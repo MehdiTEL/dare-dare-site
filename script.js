@@ -8,7 +8,7 @@ const eventData = {
   soiree: {
     heroTitle: "On ne fait pas des soirées. On crée des souvenirs.",
     heroSubtitle: "Du brief au dernier verre — on orchestre chaque détail pour que vous n'ayez qu'à profiter.",
-    heroImage: "photos/Moet et chandon .jpeg",
+    heroImage: "photos/moet-chandon.webp",
     services: [
       { icon: "palette", title: "Pilotage & coordination", desc: "Un seul chef de projet, un seul interlocuteur — de la première idée au dernier applaudissement.", features: ["Brief, cadrage, budget — tout est posé dès le départ", "Rétro-planning serré, suivi sans relâche", "Coordination de chaque prestataire", "Pilotage du jour J, minute par minute", "Débriefing & recommandations post-event"] },
       { icon: "settings", title: "Production & logistique", desc: "Lieu, traiteur, technique, mobilier — on verrouille chaque maillon pour que rien ne bouge.", features: ["Sourcing & négociation des lieux", "Régie son, lumière & vidéo", "Traiteur, bar & expérience F&B", "Mobilier, habillage & signalétique", "Sécurité, assurances & conformité"] },
@@ -21,7 +21,7 @@ const eventData = {
   seminaire: {
     heroTitle: "Vos équipes méritent mieux qu'une salle de réunion.",
     heroSubtitle: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits — dare-dare.",
-    heroImage: "photos/BNP - reims - maison de champagne.jpeg",
+    heroImage: "photos/bnp-reims-champagne-1.webp",
     services: [
       { icon: "clipboard", title: "Conception & programme", desc: "On ne remplit pas un agenda — on construit une expérience collective qui a du sens.", features: ["Cadrage des objectifs & brief stratégique", "Programme sur-mesure : plénières, ateliers, off", "Sélection de speakers & intervenants", "Scénarisation des temps forts", "Équilibre entre contenu et convivialité"] },
       { icon: "building", title: "Logistique & coordination", desc: "Hôtel, transferts, restauration, rooming — on gère tout, vous ne gérez rien.", features: ["Sourcing hôtels & domaines privatisés", "Transferts groupe & logistique terrain", "Restauration & expériences culinaires", "Rooming list & gestion des chambres", "Coordination multi-sites & multi-jours"] },
@@ -34,7 +34,7 @@ const eventData = {
   influence: {
     heroTitle: "On crée des moments que vos créateurs voudront poster.",
     heroSubtitle: "Des événements pensés pour le contenu : photogéniques, immersifs, parfaitement orchestrés.",
-    heroImage: "photos/Samsung - influences molitor.jpeg",
+    heroImage: "photos/samsung-influences-molitor-5.webp",
     services: [
       { icon: "camera", title: "Concept & set-up", desc: "Chaque angle est pensé pour la photo — chaque espace raconte votre marque.", features: ["Concept créatif & direction visuelle", "Photocalls & corners instagrammables", "Éclairage pensé pour le contenu", "Parcours invité scénographié", "Brand experience & storytelling spatial"] },
       { icon: "users", title: "Gestion de projet & guests", desc: "Guest list, accueil, gifting, flux — chaque créateur est un VIP, pas un numéro.", features: ["Stratégie d'invitation & guest list ciblée", "Accueil VIP personnalisé", "Gifting & kits créateurs sur-mesure", "Gestion des flux & espaces privés", "Brief créateurs & guidelines contenu"] },
@@ -47,7 +47,7 @@ const eventData = {
   presse: {
     heroTitle: "Un voyage presse, c'est une histoire qu'on écrit ensemble.",
     heroSubtitle: "On orchestre des expériences éditoriales où votre marque prend vie — jour après jour.",
-    heroImage: "photos/Dior 2.jpeg",
+    heroImage: "photos/dior-2.webp",
     services: [
       { icon: "map", title: "Itinéraire & storytelling", desc: "On ne planifie pas un voyage — on écrit un scénario éditorial jour par jour.", features: ["Itinéraire éditorial sur-mesure", "Immersions culturelles & accès exclusifs", "Temps forts calibrés pour les retombées", "Storytelling de marque intégré au parcours", "Programmation multi-jours cohérente"] },
       { icon: "plane", title: "Logistique multi-destinations", desc: "Vols, transferts, hôtels, restaurants — on gère la logistique pour que vos invités ne pensent qu'à écrire.", features: ["Réservation vols & billets", "Transferts privés & logistique terrain", "Hébergement premium & rooming", "Restauration & expériences culinaires", "Coordination inter-destinations fluide"] },
@@ -60,7 +60,7 @@ const eventData = {
   lancement: {
     heroTitle: "Votre produit mérite mieux qu'un communiqué de presse.",
     heroSubtitle: "On crée l'événement qui fera parler de votre marque — dare-dare.",
-    heroImage: "photos/Samsung Showcase Theodort.jpeg",
+    heroImage: "photos/samsung-showcase-theodort-1.webp",
     services: [
       { icon: "eye", title: "Concept & mise en scène", desc: "Votre produit mérite un moment — on crée le décor, le parcours et le reveal qui vont avec.", features: ["Concept créatif & direction de projet", "Parcours scénographique immersif", "Mise en lumière produit & reveal", "Décor sur-mesure & habillage spatial", "Vidéo projection & mapping"] },
       { icon: "zap", title: "Production & régie technique", desc: "Son, lumière, vidéo — une machine de guerre technique invisible, au service de l'émotion.", features: ["Régie son & lumière professionnelle", "Captation vidéo multi-caméras", "Effets spéciaux & pyrotechnie", "Streaming & diffusion en direct", "Coordination technique minute par minute"] },
@@ -80,6 +80,18 @@ const testimonials = [
   {
     text: "Depuis plus d'un an, Dare-Dare gère l'intégralité de notre logistique événementielle. Réactivité, professionnalisme, fiabilité — un partenaire sur lequel on peut compter les yeux fermés.",
     author: "Tgod Events"
+  },
+  {
+    text: "On leur a confié un événement à Marrakech avec 3 semaines de délai. Tout était parfait — du transfert aéroport au dîner sous les étoiles. L'agilité de cette équipe est impressionnante.",
+    author: "Directrice communication — Secteur luxe"
+  },
+  {
+    text: "Dare-Dare a produit notre activation en marge des 20 km de Paris : deux sites en simultané, coordination sans faille, espace VIP impeccable. On repart avec eux l'année prochaine.",
+    author: "Chef de projet — Secteur tech"
+  },
+  {
+    text: "Ce qui les distingue, c'est leur capacité à comprendre l'ADN d'une marque et à le traduire dans chaque détail de l'événement. Pas un prestataire — un vrai partenaire créatif.",
+    author: "Responsable événementiel — Maison de mode"
   }
 ];
 
@@ -125,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   const faqItems = document.querySelectorAll('.faq-item');
   const contactForm = document.getElementById('contact-form');
-  const formSuccess = document.querySelector('.contact-form__success');
+  /* FIX: supprimé formSuccess — sélecteur mort, le vrai élément est successEl */
 
   // Generate floating stars in hero
   function createFloatingStars() {
@@ -182,9 +194,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateServices(data.services);
 
-    destBadges.forEach(badge => {
-      badge.classList.toggle('visible', badge.dataset.dest === data.recommendedDest);
-    });
+    /* FIX: destBadges référence .dest-card__badge qui n'existe plus dans le HTML */
+    if (destBadges.length) {
+      destBadges.forEach(badge => {
+        badge.classList.toggle('visible', badge.dataset.dest === data.recommendedDest);
+      });
+    }
 
     showTestimonial(data.testimonialIndex);
 
@@ -248,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Morocco panel
+  /* FIX: références mortes, éléments supprimés du HTML — bloc conservé par sécurité */
   const marocCard = document.querySelector('.dest-card--maroc');
   const marocPanel = document.getElementById('maroc-panel');
   if (marocCard && marocPanel) {
@@ -273,6 +288,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   testimonialDots.forEach((dot, i) => dot.addEventListener('click', () => showTestimonial(i)));
 
+  /* UX: auto-rotation des témoignages — 6 secondes, pause au hover */
+  let autoPlayInterval = null;
+  const sliderEl = document.querySelector('.temoignages__slider');
+
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(() => {
+      showTestimonial((currentTestimonialIndex + 1) % testimonials.length);
+    }, 6000);
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+  }
+
+  startAutoPlay();
+
+  if (sliderEl) {
+    sliderEl.addEventListener('mouseenter', stopAutoPlay);
+    sliderEl.addEventListener('mouseleave', startAutoPlay);
+  }
+
+  // Réinitialiser le timer après un clic manuel (prev/next/dot)
+  const resetAutoPlay = () => { stopAutoPlay(); startAutoPlay(); };
+  document.querySelector('.temoignages__nav-btn--prev')?.addEventListener('click', resetAutoPlay);
+  document.querySelector('.temoignages__nav-btn--next')?.addEventListener('click', resetAutoPlay);
+  document.querySelectorAll('.temoignages__dot').forEach(dot => dot.addEventListener('click', resetAutoPlay));
+
   // Hamburger Menu
   hamburger?.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -293,12 +338,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const answer = item.querySelector('.faq-item__answer');
     question.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
+      /* FIX: reset aria-expanded on all items */
       faqItems.forEach(fi => {
         fi.classList.remove('open');
+        fi.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
         fi.querySelector('.faq-item__answer').style.maxHeight = '0';
       });
       if (!isOpen) {
         item.classList.add('open');
+        question.setAttribute('aria-expanded', 'true');
         answer.style.maxHeight = answer.scrollHeight + 'px';
       }
     });
@@ -328,6 +376,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* UX: mise en surbrillance du lien nav correspondant à la section visible */
+  const navLinksAll = document.querySelectorAll('.nav__link');
+  const allSections = document.querySelectorAll('section[id]');
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinksAll.forEach(link => {
+          link.classList.remove('is-active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('is-active');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.3, rootMargin: '-70px 0px 0px 0px' });
+
+  allSections.forEach(section => sectionObserver.observe(section));
 
   // Counter Animation
   const counterObserver = new IntersectionObserver((entries) => {
@@ -397,7 +465,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (prevBtn) prevBtn.addEventListener('click', () => goToStep(currentStep - 1));
-  if (nextBtn) nextBtn.addEventListener('click', () => goToStep(currentStep + 1));
+  /* UX: validation avant transition d'étape */
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      let canProceed = true;
+
+      if (currentStep === 1) {
+        const selected = document.querySelector('.contact__card input:checked');
+        if (!selected) {
+          canProceed = false;
+          const cards = document.querySelector('.contact__cards');
+          if (cards) {
+            cards.classList.add('contact__shake');
+            setTimeout(() => cards.classList.remove('contact__shake'), 500);
+          }
+        }
+      }
+
+      if (canProceed) goToStep(currentStep + 1);
+    });
+  }
 
   // Step dot navigation
   dots.forEach(dot => {
@@ -427,13 +514,75 @@ document.addEventListener('DOMContentLoaded', () => {
     updateGuestMood(guestRange.value);
   }
 
-  // Form submit
+  /* FIX: vrai envoi du formulaire via Formspree + validation */
   if (formEl) {
-    formEl.addEventListener('submit', (e) => {
+    formEl.addEventListener('submit', async (e) => {
       e.preventDefault();
-      formEl.style.display = 'none';
-      document.querySelector('.contact__progress').style.display = 'none';
-      if (successEl) successEl.classList.add('visible');
+
+      const submitButton = document.getElementById('form-submit');
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Envoi en cours...';
+      }
+
+      /* UX: validation step 4 avant envoi */
+      document.querySelectorAll('.contact__error').forEach(el => el.classList.remove('visible'));
+      document.querySelectorAll('.has-error').forEach(el => el.classList.remove('has-error'));
+
+      const nameInput = document.getElementById('contact-name');
+      const emailInput = document.getElementById('contact-email');
+      let hasError = false;
+
+      if (!nameInput || !nameInput.value.trim()) {
+        if (nameInput) nameInput.classList.add('has-error');
+        const errName = document.getElementById('error-name');
+        if (errName) errName.classList.add('visible');
+        hasError = true;
+      }
+
+      if (!emailInput || !emailInput.value.trim() || !emailInput.value.includes('@')) {
+        if (emailInput) emailInput.classList.add('has-error');
+        const errEmail = document.getElementById('error-email');
+        if (errEmail) errEmail.classList.add('visible');
+        hasError = true;
+      }
+
+      if (hasError) {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Envoyer dare-dare';
+        }
+        return;
+      }
+      try {
+        const response = await fetch(formEl.action, {
+          method: 'POST',
+          body: new FormData(formEl),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          formEl.style.display = 'none';
+          document.querySelector('.contact__progress').style.display = 'none';
+          if (successEl) successEl.classList.add('visible');
+        } else {
+          throw new Error('Erreur serveur');
+        }
+      } catch (error) {
+        alert('Une erreur est survenue. Contactez-nous directement à eva.dahan.production@gmail.com');
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Envoyer dare-dare';
+        }
+      }
+    });
+
+    /* UX: effacer l'erreur quand l'utilisateur tape dans un champ */
+    document.querySelectorAll('#contact-name, #contact-email').forEach(input => {
+      input.addEventListener('input', () => {
+        input.classList.remove('has-error');
+        const errorSpan = input.parentElement.querySelector('.contact__error');
+        if (errorSpan) errorSpan.classList.remove('visible');
+      });
     });
   }
 
@@ -520,6 +669,28 @@ document.addEventListener('DOMContentLoaded', () => {
         portfolioCards.forEach(c => c.classList.remove('is-tapped'));
         if (!wasTapped) card.classList.add('is-tapped');
       });
+    });
+
+    /* UX: tap-to-reveal pour les destinations sur mobile */
+    const destItems = document.querySelectorAll('.dest-showcase__item');
+    destItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
+        const wasTapped = item.classList.contains('is-tapped');
+        destItems.forEach(d => d.classList.remove('is-tapped'));
+        if (!wasTapped) item.classList.add('is-tapped');
+      });
+    });
+  }
+
+  /* UX: bouton retour en haut — apparaît après 600px de scroll */
+  const backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 });

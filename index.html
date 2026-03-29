@@ -8,6 +8,14 @@
   <meta property="og:title" content="Agence Dare-Dare — L'audace au service de vos événements">
   <meta property="og:description" content="Production événementielle sur-mesure à Paris, Cannes et au Maroc. Séminaires, lancements, influence, voyages presse.">
   <meta property="og:type" content="website">
+  <!-- FIX: ajout og:image, og:url, twitter:card -->
+  <meta property="og:image" content="photos/logo-dare-dare.webp">
+  <meta property="og:url" content="https://agencedaredare.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- FIX: favicon -->
+  <!-- TODO: remplacer par un vrai favicon .png 32x32 et 180x180 -->
+  <link rel="icon" type="image/jpeg" href="photos/logo-dare-dare.webp">
+  <link rel="apple-touch-icon" href="photos/logo-dare-dare.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
@@ -21,7 +29,8 @@
   <header class="nav nav--transparent" role="banner">
     <div class="nav__inner">
       <a href="#" class="nav__logo" aria-label="Agence Dare-Dare — Accueil">
-        <img class="nav__logo-img" src="photos/logo dare dare .jpeg" alt="DARE DARE">
+        <!-- CLEAN: ajout width/height pour CLS -->
+        <img class="nav__logo-img" src="photos/logo-dare-dare.webp" alt="DARE DARE" width="65" height="65">
       </a>
       <nav class="nav__links" aria-label="Navigation principale">
         <a href="#services" class="nav__link link-underline">Services</a>
@@ -58,10 +67,7 @@
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
-      <!-- Zellige reveal animation -->
-      <div class="hero__zellige-reveal" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
-      </div>
+      <!-- CLEAN: supprimé hero__zellige-reveal -->
 
       <div class="hero__bg hero__bg--gradient">
         <!-- Floating star decorations -->
@@ -98,18 +104,13 @@
       </div>
     </section>
 
-    <!-- Arch divider Hero → Services -->
-    <div class="arch-divider" aria-hidden="true" style="background: var(--ivory);">
-      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,80 L0,50 Q180,8 400,2 Q600,-2 720,0 Q840,-2 1040,2 Q1260,8 1440,50 L1440,80 Z" fill="#F7F3ED"/>
-      </svg>
-    </div>
+    <!-- CLEAN: supprimé arch-divider Hero → Services -->
 
     <!-- ===== SERVICES ===== -->
     <section class="services" id="services">
       <div class="container">
         <div class="services__header reveal">
-          <svg class="star-sep" width="20" height="20" viewBox="0 0 24 24" fill="#A67C52" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+          <!-- CLEAN: supprimé star-sep -->
           <h2 class="section-title">What We<br>Actually Do</h2>
           <p class="section-subtitle">Piloter. Produire. Livrer. Trois mots, zéro compromis — et un seul objectif : que tout soit parfait le jour J.</p>
         </div>
@@ -163,7 +164,7 @@
         </div>
 
         <div class="services__cta-wrap reveal">
-          <a href="#contact" class="services__cta">Start a project</a>
+          <a href="#contact" class="services__cta">Lancer un projet</a>
         </div>
       </div>
     </section>
@@ -180,8 +181,8 @@
       <div class="dest-showcase">
         <div class="dest-showcase__item reveal" data-city="paris">
           <div class="dest-showcase__img-wrap">
-            <img class="dest-showcase__img" src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&q=80" alt="Rue parisienne avec immeubles haussmanniens et ciel bleu" loading="lazy">
-            <img class="dest-showcase__img dest-showcase__img--hover" src="https://images.unsplash.com/photo-1759255260940-a77bb48a5e6b?w=1200&q=80" alt="Intérieur d'un palace parisien, escalier orné" loading="lazy">
+            <img class="dest-showcase__img" src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&q=80" alt="Rue parisienne avec immeubles haussmanniens et ciel bleu" loading="lazy" width="1200" height="800">
+            <img class="dest-showcase__img dest-showcase__img--hover" src="https://images.unsplash.com/photo-1759255260940-a77bb48a5e6b?w=1200&q=80" alt="Intérieur d'un palace parisien, escalier orné" loading="lazy" width="1200" height="800">
           </div>
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">01</span>
@@ -198,8 +199,8 @@
 
         <div class="dest-showcase__item reveal" data-city="cannes">
           <div class="dest-showcase__img-wrap">
-            <img class="dest-showcase__img" src="https://images.unsplash.com/photo-1557505956-eb3d48eb0223?w=1200&q=80" alt="Vue aérienne du port de Cannes et de la Croisette" loading="lazy">
-            <img class="dest-showcase__img dest-showcase__img--hover" src="https://images.unsplash.com/photo-1598695643539-f47d01094dee?w=1200&q=80" alt="Yacht sur la Méditerranée, Cannes" loading="lazy">
+            <img class="dest-showcase__img" src="https://images.unsplash.com/photo-1557505956-eb3d48eb0223?w=1200&q=80" alt="Vue aérienne du port de Cannes et de la Croisette" loading="lazy" width="1200" height="800">
+            <img class="dest-showcase__img dest-showcase__img--hover" src="https://images.unsplash.com/photo-1598695643539-f47d01094dee?w=1200&q=80" alt="Yacht sur la Méditerranée, Cannes" loading="lazy" width="1200" height="800">
           </div>
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">02</span>
@@ -216,8 +217,8 @@
 
         <div class="dest-showcase__item reveal" data-city="maroc">
           <div class="dest-showcase__img-wrap">
-            <img class="dest-showcase__img" src="https://images.unsplash.com/photo-1527760370098-806667fa3750?w=1200&q=80" alt="Riad avec fontaine et zellige, Marrakech" loading="lazy">
-            <img class="dest-showcase__img dest-showcase__img--hover" src="https://images.unsplash.com/photo-1513028179155-324cfec2566c?w=1200&q=80" alt="Cour de riad à Marrakech" loading="lazy">
+            <img class="dest-showcase__img" src="https://images.unsplash.com/photo-1527760370098-806667fa3750?w=1200&q=80" alt="Riad avec fontaine et zellige, Marrakech" loading="lazy" width="1200" height="800">
+            <img class="dest-showcase__img dest-showcase__img--hover" src="https://images.unsplash.com/photo-1513028179155-324cfec2566c?w=1200&q=80" alt="Cour de riad à Marrakech" loading="lazy" width="1200" height="800">
           </div>
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">03</span>
@@ -260,7 +261,7 @@
 
           <!-- 1. Moët & Chandon × Palais Brongniart — LARGE (luxe + spectacle = première impression) -->
           <div class="portfolio__card portfolio__card--large reveal" data-index="01" data-tags="soiree,luxe" data-visible="true">
-            <img src="photos/Moet et chandon .jpeg" alt="Moët & Chandon — Projection mapping Palais Brongniart" loading="lazy">
+            <img src="photos/moet-chandon.webp" alt="Moët & Chandon — Projection mapping Palais Brongniart" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Soirée de prestige</span>
               <span class="portfolio__name">Moët & Chandon</span>
@@ -279,7 +280,7 @@
 
           <!-- 2. Dior — Scénographie -->
           <div class="portfolio__card reveal" data-index="02" data-tags="luxe,presse" data-visible="true">
-            <img src="photos/dior 4.jpeg" alt="Dior — Scénographie florale dorée" loading="lazy">
+            <img src="photos/dior-4.webp" alt="Dior — Scénographie florale dorée" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Scénographie luxe</span>
               <span class="portfolio__name">Dior</span>
@@ -298,7 +299,7 @@
 
           <!-- 3. Pyramide du Louvre — Gala -->
           <div class="portfolio__card reveal" data-index="03" data-tags="soiree,corporate" data-visible="true">
-            <img src="photos/Paris Blockchain week louvre 1.jpeg" alt="Dîner de gala sous la Pyramide du Louvre" loading="lazy">
+            <img src="photos/paris-blockchain-week-louvre-1.webp" alt="Dîner de gala sous la Pyramide du Louvre" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Dîner de gala VIP</span>
               <span class="portfolio__name">Pyramide du Louvre</span>
@@ -317,7 +318,7 @@
 
           <!-- 4. Chanel — Hôtel 5 étoiles -->
           <div class="portfolio__card reveal" data-index="04" data-tags="luxe,soiree" data-visible="true">
-            <img src="photos/Chanel - hotel 5 etoiles.jpeg" alt="Chanel — Réception dans un hôtel 5 étoiles parisien" loading="lazy">
+            <img src="photos/chanel-hotel-5-etoiles.webp" alt="Chanel — Réception dans un hôtel 5 étoiles parisien" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Réception privée</span>
               <span class="portfolio__name">Chanel</span>
@@ -336,7 +337,7 @@
 
           <!-- 5. Samsung Showcase Theodort — Concert -->
           <div class="portfolio__card reveal" data-index="05" data-tags="lancement" data-visible="true">
-            <img src="photos/Samsung Showcase Theodort1.jpeg" alt="Samsung Showcase — Concert Theodort au Forum des Halles" loading="lazy">
+            <img src="photos/samsung-showcase-theodort-2.webp" alt="Samsung Showcase — Concert Theodort au Forum des Halles" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Concert — 1 500 pers.</span>
               <span class="portfolio__name">Samsung × Theodort</span>
@@ -355,7 +356,7 @@
 
           <!-- 6. Longchamp — Table dressée -->
           <div class="portfolio__card reveal" data-index="06" data-tags="luxe,soiree" data-visible="true">
-            <img src="photos/Longchamp.jpeg" alt="Longchamp — Table dressée soirée privée" loading="lazy">
+            <img src="photos/longchamp.webp" alt="Longchamp — Table dressée soirée privée" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Soirée privée</span>
               <span class="portfolio__name">Longchamp</span>
@@ -374,7 +375,7 @@
 
           <!-- 7. Blockchain Week — Ritz -->
           <div class="portfolio__card portfolio__card--large reveal" data-index="07" data-tags="corporate,luxe" data-visible="true">
-            <img src="photos/PaParis Blockchain week Ritz.jpeg" alt="Paris Blockchain Week — Petit-déjeuner au Ritz" loading="lazy">
+            <img src="photos/paris-blockchain-week-ritz-1.webp" alt="Paris Blockchain Week — Petit-déjeuner au Ritz" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Networking VIP</span>
               <span class="portfolio__name">Blockchain Week — Ritz</span>
@@ -393,7 +394,7 @@
 
           <!-- 8. Deloitte × Louvre — Scénographie -->
           <div class="portfolio__card reveal" data-index="08" data-tags="corporate,soiree" data-visible="true">
-            <img src="photos/Deloitte - Louvre .jpeg" alt="Deloitte — Scénographie au Carrousel du Louvre" loading="lazy">
+            <img src="photos/deloitte-louvre.webp" alt="Deloitte — Scénographie au Carrousel du Louvre" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Scénographie corporate</span>
               <span class="portfolio__name">Deloitte × Louvre</span>
@@ -412,7 +413,7 @@
 
           <!-- 9. Dior — Blé doré (expérience presse) -->
           <div class="portfolio__card portfolio__card--large reveal" data-index="09" data-tags="luxe,presse" data-visible="true">
-            <img src="photos/Dior 2.jpeg" alt="Dior — Installation champ de blé pour lancement parfum" loading="lazy">
+            <img src="photos/dior-2.webp" alt="Dior — Installation champ de blé pour lancement parfum" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Expérience de marque</span>
               <span class="portfolio__name">Dior — Parfums</span>
@@ -433,7 +434,7 @@
 
           <!-- 10. Samsung × Fnac Live -->
           <div class="portfolio__card portfolio__card--hidden reveal" data-index="10" data-tags="lancement,soiree" data-visible="false">
-            <img src="photos/Samsung x Fnac live.jpeg" alt="Samsung × Fnac Live — Hôtel de Ville la nuit" loading="lazy">
+            <img src="photos/samsung-fnac-live-2.webp" alt="Samsung × Fnac Live — Hôtel de Ville la nuit" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Activation festival</span>
               <span class="portfolio__name">Samsung × Fnac Live</span>
@@ -452,7 +453,7 @@
 
           <!-- 11. Samsung × 20 km de Paris -->
           <div class="portfolio__card portfolio__card--hidden reveal" data-index="11" data-tags="lancement" data-visible="false">
-            <img src="photos/Samsung - 20 K de Paris 3.jpeg" alt="Samsung × 20 km de Paris — Activation sportive" loading="lazy">
+            <img src="photos/samsung-20km-paris-4.webp" alt="Samsung × 20 km de Paris — Activation sportive" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Activation sportive</span>
               <span class="portfolio__name">Samsung × 20 km de Paris</span>
@@ -471,7 +472,7 @@
 
           <!-- 12. Drink More Water × Pernod Ricard -->
           <div class="portfolio__card portfolio__card--hidden reveal" data-index="12" data-tags="soiree,presse" data-visible="false">
-            <img src="photos/Drink more water - soirée influence et press - pernault ricard.jpeg" alt="Drink More Water — Soirée presse Pernod Ricard" loading="lazy">
+            <img src="photos/drink-more-water-pernod-ricard-1.webp" alt="Drink More Water — Soirée presse Pernod Ricard" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Soirée presse</span>
               <span class="portfolio__name">Pernod Ricard — DMW</span>
@@ -490,7 +491,7 @@
 
           <!-- 13. BNP — Maison de Champagne Reims -->
           <div class="portfolio__card portfolio__card--hidden reveal" data-index="13" data-tags="corporate,soiree" data-visible="false">
-            <img src="photos/BNP - reims - maison de champagne.jpeg" alt="BNP — Soirée corporate dans une maison de champagne à Reims" loading="lazy">
+            <img src="photos/bnp-reims-champagne-1.webp" alt="BNP — Soirée corporate dans une maison de champagne à Reims" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Soirée corporate</span>
               <span class="portfolio__name">BNP — Reims</span>
@@ -509,7 +510,7 @@
 
           <!-- 14. Blockchain Week × Moulin Rouge -->
           <div class="portfolio__card portfolio__card--hidden reveal" data-index="14" data-tags="soiree,corporate" data-visible="false">
-            <img src="photos/Paris Blockchain week Moulin rouge.jpeg" alt="Paris Blockchain Week — Soirée au Moulin Rouge" loading="lazy">
+            <img src="photos/paris-blockchain-week-moulin-rouge.webp" alt="Paris Blockchain Week — Soirée au Moulin Rouge" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Soirée iconique</span>
               <span class="portfolio__name">Blockchain Week — Moulin Rouge</span>
@@ -528,7 +529,7 @@
 
           <!-- 15. Maybelline NYX × Accor Arena -->
           <div class="portfolio__card portfolio__card--hidden reveal" data-index="15" data-tags="luxe,presse" data-visible="false">
-            <img src="photos/Loge Accor Arena Maybelline NYX.jpeg" alt="Maybelline NYX — Loge VIP Accor Arena" loading="lazy">
+            <img src="photos/loge-accor-arena-maybelline-nyx.webp" alt="Maybelline NYX — Loge VIP Accor Arena" loading="lazy" width="600" height="400">
             <div class="portfolio__default">
               <span class="portfolio__tag">Loge VIP</span>
               <span class="portfolio__name">Maybelline × Accor Arena</span>
@@ -558,7 +559,7 @@
         <p class="portfolio__mention reveal" style="text-align:center;margin-top:24px;font-size:11px;color:#999;letter-spacing:0.05em;">Projets réalisés en agence et en indépendant.</p>
         <p class="portfolio__cta-text reveal">Un projet en tête ? On en parle — dare-dare.</p>
         <div class="portfolio__cta-wrap reveal">
-          <a href="#contact" class="portfolio__cta">Start a project</a>
+          <a href="#contact" class="portfolio__cta">Lancer un projet</a>
         </div>
       </div>
     </section>
@@ -566,7 +567,7 @@
     <!-- ===== CHIFFRES ===== -->
     <section class="chiffres zellige-pattern zellige-pattern--light" id="chiffres">
       <div class="container">
-        <svg class="star-sep" width="24" height="24" viewBox="0 0 24 24" fill="#C4A47A" aria-hidden="true" style="margin-bottom: 16px;"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+        <!-- CLEAN: supprimé star-sep -->
         <h2 class="chiffres__title reveal">In Numbers</h2>
         <div class="chiffres__grid reveal">
           <div class="chiffre-item">
@@ -589,28 +590,20 @@
       </div>
     </section>
 
-    <!-- Arch divider Témoignages -->
-    <div class="arch-divider" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,80 L0,50 Q180,8 400,2 Q600,-2 720,0 Q840,-2 1040,2 Q1260,8 1440,50 L1440,80 Z" fill="#F7F3ED"/>
-      </svg>
-    </div>
+    <!-- CLEAN: supprimé arch-divider Témoignages -->
 
     <!-- ===== TEMOIGNAGES ===== -->
     <section class="temoignages" id="temoignages">
       <div class="container">
         <div class="temoignages__header reveal">
-          <svg class="star-sep" width="20" height="20" viewBox="0 0 24 24" fill="#A67C52" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+          <!-- CLEAN: supprimé star-sep -->
           <h2 class="section-title">What They<br>Say About Us</h2>
         </div>
 
         <div class="temoignages__slider">
           <div class="temoignage-slide active">
             <div class="temoignage-slide__inner moroccan-frame">
-              <span class="moroccan-frame__corner moroccan-frame__corner--tl"></span>
-              <span class="moroccan-frame__corner moroccan-frame__corner--tr"></span>
-              <span class="moroccan-frame__corner moroccan-frame__corner--bl"></span>
-              <span class="moroccan-frame__corner moroccan-frame__corner--br"></span>
+              <!-- CLEAN: supprimé moroccan-frame__corner ×4 -->
               <svg class="temoignage-slide__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
               <p class="temoignage-slide__text">L'équipe Dare-Dare allie rigueur et créativité avec une aisance rare. Sur chacun de nos événements grand public, leur maîtrise logistique nous a permis d'avancer en toute sérénité. C'est naturellement que nous leur confions nos prochains projets.</p>
               <div class="temoignage-slide__author">Luminart</div>
@@ -618,13 +611,32 @@
           </div>
           <div class="temoignage-slide">
             <div class="temoignage-slide__inner moroccan-frame">
-              <span class="moroccan-frame__corner moroccan-frame__corner--tl"></span>
-              <span class="moroccan-frame__corner moroccan-frame__corner--tr"></span>
-              <span class="moroccan-frame__corner moroccan-frame__corner--bl"></span>
-              <span class="moroccan-frame__corner moroccan-frame__corner--br"></span>
+              <!-- CLEAN: supprimé moroccan-frame__corner ×4 -->
               <svg class="temoignage-slide__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
               <p class="temoignage-slide__text">Depuis plus d'un an, Dare-Dare gère l'intégralité de notre logistique événementielle. Réactivité, professionnalisme, fiabilité — un partenaire sur lequel on peut compter les yeux fermés.</p>
               <div class="temoignage-slide__author">Tgod Events</div>
+            </div>
+          </div>
+          <div class="temoignage-slide">
+            <div class="temoignage-slide__inner moroccan-frame">
+              <!-- CLEAN: supprimé moroccan-frame__corner ×4 -->
+              <svg class="temoignage-slide__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+              <p class="temoignage-slide__text">On leur a confié un événement à Marrakech avec 3 semaines de délai. Tout était parfait — du transfert aéroport au dîner sous les étoiles. L'agilité de cette équipe est impressionnante.</p>
+              <div class="temoignage-slide__author">Directrice communication — Secteur luxe</div>
+            </div>
+          </div>
+          <div class="temoignage-slide">
+            <div class="temoignage-slide__inner moroccan-frame">
+              <svg class="temoignage-slide__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+              <p class="temoignage-slide__text">Dare-Dare a produit notre activation en marge des 20 km de Paris : deux sites en simultané, coordination sans faille, espace VIP impeccable. On repart avec eux l'année prochaine.</p>
+              <div class="temoignage-slide__author">Chef de projet — Secteur tech</div>
+            </div>
+          </div>
+          <div class="temoignage-slide">
+            <div class="temoignage-slide__inner moroccan-frame">
+              <svg class="temoignage-slide__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+              <p class="temoignage-slide__text">Ce qui les distingue, c'est leur capacité à comprendre l'ADN d'une marque et à le traduire dans chaque détail de l'événement. Pas un prestataire — un vrai partenaire créatif.</p>
+              <div class="temoignage-slide__author">Responsable événementiel — Maison de mode</div>
             </div>
           </div>
         </div>
@@ -634,6 +646,9 @@
           <div class="temoignages__dots">
             <button class="temoignages__dot active" aria-label="Témoignage 1"></button>
             <button class="temoignages__dot" aria-label="Témoignage 2"></button>
+            <button class="temoignages__dot" aria-label="Témoignage 3"></button>
+            <button class="temoignages__dot" aria-label="Témoignage 4"></button>
+            <button class="temoignages__dot" aria-label="Témoignage 5"></button>
           </div>
           <button class="temoignages__nav-btn temoignages__nav-btn--next" aria-label="Témoignage suivant">→</button>
         </div>
@@ -644,7 +659,7 @@
     <section class="apropos" id="apropos">
       <div class="apropos__layout">
         <div class="apropos__image-wrap grain-overlay">
-          <img class="apropos__image" src="photos/PaParis Blockchain week Ritz.jpeg" alt="Salon du Ritz Paris — Agence Dare-Dare" loading="lazy">
+          <img class="apropos__image" src="photos/paris-blockchain-week-ritz-1.webp" alt="Salon du Ritz Paris — Agence Dare-Dare" loading="lazy" width="600" height="500">
         </div>
         <div class="apropos__text">
           <h2 class="apropos__title reveal">The Daring Agency</h2>
@@ -698,7 +713,7 @@
     <section class="faq" id="faq">
       <div class="container">
         <div class="faq__header reveal">
-          <svg class="star-sep" width="20" height="20" viewBox="0 0 24 24" fill="#A67C52" aria-hidden="true"><polygon points="12,0 14,8.5 10,8.5"/><polygon points="12,24 14,15.5 10,15.5"/><polygon points="0,12 8.5,10 8.5,14"/><polygon points="24,12 15.5,10 15.5,14"/><polygon points="3.5,3.5 9.5,9 10.5,8"/><polygon points="20.5,20.5 14.5,15 13.5,16"/><polygon points="20.5,3.5 15,9.5 16,10.5"/><polygon points="3.5,20.5 9,14.5 8,13.5"/></svg>
+          <!-- CLEAN: supprimé star-sep -->
           <h2 class="section-title">FAQ</h2>
         </div>
 
@@ -807,7 +822,8 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contact-form" novalidate>
+        <!-- FIX: ajout action Formspree + method POST -->
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgoppgkl" method="POST" novalidate>
 
           <!-- Step 1: Event type -->
           <div class="contact__step-panel active" data-panel="1">
@@ -889,7 +905,8 @@
               <div class="contact__field-full">
                 <label class="contact__field-label">Combien de regards dans la salle ?</label>
                 <div class="contact__range-wrap">
-                  <input type="range" class="contact__range" id="guest-count" min="10" max="1000" value="80" step="10">
+                  <!-- FIX: ajout name pour Formspree -->
+                  <input type="range" class="contact__range" id="guest-count" name="guest-count" min="10" max="1000" value="80" step="10">
                   <output class="contact__range-value" id="guest-output">80</output>
                   <p class="contact__range-mood" id="guest-mood">Un écrin intime — chaque détail compte.</p>
                 </div>
@@ -907,11 +924,11 @@
               <div class="contact__field-row">
                 <div class="contact__field">
                   <label class="contact__field-label" for="event-date">Le jour où tout se joue</label>
-                  <input type="date" class="contact__date-input" id="event-date">
+                  <input type="date" class="contact__date-input" id="event-date" name="event-date">
                 </div>
                 <div class="contact__field">
                   <label class="contact__field-label" for="event-city">Le décor de votre histoire</label>
-                  <input type="text" class="contact__text-input" id="event-city" placeholder="Paris, Cannes, Marrakech, le monde...">
+                  <input type="text" class="contact__text-input" id="event-city" name="event-city" placeholder="Paris, Cannes, Marrakech, le monde...">
                 </div>
               </div>
             </div>
@@ -924,26 +941,28 @@
               <div class="contact__field-row">
                 <div class="contact__field">
                   <label class="contact__field-label" for="contact-name">Nom complet</label>
-                  <input type="text" class="contact__text-input" id="contact-name" placeholder="Marie Dupont" required>
+                  <input type="text" class="contact__text-input" id="contact-name" name="contact-name" placeholder="Marie Dupont" required>
+                  <span class="contact__error" id="error-name">Merci de renseigner votre nom</span>
                 </div>
                 <div class="contact__field">
                   <label class="contact__field-label" for="contact-company">Entreprise</label>
-                  <input type="text" class="contact__text-input" id="contact-company" placeholder="Votre entreprise">
+                  <input type="text" class="contact__text-input" id="contact-company" name="contact-company" placeholder="Votre entreprise">
                 </div>
               </div>
               <div class="contact__field-row">
                 <div class="contact__field">
                   <label class="contact__field-label" for="contact-email">Email</label>
-                  <input type="email" class="contact__text-input" id="contact-email" placeholder="marie@entreprise.com" required>
+                  <input type="email" class="contact__text-input" id="contact-email" name="contact-email" placeholder="marie@entreprise.com" required>
+                  <span class="contact__error" id="error-email">Merci de renseigner un email valide</span>
                 </div>
                 <div class="contact__field">
                   <label class="contact__field-label" for="contact-phone">Téléphone</label>
-                  <input type="tel" class="contact__text-input" id="contact-phone" placeholder="+33 6 00 00 00 00">
+                  <input type="tel" class="contact__text-input" id="contact-phone" name="contact-phone" placeholder="+33 6 00 00 00 00">
                 </div>
               </div>
               <div class="contact__field">
                 <label class="contact__field-label" for="contact-message">Un mot sur votre projet ?</label>
-                <textarea class="contact__textarea" id="contact-message" placeholder="Dites-nous ce qui vous fait rêver..." rows="3"></textarea>
+                <textarea class="contact__textarea" id="contact-message" name="contact-message" placeholder="Dites-nous ce qui vous fait rêver..." rows="3"></textarea>
               </div>
             </div>
           </div>
@@ -982,7 +1001,7 @@
   <footer class="footer zellige-pattern zellige-pattern--gold" role="contentinfo">
     <div class="container">
       <div class="footer__logo">
-        <img class="footer__logo-img" src="photos/logo dare dare .jpeg" alt="DARE DARE">
+        <img class="footer__logo-img" src="photos/logo-dare-dare.webp" alt="DARE DARE" width="48" height="48">
       </div>
       <p class="footer__tagline font-moroccan">You dare us, we did it.</p>
       <div class="footer__links">
@@ -998,7 +1017,8 @@
         <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+        <!-- TODO: mettre le vrai lien LinkedIn -->
+        <a href="https://linkedin.com/company/agence-dare-dare" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
       </div>
@@ -1006,6 +1026,9 @@
       <p class="footer__legal"><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
     </div>
   </footer>
+
+  <!-- UX: bouton retour en haut -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
 
   <script src="script.js"></script>
 </body>
