@@ -4,7 +4,8 @@
    ============================================ */
 
 // ---------- Event Data ----------
-const eventData = {
+// Exposed on window for i18n access
+const eventData = window.eventData = {
   soiree: {
     heroTitle: "On ne fait pas des soirées. On crée des souvenirs.",
     heroSubtitle: "Du brief au dernier verre — on orchestre chaque détail pour que vous n'ayez qu'à profiter.",
@@ -72,7 +73,7 @@ const eventData = {
   }
 };
 
-const testimonials = [
+const testimonials = window.testimonials = [
   {
     text: "L'équipe Dare-Dare allie rigueur et créativité avec une aisance rare. Sur chacun de nos événements grand public, leur maîtrise logistique nous a permis d'avancer en toute sérénité. C'est naturellement que nous leur confions nos prochains projets.",
     author: "Luminart"
@@ -120,6 +121,7 @@ const star8SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="
 // ---------- DOM Ready ----------
 document.addEventListener('DOMContentLoaded', () => {
   let currentType = 'soiree';
+  window.currentType = currentType;
   let currentTestimonialIndex = 0;
 
   const nav = document.querySelector('.nav');
@@ -177,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!eventData[type]) return;
     const data = eventData[type];
     currentType = type;
+    window.currentType = type;
 
     heroTabs.forEach(tab => {
       tab.classList.toggle('active', tab.dataset.type === type);
@@ -278,6 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     testimonialDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
   }
 
+  window.switchEventType = switchEventType;
   heroTabs.forEach(tab => tab.addEventListener('click', () => switchEventType(tab.dataset.type)));
 
   document.querySelector('.temoignages__nav-btn--prev')?.addEventListener('click', () => {
@@ -691,6 +695,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
     backToTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* WHATSAPP: logique d'apparition du bouton flottant */
+  const whatsappBtn = document.getElementById('whatsappFloat');
+  const contactSection = document.getElementById('contact');
+
+  if (whatsappBtn) {
+    let whatsappVisible = false;
+    let pulseDone = false;
+    let pulseTimer = null;
+
+    /* Apparition : après 3 secondes OU 300px de scroll (le premier des deux) */
+    function showWhatsApp() {
+      if (whatsappVisible) return;
+      whatsappVisible = true;
+      whatsappBtn.classList.add('visible');
+
+      /* Pulse unique après 8 secondes pour attirer l'attention une seule fois */
+      if (!pulseDone) {
+        pulseTimer = setTimeout(() => {
+          whatsappBtn.classList.add('pulse');
+          pulseDone = true;
+          /* Retirer la classe après l'animation pour ne pas la rejouer */
+          whatsappBtn.addEventListener('animationend', () => {
+            whatsappBtn.classList.remove('pulse');
+          }, { once: true });
+        }, 8000);
+      }
+    }
+
+    /* Timer de 3 secondes */
+    setTimeout(showWhatsApp, 3000);
+
+    /* Scroll de 300px */
+    function checkScrollWhatsApp() {
+      if (window.scrollY > 300) {
+        showWhatsApp();
+      }
+    }
+    window.addEventListener('scroll', checkScrollWhatsApp, { passive: true });
+
+    /* Masquer quand le visiteur est dans la section contact */
+    if (contactSection) {
+      const contactObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            whatsappBtn.classList.add('hidden-in-contact');
+          } else {
+            whatsappBtn.classList.remove('hidden-in-contact');
+          }
+        });
+      }, { threshold: 0.2 });
+      contactObserver.observe(contactSection);
+    }
+
+    /* WHATSAPP: log du clic — remplacer par Google Analytics quand disponible */
+    whatsappBtn.addEventListener('click', () => {
+      console.log('[Dare-Dare] WhatsApp click — lead captured');
+      /* TODO: remplacer par gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: 'floating_button' }); */
     });
   }
 });

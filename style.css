@@ -227,33 +227,34 @@ ul, ol { list-style: none; }
   display: flex; align-items: center; justify-content: space-between;
   width: 100%; max-width: var(--container-max);
   margin: 0 auto; padding: 0 24px;
+  gap: 8px;
 }
 .nav__logo {
   display: flex; align-items: center;
+  flex-shrink: 0;
   transition: filter var(--transition-base);
 }
-.nav__logo-img {
-  height: 65px; width: auto;
+/* LOGO: SVG inline — plus besoin de filter/invert/blend-mode */
+.nav__logo-svg {
+  height: 30px;
+  width: auto;
   display: block;
-  transition: filter var(--transition-base);
+  transition: color var(--transition-base);
 }
-/* Sur fond sombre : logo blanc (invert le noir en blanc, blend élimine le fond) */
-.nav--transparent .nav__logo-img {
-  filter: invert(1) brightness(2);
-  mix-blend-mode: screen;
+/* Sur fond sombre : logo blanc */
+.nav--transparent .nav__logo-svg {
+  color: #fff;
 }
-/* Sur fond clair : logo noir (blend multiply élimine le fond blanc) */
-.nav--scrolled .nav__logo-img {
-  filter: none;
-  mix-blend-mode: multiply;
+/* Sur fond clair : logo noir */
+.nav--scrolled .nav__logo-svg {
+  color: var(--ink);
 }
-/* CLEAN: supprimé nav__logo-text/separator/ornament/star display:none — éléments absents du HTML */
 
-.nav__links { display: flex; align-items: center; }
+.nav__links { display: flex; align-items: center; flex-shrink: 1; flex-wrap: nowrap; }
 .nav__link {
   font-family: var(--font-body); font-weight: 500;
-  font-size: 12px; text-transform: uppercase;
-  letter-spacing: 0.12em;
+  font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.08em; white-space: nowrap;
   transition: color var(--transition-fast), opacity var(--transition-fast);
   padding: 8px 0;
 }
@@ -267,19 +268,19 @@ ul, ol { list-style: none; }
 .nav--transparent .nav__link.is-active { color: #fff; }
 .nav__link.is-active::after { width: 100%; }
 
-.nav__diamond { font-size: 3px; margin: 0 16px; opacity: 0.25; }
+.nav__diamond { font-size: 3px; margin: 0 10px; opacity: 0.25; }
 .nav--transparent .nav__diamond { color: #fff; }
 .nav--scrolled .nav__diamond { color: var(--ink); }
 
 .nav__cta {
   font-family: var(--font-body); font-weight: 600;
-  font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em;
-  padding: 10px 28px;
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em;
+  padding: 8px 20px;
   border: none; border-radius: 0;
   background: #0A0A0A; color: #fff;
   position: relative; overflow: hidden;
   transition: all var(--transition-base);
-  margin-left: 28px;
+  margin-left: 4px; flex-shrink: 0; white-space: nowrap;
   clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
 }
 .nav__cta::after {
@@ -293,6 +294,35 @@ ul, ol { list-style: none; }
 .nav--transparent .nav__cta::after { background: #0A0A0A; }
 .nav--scrolled .nav__cta { background: #0A0A0A; color: #fff; }
 .nav__cta:hover { opacity: 0.9; }
+
+/* i18n — Language Toggle */
+.lang-toggle {
+  display: flex; align-items: center; gap: 2px;
+  margin-left: 6px; flex-shrink: 0;
+}
+.lang-toggle__btn {
+  background: none; border: none; cursor: pointer;
+  padding: 3px 5px; border-radius: 2px;
+  font-family: var(--font-body); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--grey); transition: color var(--transition-fast), background var(--transition-fast);
+}
+.lang-toggle__btn.active {
+  color: var(--ink); background: var(--sand);
+}
+.lang-toggle__btn:hover:not(.active) { color: var(--ink); }
+.lang-toggle__sep { color: var(--sand-dark); font-size: 9px; user-select: none; }
+.nav--transparent .lang-toggle__btn { color: rgba(255,255,255,0.45); }
+.nav--transparent .lang-toggle__btn.active { color: #fff; background: rgba(255,255,255,0.15); }
+.nav--transparent .lang-toggle__sep { color: rgba(255,255,255,0.2); }
+
+/* Mobile lang toggle */
+.lang-toggle--mobile {
+  margin: 24px auto 0; justify-content: center;
+}
+.lang-toggle--mobile .lang-toggle__btn { color: rgba(255,255,255,0.5); font-size: 13px; padding: 6px 10px; }
+.lang-toggle--mobile .lang-toggle__btn.active { color: #fff; background: rgba(255,255,255,0.15); }
+.lang-toggle--mobile .lang-toggle__sep { color: rgba(255,255,255,0.25); }
 
 /* Hamburger */
 .nav__hamburger {
@@ -1404,12 +1434,17 @@ ul, ol { list-style: none; }
   margin-bottom: 12px;
   display: flex; align-items: center; justify-content: center;
 }
-.footer__logo-img {
-  height: 48px; width: auto;
+/* LOGO: SVG inline footer */
+.footer__logo-svg {
+  height: 36px;
+  width: auto;
   display: block;
   margin: 0 auto;
-  filter: invert(1) brightness(2);
-  mix-blend-mode: screen;
+  color: rgba(255,255,255,0.85);
+  transition: color var(--transition-base);
+}
+.footer__logo-svg:hover {
+  color: #fff;
 }
 .footer__tagline {
   font-family: var(--font-display); font-style: italic;
@@ -1457,6 +1492,91 @@ ul, ol { list-style: none; }
 .reveal-stagger > .reveal:nth-child(3) { transition-delay: 200ms; }
 .reveal-stagger > .reveal:nth-child(4) { transition-delay: 300ms; }
 
+/* WHATSAPP: bouton flottant */
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  right: 88px; /* décalé à gauche du back-to-top (44px bouton + 12px gap + 32px right) */
+  z-index: 900;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+/* WHATSAPP: état visible */
+.whatsapp-float.visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0) scale(1);
+}
+
+/* WHATSAPP: hover */
+.whatsapp-float:hover {
+  background: #1A1A1A;
+  border-color: rgba(255,255,255,0.35);
+  transform: translateY(0) scale(1.08);
+}
+
+/* WHATSAPP: focus accessible */
+.whatsapp-float:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* WHATSAPP: masqué quand le visiteur est dans la section contact */
+.whatsapp-float.hidden-in-contact {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(10px) scale(0.9) !important;
+}
+
+/* WHATSAPP: pulse unique après 8s pour attirer l'attention */
+@keyframes whatsapp-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
+  70% { box-shadow: 0 0 0 14px rgba(255,255,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}
+.whatsapp-float.pulse {
+  animation: whatsapp-pulse 1.2s ease-out;
+}
+
+/* WHATSAPP: tooltip au hover (desktop only) */
+.whatsapp-float::after {
+  content: 'Un projet ? Écrivez-nous';
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 8px 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.whatsapp-float:hover::after {
+  opacity: 1;
+}
+
 /* UX: bouton retour en haut */
 .back-to-top {
   position: fixed; bottom: 32px; right: 32px; z-index: 900;
@@ -1501,12 +1621,32 @@ ul, ol { list-style: none; }
   .portfolio__default { opacity: 1; }
 }
 
+/* Breakpoint tablette — passage en hamburger */
+@media (max-width: 1080px) {
+  .nav__links, .nav__cta, .lang-toggle:not(.lang-toggle--mobile) { display: none; }
+  .nav__hamburger { display: flex; }
+  .nav__logo-svg { height: 28px; }
+}
+
 @media (max-width: 768px) {
   :root { --section-padding: 56px; }
   body { font-size: 16px; }
 
-  .nav__links, .nav__cta { display: none; }
-  .nav__hamburger { display: flex; }
+  /* WHATSAPP: mobile — légèrement plus gros pour le touch */
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    bottom: 24px;
+    right: 76px;
+  }
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+  /* WHATSAPP: pas de tooltip sur mobile */
+  .whatsapp-float::after {
+    display: none;
+  }
 
   .hero__tabs {
     overflow-x: auto; justify-content: flex-start;

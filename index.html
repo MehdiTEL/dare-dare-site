@@ -4,48 +4,260 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agence Dare-Dare — Production événementielle sur-mesure | Paris · Cannes · Maroc</title>
-  <meta name="description" content="Agence événementielle premium spécialisée en production et logistique : séminaires, lancements, événements influence, voyages presse. Paris, Cannes et DMC Maroc.">
+  <meta name="description" content="Agence Dare-Dare — Production événementielle sur-mesure à Paris, Cannes et au Maroc. Soirées d'entreprise, séminaires, événements influence, voyages presse et lancements produits. Samsung, Chanel, Dior nous font confiance.">
   <meta property="og:title" content="Agence Dare-Dare — L'audace au service de vos événements">
   <meta property="og:description" content="Production événementielle sur-mesure à Paris, Cannes et au Maroc. Séminaires, lancements, influence, voyages presse.">
   <meta property="og:type" content="website">
-  <!-- FIX: ajout og:image, og:url, twitter:card -->
-  <meta property="og:image" content="photos/logo-dare-dare.webp">
+  <!-- SEO: Open Graph complet -->
+  <meta property="og:image" content="https://agencedaredare.com/photos/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/webp">
   <meta property="og:url" content="https://agencedaredare.com">
+  <meta property="og:site_name" content="Agence Dare-Dare">
+  <meta property="og:locale" content="fr_FR">
+  <!-- SEO: Twitter Cards complet -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- FIX: favicon -->
-  <!-- TODO: remplacer par un vrai favicon .png 32x32 et 180x180 -->
-  <link rel="icon" type="image/jpeg" href="photos/logo-dare-dare.webp">
-  <link rel="apple-touch-icon" href="photos/logo-dare-dare.webp">
+  <meta name="twitter:title" content="Agence Dare-Dare — L'audace au service de vos événements">
+  <meta name="twitter:description" content="Production événementielle sur-mesure à Paris, Cannes et au Maroc. Séminaires, lancements, influence, voyages presse.">
+  <meta name="twitter:image" content="https://agencedaredare.com/photos/og-image.webp">
+  <!-- SEO: meta complémentaires -->
+  <meta name="author" content="Agence Dare-Dare">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="geo.region" content="FR-75">
+  <meta name="geo.placename" content="Paris">
+  <meta name="theme-color" content="#0A0A0A">
+  <!-- SEO: canonical URL -->
+  <link rel="canonical" href="https://agencedaredare.com/">
+  <!-- LOGO: favicon multi-format (Safari = .ico, Chrome/Firefox = SVG, iOS = apple-touch-icon) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="photos/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="photos/apple-touch-icon.png">
+  <link rel="mask-icon" href="photos/favicon.svg" color="#0A0A0A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- SEO: preconnect Unsplash pour les images destinations -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- SEO: Schema.org Organization + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventPlanningBusiness",
+    "@id": "https://agencedaredare.com/#organization",
+    "name": "Agence Dare-Dare",
+    "alternateName": "Dare-Dare",
+    "url": "https://agencedaredare.com",
+    "logo": "https://agencedaredare.com/photos/logo-dare-dare.webp",
+    "image": "https://agencedaredare.com/photos/og-image.webp",
+    "description": "Agence événementielle premium spécialisée en production et logistique : séminaires, lancements, événements influence, voyages presse. Paris, Cannes et DMC Maroc.",
+    "foundingDate": "2024",
+    "email": "eva.dahan.production@gmail.com",
+    "telephone": "+33681969362",
+    "sameAs": [
+      "https://instagram.com/agencedaredare",
+      "https://linkedin.com/company/agence-dare-dare"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Paris",
+        "containedInPlace": { "@type": "Country", "name": "France" }
+      },
+      {
+        "@type": "City",
+        "name": "Cannes",
+        "containedInPlace": { "@type": "Country", "name": "France" }
+      },
+      {
+        "@type": "Country",
+        "name": "Morocco"
+      }
+    ],
+    "knowsAbout": [
+      "Production événementielle",
+      "Séminaires d'entreprise",
+      "Événements influence",
+      "Voyages presse",
+      "Lancements produits",
+      "Scénographie",
+      "Logistique événementielle",
+      "DMC Maroc"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services événementiels",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Soirées d'entreprise",
+          "description": "Galas, afterworks, soirées de lancement — production complète de A à Z"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Séminaires & Incentives",
+          "description": "Conception, logistique, team building — événements multi-jours en France et à l'étranger"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Événements Influence",
+          "description": "Activations de marque, trips créateurs, expériences immersives pour les réseaux sociaux"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Voyages Presse",
+          "description": "Press trips multi-destinations, accueil journalistes, suivi retombées médias"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Lancements Produits",
+          "description": "Scénographie, régie technique, guest management pour les reveals de marque"
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "5",
+      "bestRating": "5"
+    }
+  }
+  </script>
+  <!-- SEO: Schema.org FAQPage — 8 questions pour rich snippets Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quels types d'événements organisez-vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous produisons des soirées d'entreprise, séminaires & incentives, événements influence, voyages presse et lancements produits. Chaque format est conçu sur-mesure selon vos objectifs, votre budget et votre audience. Nous intervenons aussi bien pour des événements intimes (30 personnes) que pour des formats plus ambitieux (500+)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Avec quelles marques avez-vous travaillé ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous avons eu le privilège d'accompagner Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp et Mugler, ainsi que des événements de grande envergure comme la Paris Blockchain Week. Chaque collaboration nourrit notre expertise et notre réseau."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sur quelles destinations intervenez-vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trois territoires, une même exigence : Paris, Cannes et le Maroc. Côté marocain, nous couvrons Casablanca, Rabat, Marrakech, Tanger, Fès et Essaouira grâce à un réseau local de prestataires rigoureusement sélectionnés. Votre événement vous emmène ailleurs ? On s'adapte, partout dans le monde."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est votre délai minimum pour organiser un événement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Idéalement, nous recommandons un délai de 2 à 3 mois pour un événement standard, et 4 à 6 mois pour un séminaire à l'étranger ou un événement complexe. Cependant, notre agilité nous permet de répondre à des demandes en 3 à 4 semaines lorsque c'est nécessaire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment fonctionne votre tarification ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous facturons des honoraires de production calculés en fonction de la complexité et de la durée du projet. Les frais de prestataires sont refacturés en transparence. Chaque devis est détaillé poste par poste. Nous nous adaptons à votre budget et proposons des recommandations en conséquence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Travaillez-vous avec des agences en sous-traitance ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, nous collaborons régulièrement avec des agences de communication, des agences événementielles et des marques qui nous confient la production et la logistique de leurs événements. Nous intervenons en marque blanche si nécessaire, avec une confidentialité totale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est votre valeur ajoutée au Maroc ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Notre connaissance du terrain, un réseau de prestataires rigoureusement sélectionnés et une présence sur place permettent d'assurer une coordination fluide et un niveau d'exigence identique à celui que nous offrons en France. Nous éliminons les risques liés à l'organisation à distance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment se déroule une première prise de contact ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tout commence par un échange — par téléphone, visio ou en personne — pour comprendre votre projet, vos attentes et vos contraintes. Nous vous envoyons ensuite une proposition détaillée avec recommandations de lieux, concept et budget estimatif. Aucun engagement à ce stade."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- SEO: Schema.org WebSite — identité du site pour Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Agence Dare-Dare",
+    "alternateName": "Dare-Dare",
+    "url": "https://agencedaredare.com",
+    "description": "Agence événementielle premium — production sur-mesure à Paris, Cannes et au Maroc.",
+    "publisher": {
+      "@id": "https://agencedaredare.com/#organization"
+    },
+    "inLanguage": "fr-FR"
+  }
+  </script>
 </head>
 <body>
 
-  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <a href="#main" class="skip-link" data-i18n="skip.link">Aller au contenu principal</a>
 
   <!-- ===== NAVIGATION ===== -->
   <header class="nav nav--transparent" role="banner">
     <div class="nav__inner">
       <a href="#" class="nav__logo" aria-label="Agence Dare-Dare — Accueil">
-        <!-- CLEAN: ajout width/height pour CLS -->
-        <img class="nav__logo-img" src="photos/logo-dare-dare.webp" alt="DARE DARE" width="65" height="65">
+        <!-- LOGO: SVG inline — hérite de currentColor via CSS -->
+        <svg class="nav__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
+          <title>DARE DARE</title>
+          <text x="6" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          <g transform="translate(289, 50) rotate(180)">
+            <text x="0" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          </g>
+        </svg>
       </a>
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="#services" class="nav__link link-underline">Services</a>
+        <a href="#services" class="nav__link link-underline" data-i18n="nav.services">Services</a>
         <span class="nav__diamond" aria-hidden="true">◆</span>
-        <a href="#destinations" class="nav__link link-underline">Destinations</a>
+        <a href="#destinations" class="nav__link link-underline" data-i18n="nav.destinations">Destinations</a>
         <span class="nav__diamond" aria-hidden="true">◆</span>
-        <a href="#lieux" class="nav__link link-underline">Événements</a>
+        <a href="#lieux" class="nav__link link-underline" data-i18n="nav.events">Événements</a>
         <span class="nav__diamond" aria-hidden="true">◆</span>
-        <a href="#temoignages" class="nav__link link-underline">Témoignages</a>
+        <a href="#temoignages" class="nav__link link-underline" data-i18n="nav.testimonials">Témoignages</a>
         <span class="nav__diamond" aria-hidden="true">◆</span>
-        <a href="#apropos" class="nav__link link-underline">À propos</a>
+        <a href="#apropos" class="nav__link link-underline" data-i18n="nav.about">À propos</a>
         <span class="nav__diamond" aria-hidden="true">◆</span>
-        <a href="#contact" class="nav__link link-underline">Contact</a>
+        <a href="#contact" class="nav__link link-underline" data-i18n="nav.contact">Contact</a>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <a href="blog/" class="nav__link link-underline" data-i18n="nav.blog">Blog</a>
       </nav>
-      <a href="#contact" class="nav__cta">Devis</a>
+      <!-- i18n: Language toggle -->
+      <div class="lang-toggle">
+        <button class="lang-toggle__btn active" data-lang="fr">FR</button>
+        <span class="lang-toggle__sep">|</span>
+        <button class="lang-toggle__btn" data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="nav__cta" title="Demander un devis événementiel" data-i18n="nav.cta">Devis</a>
       <button class="nav__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -54,13 +266,20 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" aria-hidden="true">
-    <a href="#services" class="mobile-menu__link">Services</a>
-    <a href="#destinations" class="mobile-menu__link">Destinations</a>
-    <a href="#lieux" class="mobile-menu__link">Événements</a>
-    <a href="#temoignages" class="mobile-menu__link">Témoignages</a>
-    <a href="#apropos" class="mobile-menu__link">À propos</a>
-    <a href="#contact" class="mobile-menu__link">Contact</a>
-    <a href="#contact" class="mobile-menu__link" style="color: var(--terracotta-light); margin-top: 24px;">Devis</a>
+    <a href="#services" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+    <a href="#destinations" class="mobile-menu__link" data-i18n="nav.destinations">Destinations</a>
+    <a href="#lieux" class="mobile-menu__link" data-i18n="nav.events">Événements</a>
+    <a href="#temoignages" class="mobile-menu__link" data-i18n="nav.testimonials">Témoignages</a>
+    <a href="#apropos" class="mobile-menu__link" data-i18n="nav.about">À propos</a>
+    <a href="#contact" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+    <a href="blog/" class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+    <a href="#contact" class="mobile-menu__link" style="color: var(--terracotta-light); margin-top: 24px;" data-i18n="nav.cta">Devis</a>
+    <!-- i18n: mobile lang toggle -->
+    <div class="lang-toggle lang-toggle--mobile">
+      <button class="lang-toggle__btn active" data-lang="fr">FR</button>
+      <span class="lang-toggle__sep">|</span>
+      <button class="lang-toggle__btn" data-lang="en">EN</button>
+    </div>
   </div>
 
   <main id="main">
@@ -76,15 +295,15 @@
 
       <div class="hero__content">
         <div class="hero__tabs" role="tablist" aria-label="Type d'événement">
-          <button class="hero__tab active" role="tab" aria-selected="true" data-type="soiree" id="tab-soiree">Soirée</button>
+          <button class="hero__tab active" role="tab" aria-selected="true" data-type="soiree" id="tab-soiree" data-i18n="hero.tab.soiree">Soirée</button>
           <span class="hero__tab-diamond" aria-hidden="true">◆</span>
-          <button class="hero__tab" role="tab" aria-selected="false" data-type="seminaire" id="tab-seminaire">Séminaire</button>
+          <button class="hero__tab" role="tab" aria-selected="false" data-type="seminaire" id="tab-seminaire" data-i18n="hero.tab.seminaire">Séminaire</button>
           <span class="hero__tab-diamond" aria-hidden="true">◆</span>
-          <button class="hero__tab" role="tab" aria-selected="false" data-type="influence" id="tab-influence">Influence</button>
+          <button class="hero__tab" role="tab" aria-selected="false" data-type="influence" id="tab-influence" data-i18n="hero.tab.influence">Influence</button>
           <span class="hero__tab-diamond" aria-hidden="true">◆</span>
-          <button class="hero__tab" role="tab" aria-selected="false" data-type="presse" id="tab-presse">Presse</button>
+          <button class="hero__tab" role="tab" aria-selected="false" data-type="presse" id="tab-presse" data-i18n="hero.tab.presse">Presse</button>
           <span class="hero__tab-diamond" aria-hidden="true">◆</span>
-          <button class="hero__tab" role="tab" aria-selected="false" data-type="lancement" id="tab-lancement">Lancement</button>
+          <button class="hero__tab" role="tab" aria-selected="false" data-type="lancement" id="tab-lancement" data-i18n="hero.tab.lancement">Lancement</button>
         </div>
 
         <div class="hero__title-wrapper">
@@ -93,8 +312,8 @@
         <p class="hero__subtitle" id="hero-subtitle">Du brief au dernier verre — on orchestre chaque détail pour que vous n'ayez qu'à profiter.</p>
 
         <div class="hero__ctas">
-          <a href="#services" class="hero__cta-primary">Découvrir nos services</a>
-          <a href="#contact" class="hero__cta-secondary">Demander un devis</a>
+          <a href="#services" class="hero__cta-primary" title="Découvrir nos services événementiels" data-i18n="hero.cta.primary">Découvrir nos services</a>
+          <a href="#contact" class="hero__cta-secondary" title="Demander un devis personnalisé" data-i18n="hero.cta.secondary">Demander un devis</a>
         </div>
       </div>
 
@@ -111,8 +330,8 @@
       <div class="container">
         <div class="services__header reveal">
           <!-- CLEAN: supprimé star-sep -->
-          <h2 class="section-title">What We<br>Actually Do</h2>
-          <p class="section-subtitle">Piloter. Produire. Livrer. Trois mots, zéro compromis — et un seul objectif : que tout soit parfait le jour J.</p>
+          <h2 class="section-title" data-i18n="services.title">What We<br>Actually Do</h2>
+          <p class="section-subtitle" data-i18n="services.subtitle">Piloter. Produire. Livrer. Trois mots, zéro compromis — et un seul objectif : que tout soit parfait le jour J.</p>
         </div>
 
         <div class="services__grid reveal-stagger" id="services-grid">
@@ -120,28 +339,28 @@
             <div class="service-card__icon"></div>
             <h3 class="service-card__title"></h3>
             <p class="service-card__desc"></p>
-            <button class="service-card__toggle" aria-expanded="false">Découvrir <span class="service-card__toggle-icon">+</span></button>
+            <button class="service-card__toggle" aria-expanded="false"><span data-i18n="services.toggle">Découvrir</span> <span class="service-card__toggle-icon">+</span></button>
             <ul class="service-card__features"></ul>
           </div>
           <div class="service-card reveal" style="transition: opacity 300ms ease, transform 300ms ease;">
             <div class="service-card__icon"></div>
             <h3 class="service-card__title"></h3>
             <p class="service-card__desc"></p>
-            <button class="service-card__toggle" aria-expanded="false">Découvrir <span class="service-card__toggle-icon">+</span></button>
+            <button class="service-card__toggle" aria-expanded="false"><span data-i18n="services.toggle">Découvrir</span> <span class="service-card__toggle-icon">+</span></button>
             <ul class="service-card__features"></ul>
           </div>
           <div class="service-card reveal" style="transition: opacity 300ms ease, transform 300ms ease;">
             <div class="service-card__icon"></div>
             <h3 class="service-card__title"></h3>
             <p class="service-card__desc"></p>
-            <button class="service-card__toggle" aria-expanded="false">Découvrir <span class="service-card__toggle-icon">+</span></button>
+            <button class="service-card__toggle" aria-expanded="false"><span data-i18n="services.toggle">Découvrir</span> <span class="service-card__toggle-icon">+</span></button>
             <ul class="service-card__features"></ul>
           </div>
         </div>
 
         <!-- Marquee brands -->
         <div class="marquee reveal">
-          <p class="marquee__title">Trusted by</p>
+          <p class="marquee__title" data-i18n="services.trusted">Trusted by</p>
           <div class="marquee__track">
             <span class="marquee__item">Samsung</span><span class="marquee__diamond" aria-hidden="true">◆</span>
             <span class="marquee__item">Chanel</span><span class="marquee__diamond" aria-hidden="true">◆</span>
@@ -164,7 +383,7 @@
         </div>
 
         <div class="services__cta-wrap reveal">
-          <a href="#contact" class="services__cta">Lancer un projet</a>
+          <a href="#contact" class="services__cta" data-i18n="services.cta">Lancer un projet</a>
         </div>
       </div>
     </section>
@@ -173,8 +392,8 @@
     <section class="destinations" id="destinations">
       <div class="container">
         <div class="destinations__header reveal">
-          <h2 class="section-title">Where We<br>Set the Stage</h2>
-          <p class="section-subtitle">Paris, Cannes, Maroc — et partout où votre ambition nous emmène.</p>
+          <h2 class="section-title" data-i18n="dest.title">Where We<br>Set the Stage</h2>
+          <p class="section-subtitle" data-i18n="dest.subtitle">Paris, Cannes, Maroc — et partout où votre ambition nous emmène.</p>
         </div>
       </div>
 
@@ -187,9 +406,9 @@
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">01</span>
             <h3 class="dest-showcase__city">Paris</h3>
-            <p class="dest-showcase__tagline">Ici, même les murs ont l'habitude du grand spectacle.</p>
+            <p class="dest-showcase__tagline" data-i18n="dest.paris.tagline">Ici, même les murs ont l'habitude du grand spectacle.</p>
             <div class="dest-showcase__details">
-              <p>Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés — on transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.</p>
+              <p data-i18n="dest.paris.desc">Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés — on transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.</p>
               <div class="dest-showcase__keywords">
                 <span>Galas</span><span>Lancements</span><span>Rooftops</span><span>Palaces</span>
               </div>
@@ -205,9 +424,9 @@
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">02</span>
             <h3 class="dest-showcase__city">Cannes</h3>
-            <p class="dest-showcase__tagline">On vous déroule le tapis rouge, même en dehors du festival.</p>
+            <p class="dest-showcase__tagline" data-i18n="dest.cannes.tagline">On vous déroule le tapis rouge, même en dehors du festival.</p>
             <div class="dest-showcase__details">
-              <p>Villas privées sur les hauteurs, terrasses face à la Méditerranée, yachts privatisés — le glamour de la Riviera au service de votre image, 365 jours par an.</p>
+              <p data-i18n="dest.cannes.desc">Villas privées sur les hauteurs, terrasses face à la Méditerranée, yachts privatisés — le glamour de la Riviera au service de votre image, 365 jours par an.</p>
               <div class="dest-showcase__keywords">
                 <span>Croisette</span><span>Villas privées</span><span>Yachts</span><span>Influence</span>
               </div>
@@ -223,9 +442,9 @@
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">03</span>
             <h3 class="dest-showcase__city">Maroc</h3>
-            <p class="dest-showcase__tagline">Le Maroc, c'est notre terrain — on y produit comme chez nous.</p>
+            <p class="dest-showcase__tagline" data-i18n="dest.maroc.tagline">Le Maroc, c'est notre terrain — on y produit comme chez nous.</p>
             <div class="dest-showcase__details">
-              <p>Casa pour les lancements, Rabat pour le protocole, Marrakech pour l'émotion, Tanger pour l'audace — Dare-Dare a les prestataires, les lieux et le réseau pour livrer des événements d'exception sur tout le territoire.</p>
+              <p data-i18n="dest.maroc.desc">Casa pour les lancements, Rabat pour le protocole, Marrakech pour l'émotion, Tanger pour l'audace — Dare-Dare a les prestataires, les lieux et le réseau pour livrer des événements d'exception sur tout le territoire.</p>
               <div class="dest-showcase__keywords">
                 <span>Marrakech</span><span>Casablanca</span><span>Rabat</span><span>Tanger</span><span>Essaouira</span><span>Fès</span>
               </div>
@@ -235,7 +454,7 @@
       </div>
 
       <div class="container">
-        <p class="destinations__elsewhere reveal">Votre événement nous emmène ailleurs ? <strong>On produit sur-mesure, partout dans le monde.</strong></p>
+        <p class="destinations__elsewhere reveal" data-i18n="dest.elsewhere">Votre événement nous emmène ailleurs ? <strong>On produit sur-mesure, partout dans le monde.</strong></p>
       </div>
     </section>
 
@@ -243,18 +462,18 @@
     <section class="portfolio" id="lieux">
       <div class="container">
         <div class="portfolio__header reveal">
-          <h2 class="section-title">Portfolio</h2>
-          <p class="section-subtitle">Chaque projet est une histoire. Au survol, découvrez les coulisses.</p>
+          <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+          <p class="section-subtitle" data-i18n="portfolio.subtitle">Chaque projet est une histoire. Au survol, découvrez les coulisses.</p>
         </div>
 
         <!-- Filtres -->
         <div class="portfolio__filters reveal">
-          <button class="portfolio__filter is-active" data-filter="all">Tous</button>
-          <button class="portfolio__filter" data-filter="lancement">Lancements</button>
-          <button class="portfolio__filter" data-filter="soiree">Soirées</button>
-          <button class="portfolio__filter" data-filter="corporate">Corporate</button>
-          <button class="portfolio__filter" data-filter="luxe">Luxe & Mode</button>
-          <button class="portfolio__filter" data-filter="presse">Presse & Influence</button>
+          <button class="portfolio__filter is-active" data-filter="all" data-i18n="portfolio.filter.all">Tous</button>
+          <button class="portfolio__filter" data-filter="lancement" data-i18n="portfolio.filter.lancement">Lancements</button>
+          <button class="portfolio__filter" data-filter="soiree" data-i18n="portfolio.filter.soiree">Soirées</button>
+          <button class="portfolio__filter" data-filter="corporate" data-i18n="portfolio.filter.corporate">Corporate</button>
+          <button class="portfolio__filter" data-filter="luxe" data-i18n="portfolio.filter.luxe">Luxe & Mode</button>
+          <button class="portfolio__filter" data-filter="presse" data-i18n="portfolio.filter.presse">Presse & Influence</button>
         </div>
 
         <div class="portfolio__grid">
@@ -551,15 +770,15 @@
         <!-- Show more -->
         <div class="portfolio__more-wrap reveal">
           <button class="portfolio__more-btn" id="portfolioShowMore">
-            <span class="portfolio__more-text">Voir tous nos projets</span>
+            <span class="portfolio__more-text" data-i18n="portfolio.showmore">Voir tous nos projets</span>
             <span class="portfolio__more-count">+6</span>
           </button>
         </div>
 
-        <p class="portfolio__mention reveal" style="text-align:center;margin-top:24px;font-size:11px;color:#999;letter-spacing:0.05em;">Projets réalisés en agence et en indépendant.</p>
-        <p class="portfolio__cta-text reveal">Un projet en tête ? On en parle — dare-dare.</p>
+        <p class="portfolio__mention reveal" style="text-align:center;margin-top:24px;font-size:11px;color:#999;letter-spacing:0.05em;" data-i18n="portfolio.mention">Projets réalisés en agence et en indépendant.</p>
+        <p class="portfolio__cta-text reveal" data-i18n="portfolio.cta.text">Un projet en tête ? On en parle — dare-dare.</p>
         <div class="portfolio__cta-wrap reveal">
-          <a href="#contact" class="portfolio__cta">Lancer un projet</a>
+          <a href="#contact" class="portfolio__cta" data-i18n="portfolio.cta.btn">Lancer un projet</a>
         </div>
       </div>
     </section>
@@ -568,23 +787,23 @@
     <section class="chiffres zellige-pattern zellige-pattern--light" id="chiffres">
       <div class="container">
         <!-- CLEAN: supprimé star-sep -->
-        <h2 class="chiffres__title reveal">In Numbers</h2>
+        <h2 class="chiffres__title reveal" data-i18n="chiffres.title">In Numbers</h2>
         <div class="chiffres__grid reveal">
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="50" data-prefix="+">+0</div>
-            <div class="chiffre-item__label">projets pilotés</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.projects">projets pilotés</div>
           </div>
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="20000" data-prefix="+">+0</div>
-            <div class="chiffre-item__label">participants accueillis</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.guests">participants accueillis</div>
           </div>
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="3">0</div>
-            <div class="chiffre-item__label">destinations</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.destinations">destinations</div>
           </div>
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="15" data-prefix="+">+0</div>
-            <div class="chiffre-item__label">marques accompagnées</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.brands">marques accompagnées</div>
           </div>
         </div>
       </div>
@@ -597,7 +816,7 @@
       <div class="container">
         <div class="temoignages__header reveal">
           <!-- CLEAN: supprimé star-sep -->
-          <h2 class="section-title">What They<br>Say About Us</h2>
+          <h2 class="section-title" data-i18n="temoignages.title">What They<br>Say About Us</h2>
         </div>
 
         <div class="temoignages__slider">
@@ -662,11 +881,11 @@
           <img class="apropos__image" src="photos/paris-blockchain-week-ritz-1.webp" alt="Salon du Ritz Paris — Agence Dare-Dare" loading="lazy" width="600" height="500">
         </div>
         <div class="apropos__text">
-          <h2 class="apropos__title reveal">The Daring Agency</h2>
+          <h2 class="apropos__title reveal" data-i18n="apropos.title">The Daring Agency</h2>
           <p class="apropos__dynamic reveal" id="bio-dynamic">Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge — Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé.</p>
-          <p class="apropos__fixed reveal">Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler — autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.</p>
-          <p class="apropos__fixed reveal" style="margin-top: 16px;">Fondée en 2024, l'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em></p>
-          <p class="apropos__fixed reveal" style="margin-top: 16px;">Aujourd'hui, notre équipe opère entre Paris, Cannes et le Maroc pour offrir à ses clients des événements d'exception entre deux rives de la Méditerranée.</p>
+          <p class="apropos__fixed reveal" data-i18n="apropos.fixed1">Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler — autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.</p>
+          <p class="apropos__fixed reveal" style="margin-top: 16px;" data-i18n="apropos.fixed2">Fondée en 2024, l'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em></p>
+          <p class="apropos__fixed reveal" style="margin-top: 16px;" data-i18n="apropos.fixed3">Aujourd'hui, notre équipe opère entre Paris, Cannes et le Maroc pour offrir à ses clients des événements d'exception entre deux rives de la Méditerranée.</p>
         </div>
       </div>
     </section>
@@ -680,7 +899,7 @@
             <div class="lexique__lang">EN</div>
             <div class="lexique__word">Dare <span class="lexique__phonetic">/dɛːr/</span></div>
             <div class="lexique__type">verb.</div>
-            <div class="lexique__def">To have the courage to do something bold. To challenge someone — and mean it.<br><span class="lexique__example">"You dare us? Consider it done."</span></div>
+            <div class="lexique__def" data-i18n="lexique.en.def">To have the courage to do something bold. To challenge someone — and mean it.<br><span class="lexique__example">"You dare us? Consider it done."</span></div>
           </div>
 
           <div class="lexique__divider"></div>
@@ -689,7 +908,7 @@
             <div class="lexique__lang">FR</div>
             <div class="lexique__word">Dare-dare <span class="lexique__phonetic">/daʁ.daʁ/</span></div>
             <div class="lexique__type">adv. familier.</div>
-            <div class="lexique__def">En toute hâte, sans perdre une seconde. L'art de transformer l'urgence en excellence.<br><span class="lexique__example">"Le dîner est dans 72h pour 300 personnes ? On s'en occupe — dare-dare."</span></div>
+            <div class="lexique__def" data-i18n="lexique.fr.def">En toute hâte, sans perdre une seconde. L'art de transformer l'urgence en excellence.<br><span class="lexique__example">"Le dîner est dans 72h pour 300 personnes ? On s'en occupe — dare-dare."</span></div>
           </div>
 
           <div class="lexique__divider"></div>
@@ -698,11 +917,11 @@
             <div class="lexique__lang">دارجة</div>
             <div class="lexique__word">Dar <span class="lexique__phonetic">/daːr/</span> <span class="lexique__arabic">دار</span></div>
             <div class="lexique__type">n.f.</div>
-            <div class="lexique__def">Maison. Chez soi. Là où l'on se sent accueilli, protégé, entouré. En darija marocain, chaque événement commence par une porte qui s'ouvre.<br><span class="lexique__example">"Mrhba bik f'dar — Bienvenue chez nous."</span></div>
+            <div class="lexique__def" data-i18n="lexique.darija.def">Maison. Chez soi. Là où l'on se sent accueilli, protégé, entouré. En darija marocain, chaque événement commence par une porte qui s'ouvre.<br><span class="lexique__example">"Mrhba bik f'dar — Bienvenue chez nous."</span></div>
           </div>
 
           <div class="lexique__footer reveal">
-            <p class="lexique__conclusion">Three languages. One name. A house that dares — dare-dare.</p>
+            <p class="lexique__conclusion" data-i18n="lexique.conclusion">Three languages. One name. A house that dares — dare-dare.</p>
           </div>
 
         </div>
@@ -714,7 +933,7 @@
       <div class="container">
         <div class="faq__header reveal">
           <!-- CLEAN: supprimé star-sep -->
-          <h2 class="section-title">FAQ</h2>
+          <h2 class="section-title" data-i18n="faq.title">FAQ</h2>
         </div>
 
         <div class="faq__list">
@@ -805,8 +1024,8 @@
     <section class="contact" id="contact">
       <div class="container">
         <div class="contact__header reveal">
-          <h2 class="contact__title">Let's Talk</h2>
-          <p class="contact__subtitle">Configurez votre événement en 4 étapes — on s'occupe du reste.</p>
+          <h2 class="contact__title" data-i18n="contact.title">Let's Talk</h2>
+          <p class="contact__subtitle" data-i18n="contact.subtitle">Configurez votre événement en 4 étapes — on s'occupe du reste.</p>
         </div>
 
         <!-- Progress bar -->
@@ -815,10 +1034,10 @@
             <div class="contact__progress-fill" id="progress-fill"></div>
           </div>
           <div class="contact__progress-steps">
-            <button class="contact__step-dot active" data-step="1"><span>01</span> Votre événement</button>
-            <button class="contact__step-dot" data-step="2"><span>02</span> Vos envies</button>
-            <button class="contact__step-dot" data-step="3"><span>03</span> Budget & timing</button>
-            <button class="contact__step-dot" data-step="4"><span>04</span> Vos coordonnées</button>
+            <button class="contact__step-dot active" data-step="1"><span>01</span> <span data-i18n="contact.step1.label">Votre événement</span></button>
+            <button class="contact__step-dot" data-step="2"><span>02</span> <span data-i18n="contact.step2.label">Vos envies</span></button>
+            <button class="contact__step-dot" data-step="3"><span>03</span> <span data-i18n="contact.step3.label">Budget & timing</span></button>
+            <button class="contact__step-dot" data-step="4"><span>04</span> <span data-i18n="contact.step4.label">Vos coordonnées</span></button>
           </div>
         </div>
 
@@ -827,54 +1046,54 @@
 
           <!-- Step 1: Event type -->
           <div class="contact__step-panel active" data-panel="1">
-            <p class="contact__step-question reveal">Quel type d'événement imaginez-vous ?</p>
+            <p class="contact__step-question reveal" data-i18n="contact.step1.question">Quel type d'événement imaginez-vous ?</p>
             <div class="contact__cards reveal">
               <label class="contact__card">
                 <input type="radio" name="event-type" value="Soirée d'entreprise">
                 <div class="contact__card-inner">
                   <span class="contact__card-emoji">🥂</span>
-                  <span class="contact__card-title">Soirée d'entreprise</span>
-                  <span class="contact__card-desc">Gala, afterwork, soirée de lancement</span>
+                  <span class="contact__card-title" data-i18n="contact.card.soiree">Soirée d'entreprise</span>
+                  <span class="contact__card-desc" data-i18n="contact.card.soiree.d">Gala, afterwork, soirée de lancement</span>
                 </div>
               </label>
               <label class="contact__card">
                 <input type="radio" name="event-type" value="Séminaire & incentive">
                 <div class="contact__card-inner">
                   <span class="contact__card-emoji">🏔</span>
-                  <span class="contact__card-title">Séminaire & incentive</span>
-                  <span class="contact__card-desc">Team building, offsite, convention</span>
+                  <span class="contact__card-title" data-i18n="contact.card.seminaire">Séminaire & incentive</span>
+                  <span class="contact__card-desc" data-i18n="contact.card.seminaire.d">Team building, offsite, convention</span>
                 </div>
               </label>
               <label class="contact__card">
                 <input type="radio" name="event-type" value="Événement influence">
                 <div class="contact__card-inner">
                   <span class="contact__card-emoji">📸</span>
-                  <span class="contact__card-title">Événement influence</span>
-                  <span class="contact__card-desc">Trip, dîner, activation digitale</span>
+                  <span class="contact__card-title" data-i18n="contact.card.influence">Événement influence</span>
+                  <span class="contact__card-desc" data-i18n="contact.card.influence.d">Trip, dîner, activation digitale</span>
                 </div>
               </label>
               <label class="contact__card">
                 <input type="radio" name="event-type" value="Voyage presse">
                 <div class="contact__card-inner">
                   <span class="contact__card-emoji">✈️</span>
-                  <span class="contact__card-title">Voyage presse</span>
-                  <span class="contact__card-desc">Press trip, visite privée, showcase</span>
+                  <span class="contact__card-title" data-i18n="contact.card.presse">Voyage presse</span>
+                  <span class="contact__card-desc" data-i18n="contact.card.presse.d">Press trip, visite privée, showcase</span>
                 </div>
               </label>
               <label class="contact__card">
                 <input type="radio" name="event-type" value="Lancement produit">
                 <div class="contact__card-inner">
                   <span class="contact__card-emoji">🚀</span>
-                  <span class="contact__card-title">Lancement produit</span>
-                  <span class="contact__card-desc">Pop-up, keynote, reveal</span>
+                  <span class="contact__card-title" data-i18n="contact.card.lancement">Lancement produit</span>
+                  <span class="contact__card-desc" data-i18n="contact.card.lancement.d">Pop-up, keynote, reveal</span>
                 </div>
               </label>
               <label class="contact__card">
                 <input type="radio" name="event-type" value="Autre">
                 <div class="contact__card-inner">
                   <span class="contact__card-emoji">✨</span>
-                  <span class="contact__card-title">Autre projet</span>
-                  <span class="contact__card-desc">Dites-nous tout, on adore les défis</span>
+                  <span class="contact__card-title" data-i18n="contact.card.autre">Autre projet</span>
+                  <span class="contact__card-desc" data-i18n="contact.card.autre.d">Dites-nous tout, on adore les défis</span>
                 </div>
               </label>
             </div>
@@ -882,28 +1101,28 @@
 
           <!-- Step 2: L'immersion -->
           <div class="contact__step-panel" data-panel="2">
-            <p class="contact__step-question">On construit votre univers.</p>
-            <p class="contact__step-hint">Cochez tout ce qui vous parle — le reste, on l'invente ensemble.</p>
+            <p class="contact__step-question" data-i18n="contact.step2.question">On construit votre univers.</p>
+            <p class="contact__step-hint" data-i18n="contact.step2.hint">Cochez tout ce qui vous parle — le reste, on l'invente ensemble.</p>
             <div class="contact__tags">
-              <label class="contact__tag"><input type="checkbox" name="services" value="Un lieu qui raconte une histoire"><span>Un lieu qui raconte une histoire</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une scénographie qu'on n'oublie pas"><span>Une scénographie qu'on n'oublie pas</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une expérience culinaire signature"><span>Une expérience culinaire signature</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une ambiance sonore sur-mesure"><span>Une ambiance sonore sur-mesure</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Du contenu qui fait parler"><span>Du contenu qui fait parler</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Un rayonnement médias & influence"><span>Un rayonnement médias & influence</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une prise en charge de A à Z"><span>Une prise en charge de A à Z</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Un moment de cohésion mémorable"><span>Un moment de cohésion mémorable</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Surprenez-moi"><span>Surprenez-moi</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Un lieu qui raconte une histoire"><span data-i18n="contact.tag.lieu">Un lieu qui raconte une histoire</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Une scénographie qu'on n'oublie pas"><span data-i18n="contact.tag.sceno">Une scénographie qu'on n'oublie pas</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Une expérience culinaire signature"><span data-i18n="contact.tag.food">Une expérience culinaire signature</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Une ambiance sonore sur-mesure"><span data-i18n="contact.tag.son">Une ambiance sonore sur-mesure</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Du contenu qui fait parler"><span data-i18n="contact.tag.contenu">Du contenu qui fait parler</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Un rayonnement médias & influence"><span data-i18n="contact.tag.media">Un rayonnement médias & influence</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Une prise en charge de A à Z"><span data-i18n="contact.tag.atoz">Une prise en charge de A à Z</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Un moment de cohésion mémorable"><span data-i18n="contact.tag.cohesion">Un moment de cohésion mémorable</span></label>
+              <label class="contact__tag"><input type="checkbox" name="services" value="Surprenez-moi"><span data-i18n="contact.tag.surprise">Surprenez-moi</span></label>
             </div>
           </div>
 
           <!-- Step 3: Budget & date -->
           <div class="contact__step-panel" data-panel="3">
-            <p class="contact__step-question">Donnez-nous les clés.</p>
-            <p class="contact__step-hint">Pas de mauvaise réponse — juste des envies à transformer en réalité.</p>
+            <p class="contact__step-question" data-i18n="contact.step3.question">Donnez-nous les clés.</p>
+            <p class="contact__step-hint" data-i18n="contact.step3.hint">Pas de mauvaise réponse — juste des envies à transformer en réalité.</p>
             <div class="contact__concrete">
               <div class="contact__field-full">
-                <label class="contact__field-label">Combien de regards dans la salle ?</label>
+                <label class="contact__field-label" data-i18n="contact.guests.label">Combien de regards dans la salle ?</label>
                 <div class="contact__range-wrap">
                   <!-- FIX: ajout name pour Formspree -->
                   <input type="range" class="contact__range" id="guest-count" name="guest-count" min="10" max="1000" value="80" step="10">
@@ -912,23 +1131,23 @@
                 </div>
               </div>
               <div class="contact__field-full">
-                <label class="contact__field-label">L'ambition, en un mot</label>
+                <label class="contact__field-label" data-i18n="contact.budget.label">L'ambition, en un mot</label>
                 <div class="contact__budget-options">
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="< 10k"><span>L'essentiel, bien fait</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="10k-30k"><span>On marque les esprits</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="30k-80k"><span>On voit grand</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="80k+"><span>Sans limites</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="À définir"><span>On en parle ensemble</span></label>
+                  <label class="contact__budget-pill"><input type="radio" name="budget" value="< 10k"><span data-i18n="contact.budget.1">L'essentiel, bien fait</span></label>
+                  <label class="contact__budget-pill"><input type="radio" name="budget" value="10k-30k"><span data-i18n="contact.budget.2">On marque les esprits</span></label>
+                  <label class="contact__budget-pill"><input type="radio" name="budget" value="30k-80k"><span data-i18n="contact.budget.3">On voit grand</span></label>
+                  <label class="contact__budget-pill"><input type="radio" name="budget" value="80k+"><span data-i18n="contact.budget.4">Sans limites</span></label>
+                  <label class="contact__budget-pill"><input type="radio" name="budget" value="À définir"><span data-i18n="contact.budget.5">On en parle ensemble</span></label>
                 </div>
               </div>
               <div class="contact__field-row">
                 <div class="contact__field">
-                  <label class="contact__field-label" for="event-date">Le jour où tout se joue</label>
+                  <label class="contact__field-label" for="event-date" data-i18n="contact.date.label">Le jour où tout se joue</label>
                   <input type="date" class="contact__date-input" id="event-date" name="event-date">
                 </div>
                 <div class="contact__field">
-                  <label class="contact__field-label" for="event-city">Le décor de votre histoire</label>
-                  <input type="text" class="contact__text-input" id="event-city" name="event-city" placeholder="Paris, Cannes, Marrakech, le monde...">
+                  <label class="contact__field-label" for="event-city" data-i18n="contact.city.label">Le décor de votre histoire</label>
+                  <input type="text" class="contact__text-input" id="event-city" name="event-city" placeholder="Paris, Cannes, Marrakech, le monde..." data-i18n="contact.city.placeholder" data-i18n-placeholder>
                 </div>
               </div>
             </div>
@@ -936,57 +1155,57 @@
 
           <!-- Step 4: Coordonnées -->
           <div class="contact__step-panel" data-panel="4">
-            <p class="contact__step-question">Dernière étape — on vous recontacte dare-dare.</p>
+            <p class="contact__step-question" data-i18n="contact.step4.question">Dernière étape — on vous recontacte dare-dare.</p>
             <div class="contact__final-fields">
               <div class="contact__field-row">
                 <div class="contact__field">
-                  <label class="contact__field-label" for="contact-name">Nom complet</label>
-                  <input type="text" class="contact__text-input" id="contact-name" name="contact-name" placeholder="Marie Dupont" required>
-                  <span class="contact__error" id="error-name">Merci de renseigner votre nom</span>
+                  <label class="contact__field-label" for="contact-name" data-i18n="contact.name.label">Nom complet</label>
+                  <input type="text" class="contact__text-input" id="contact-name" name="contact-name" placeholder="Marie Dupont" required data-i18n="contact.name.ph" data-i18n-placeholder>
+                  <span class="contact__error" id="error-name" data-i18n="contact.error.name">Merci de renseigner votre nom</span>
                 </div>
                 <div class="contact__field">
-                  <label class="contact__field-label" for="contact-company">Entreprise</label>
-                  <input type="text" class="contact__text-input" id="contact-company" name="contact-company" placeholder="Votre entreprise">
+                  <label class="contact__field-label" for="contact-company" data-i18n="contact.company.label">Entreprise</label>
+                  <input type="text" class="contact__text-input" id="contact-company" name="contact-company" placeholder="Votre entreprise" data-i18n="contact.company.ph" data-i18n-placeholder>
                 </div>
               </div>
               <div class="contact__field-row">
                 <div class="contact__field">
-                  <label class="contact__field-label" for="contact-email">Email</label>
-                  <input type="email" class="contact__text-input" id="contact-email" name="contact-email" placeholder="marie@entreprise.com" required>
-                  <span class="contact__error" id="error-email">Merci de renseigner un email valide</span>
+                  <label class="contact__field-label" for="contact-email" data-i18n="contact.email.label">Email</label>
+                  <input type="email" class="contact__text-input" id="contact-email" name="contact-email" placeholder="marie@entreprise.com" required data-i18n="contact.email.ph" data-i18n-placeholder>
+                  <span class="contact__error" id="error-email" data-i18n="contact.error.email">Merci de renseigner un email valide</span>
                 </div>
                 <div class="contact__field">
-                  <label class="contact__field-label" for="contact-phone">Téléphone</label>
-                  <input type="tel" class="contact__text-input" id="contact-phone" name="contact-phone" placeholder="+33 6 00 00 00 00">
+                  <label class="contact__field-label" for="contact-phone" data-i18n="contact.phone.label">Téléphone</label>
+                  <input type="tel" class="contact__text-input" id="contact-phone" name="contact-phone" placeholder="+33 6 00 00 00 00" data-i18n="contact.phone.ph" data-i18n-placeholder>
                 </div>
               </div>
               <div class="contact__field">
-                <label class="contact__field-label" for="contact-message">Un mot sur votre projet ?</label>
-                <textarea class="contact__textarea" id="contact-message" name="contact-message" placeholder="Dites-nous ce qui vous fait rêver..." rows="3"></textarea>
+                <label class="contact__field-label" for="contact-message" data-i18n="contact.message.label">Un mot sur votre projet ?</label>
+                <textarea class="contact__textarea" id="contact-message" name="contact-message" placeholder="Dites-nous ce qui vous fait rêver..." rows="3" data-i18n="contact.message.ph" data-i18n-placeholder></textarea>
               </div>
             </div>
           </div>
 
           <!-- Navigation buttons -->
           <div class="contact__nav reveal">
-            <button type="button" class="contact__nav-btn contact__nav-prev" id="form-prev" disabled>Retour</button>
-            <button type="button" class="contact__nav-btn contact__nav-next" id="form-next">Continuer</button>
-            <button type="submit" class="contact__nav-btn contact__nav-submit" id="form-submit" style="display:none">Envoyer dare-dare</button>
+            <button type="button" class="contact__nav-btn contact__nav-prev" id="form-prev" disabled data-i18n="contact.prev">Retour</button>
+            <button type="button" class="contact__nav-btn contact__nav-next" id="form-next" data-i18n="contact.next">Continuer</button>
+            <button type="submit" class="contact__nav-btn contact__nav-submit" id="form-submit" style="display:none" data-i18n="contact.submit">Envoyer dare-dare</button>
           </div>
         </form>
 
         <!-- Success state -->
         <div class="contact__success" id="contact-success">
           <span class="contact__success-emoji">🎉</span>
-          <h3 class="contact__success-title">You dared us.</h3>
-          <p class="contact__success-text">On revient vers vous dans les 24h — promis, dare-dare.</p>
+          <h3 class="contact__success-title" data-i18n="contact.success.title">You dared us.</h3>
+          <p class="contact__success-text" data-i18n="contact.success.text">On revient vers vous dans les 24h — promis, dare-dare.</p>
         </div>
 
         <!-- Contact info bar -->
         <div class="contact__info-bar reveal">
-          <a href="mailto:eva.dahan.production@gmail.com" class="contact__info-link">eva.dahan.production@gmail.com</a>
+          <a href="mailto:eva.dahan.production@gmail.com" class="contact__info-link" title="Envoyer un email à l'Agence Dare-Dare">eva.dahan.production@gmail.com</a>
           <span class="contact__info-sep">—</span>
-          <a href="tel:+33681969362" class="contact__info-link">+33 6 81 96 93 62</a>
+          <a href="tel:+33681969362" class="contact__info-link" title="Appeler l'Agence Dare-Dare">+33 6 81 96 93 62</a>
           <span class="contact__info-sep">—</span>
           <span class="contact__info-link">Paris · Cannes · Maroc</span>
           <span class="contact__info-sep">—</span>
@@ -1001,17 +1220,26 @@
   <footer class="footer zellige-pattern zellige-pattern--gold" role="contentinfo">
     <div class="container">
       <div class="footer__logo">
-        <img class="footer__logo-img" src="photos/logo-dare-dare.webp" alt="DARE DARE" width="48" height="48">
+        <!-- LOGO: SVG inline footer -->
+        <svg class="footer__logo-svg" viewBox="0 0 340 56" fill="currentColor" aria-hidden="true" role="img">
+          <title>DARE DARE</title>
+          <text x="8" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          <g transform="translate(332, 50) rotate(180)">
+            <text x="0" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          </g>
+        </svg>
       </div>
       <p class="footer__tagline font-moroccan">You dare us, we did it.</p>
       <div class="footer__links">
-        <a href="#services" class="footer__link">Services</a>
+        <a href="#services" class="footer__link" data-i18n="nav.services">Services</a>
         <span class="footer__diamond" aria-hidden="true">◆</span>
-        <a href="#lieux" class="footer__link">Événements</a>
+        <a href="#lieux" class="footer__link" data-i18n="footer.events">Événements</a>
         <span class="footer__diamond" aria-hidden="true">◆</span>
-        <a href="#destinations" class="footer__link">Destinations</a>
+        <a href="#destinations" class="footer__link" data-i18n="nav.destinations">Destinations</a>
         <span class="footer__diamond" aria-hidden="true">◆</span>
-        <a href="#contact" class="footer__link">Contact</a>
+        <a href="#contact" class="footer__link" data-i18n="nav.contact">Contact</a>
+        <span class="footer__diamond" aria-hidden="true">◆</span>
+        <a href="blog/" class="footer__link" data-i18n="nav.blog">Blog</a>
       </div>
       <div class="footer__social">
         <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
@@ -1022,14 +1250,29 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
       </div>
-      <p class="footer__copyright">© 2024-2026 Agence Dare-Dare — Tous droits réservés</p>
-      <p class="footer__legal"><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+      <p class="footer__copyright" data-i18n="footer.copyright">© 2024-2026 Agence Dare-Dare — Tous droits réservés</p>
+      <p class="footer__legal"><a href="#" data-i18n="footer.legal">Mentions légales</a> | <a href="#" data-i18n="footer.privacy">Politique de confidentialité</a></p>
     </div>
   </footer>
+
+  <!-- WHATSAPP: bouton flottant de contact rapide -->
+  <a href="https://wa.me/33681969362?text=Hello%20Dare-Dare%20%E2%80%94%20j%27ai%20un%20projet%20en%20t%C3%AAte%2C%20on%20en%20parle%20%3F"
+     class="whatsapp-float"
+     id="whatsappFloat"
+     target="_blank"
+     rel="noopener"
+     aria-label="Nous contacter sur WhatsApp"
+     title="Discuter avec l'Agence Dare-Dare sur WhatsApp"
+     data-track="whatsapp-click">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
 
   <!-- UX: bouton retour en haut -->
   <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
