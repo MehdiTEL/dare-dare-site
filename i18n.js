@@ -28,14 +28,14 @@ const translations = {
   "hero.tagline":       { fr: "You dare us, we did it.", en: "You dare us, we did it." },
 
   /* ===== SERVICES ===== */
-  "services.title":       { fr: "What We<br>Actually Do", en: "What We<br>Actually Do" },
+  "services.title":       { fr: "Ce qu'on<br>fait vraiment", en: "What We<br>Actually Do" },
   "services.subtitle":    { fr: "Piloter. Produire. Livrer. Trois mots, zéro compromis, et un seul objectif : que tout soit parfait le jour J.", en: "Plan. Produce. Deliver. Three words, zero compromise, and one goal: perfection on the big day." },
   "services.toggle":      { fr: "Découvrir",  en: "Discover" },
   "services.cta":         { fr: "Lancer un projet", en: "Start a project" },
   "services.trusted":     { fr: "Trusted by", en: "Trusted by" },
 
   /* ===== DESTINATIONS ===== */
-  "dest.title":           { fr: "Where We<br>Set the Stage", en: "Where We<br>Set the Stage" },
+  "dest.title":           { fr: "L\u00e0 o\u00f9 on<br>plante le d\u00e9cor", en: "Where We<br>Set the Stage" },
   "dest.subtitle":        { fr: "Paris, Cannes, Maroc. Et partout où votre ambition nous emmène.", en: "Paris, Cannes, Morocco. And wherever your ambition takes us." },
   "dest.paris.tagline":   { fr: "Ici, même les murs ont l'habitude du grand spectacle.", en: "Here, even the walls are used to the grandest of shows." },
   "dest.paris.desc":      { fr: "Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés. On transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.", en: "Eiffel Tower, Palais Brongniart, Piscine Molitor, private palaces. We transform the most iconic venues in the capital into bespoke stages for your brand." },
@@ -60,17 +60,17 @@ const translations = {
   "portfolio.cta.btn":          { fr: "Lancer un projet", en: "Start a project" },
 
   /* ===== CHIFFRES ===== */
-  "chiffres.title":       { fr: "In Numbers", en: "In Numbers" },
+  "chiffres.title":       { fr: "En chiffres", en: "In Numbers" },
   "chiffres.projects":    { fr: "projets pilotés",         en: "projects managed" },
   "chiffres.guests":      { fr: "participants accueillis", en: "guests welcomed" },
   "chiffres.destinations":{ fr: "destinations",            en: "destinations" },
   "chiffres.brands":      { fr: "marques accompagnées",    en: "brands served" },
 
   /* ===== TEMOIGNAGES ===== */
-  "temoignages.title":   { fr: "What They<br>Say About Us", en: "What They<br>Say About Us" },
+  "temoignages.title":   { fr: "Ce qu'ils<br>disent de nous", en: "What They<br>Say About Us" },
 
   /* ===== A PROPOS ===== */
-  "apropos.title":       { fr: "The Daring Agency", en: "The Daring Agency" },
+  "apropos.title":       { fr: "L'agence qui ose", en: "The Daring Agency" },
   "apropos.fixed1":      { fr: "Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler : autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.", en: "Dare-Dare is the agency that turns every brief into a memorable moment. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler: prestigious houses that trust us to lead their most ambitious event projects, from 1,500-person concerts to VIP dinners beneath the Louvre Pyramid." },
   "apropos.fixed2":      { fr: 'Fondée en 2024, l\'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>', en: 'Founded in 2024, the agency is driven by one belief: <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>' },
   "apropos.fixed3":      { fr: "Aujourd'hui, notre équipe opère entre Paris, Cannes et le Maroc pour offrir à ses clients des événements d'exception entre deux rives de la Méditerranée.", en: "Today, our team operates between Paris, Cannes and Morocco, delivering exceptional events across both sides of the Mediterranean." },
@@ -85,7 +85,7 @@ const translations = {
   "faq.title":             { fr: "FAQ", en: "FAQ" },
 
   /* ===== CONTACT ===== */
-  "contact.title":         { fr: "Let's Talk",  en: "Let's Talk" },
+  "contact.title":         { fr: "Parlons-en",  en: "Let's Talk" },
   "contact.subtitle":      { fr: "Configurez votre événement en 4 étapes. On s'occupe du reste.", en: "Configure your event in 4 steps. We take care of the rest." },
   "contact.step1.label":   { fr: "Votre événement",  en: "Your event" },
   "contact.step2.label":   { fr: "Vos envies",       en: "Your wishes" },
