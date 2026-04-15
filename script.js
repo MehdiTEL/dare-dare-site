@@ -73,6 +73,77 @@ const eventData = window.eventData = {
   }
 };
 
+// ---------- B2C Private Event Data ----------
+const eventDataPrive = window.eventDataPrive = {
+  'soiree-privee': {
+    heroTitle: "Votre soirée. Votre moment. Notre obsession.",
+    heroSubtitle: "Anniversaire, pendaison de crémaillère ou soirée entre amis : on crée l'événement que vos invités n'oublieront pas.",
+    heroImage: "photos/moet-chandon.webp",
+    services: [
+      { icon: "palette", title: "Conception & ambiance", desc: "On imagine l'atmosphère, la lumière, chaque détail qui transforme votre soirée en souvenir.", features: ["Direction artistique sur-mesure", "Décoration & scénographie", "Éclairage d'ambiance", "Mise en scène des espaces", "Thématisation complète"] },
+      { icon: "settings", title: "Logistique & coordination", desc: "Lieu, traiteur, prestataires : on gère toute l'organisation pour que vous profitiez de vos invités.", features: ["Recherche de lieu privatisé", "Sélection traiteur & bar", "Coordination prestataires", "Planning de soirée minute par minute", "Gestion le jour J"] },
+      { icon: "music", title: "Animation & temps forts", desc: "DJ, musiciens, spectacle : on crée les moments qui font lever les verres et vibrer la piste.", features: ["DJ & musiciens live", "Spectacles & performances", "Photobooth & souvenirs", "Animations sur-mesure", "Maître de cérémonie"] }
+    ],
+    recommendedDest: "paris",
+    testimonialIndex: 0,
+    bio: "Des anniversaires intimistes aux grandes fêtes privées, Dare-Dare apporte à chaque célébration personnelle le même niveau d'exigence que pour les plus grandes maisons."
+  },
+  'diner': {
+    heroTitle: "Un dîner qui se savoure avant même de passer à table.",
+    heroSubtitle: "Chef à domicile, table d'exception ou dîner secret : chaque repas devient une expérience inoubliable.",
+    heroImage: "photos/longchamp.webp",
+    services: [
+      { icon: "sparkles", title: "Concept & art de la table", desc: "Vaisselle, fleurs, lumière : on compose une table qui raconte une histoire avant la première bouchée.", features: ["Art de la table sur-mesure", "Décoration florale", "Éclairage à la bougie & ambiance", "Menu personnalisé", "Accord mets & vins"] },
+      { icon: "settings", title: "Chef & service", desc: "On sélectionne le chef qui correspond à votre univers et on assure un service impeccable.", features: ["Sélection de chef privé", "Service en salle professionnel", "Sommelier à domicile", "Régimes & allergies gérés", "Vaisselle & matériel fournis"] },
+      { icon: "star", title: "Lieu & scénographie", desc: "Chez vous, dans un loft, sur un rooftop : on transforme n'importe quel espace en salle de réception.", features: ["Repérage & aménagement du lieu", "Mobilier & nappage", "Sonorisation discrète", "Accueil & vestiaire", "Nettoyage post-événement"] }
+    ],
+    recommendedDest: "paris",
+    testimonialIndex: 1,
+    bio: "Du dîner à deux au banquet de famille, Dare-Dare orchestre des expériences culinaires privées où chaque assiette, chaque verre, chaque silence compte."
+  },
+  'mariage': {
+    heroTitle: "Votre mariage, sans compromis.",
+    heroSubtitle: "Cérémonie, réception, organisation complète : on fait de ce jour le plus beau. Dare-dare.",
+    heroImage: "photos/dior-2.webp",
+    services: [
+      { icon: "palette", title: "Direction artistique", desc: "Palette de couleurs, thème, ambiance : on traduit votre histoire d'amour en un univers visuel cohérent.", features: ["Concept & moodboard personnalisé", "Palette chromatique & thème", "Papeterie & faire-part", "Plan de table créatif", "Livre d'or & souvenirs"] },
+      { icon: "clipboard", title: "Organisation complète", desc: "Du save-the-date au lendemain : on pilote chaque étape pour que vous ne pensiez qu'à vous dire oui.", features: ["Rétro-planning complet", "Sélection & coordination prestataires", "Gestion du budget", "Répétition & coordination jour J", "Plan B météo"] },
+      { icon: "music", title: "Réception & fête", desc: "Cérémonie laïque, cocktail, soirée dansante : chaque moment est chorégraphié pour marquer les esprits.", features: ["Cérémonie laïque sur-mesure", "Cocktail & dîner assis", "DJ, groupe live & playlist", "Photobooth & animation", "Brunch du lendemain"] }
+    ],
+    recommendedDest: "maroc",
+    testimonialIndex: 2,
+    bio: "Mariages en France comme au Maroc, Dare-Dare conçoit des cérémonies sur-mesure où l'émotion est aussi précise que la logistique."
+  },
+  'voyage-prive': {
+    heroTitle: "L'évasion sur-mesure, pour ceux qui ne font rien comme tout le monde.",
+    heroSubtitle: "Lune de miel, escapade entre amis ou voyage en famille : on conçoit le voyage que vous n'auriez jamais su organiser.",
+    heroImage: "photos/dior-4.webp",
+    services: [
+      { icon: "map", title: "Itinéraire sur-mesure", desc: "On dessine votre voyage autour de vos envies, pas autour d'un catalogue.", features: ["Conception d'itinéraire personnalisé", "Accès exclusifs & expériences privées", "Immersions culturelles", "Rythme adapté à vos envies", "Suggestions hors des sentiers battus"] },
+      { icon: "plane", title: "Logistique complète", desc: "Vols, transferts, hébergements d'exception : on gère tout, vous ne gérez rien.", features: ["Réservation vols & transferts", "Hébergements triés sur le volet", "Restaurants & expériences culinaires", "Assurance & assistance 24/7", "Conciergerie sur place"] },
+      { icon: "camera", title: "Moments & souvenirs", desc: "Photographe privé, surprises en cours de route : on crée les moments qui feront vos plus belles photos.", features: ["Photographe/vidéaste privé", "Surprises & attentions cachées", "Activités exclusives", "Dîners dans des lieux secrets", "Album souvenir"] }
+    ],
+    recommendedDest: "maroc",
+    testimonialIndex: 0,
+    bio: "De Marrakech à Venise, de Santorini à la côte amalfitaine, Dare-Dare conçoit des voyages privés où chaque jour est une découverte et chaque soir un souvenir."
+  }
+};
+
+const testimonialsPrive = window.testimonialsPrive = [
+  {
+    text: "On leur a confié notre mariage à Marrakech avec un timing serré. Résultat : chaque détail était parfait, de la cérémonie au brunch du lendemain. Nos invités en parlent encore.",
+    author: "Marie & Thomas"
+  },
+  {
+    text: "Pour les 50 ans de mon mari, je voulais une soirée dont il se souviendrait toute sa vie. Dare-Dare a dépassé tout ce que j'avais imaginé. Le lieu, le chef, l'ambiance : tout était au-delà.",
+    author: "Sophie L."
+  },
+  {
+    text: "Ils ont organisé notre voyage de noces entre le Maroc et le Portugal. Chaque jour était une surprise, chaque hôtel une découverte. On n'aurait jamais pu faire ça seuls.",
+    author: "Léa & Maxime"
+  }
+];
+
 const testimonials = window.testimonials = [
   {
     text: "L'équipe Dare-Dare allie rigueur et créativité avec une aisance rare. Sur chacun de nos événements grand public, leur maîtrise logistique nous a permis d'avancer en toute sérénité. C'est naturellement que nous leur confions nos prochains projets.",
@@ -176,12 +247,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Switch Event Type
   function switchEventType(type) {
-    if (!eventData[type]) return;
-    const data = eventData[type];
+    const activeData = window.eventData || eventData;
+    if (!activeData[type]) return;
+    const data = activeData[type];
     currentType = type;
     window.currentType = type;
 
-    heroTabs.forEach(tab => {
+    document.querySelectorAll('.hero__tab').forEach(tab => {
       tab.classList.toggle('active', tab.dataset.type === type);
       tab.setAttribute('aria-selected', tab.dataset.type === type ? 'true' : 'false');
     });
@@ -277,18 +349,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showTestimonial(index) {
     currentTestimonialIndex = index;
-    testimonialSlides.forEach((slide, i) => slide.classList.toggle('active', i === index));
-    testimonialDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    const slides = document.querySelectorAll('.temoignage-slide');
+    const dots = document.querySelectorAll('.temoignages__dot');
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
   }
 
   window.switchEventType = switchEventType;
+  window.showTestimonial = showTestimonial;
   heroTabs.forEach(tab => tab.addEventListener('click', () => switchEventType(tab.dataset.type)));
 
   document.querySelector('.temoignages__nav-btn--prev')?.addEventListener('click', () => {
-    showTestimonial((currentTestimonialIndex - 1 + testimonials.length) % testimonials.length);
+    const t = window.testimonials || testimonials;
+    showTestimonial((currentTestimonialIndex - 1 + t.length) % t.length);
   });
   document.querySelector('.temoignages__nav-btn--next')?.addEventListener('click', () => {
-    showTestimonial((currentTestimonialIndex + 1) % testimonials.length);
+    const t = window.testimonials || testimonials;
+    showTestimonial((currentTestimonialIndex + 1) % t.length);
   });
   testimonialDots.forEach((dot, i) => dot.addEventListener('click', () => showTestimonial(i)));
 

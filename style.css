@@ -324,6 +324,29 @@ ul, ol { list-style: none; }
 .lang-toggle--mobile .lang-toggle__btn.active { color: #fff; background: rgba(255,255,255,0.15); }
 .lang-toggle--mobile .lang-toggle__sep { color: rgba(255,255,255,0.25); }
 
+/* Mode Toggle (PRO/PRIVÉ) */
+.mode-toggle {
+  display: flex; align-items: center; gap: 2px;
+  margin-left: 6px; flex-shrink: 0;
+}
+.mode-toggle__btn {
+  background: none; border: none; cursor: pointer;
+  padding: 3px 5px; border-radius: 2px;
+  font-family: var(--font-body); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--grey); transition: color var(--transition-fast), background var(--transition-fast);
+}
+.mode-toggle__btn.active { color: var(--ink); background: var(--sand); }
+.mode-toggle__btn:hover:not(.active) { color: var(--ink); }
+.mode-toggle__sep { color: var(--sand-dark); font-size: 9px; user-select: none; }
+.nav--transparent .mode-toggle__btn { color: rgba(255,255,255,0.7); }
+.nav--transparent .mode-toggle__btn.active { color: #fff; background: rgba(255,255,255,0.2); }
+.nav--transparent .mode-toggle__sep { color: rgba(255,255,255,0.5); }
+.mode-toggle--mobile { margin: 12px auto 0; justify-content: center; }
+.mode-toggle--mobile .mode-toggle__btn { color: rgba(255,255,255,0.5); font-size: 13px; padding: 6px 10px; }
+.mode-toggle--mobile .mode-toggle__btn.active { color: #fff; background: rgba(255,255,255,0.15); }
+.mode-toggle--mobile .mode-toggle__sep { color: rgba(255,255,255,0.25); }
+
 /* Hamburger */
 .nav__hamburger {
   display: none; flex-direction: column; justify-content: center;
@@ -1458,6 +1481,66 @@ ul, ol { list-style: none; }
 .contact__card:hover [data-anim="sparkles"] svg {
   animation: sparkle-twinkle 800ms ease-in-out;
 }
+
+/* ---- PRIVÉ card animations ---- */
+
+/* Clink: two glasses tilt inward to clink */
+.contact__card-icon--prive-clink { display: flex; gap: 6px; }
+.contact__card-icon--prive-clink svg { width: 45%; height: 100%; }
+.contact__card-icon--prive-clink .prive-glass-l { transform: rotate(-10deg); transform-origin: bottom center; }
+.contact__card-icon--prive-clink .prive-glass-r { transform: rotate(10deg) scaleX(-1); transform-origin: bottom center; }
+@keyframes prive-clink-l { 0% { transform: rotate(-10deg); } 35% { transform: rotate(-22deg); } 50% { transform: rotate(-6deg); } 100% { transform: rotate(-10deg); } }
+@keyframes prive-clink-r { 0% { transform: rotate(10deg) scaleX(-1); } 35% { transform: rotate(22deg) scaleX(-1); } 50% { transform: rotate(6deg) scaleX(-1); } 100% { transform: rotate(10deg) scaleX(-1); } }
+.contact__card:hover [data-anim="prive-clink"] .prive-glass-l { animation: prive-clink-l 700ms ease-in-out; }
+.contact__card:hover [data-anim="prive-clink"] .prive-glass-r { animation: prive-clink-r 700ms ease-in-out; }
+
+/* Cloche: dome lifts up to reveal */
+@keyframes prive-cloche-lift {
+  0%   { transform: translateY(0) rotate(0); }
+  30%  { transform: translateY(-8px) rotate(-5deg); }
+  50%  { transform: translateY(-10px) rotate(3deg); }
+  70%  { transform: translateY(-5px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(0); }
+}
+.contact__card:hover [data-anim="prive-cloche"] .cloche-dome {
+  animation: prive-cloche-lift 800ms ease-in-out;
+  transform-origin: center bottom;
+}
+
+/* Kiss: bride (robe) + groom (cravate) lean in, heart pulses */
+.contact__card-icon--prive-kiss { display: flex; align-items: flex-end; gap: 2px; }
+.contact__card-icon--prive-kiss .prive-bride { width: 38%; height: 100%; }
+.contact__card-icon--prive-kiss .prive-heart { width: 18%; height: 40%; align-self: flex-start; margin-top: 4px; opacity: 0.5; }
+.contact__card-icon--prive-kiss .prive-groom { width: 38%; height: 100%; }
+@keyframes prive-lean-l { 0% { transform: rotate(0); } 35% { transform: rotate(10deg) translateX(3px); } 100% { transform: rotate(0); } }
+@keyframes prive-lean-r { 0% { transform: rotate(0); } 35% { transform: rotate(-10deg) translateX(-3px); } 100% { transform: rotate(0); } }
+@keyframes prive-heart-pulse { 0% { transform: scale(1); opacity: 0.5; } 25% { transform: scale(0.5); opacity: 0; } 50% { transform: scale(1.4); opacity: 1; } 75% { transform: scale(1); } 100% { transform: scale(1); opacity: 0.5; } }
+.contact__card:hover [data-anim="prive-kiss"] .prive-bride { animation: prive-lean-l 900ms ease-in-out; transform-origin: bottom right; }
+.contact__card:hover [data-anim="prive-kiss"] .prive-groom { animation: prive-lean-r 900ms ease-in-out; transform-origin: bottom left; }
+.contact__card:hover [data-anim="prive-kiss"] .prive-heart { animation: prive-heart-pulse 900ms ease-in-out; }
+
+/* Plane: rectangle orbit tracing the card edges */
+.contact__card:has([data-anim="prive-plane"]) { overflow: visible; position: relative; }
+.contact__card:has([data-anim="prive-plane"]) .contact__card-inner { overflow: visible; clip-path: none; }
+[data-anim="prive-plane"] { overflow: visible; z-index: 10; position: relative; }
+@keyframes prive-plane-orbit {
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(70px, -60px) rotate(0deg); }
+  25%  { transform: translate(70px, 60px) rotate(90deg); }
+  50%  { transform: translate(-70px, 60px) rotate(180deg); }
+  75%  { transform: translate(-70px, -60px) rotate(270deg); }
+  90%  { transform: translate(0px, -60px) rotate(340deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+.contact__card:hover [data-anim="prive-plane"] svg { animation: prive-plane-orbit 2000ms linear; }
+
+/* Sparkles: twinkle individually */
+@keyframes prive-sparkle-main { 0% { transform: scale(1) rotate(0); } 25% { transform: scale(1.15) rotate(8deg); } 50% { transform: scale(0.9) rotate(-5deg); } 75% { transform: scale(1.1) rotate(3deg); } 100% { transform: scale(1) rotate(0); } }
+@keyframes prive-sparkle-sm { 0% { opacity: 1; } 30% { opacity: 0.2; } 60% { opacity: 1; } 80% { opacity: 0.3; } 100% { opacity: 1; } }
+.contact__card:hover [data-anim="prive-sparkle"] .sparkle-main { animation: prive-sparkle-main 900ms ease-in-out; }
+.contact__card:hover [data-anim="prive-sparkle"] .sparkle-sm1 { animation: prive-sparkle-sm 600ms ease-in-out; }
+.contact__card:hover [data-anim="prive-sparkle"] .sparkle-sm2 { animation: prive-sparkle-sm 600ms 150ms ease-in-out; }
+
 .contact__card-title {
   font-family: var(--font-body); font-weight: 600; font-size: 13px;
   text-transform: uppercase; letter-spacing: 0.08em; text-align: center;
@@ -1617,8 +1700,10 @@ ul, ol { list-style: none; }
 .contact__info-link {
   font-family: var(--font-body); font-size: 13px; font-weight: 400;
   color: rgba(255,255,255,0.4); transition: color 0.3s;
+  display: inline-flex; align-items: center; gap: 6px;
 }
 .contact__info-link:hover { color: #fff; }
+.contact__info-icon { width: 15px; height: 15px; flex-shrink: 0; }
 .contact__info-sep { color: rgba(255,255,255,0.15); font-size: 12px; }
 
 /* UX: validation form · messages d'erreur inline */
@@ -1919,3 +2004,206 @@ ul, ol { list-style: none; }
   .footer__diamond { display: none; }
 
 }
+
+/* ============================================
+   MODE PRIVÉ · Inversion noir/blanc
+   ============================================ */
+
+/* Logo flip animation */
+.nav__logo-svg,
+.footer__logo-svg {
+  transition: color var(--transition-base), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Upside-down logo in PRIVÉ mode */
+.mode-prive .nav__logo-svg,
+.mode-prive .footer__logo-svg {
+  transform: rotate(180deg);
+}
+
+/* Smooth global transitions for mode switch */
+.mode-prive,
+.mode-prive .hero,
+.mode-prive .services,
+.mode-prive .dest-showcase,
+.mode-prive .portfolio,
+.mode-prive .temoignages,
+.mode-prive .contact,
+.mode-prive .footer,
+.mode-prive .nav,
+.mode-prive .nav--transparent,
+.mode-prive .nav--scrolled {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Hero section inversion */
+.mode-prive .hero { color: var(--ink); }
+.mode-prive .hero__bg--gradient { background: #fff; }
+.mode-prive .hero__star-float { color: var(--sand-dark); }
+.mode-prive .hero__title,
+.mode-prive .hero__subtitle { color: var(--ink); }
+.mode-prive .hero__tab { color: rgba(0,0,0,0.55); }
+.mode-prive .hero__tab.active { color: var(--ink); }
+.mode-prive .hero__tab-diamond { color: rgba(0,0,0,0.25); }
+.mode-prive .hero__cta-primary { background: var(--ink); color: #fff; }
+.mode-prive .hero__cta-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+.mode-prive .hero__tagline { color: rgba(0,0,0,0.6); }
+.mode-prive .hero__locations-brands { color: rgba(0,0,0,0.4); }
+
+/* Nav inversion */
+.mode-prive .nav--transparent { background: rgba(255,255,255,0.95); }
+.mode-prive .nav--transparent .nav__logo-svg { color: var(--ink); }
+.mode-prive .nav--transparent .nav__link { color: var(--ink); }
+.mode-prive .nav--transparent .nav__diamond { color: rgba(0,0,0,0.2); }
+.mode-prive .nav--transparent .nav__cta { background: var(--ink); color: #fff; }
+.mode-prive .nav--transparent .nav__hamburger span { background: var(--ink); }
+.mode-prive .nav--transparent .lang-toggle__btn { color: rgba(0,0,0,0.4); }
+.mode-prive .nav--transparent .lang-toggle__btn.active { color: var(--ink); background: var(--sand); }
+.mode-prive .nav--transparent .lang-toggle__sep { color: rgba(0,0,0,0.2); }
+.mode-prive .nav--transparent .mode-toggle__btn { color: rgba(0,0,0,0.4); }
+.mode-prive .nav--transparent .mode-toggle__btn.active { color: var(--ink); background: var(--sand); }
+.mode-prive .nav--transparent .mode-toggle__sep { color: rgba(0,0,0,0.2); }
+
+/* Services section inversion */
+.mode-prive .services { background: #fff; }
+.mode-prive .section-title { color: var(--ink); }
+.mode-prive .section-subtitle { color: var(--sage); }
+.mode-prive .service-card { background: var(--sand-light); border-color: var(--sand); }
+.mode-prive .service-card__icon { color: var(--ink); }
+.mode-prive .service-card__title { color: var(--ink); }
+.mode-prive .service-card__desc { color: var(--sage); }
+.mode-prive .service-card__toggle { color: var(--ink); }
+.mode-prive .service-card__features li { color: var(--sage); }
+.mode-prive .service-card__features li::before { color: var(--ink); }
+.mode-prive .marquee__title { color: var(--sage); }
+.mode-prive .marquee__item { color: var(--ink); }
+.mode-prive .marquee__diamond { color: var(--sand-dark); }
+.mode-prive .services__cta { background: var(--ink); color: #fff; }
+
+/* Destinations inversion (only section bg, NOT card content which stays on dark overlay) */
+.mode-prive .dest-showcase { background: var(--sand-light); }
+.mode-prive .dest-showcase .section-title { color: var(--ink); }
+.mode-prive .dest-showcase .section-subtitle { color: var(--sage); }
+
+/* Portfolio inversion */
+.mode-prive .portfolio { background: #fff; }
+.mode-prive .portfolio__filter { color: var(--sage); border-color: var(--sand); }
+.mode-prive .portfolio__filter.active { background: var(--ink); color: #fff; }
+
+/* Testimonials inversion */
+.mode-prive .temoignages { background: #fff; }
+.mode-prive .temoignage-slide__text { color: var(--ink); }
+.mode-prive .temoignage-slide__author { color: var(--sage); }
+.mode-prive .temoignage-slide__star { color: var(--sand-dark); }
+.mode-prive .temoignages__dot { background: var(--sand-dark); }
+.mode-prive .temoignages__dot.active { background: var(--ink); }
+
+/* About section */
+.mode-prive .apropos { background: #fff; }
+.mode-prive .apropos__text { color: var(--ink); }
+.mode-prive .apropos__title { color: var(--ink); }
+.mode-prive .apropos__fixed { color: var(--sage); }
+.mode-prive .apropos__dynamic { color: var(--ink); }
+.mode-prive .apropos__image-wrap { background: var(--sand-light); }
+
+/* Lexique */
+.mode-prive .lexique { background: #fff; color: var(--ink); }
+.mode-prive .lexique__lang { color: rgba(0,0,0,0.35); }
+.mode-prive .lexique__word { color: var(--ink); }
+.mode-prive .lexique__phonetic { color: rgba(0,0,0,0.4); }
+.mode-prive .lexique__arabic { color: rgba(0,0,0,0.5); }
+.mode-prive .lexique__type { color: rgba(0,0,0,0.4); }
+.mode-prive .lexique__def { color: var(--sage); }
+.mode-prive .lexique__example { color: rgba(0,0,0,0.5); }
+.mode-prive .lexique__divider { background: rgba(0,0,0,0.15); }
+.mode-prive .lexique__conclusion { color: var(--ink); }
+.mode-prive .lexique__footer-line { background: rgba(0,0,0,0.15); }
+
+/* Stats */
+.mode-prive .chiffres { background: #fff; }
+.mode-prive .chiffres__title { color: var(--ink); }
+.mode-prive .chiffre-item__number { color: var(--ink); }
+.mode-prive .chiffre-item__label { color: var(--sage); }
+
+/* FAQ inversion */
+.mode-prive .faq { background: #fff; }
+.mode-prive .faq-item { border-color: var(--sand); }
+.mode-prive .faq-item__question { color: var(--ink); }
+.mode-prive .faq-item__answer-inner { color: var(--sage); }
+
+/* Contact section inversion */
+.mode-prive .contact { background: var(--sand-light); }
+.mode-prive .contact__title { color: var(--ink); }
+.mode-prive .contact__subtitle { color: var(--sage); }
+.mode-prive .contact__step-question { color: var(--ink); }
+.mode-prive .contact__step-hint { color: var(--sage); }
+.mode-prive .contact__card-inner {
+  border-color: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.02);
+}
+.mode-prive .contact__card-inner::before { background: rgba(0,0,0,0.1); }
+.mode-prive .contact__card:hover .contact__card-inner { background: rgba(0,0,0,0.05); }
+.mode-prive .contact__card:hover .contact__card-inner::before { background: rgba(0,0,0,0.2); }
+.mode-prive .contact__card input:checked ~ .contact__card-inner { background: rgba(0,0,0,0.08); }
+.mode-prive .contact__card input:checked ~ .contact__card-inner::before { background: var(--ink); }
+.mode-prive .contact__card-icon { color: var(--sage); width: 36px; height: 36px; }
+.mode-prive .contact__card-icon--prive-clink { width: 52px; }
+.mode-prive .contact__card-icon--prive-kiss { width: 56px; height: 40px; }
+.mode-prive .contact__card input:checked ~ .contact__card-inner .contact__card-icon { color: var(--ink); }
+.mode-prive .contact__card-title { color: var(--ink); }
+.mode-prive .contact__card-desc { color: var(--sage); }
+.mode-prive .contact__tag span { color: var(--ink); border-color: var(--sand); }
+.mode-prive .contact__tag input:checked + span { background: var(--ink); color: #fff; }
+.mode-prive .contact__field label { color: var(--ink); }
+.mode-prive .contact__field input,
+.mode-prive .contact__field textarea,
+.mode-prive .contact__field select { color: var(--ink); border-color: var(--sand); background: #fff; }
+.mode-prive .contact__nav-next { background: var(--ink); color: #fff; }
+.mode-prive .contact__nav-prev { color: var(--ink); border-color: var(--sand); }
+.mode-prive .contact__nav-submit { background: var(--ink); color: #fff; }
+.mode-prive .contact__progress-step { color: var(--sage); }
+.mode-prive .contact__progress-step.active { color: var(--ink); }
+.mode-prive .contact__step-dot { color: rgba(0,0,0,0.3); }
+.mode-prive .contact__step-dot.active { color: var(--ink); }
+.mode-prive .contact__info-link { color: var(--ink); }
+.mode-prive .contact__info-sep { color: var(--sand-dark); }
+
+/* Footer inversion */
+.mode-prive .footer { background: var(--sand-light); }
+.mode-prive .footer__logo-svg { color: var(--ink); }
+.mode-prive .footer__tagline { color: var(--ink); }
+.mode-prive .footer__link { color: var(--ink); border-color: rgba(0,0,0,0.1); }
+.mode-prive .footer__copyright { color: var(--sage); }
+.mode-prive .footer__social-link { color: var(--ink); border-color: rgba(0,0,0,0.1); }
+
+/* Contact progress bar & range */
+.mode-prive .contact__progress-bar { background: var(--sand); }
+.mode-prive .contact__progress-fill { background: var(--ink); }
+.mode-prive .contact__range { background: var(--sand); }
+.mode-prive .contact__range::-webkit-slider-thumb { background: var(--ink); border-color: var(--ink); }
+.mode-prive .contact__range-value { color: var(--ink); }
+.mode-prive .contact__range-mood { color: var(--sage); }
+.mode-prive .contact__success-title { color: var(--ink); }
+.mode-prive .contact__success-text { color: var(--sage); }
+
+/* Testimonials nav buttons */
+.mode-prive .temoignages__nav-btn { color: var(--ink); border-color: var(--sand); }
+.mode-prive .temoignages__nav-btn:hover { background: var(--sand-light); }
+.mode-prive .temoignage-slide { border-color: var(--sand); }
+
+/* Portfolio "show more" + mention + CTA in PRIVÉ */
+.mode-prive .portfolio__more-wrap { display: none; }
+.mode-prive .portfolio__mention { color: var(--sage); }
+.mode-prive .portfolio__cta-text { color: var(--ink); }
+.mode-prive .portfolio__cta { background: var(--ink); color: #fff; }
+.mode-prive .portfolio__subtitle { color: var(--sage); }
+
+/* Marquee hidden in PRIVÉ (B2B brands irrelevant for private clients) */
+.mode-prive .marquee { display: none; }
+
+/* Mobile menu in PRIVÉ */
+.mode-prive .mobile-menu { background: var(--ink); }
+
+/* WhatsApp float */
+.mode-prive .whatsapp-float { background: var(--ink); }
+.mode-prive #backToTop { background: var(--ink); color: #fff; }

@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="dns-prefetch" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260415c">
   <!-- SEO: Schema.org Organization + LocalBusiness -->
   <script type="application/ld+json">
   {
@@ -257,6 +257,12 @@
         <span class="lang-toggle__sep">|</span>
         <button class="lang-toggle__btn" data-lang="en">EN</button>
       </div>
+      <!-- Mode toggle: PRO / PRIVÉ -->
+      <div class="mode-toggle">
+        <button class="mode-toggle__btn active" data-mode="pro">PRO</button>
+        <span class="mode-toggle__sep">|</span>
+        <button class="mode-toggle__btn" data-mode="prive">PRIVÉ</button>
+      </div>
       <a href="#contact" class="nav__cta" title="Demander un devis événementiel" data-i18n="nav.cta">Devis</a>
       <button class="nav__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -279,6 +285,12 @@
       <button class="lang-toggle__btn active" data-lang="fr">FR</button>
       <span class="lang-toggle__sep">|</span>
       <button class="lang-toggle__btn" data-lang="en">EN</button>
+    </div>
+    <!-- Mode toggle mobile: PRO / PRIVÉ -->
+    <div class="mode-toggle mode-toggle--mobile">
+      <button class="mode-toggle__btn active" data-mode="pro">PRO</button>
+      <span class="mode-toggle__sep">|</span>
+      <button class="mode-toggle__btn" data-mode="prive">PRIVÉ</button>
     </div>
   </div>
 
@@ -330,8 +342,8 @@
       <div class="container">
         <div class="services__header reveal">
           <!-- CLEAN: supprimé star-sep -->
-          <h2 class="section-title" data-i18n="services.title">What We<br>Actually Do</h2>
-          <p class="section-subtitle" data-i18n="services.subtitle">Piloter. Produire. Livrer. Trois mots, zéro compromis, et un seul objectif : que tout soit parfait le jour J.</p>
+          <h2 class="section-title" data-i18n="services.title" data-i18n-prive="services.title.prive">What We<br>Actually Do</h2>
+          <p class="section-subtitle" data-i18n="services.subtitle" data-i18n-prive="services.subtitle.prive">Piloter. Produire. Livrer. Trois mots, zéro compromis, et un seul objectif : que tout soit parfait le jour J.</p>
         </div>
 
         <div class="services__grid reveal-stagger" id="services-grid">
@@ -406,9 +418,9 @@
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">01</span>
             <h3 class="dest-showcase__city">Paris</h3>
-            <p class="dest-showcase__tagline" data-i18n="dest.paris.tagline">Ici, même les murs ont l'habitude du grand spectacle.</p>
+            <p class="dest-showcase__tagline" data-i18n="dest.paris.tagline" data-i18n-prive="dest.paris.tagline.prive">Ici, même les murs ont l'habitude du grand spectacle.</p>
             <div class="dest-showcase__details">
-              <p data-i18n="dest.paris.desc">Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés. On transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.</p>
+              <p data-i18n="dest.paris.desc" data-i18n-prive="dest.paris.desc.prive">Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés. On transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.</p>
               <div class="dest-showcase__keywords">
                 <span>Galas</span><span>Lancements</span><span>Rooftops</span><span>Palaces</span>
               </div>
@@ -424,9 +436,9 @@
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">02</span>
             <h3 class="dest-showcase__city">Cannes</h3>
-            <p class="dest-showcase__tagline" data-i18n="dest.cannes.tagline">On vous déroule le tapis rouge, même en dehors du festival.</p>
+            <p class="dest-showcase__tagline" data-i18n="dest.cannes.tagline" data-i18n-prive="dest.cannes.tagline.prive">On vous déroule le tapis rouge, même en dehors du festival.</p>
             <div class="dest-showcase__details">
-              <p data-i18n="dest.cannes.desc">Villas privées sur les hauteurs, terrasses face à la Méditerranée, yachts privatisés. Le glamour de la Riviera au service de votre image, 365 jours par an.</p>
+              <p data-i18n="dest.cannes.desc" data-i18n-prive="dest.cannes.desc.prive">Villas privées sur les hauteurs, terrasses face à la Méditerranée, yachts privatisés. Le glamour de la Riviera au service de votre image, 365 jours par an.</p>
               <div class="dest-showcase__keywords">
                 <span>Croisette</span><span>Villas privées</span><span>Yachts</span><span>Influence</span>
               </div>
@@ -442,9 +454,9 @@
           <div class="dest-showcase__content">
             <span class="dest-showcase__number">03</span>
             <h3 class="dest-showcase__city">Maroc</h3>
-            <p class="dest-showcase__tagline" data-i18n="dest.maroc.tagline">Le Maroc, c'est notre terrain. On y produit comme chez nous.</p>
+            <p class="dest-showcase__tagline" data-i18n="dest.maroc.tagline" data-i18n-prive="dest.maroc.tagline.prive">Le Maroc, c'est notre terrain. On y produit comme chez nous.</p>
             <div class="dest-showcase__details">
-              <p data-i18n="dest.maroc.desc">Casa pour les lancements, Rabat pour le protocole, Marrakech pour l'émotion, Tanger pour l'audace. Dare-Dare a les prestataires, les lieux et le réseau pour livrer des événements d'exception sur tout le territoire.</p>
+              <p data-i18n="dest.maroc.desc" data-i18n-prive="dest.maroc.desc.prive">Casa pour les lancements, Rabat pour le protocole, Marrakech pour l'émotion, Tanger pour l'audace. Dare-Dare a les prestataires, les lieux et le réseau pour livrer des événements d'exception sur tout le territoire.</p>
               <div class="dest-showcase__keywords">
                 <span>Marrakech</span><span>Casablanca</span><span>Rabat</span><span>Tanger</span><span>Essaouira</span><span>Fès</span>
               </div>
@@ -462,8 +474,8 @@
     <section class="portfolio" id="lieux">
       <div class="container">
         <div class="portfolio__header reveal">
-          <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
-          <p class="section-subtitle" data-i18n="portfolio.subtitle">Chaque projet est une histoire. Au survol, découvrez les coulisses.</p>
+          <h2 class="section-title" data-i18n="portfolio.title" data-i18n-prive="portfolio.title.prive">Portfolio</h2>
+          <p class="section-subtitle" data-i18n="portfolio.subtitle" data-i18n-prive="portfolio.subtitle.prive">Chaque projet est une histoire. Au survol, découvrez les coulisses.</p>
         </div>
 
         <!-- Filtres -->
@@ -765,14 +777,39 @@
             </div>
           </div>
 
+          <!-- 16. Bottega Veneta · Séminaire Venise -->
+          <div class="portfolio__card portfolio__card--hidden reveal" data-index="16" data-tags="corporate,luxe" data-visible="false">
+            <img src="photos/bottega-veneta-venise.jpg" alt="Bottega Veneta · Séminaire MICE à Venise" loading="lazy" width="600" height="400">
+            <div class="portfolio__default">
+              <span class="portfolio__tag">Séminaire MICE · 3 jours</span>
+              <span class="portfolio__name">Bottega Veneta · Venise</span>
+            </div>
+            <div class="portfolio__detail">
+              <span class="portfolio__detail-client">Bottega Veneta</span>
+              <span class="portfolio__detail-type">Séminaire MICE · Format ultra-privé</span>
+              <div class="portfolio__detail-meta">
+                <span>Venise, Italie</span>
+                <span>3 jours · VIP exclusif</span>
+              </div>
+              <p class="portfolio__detail-quote">Trois jours à Venise pour l'une des maisons les plus exigeantes au monde. Chaque lieu, chaque transfert, chaque repas pensé comme un acte de marque.</p>
+              <span class="portfolio__detail-role">Gestion complète MICE : logistique multi-jours, lieux privatisés, coordination sur place, accueil VIP</span>
+            </div>
+          </div>
+
         </div>
 
         <!-- Show more -->
         <div class="portfolio__more-wrap reveal">
           <button class="portfolio__more-btn" id="portfolioShowMore">
             <span class="portfolio__more-text" data-i18n="portfolio.showmore">Voir tous nos projets</span>
-            <span class="portfolio__more-count">+6</span>
+            <span class="portfolio__more-count">+7</span>
           </button>
+        </div>
+
+        <!-- Portfolio coming-soon (visible only in PRIVÉ mode) -->
+        <div class="portfolio__coming-soon reveal" style="display:none; text-align:center; padding:60px 24px;">
+          <p style="font-size:18px; color:#fff; margin-bottom:16px;" data-i18n="portfolio.prive.soon">Nos premières réalisations privées arrivent bientôt. En attendant, chaque projet est une promesse : la vôtre sera tenue.</p>
+          <a href="#contact" class="portfolio__cta" data-i18n="portfolio.cta.btn">Lancer un projet</a>
         </div>
 
         <p class="portfolio__mention reveal" style="text-align:center;margin-top:24px;font-size:11px;color:#999;letter-spacing:0.05em;" data-i18n="portfolio.mention">Projets réalisés en agence et en indépendant.</p>
@@ -787,15 +824,15 @@
     <section class="chiffres zellige-pattern zellige-pattern--light" id="chiffres">
       <div class="container">
         <!-- CLEAN: supprimé star-sep -->
-        <h2 class="chiffres__title reveal" data-i18n="chiffres.title">In Numbers</h2>
+        <h2 class="chiffres__title reveal" data-i18n="chiffres.title" data-i18n-prive="chiffres.title.prive">In Numbers</h2>
         <div class="chiffres__grid reveal">
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="50" data-prefix="+">+0</div>
-            <div class="chiffre-item__label" data-i18n="chiffres.projects">projets pilotés</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.projects" data-i18n-prive="chiffres.projects.prive">projets pilotés</div>
           </div>
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="20000" data-prefix="+">+0</div>
-            <div class="chiffre-item__label" data-i18n="chiffres.guests">participants accueillis</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.guests" data-i18n-prive="chiffres.guests.prive">participants accueillis</div>
           </div>
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="3">0</div>
@@ -803,7 +840,7 @@
           </div>
           <div class="chiffre-item">
             <div class="chiffre-item__number" data-count="15" data-prefix="+">+0</div>
-            <div class="chiffre-item__label" data-i18n="chiffres.brands">marques accompagnées</div>
+            <div class="chiffre-item__label" data-i18n="chiffres.brands" data-i18n-prive="chiffres.brands.prive">marques accompagnées</div>
           </div>
         </div>
       </div>
@@ -816,7 +853,7 @@
       <div class="container">
         <div class="temoignages__header reveal">
           <!-- CLEAN: supprimé star-sep -->
-          <h2 class="section-title" data-i18n="temoignages.title">What They<br>Say About Us</h2>
+          <h2 class="section-title" data-i18n="temoignages.title" data-i18n-prive="temoignages.title.prive">What They<br>Say About Us</h2>
         </div>
 
         <div class="temoignages__slider">
@@ -883,7 +920,7 @@
         <div class="apropos__text">
           <h2 class="apropos__title reveal" data-i18n="apropos.title">The Daring Agency</h2>
           <p class="apropos__dynamic reveal" id="bio-dynamic">Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge, Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé.</p>
-          <p class="apropos__fixed reveal" data-i18n="apropos.fixed1">Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler : autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.</p>
+          <p class="apropos__fixed reveal" data-i18n="apropos.fixed1" data-i18n-prive="apropos.fixed1.prive">Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler : autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.</p>
           <p class="apropos__fixed reveal" style="margin-top: 16px;" data-i18n="apropos.fixed2">Fondée en 2024, l'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em></p>
           <p class="apropos__fixed reveal" style="margin-top: 16px;" data-i18n="apropos.fixed3">Aujourd'hui, notre équipe opère entre Paris, Cannes et le Maroc pour offrir à ses clients des événements d'exception entre deux rives de la Méditerranée.</p>
         </div>
@@ -1025,7 +1062,7 @@
       <div class="container">
         <div class="contact__header reveal">
           <h2 class="contact__title" data-i18n="contact.title">Let's Talk</h2>
-          <p class="contact__subtitle" data-i18n="contact.subtitle">Configurez votre événement en 4 étapes. On s'occupe du reste.</p>
+          <p class="contact__subtitle" data-i18n="contact.subtitle" data-i18n-prive="contact.subtitle.prive">Configurez votre événement en 4 étapes. On s'occupe du reste.</p>
         </div>
 
         <!-- Progress bar -->
@@ -1043,6 +1080,7 @@
 
         <!-- FIX: ajout action Formspree + method POST -->
         <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgoppgkl" method="POST" novalidate>
+          <input type="hidden" name="mode" id="mode-field" value="pro">
 
           <!-- Step 1: Event type -->
           <div class="contact__step-panel active" data-panel="1">
@@ -1203,13 +1241,13 @@
 
         <!-- Contact info bar -->
         <div class="contact__info-bar reveal">
-          <a href="mailto:eva.dahan.production@gmail.com" class="contact__info-link" title="Envoyer un email à l'Agence Dare-Dare">eva.dahan.production@gmail.com</a>
+          <a href="mailto:eva.dahan.production@gmail.com" class="contact__info-link" title="Envoyer un email à l'Agence Dare-Dare"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>eva.dahan.production@gmail.com</a>
           <span class="contact__info-sep">·</span>
-          <a href="tel:+33681969362" class="contact__info-link" title="Appeler l'Agence Dare-Dare">+33 6 81 96 93 62</a>
+          <a href="tel:+33681969362" class="contact__info-link" title="Appeler l'Agence Dare-Dare"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+33 6 81 96 93 62</a>
           <span class="contact__info-sep">·</span>
-          <span class="contact__info-link">Paris · Cannes · Maroc</span>
+          <span class="contact__info-link"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Paris · Cannes · Maroc</span>
           <span class="contact__info-sep">·</span>
-          <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" class="contact__info-link">@agencedaredare</a>
+          <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" class="contact__info-link"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@agencedaredare</a>
         </div>
       </div>
     </section>
@@ -1272,7 +1310,7 @@
   <!-- UX: bouton retour en haut -->
   <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
 
-  <script src="i18n.js"></script>
-  <script src="script.js"></script>
+  <script src="i18n.js?v=20260415"></script>
+  <script src="script.js?v=20260415"></script>
 </body>
 </html>
