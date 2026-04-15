@@ -1,5 +1,5 @@
 /* ============================================
-   AGENCE DARE-DARE — Script JS v4
+   AGENCE DARE-DARE · Script JS v4
    Contenu enrichi + identité marocaine
    ============================================ */
 
@@ -8,68 +8,68 @@
 const eventData = window.eventData = {
   soiree: {
     heroTitle: "On ne fait pas des soirées. On crée des souvenirs.",
-    heroSubtitle: "Du brief au dernier verre — on orchestre chaque détail pour que vous n'ayez qu'à profiter.",
+    heroSubtitle: "Du brief au dernier verre. On orchestre chaque détail pour que vous n'ayez qu'à profiter.",
     heroImage: "photos/moet-chandon.webp",
     services: [
-      { icon: "palette", title: "Pilotage & coordination", desc: "Un seul chef de projet, un seul interlocuteur — de la première idée au dernier applaudissement.", features: ["Brief, cadrage, budget — tout est posé dès le départ", "Rétro-planning serré, suivi sans relâche", "Coordination de chaque prestataire", "Pilotage du jour J, minute par minute", "Débriefing & recommandations post-event"] },
-      { icon: "settings", title: "Production & logistique", desc: "Lieu, traiteur, technique, mobilier — on verrouille chaque maillon pour que rien ne bouge.", features: ["Sourcing & négociation des lieux", "Régie son, lumière & vidéo", "Traiteur, bar & expérience F&B", "Mobilier, habillage & signalétique", "Sécurité, assurances & conformité"] },
-      { icon: "music", title: "Mise en scène & moments forts", desc: "DJ, artistes, scénographie — on crée les instants dont vos invités parleront encore dans six mois.", features: ["Booking artistes, DJ & performers", "Scénarisation des temps forts", "Photobooth & dispositif contenu", "Accueil VIP & gestion des flux", "Maître de cérémonie & ambiance sur-mesure"] }
+      { icon: "palette", title: "Pilotage & coordination", desc: "Un seul chef de projet, un seul interlocuteur, de la première idée au dernier applaudissement.", features: ["Brief, cadrage, budget : tout est posé dès le départ", "Rétro-planning serré, suivi sans relâche", "Coordination de chaque prestataire", "Pilotage du jour J, minute par minute", "Débriefing & recommandations post-event"] },
+      { icon: "settings", title: "Production & logistique", desc: "Lieu, traiteur, technique, mobilier : on verrouille chaque maillon pour que rien ne bouge.", features: ["Sourcing & négociation des lieux", "Régie son, lumière & vidéo", "Traiteur, bar & expérience F&B", "Mobilier, habillage & signalétique", "Sécurité, assurances & conformité"] },
+      { icon: "music", title: "Scénographie & temps forts", desc: "DJ, artistes, scénographie : on crée les instants dont vos invités parleront encore dans six mois.", features: ["Booking artistes, DJ & performers", "Scénarisation des temps forts", "Photobooth & dispositif contenu", "Accueil VIP & gestion des flux", "Maître de cérémonie & ambiance sur-mesure"] }
     ],
     recommendedDest: "paris",
     testimonialIndex: 0,
-    bio: "Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge — Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé."
+    bio: "Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge, Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé."
   },
   seminaire: {
     heroTitle: "Vos équipes méritent mieux qu'une salle de réunion.",
-    heroSubtitle: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits — dare-dare.",
+    heroSubtitle: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits, dare-dare.",
     heroImage: "photos/bnp-reims-champagne-1.webp",
     services: [
-      { icon: "clipboard", title: "Conception & programme", desc: "On ne remplit pas un agenda — on construit une expérience collective qui a du sens.", features: ["Cadrage des objectifs & brief stratégique", "Programme sur-mesure : plénières, ateliers, off", "Sélection de speakers & intervenants", "Scénarisation des temps forts", "Équilibre entre contenu et convivialité"] },
-      { icon: "building", title: "Logistique & coordination", desc: "Hôtel, transferts, restauration, rooming — on gère tout, vous ne gérez rien.", features: ["Sourcing hôtels & domaines privatisés", "Transferts groupe & logistique terrain", "Restauration & expériences culinaires", "Rooming list & gestion des chambres", "Coordination multi-sites & multi-jours"] },
-      { icon: "trophy", title: "Team building & incentive", desc: "Rallye, ateliers, outdoor — des moments partagés qui marquent plus qu'un PowerPoint.", features: ["Team building sportif & outdoor", "Rallye, défis d'équipe & chasses au trésor", "Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"] }
+      { icon: "clipboard", title: "Conception & programme", desc: "On ne remplit pas un agenda : on construit une expérience collective qui a du sens.", features: ["Cadrage des objectifs & brief stratégique", "Programme sur-mesure : plénières, ateliers, off", "Sélection de speakers & intervenants", "Scénarisation des temps forts", "Équilibre entre contenu et convivialité"] },
+      { icon: "building", title: "Logistique & coordination", desc: "Hôtel, transferts, restauration, rooming : on gère tout, vous ne gérez rien.", features: ["Sourcing hôtels & domaines privatisés", "Transferts groupe & logistique terrain", "Restauration & expériences culinaires", "Rooming list & gestion des chambres", "Coordination multi-sites & multi-jours"] },
+      { icon: "trophy", title: "Team building & incentive", desc: "Rallye, ateliers, outdoor : des moments partagés qui marquent plus qu'un PowerPoint.", features: ["Team building sportif & outdoor", "Rallye, défis d'équipe & chasses au trésor", "Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"] }
     ],
     recommendedDest: "maroc",
     testimonialIndex: 1,
-    bio: "De 150 à 900 personnes, en France comme au Maroc — Dare-Dare conçoit des séminaires où logistique, programmation et cohésion d'équipe s'articulent sans faille. Chaque brief devient une expérience collective mémorable."
+    bio: "De 150 à 900 personnes, en France comme au Maroc, Dare-Dare conçoit des séminaires où logistique, programmation et cohésion d'équipe s'articulent sans faille. Chaque brief devient une expérience collective mémorable."
   },
   influence: {
     heroTitle: "On crée des moments que vos créateurs voudront poster.",
     heroSubtitle: "Des événements pensés pour le contenu : photogéniques, immersifs, parfaitement orchestrés.",
     heroImage: "photos/samsung-influences-molitor-5.webp",
     services: [
-      { icon: "camera", title: "Concept & set-up", desc: "Chaque angle est pensé pour la photo — chaque espace raconte votre marque.", features: ["Concept créatif & direction visuelle", "Photocalls & corners instagrammables", "Éclairage pensé pour le contenu", "Parcours invité scénographié", "Brand experience & storytelling spatial"] },
-      { icon: "users", title: "Gestion de projet & guests", desc: "Guest list, accueil, gifting, flux — chaque créateur est un VIP, pas un numéro.", features: ["Stratégie d'invitation & guest list ciblée", "Accueil VIP personnalisé", "Gifting & kits créateurs sur-mesure", "Gestion des flux & espaces privés", "Brief créateurs & guidelines contenu"] },
-      { icon: "sparkles", title: "Contenu & retombées", desc: "On crée les conditions pour que le contenu se fasse tout seul — et qu'il performe.", features: ["Activités exclusives & instants partageables", "Masterclass & ateliers de marque", "Expériences sensorielles & immersives", "Live content & stories real-time", "Suivi retombées & reporting social media"] }
+      { icon: "camera", title: "Concept & set-up", desc: "Chaque angle est pensé pour la photo, chaque espace raconte votre marque.", features: ["Concept créatif & direction visuelle", "Photocalls & corners instagrammables", "Éclairage pensé pour le contenu", "Parcours invité scénographié", "Brand experience & storytelling spatial"] },
+      { icon: "users", title: "Gestion de projet & guests", desc: "Guest list, accueil, gifting, flux : chaque créateur est un VIP, pas un numéro.", features: ["Stratégie d'invitation & guest list ciblée", "Accueil VIP personnalisé", "Gifting & kits créateurs sur-mesure", "Gestion des flux & espaces privés", "Brief créateurs & guidelines contenu"] },
+      { icon: "sparkles", title: "Contenu & retombées", desc: "On crée les conditions pour que le contenu se fasse tout seul, et qu'il performe.", features: ["Activités exclusives & instants partageables", "Masterclass & ateliers de marque", "Expériences sensorielles & immersives", "Live content & stories real-time", "Suivi retombées & reporting social media"] }
     ],
     recommendedDest: "cannes",
     testimonialIndex: 0,
-    bio: "Chanel, Dior, Mugler, Longchamp — Dare-Dare évolue dans l'univers des marques qui font rêver les créateurs de contenu. Chaque angle est pensé, chaque moment est partageable, avec une exécution irréprochable en coulisses."
+    bio: "Chanel, Dior, Mugler, Longchamp : Dare-Dare évolue dans l'univers des marques qui font rêver les créateurs de contenu. Chaque angle est pensé, chaque moment est partageable, avec une exécution irréprochable en coulisses."
   },
   presse: {
     heroTitle: "Un voyage presse, c'est une histoire qu'on écrit ensemble.",
-    heroSubtitle: "On orchestre des expériences éditoriales où votre marque prend vie — jour après jour.",
+    heroSubtitle: "On orchestre des expériences éditoriales où votre marque prend vie, jour après jour.",
     heroImage: "photos/dior-2.webp",
     services: [
-      { icon: "map", title: "Itinéraire & storytelling", desc: "On ne planifie pas un voyage — on écrit un scénario éditorial jour par jour.", features: ["Itinéraire éditorial sur-mesure", "Immersions culturelles & accès exclusifs", "Temps forts calibrés pour les retombées", "Storytelling de marque intégré au parcours", "Programmation multi-jours cohérente"] },
-      { icon: "plane", title: "Logistique multi-destinations", desc: "Vols, transferts, hôtels, restaurants — on gère la logistique pour que vos invités ne pensent qu'à écrire.", features: ["Réservation vols & billets", "Transferts privés & logistique terrain", "Hébergement premium & rooming", "Restauration & expériences culinaires", "Coordination inter-destinations fluide"] },
-      { icon: "mail", title: "Suivi médias & retombées", desc: "Chaque journaliste est un projet — de l'invitation au follow-up post-trip.", features: ["Accueil personnalisé de chaque invité", "Dossiers de presse & kits médias", "Gestion des demandes spéciales", "Relances rédactionnelles ciblées", "Reporting complet des retombées"] }
+      { icon: "map", title: "Itinéraire & storytelling", desc: "On ne planifie pas un voyage : on écrit un scénario éditorial jour par jour.", features: ["Itinéraire éditorial sur-mesure", "Immersions culturelles & accès exclusifs", "Temps forts calibrés pour les retombées", "Storytelling de marque intégré au parcours", "Programmation multi-jours cohérente"] },
+      { icon: "plane", title: "Logistique multi-destinations", desc: "Vols, transferts, hôtels, restaurants : on gère la logistique pour que vos invités ne pensent qu'à écrire.", features: ["Réservation vols & billets", "Transferts privés & logistique terrain", "Hébergement premium & rooming", "Restauration & expériences culinaires", "Coordination inter-destinations fluide"] },
+      { icon: "mail", title: "Suivi médias & retombées", desc: "Chaque journaliste est un projet, de l'invitation au follow-up post-trip.", features: ["Accueil personnalisé de chaque invité", "Dossiers de presse & kits médias", "Gestion des demandes spéciales", "Relances rédactionnelles ciblées", "Reporting complet des retombées"] }
     ],
     recommendedDest: "maroc",
     testimonialIndex: 1,
-    bio: "De Venise pour Bottega Veneta à des activations multi-sites pour Samsung — Dare-Dare excelle dans la coordination complexe. Multi-jours, multi-lieux : chaque participant vit une expérience éditoriale forte."
+    bio: "De Venise pour Bottega Veneta à des activations multi-sites pour Samsung, Dare-Dare excelle dans la coordination complexe. Multi-jours, multi-lieux : chaque participant vit une expérience éditoriale forte."
   },
   lancement: {
     heroTitle: "Votre produit mérite mieux qu'un communiqué de presse.",
-    heroSubtitle: "On crée l'événement qui fera parler de votre marque — dare-dare.",
+    heroSubtitle: "On crée l'événement qui fera parler de votre marque, dare-dare.",
     heroImage: "photos/samsung-showcase-theodort-1.webp",
     services: [
-      { icon: "eye", title: "Concept & mise en scène", desc: "Votre produit mérite un moment — on crée le décor, le parcours et le reveal qui vont avec.", features: ["Concept créatif & direction de projet", "Parcours scénographique immersif", "Mise en lumière produit & reveal", "Décor sur-mesure & habillage spatial", "Vidéo projection & mapping"] },
-      { icon: "zap", title: "Production & régie technique", desc: "Son, lumière, vidéo — une machine de guerre technique invisible, au service de l'émotion.", features: ["Régie son & lumière professionnelle", "Captation vidéo multi-caméras", "Effets spéciaux & pyrotechnie", "Streaming & diffusion en direct", "Coordination technique minute par minute"] },
-      { icon: "star", title: "Accueil & guest management", desc: "Guest list, accueil VIP, parcours invité — chaque personne qui entre doit sentir qu'on l'attendait.", features: ["Guest list & stratégie d'invitation", "Accueil premium & parcours VIP", "Signalétique & branding sur site", "Vestiaire, badges & accréditations", "Conciergerie événementielle sur-mesure"] }
+      { icon: "eye", title: "Concept & mise en scène", desc: "Votre produit mérite un moment : on crée le décor, le parcours et le reveal qui vont avec.", features: ["Concept créatif & direction de projet", "Parcours scénographique immersif", "Mise en lumière produit & reveal", "Décor sur-mesure & habillage spatial", "Vidéo projection & mapping"] },
+      { icon: "zap", title: "Production & régie technique", desc: "Son, lumière, vidéo : une machine de guerre technique invisible, au service de l'émotion.", features: ["Régie son & lumière professionnelle", "Captation vidéo multi-caméras", "Effets spéciaux & pyrotechnie", "Streaming & diffusion en direct", "Coordination technique minute par minute"] },
+      { icon: "star", title: "Accueil & guest management", desc: "Guest list, accueil VIP, parcours invité : chaque personne qui entre doit sentir qu'on l'attendait.", features: ["Guest list & stratégie d'invitation", "Accueil premium & parcours VIP", "Signalétique & branding sur site", "Vestiaire, badges & accréditations", "Conciergerie événementielle sur-mesure"] }
     ],
     recommendedDest: "paris",
     testimonialIndex: 0,
-    bio: "Samsung aux Forum des Halles devant 1 500 personnes, deux activations aux 20 km de Paris, Paris Blockchain Week au Carrousel du Louvre — Dare-Dare crée des lancements spectaculaires dans des lieux emblématiques."
+    bio: "Samsung aux Forum des Halles devant 1 500 personnes, deux activations aux 20 km de Paris, Paris Blockchain Week au Carrousel du Louvre : Dare-Dare crée des lancements spectaculaires dans des lieux emblématiques."
   }
 };
 
@@ -79,20 +79,20 @@ const testimonials = window.testimonials = [
     author: "Luminart"
   },
   {
-    text: "Depuis plus d'un an, Dare-Dare gère l'intégralité de notre logistique événementielle. Réactivité, professionnalisme, fiabilité — un partenaire sur lequel on peut compter les yeux fermés.",
+    text: "Depuis plus d'un an, Dare-Dare gère l'intégralité de notre logistique événementielle. Réactivité, professionnalisme, fiabilité : un partenaire sur lequel on peut compter les yeux fermés.",
     author: "Tgod Events"
   },
   {
-    text: "On leur a confié un événement à Marrakech avec 3 semaines de délai. Tout était parfait — du transfert aéroport au dîner sous les étoiles. L'agilité de cette équipe est impressionnante.",
-    author: "Directrice communication — Secteur luxe"
+    text: "On leur a confié un événement à Marrakech avec 3 semaines de délai. Tout était parfait, du transfert aéroport au dîner sous les étoiles. L'agilité de cette équipe est impressionnante.",
+    author: "Directrice communication · Secteur luxe"
   },
   {
     text: "Dare-Dare a produit notre activation en marge des 20 km de Paris : deux sites en simultané, coordination sans faille, espace VIP impeccable. On repart avec eux l'année prochaine.",
-    author: "Chef de projet — Secteur tech"
+    author: "Chef de projet · Secteur tech"
   },
   {
-    text: "Ce qui les distingue, c'est leur capacité à comprendre l'ADN d'une marque et à le traduire dans chaque détail de l'événement. Pas un prestataire — un vrai partenaire créatif.",
-    author: "Responsable événementiel — Maison de mode"
+    text: "Ce qui les distingue, c'est leur capacité à comprendre l'ADN d'une marque et à le traduire dans chaque détail de l'événement. Pas un prestataire : un vrai partenaire créatif.",
+    author: "Responsable événementiel · Maison de mode"
   }
 ];
 
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   const faqItems = document.querySelectorAll('.faq-item');
   const contactForm = document.getElementById('contact-form');
-  /* FIX: supprimé formSuccess — sélecteur mort, le vrai élément est successEl */
+  /* FIX: supprimé formSuccess, sélecteur mort, le vrai élément est successEl */
 
   // Generate floating stars in hero
   function createFloatingStars() {
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* FIX: références mortes, éléments supprimés du HTML — bloc conservé par sécurité */
+  /* FIX: références mortes, éléments supprimés du HTML, bloc conservé par sécurité */
   const marocCard = document.querySelector('.dest-card--maroc');
   const marocPanel = document.getElementById('maroc-panel');
   if (marocCard && marocPanel) {
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   testimonialDots.forEach((dot, i) => dot.addEventListener('click', () => showTestimonial(i)));
 
-  /* UX: auto-rotation des témoignages — 6 secondes, pause au hover */
+  /* UX: auto-rotation des témoignages, 6 secondes, pause au hover */
   let autoPlayInterval = null;
   const sliderEl = document.querySelector('.temoignages__slider');
 
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Contact Form — handled by multi-step logic below
+  // Contact Form, handled by multi-step logic below
 
   // Smooth Scroll
   document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -503,10 +503,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateGuestMood(val) {
     const v = parseInt(val);
     let text, display;
-    if (v <= 30) { display = v; text = 'Un écrin intime — chaque détail compte.'; }
+    if (v <= 30) { display = v; text = 'Un écrin intime : chaque détail compte.'; }
     else if (v <= 80) { display = v; text = 'L\'élégance d\'un événement à taille humaine.'; }
     else if (v <= 150) { display = v; text = 'Assez pour impressionner, assez pour se souvenir de chacun.'; }
-    else if (v <= 300) { display = v; text = 'On passe en mode production — et on adore ça.'; }
+    else if (v <= 300) { display = v; text = 'On passe en mode production, et on adore ça.'; }
     else if (v <= 500) { display = v; text = 'Du grand spectacle. On sort l\'artillerie.'; }
     else if (v <= 800) { display = v; text = 'Un festival à votre nom. On gère.'; }
     else { display = v + '+'; text = 'Vous voyez en grand ? Nous aussi. Dare-dare.'; }
@@ -590,7 +590,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---------- PORTFOLIO — Filters, Show More, Mobile Tap ----------
+  // ---------- PORTFOLIO · Filters, Show More, Mobile Tap ----------
   const portfolioCards = document.querySelectorAll('.portfolio__card');
   const filterBtns = document.querySelectorAll('.portfolio__filter');
   const showMoreBtn = document.getElementById('portfolioShowMore');
@@ -687,7 +687,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* UX: bouton retour en haut — apparaît après 600px de scroll */
+  /* UX: bouton retour en haut, apparaît après 600px de scroll */
   const backToTop = document.getElementById('backToTop');
   if (backToTop) {
     window.addEventListener('scroll', () => {
@@ -751,9 +751,9 @@ document.addEventListener('DOMContentLoaded', () => {
       contactObserver.observe(contactSection);
     }
 
-    /* WHATSAPP: log du clic — remplacer par Google Analytics quand disponible */
+    /* WHATSAPP: log du clic, remplacer par Google Analytics quand disponible */
     whatsappBtn.addEventListener('click', () => {
-      console.log('[Dare-Dare] WhatsApp click — lead captured');
+      console.log('[Dare-Dare] WhatsApp click, lead captured');
       /* TODO: remplacer par gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: 'floating_button' }); */
     });
   }

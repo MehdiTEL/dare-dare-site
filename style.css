@@ -1,11 +1,11 @@
 /* ============================================
-   AGENCE DARE-DARE — Style CSS v4
+   AGENCE DARE-DARE · Style CSS v4
    Identité marocaine renforcée + contenu enrichi
    ============================================ */
 
 /* ---------- Custom Properties ---------- */
 :root {
-  /* Palette Numéro — quasi monochrome */
+  /* Palette Numéro · quasi monochrome */
   --ivory: #FFFFFF;
   --ink: #0A0A0A;
   --gold: #1A1A1A;
@@ -24,10 +24,10 @@
   --white: #FFFFFF;
   --grey: #6C757D;
   --grey-text: #6C757D;
-  /* Accent unique — doré très discret */
+  /* Accent unique · doré très discret */
   --accent: #B8860B;
 
-  /* Typographie — Numéro editorial */
+  /* Typographie · Numéro editorial */
   --font-display: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-body: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-moroccan: 'Inter', 'Helvetica Neue', sans-serif;
@@ -110,7 +110,7 @@ ul, ol { list-style: none; }
   line-height: 1.6;
 }
 
-/* Star separator — hidden in editorial mode */
+/* Star separator · hidden in editorial mode */
 .star-sep {
   display: none;
   margin: 16px auto;
@@ -136,7 +136,7 @@ ul, ol { list-style: none; }
 /* Font moroccan class */
 .font-moroccan { font-family: var(--font-moroccan); }
 
-/* CLEAN: supprimé zellige-pattern (DISABLED, --light, --gold) + zellige-band — tous désactivés/orphelins */
+/* CLEAN: supprimé zellige-pattern (DISABLED, --light, --gold) + zellige-band · tous désactivés/orphelins */
 
 /* ---------- Grain overlay ---------- */
 .grain-overlay { position: relative; overflow: hidden; }
@@ -156,7 +156,7 @@ ul, ol { list-style: none; }
     radial-gradient(ellipse at 50% 80%, rgba(197,183,164,0.12) 0%, transparent 50%);
 }
 
-/* CLEAN: supprimé arch-divider, section-fade-top — tous désactivés/orphelins */
+/* CLEAN: supprimé arch-divider, section-fade-top · tous désactivés/orphelins */
 
 /* ---------- 8-branch star SVG inline ---------- */
 .star-8 {
@@ -172,7 +172,7 @@ ul, ol { list-style: none; }
   padding: 0;
   position: relative;
 }
-/* CLEAN: supprimé moroccan-frame__corner + variantes positionnelles — éléments absents du HTML */
+/* CLEAN: supprimé moroccan-frame__corner + variantes positionnelles · éléments absents du HTML */
 
 /* ---------- Marquee ---------- */
 .marquee {
@@ -234,7 +234,7 @@ ul, ol { list-style: none; }
   flex-shrink: 0;
   transition: filter var(--transition-base);
 }
-/* LOGO: SVG inline — plus besoin de filter/invert/blend-mode */
+/* LOGO: SVG inline · plus besoin de filter/invert/blend-mode */
 .nav__logo-svg {
   height: 30px;
   width: auto;
@@ -295,7 +295,7 @@ ul, ol { list-style: none; }
 .nav--scrolled .nav__cta { background: #0A0A0A; color: #fff; }
 .nav__cta:hover { opacity: 0.9; }
 
-/* i18n — Language Toggle */
+/* i18n · Language Toggle */
 .lang-toggle {
   display: flex; align-items: center; gap: 2px;
   margin-left: 6px; flex-shrink: 0;
@@ -644,7 +644,7 @@ ul, ol { list-style: none; }
   color: rgba(255,255,255,0.7);
 }
 
-/* Details — reveal on hover */
+/* Details · reveal on hover */
 .dest-showcase__details {
   max-height: 0; overflow: hidden; opacity: 0;
   transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -675,7 +675,7 @@ ul, ol { list-style: none; }
   color: rgba(255,255,255,0.7);
 }
 
-/* UX: tap-to-reveal destinations — réplique le hover pour le tactile */
+/* UX: tap-to-reveal destinations · réplique le hover pour le tactile */
 .dest-showcase__item.is-tapped .dest-showcase__city {
   transform: translateX(12px);
 }
@@ -802,7 +802,7 @@ ul, ol { list-style: none; }
   color: rgba(255,255,255,0.9);
 }
 
-/* Default state — name + tag at bottom */
+/* Default state · name + tag at bottom */
 .portfolio__default {
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
   padding: 28px; display: flex; flex-direction: column; gap: 8px;
@@ -999,7 +999,7 @@ ul, ol { list-style: none; }
   border-top: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
 }
-/* CLEAN: supprimé .temoignage-slide__corner { display: none; } — aucun élément HTML */
+/* CLEAN: supprimé .temoignage-slide__corner { display: none; } · aucun élément HTML */
 
 .temoignage-slide__star {
   display: block; margin: 0 auto 16px; width: 20px; height: 20px;
@@ -1227,22 +1227,237 @@ ul, ol { list-style: none; }
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 16px; max-width: 800px; margin: 0 auto;
 }
-.contact__card { cursor: pointer; }
+.contact__card { cursor: pointer; position: relative; }
 .contact__card input { display: none; }
 .contact__card-inner {
   display: flex; flex-direction: column; align-items: center;
-  gap: 8px; padding: 28px 16px;
-  border: 1px solid rgba(255,255,255,0.12);
+  gap: 8px; padding: 36px 16px 24px;
   background: rgba(255,255,255,0.03);
-  transition: all 0.3s;
+  transition: background 0.3s;
+  position: relative;
+  /* Forme arche · inspiration architecturale marocaine */
+  clip-path: polygon(
+    0% 18%, 6% 8%, 15% 3%, 25% 0.5%, 50% 0%, 75% 0.5%, 85% 3%, 94% 8%, 100% 18%,
+    100% 100%, 0% 100%
+  );
+}
+/* Contour arche via pseudo-element */
+.contact__card-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.12);
+  clip-path: polygon(
+    0% 18%, 6% 8%, 15% 3%, 25% 0.5%, 50% 0%, 75% 0.5%, 85% 3%, 94% 8%, 100% 18%,
+    100% 100%, 0% 100%,
+    /* Inner cutout (1px inset) */
+    1px 100%, 1px calc(18% + 1px),
+    calc(6% + 1px) calc(8% + 1px), calc(15% + 1px) calc(3% + 1px),
+    calc(25% + 0.5px) calc(0.5% + 1px), 50% 1px,
+    calc(75% - 0.5px) calc(0.5% + 1px), calc(85% - 1px) calc(3% + 1px),
+    calc(94% - 1px) calc(8% + 1px), calc(100% - 1px) calc(18% + 1px),
+    calc(100% - 1px) 100%, 1px 100%
+  );
+  pointer-events: none;
+  transition: background 0.3s;
 }
 .contact__card:hover .contact__card-inner {
-  border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.06);
+}
+.contact__card:hover .contact__card-inner::before {
+  background: rgba(255,255,255,0.3);
 }
 .contact__card input:checked ~ .contact__card-inner {
-  border-color: #fff; background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.1);
 }
-.contact__card-emoji { font-size: 32px; }
+.contact__card input:checked ~ .contact__card-inner::before {
+  background: #fff;
+}
+.contact__card-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  color: var(--sand);
+  transition: color var(--transition-base);
+}
+.contact__card-icon svg { width: 100%; height: 100%; }
+.contact__card input:checked ~ .contact__card-inner .contact__card-icon { color: #fff; }
+
+/* ---- Contact card icon hover animations ---- */
+
+/* Clink · two champagne glasses side by side */
+.contact__card-icon--wide { width: 56px; gap: 2px; }
+.contact__card-icon--wide svg { width: 26px; height: 26px; }
+.contact__card-icon--wide .clink-left {
+  transform: rotate(-10deg);
+  transform-origin: bottom right;
+}
+.contact__card-icon--wide .clink-right {
+  transform: rotate(10deg);
+  transform-origin: bottom left;
+}
+@keyframes clink-left {
+  0%   { transform: rotate(-10deg); }
+  30%  { transform: rotate(-22deg) translateX(-3px); }
+  55%  { transform: rotate(2deg) translateX(1px); }
+  70%  { transform: rotate(-10deg); }
+  100% { transform: rotate(-10deg); }
+}
+@keyframes clink-right {
+  0%   { transform: rotate(10deg); }
+  30%  { transform: rotate(22deg) translateX(3px); }
+  55%  { transform: rotate(-2deg) translateX(-1px); }
+  70%  { transform: rotate(10deg); }
+  100% { transform: rotate(10deg); }
+}
+.contact__card:hover [data-anim="clink"] .clink-left {
+  animation: clink-left 700ms ease-in-out;
+  transform-origin: bottom right;
+}
+.contact__card:hover [data-anim="clink"] .clink-right {
+  animation: clink-right 700ms ease-in-out;
+  transform-origin: bottom left;
+}
+
+/* Crew · four stick figures, arms down → arms up + jump on hover */
+.contact__card-icon--crew { width: 80px; gap: 2px; }
+.contact__card-icon--crew .crew-person { width: 20px; height: 34px; }
+
+/* Arms transition from down to up */
+.crew-arm-l, .crew-arm-r {
+  transition: d 400ms ease-in-out;
+}
+/* Hover: arms go up · use transform on arm paths */
+.contact__card:hover .contact__card-icon--crew .crew-arm-l {
+  d: path("M8 9l-5 -5");
+}
+.contact__card:hover .contact__card-icon--crew .crew-arm-r {
+  d: path("M8 9l5 -5");
+}
+
+/* Jump animation on hover */
+@keyframes crew-jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-8px); }
+  50%  { transform: translateY(-8px); }
+  70%  { transform: translateY(0); }
+  85%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+.contact__card:hover [data-anim="crew"] .crew-person {
+  animation: crew-jump 700ms ease-in-out;
+}
+.contact__card:hover [data-anim="crew"] .crew-person:nth-child(2) { animation-delay: 50ms; }
+.contact__card:hover [data-anim="crew"] .crew-person:nth-child(3) { animation-delay: 100ms; }
+.contact__card:hover [data-anim="crew"] .crew-person:nth-child(4) { animation-delay: 150ms; }
+
+/* Camera · real flash burst */
+[data-anim="camera"] { position: relative; overflow: visible; }
+[data-anim="camera"]::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+  opacity: 0;
+  transform: scale(0.3);
+  pointer-events: none;
+}
+@keyframes camera-flash-svg {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.06); }
+  30%  { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+@keyframes camera-flash-burst {
+  0%   { opacity: 0; transform: scale(0.3); }
+  20%  { opacity: 0; transform: scale(0.3); }
+  30%  { opacity: 1; transform: scale(1.8); }
+  50%  { opacity: 0.8; transform: scale(2.2); }
+  70%  { opacity: 0; transform: scale(2.5); }
+  100% { opacity: 0; transform: scale(0.3); }
+}
+.contact__card:hover [data-anim="camera"] svg {
+  animation: camera-flash-svg 700ms ease-in-out;
+}
+.contact__card:hover [data-anim="camera"]::after {
+  animation: camera-flash-burst 700ms ease-out;
+}
+
+/* Plane · orbits around the card text */
+.contact__card:has([data-anim="plane"]) { overflow: visible; position: relative; }
+[data-anim="plane"] { overflow: visible; }
+@keyframes plane-orbit {
+  0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+  8%   { transform: translate(40px, -20px) rotate(15deg) scale(0.85); }
+  20%  { transform: translate(100px, 15px) rotate(40deg) scale(0.7); }
+  35%  { transform: translate(60px, 65px) rotate(110deg) scale(0.65); }
+  50%  { transform: translate(-10px, 75px) rotate(180deg) scale(0.6); }
+  65%  { transform: translate(-80px, 50px) rotate(240deg) scale(0.65); }
+  78%  { transform: translate(-90px, -10px) rotate(310deg) scale(0.75); }
+  90%  { transform: translate(-30px, -25px) rotate(350deg) scale(0.9); }
+  100% { transform: translate(0, 0) rotate(360deg) scale(1); }
+}
+.contact__card:hover [data-anim="plane"] svg {
+  animation: plane-orbit 1400ms ease-in-out;
+}
+
+/* Rocket · straight launch with exhaust smoke */
+[data-anim="rocket"] { position: relative; overflow: visible; }
+[data-anim="rocket"]::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 8px; height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  opacity: 0;
+  pointer-events: none;
+  box-shadow:
+    -6px  5px 2px 1px rgba(255,255,255,0.5),
+     6px  5px 2px 1px rgba(255,255,255,0.5),
+     0px 12px 3px 2px rgba(255,255,255,0.4),
+    -8px 18px 4px 2px rgba(255,255,255,0.3),
+     8px 18px 4px 2px rgba(255,255,255,0.3),
+    -3px 24px 5px 3px rgba(255,255,255,0.2),
+     3px 24px 5px 3px rgba(255,255,255,0.2),
+     0px 30px 6px 3px rgba(255,255,255,0.1);
+}
+@keyframes rocket-launch {
+  0%   { transform: translateY(0); opacity: 1; }
+  40%  { transform: translateY(-28px); opacity: 0; }
+  41%  { transform: translateY(12px); opacity: 0; }
+  70%  { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes rocket-smoke {
+  0%   { opacity: 0; transform: scaleY(0.2) scaleX(0.5); filter: blur(0px); }
+  10%  { opacity: 0.7; transform: scaleY(0.5) scaleX(0.7); filter: blur(1px); }
+  30%  { opacity: 0.6; transform: scaleY(0.9) scaleX(1); filter: blur(2px); }
+  50%  { opacity: 0.35; transform: scaleY(1.1) scaleX(1.3); filter: blur(3px); }
+  70%  { opacity: 0.1; transform: scaleY(1.3) scaleX(1.5); filter: blur(5px); }
+  100% { opacity: 0; transform: scaleY(1.5) scaleX(1.8); filter: blur(6px); }
+}
+.contact__card:hover [data-anim="rocket"] svg {
+  animation: rocket-launch 900ms ease-in-out;
+}
+.contact__card:hover [data-anim="rocket"]::after {
+  animation: rocket-smoke 900ms ease-out;
+}
+
+/* Sparkles · twinkle / shimmer */
+@keyframes sparkle-twinkle {
+  0%   { transform: scale(1) rotate(0); opacity: 1; }
+  20%  { transform: scale(0.85) rotate(-8deg); opacity: 0.6; }
+  40%  { transform: scale(1.15) rotate(6deg); opacity: 1; }
+  60%  { transform: scale(0.9) rotate(-4deg); opacity: 0.7; }
+  80%  { transform: scale(1.1) rotate(3deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.contact__card:hover [data-anim="sparkles"] svg {
+  animation: sparkle-twinkle 800ms ease-in-out;
+}
 .contact__card-title {
   font-family: var(--font-body); font-weight: 600; font-size: 13px;
   text-transform: uppercase; letter-spacing: 0.08em; text-align: center;
@@ -1406,7 +1621,7 @@ ul, ol { list-style: none; }
 .contact__info-link:hover { color: #fff; }
 .contact__info-sep { color: rgba(255,255,255,0.15); font-size: 12px; }
 
-/* UX: validation form — messages d'erreur inline */
+/* UX: validation form · messages d'erreur inline */
 .contact__error {
   display: none;
   font-family: var(--font-body); font-size: 12px; font-weight: 400;
@@ -1606,7 +1821,7 @@ ul, ol { list-style: none; }
     scroll-behavior: auto !important;
   }
   .reveal { opacity: 1; transform: none; }
-  /* CLEAN: supprimé .hero__zellige-reveal { display: none; } — élément supprimé */
+  /* CLEAN: supprimé .hero__zellige-reveal { display: none; } · élément supprimé */
   .marquee__track { animation: none; }
 }
 
@@ -1621,7 +1836,7 @@ ul, ol { list-style: none; }
   .portfolio__default { opacity: 1; }
 }
 
-/* Breakpoint tablette — passage en hamburger */
+/* Breakpoint tablette · passage en hamburger */
 @media (max-width: 1080px) {
   .nav__links, .nav__cta, .lang-toggle:not(.lang-toggle--mobile) { display: none; }
   .nav__hamburger { display: flex; }
@@ -1632,7 +1847,7 @@ ul, ol { list-style: none; }
   :root { --section-padding: 56px; }
   body { font-size: 16px; }
 
-  /* WHATSAPP: mobile — légèrement plus gros pour le touch */
+  /* WHATSAPP: mobile · légèrement plus gros pour le touch */
   .whatsapp-float {
     width: 52px;
     height: 52px;

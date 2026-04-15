@@ -1,5 +1,5 @@
 /* ============================================
-   AGENCE DARE-DARE — i18n FR/EN
+   AGENCE DARE-DARE · i18n FR/EN
    Basculement instantané, 0 rechargement
    ============================================ */
 
@@ -29,20 +29,20 @@ const translations = {
 
   /* ===== SERVICES ===== */
   "services.title":       { fr: "What We<br>Actually Do", en: "What We<br>Actually Do" },
-  "services.subtitle":    { fr: "Piloter. Produire. Livrer. Trois mots, zéro compromis — et un seul objectif : que tout soit parfait le jour J.", en: "Plan. Produce. Deliver. Three words, zero compromise — and one goal: perfection on the big day." },
+  "services.subtitle":    { fr: "Piloter. Produire. Livrer. Trois mots, zéro compromis, et un seul objectif : que tout soit parfait le jour J.", en: "Plan. Produce. Deliver. Three words, zero compromise, and one goal: perfection on the big day." },
   "services.toggle":      { fr: "Découvrir",  en: "Discover" },
   "services.cta":         { fr: "Lancer un projet", en: "Start a project" },
   "services.trusted":     { fr: "Trusted by", en: "Trusted by" },
 
   /* ===== DESTINATIONS ===== */
   "dest.title":           { fr: "Where We<br>Set the Stage", en: "Where We<br>Set the Stage" },
-  "dest.subtitle":        { fr: "Paris, Cannes, Maroc — et partout où votre ambition nous emmène.", en: "Paris, Cannes, Morocco — and wherever your ambition takes us." },
+  "dest.subtitle":        { fr: "Paris, Cannes, Maroc. Et partout où votre ambition nous emmène.", en: "Paris, Cannes, Morocco. And wherever your ambition takes us." },
   "dest.paris.tagline":   { fr: "Ici, même les murs ont l'habitude du grand spectacle.", en: "Here, even the walls are used to the grandest of shows." },
-  "dest.paris.desc":      { fr: "Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés — on transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.", en: "Eiffel Tower, Palais Brongniart, Piscine Molitor, private palaces — we transform the most iconic venues in the capital into bespoke stages for your brand." },
+  "dest.paris.desc":      { fr: "Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés. On transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.", en: "Eiffel Tower, Palais Brongniart, Piscine Molitor, private palaces. We transform the most iconic venues in the capital into bespoke stages for your brand." },
   "dest.cannes.tagline":  { fr: "On vous déroule le tapis rouge, même en dehors du festival.", en: "We roll out the red carpet, even outside the festival." },
-  "dest.cannes.desc":     { fr: "Villas privées sur les hauteurs, terrasses face à la Méditerranée, yachts privatisés — le glamour de la Riviera au service de votre image, 365 jours par an.", en: "Private villas on the hills, terraces facing the Mediterranean, private yachts — the glamour of the Riviera serving your image, 365 days a year." },
-  "dest.maroc.tagline":   { fr: "Le Maroc, c'est notre terrain — on y produit comme chez nous.", en: "Morocco is our home turf — we produce as if it were our own." },
-  "dest.maroc.desc":      { fr: "Casa pour les lancements, Rabat pour le protocole, Marrakech pour l'émotion, Tanger pour l'audace — Dare-Dare a les prestataires, les lieux et le réseau pour livrer des événements d'exception sur tout le territoire.", en: "Casablanca for launches, Rabat for protocol, Marrakech for emotion, Tangier for audacity — Dare-Dare has the vendors, venues and network to deliver exceptional events across the country." },
+  "dest.cannes.desc":     { fr: "Villas privées sur les hauteurs, terrasses face à la Méditerranée, yachts privatisés. Le glamour de la Riviera au service de votre image, 365 jours par an.", en: "Private villas on the hills, terraces facing the Mediterranean, private yachts. The glamour of the Riviera serving your image, 365 days a year." },
+  "dest.maroc.tagline":   { fr: "Le Maroc, c'est notre terrain. On y produit comme chez nous.", en: "Morocco is our home turf. We produce as if it were our own." },
+  "dest.maroc.desc":      { fr: "Casa pour les lancements, Rabat pour le protocole, Marrakech pour l'émotion, Tanger pour l'audace. Dare-Dare a les prestataires, les lieux et le réseau pour livrer des événements d'exception sur tout le territoire.", en: "Casablanca for launches, Rabat for protocol, Marrakech for emotion, Tangier for audacity. Dare-Dare has the vendors, venues and network to deliver exceptional events across the country." },
   "dest.elsewhere":       { fr: 'Votre événement nous emmène ailleurs ? <strong>On produit sur-mesure, partout dans le monde.</strong>', en: 'Taking your event elsewhere? <strong>We produce bespoke events, anywhere in the world.</strong>' },
 
   /* ===== PORTFOLIO ===== */
@@ -56,7 +56,7 @@ const translations = {
   "portfolio.filter.presse":    { fr: "Presse & Influence", en: "Press & Influence" },
   "portfolio.showmore":         { fr: "Voir tous nos projets", en: "See all our projects" },
   "portfolio.mention":          { fr: "Projets réalisés en agence et en indépendant.", en: "Projects delivered in-house and as freelance." },
-  "portfolio.cta.text":         { fr: "Un projet en tête ? On en parle — dare-dare.", en: "Got a project in mind? Let's talk — dare-dare." },
+  "portfolio.cta.text":         { fr: "Un projet en tête ? On en parle, dare-dare.", en: "Got a project in mind? Let's talk, dare-dare." },
   "portfolio.cta.btn":          { fr: "Lancer un projet", en: "Start a project" },
 
   /* ===== CHIFFRES ===== */
@@ -71,22 +71,22 @@ const translations = {
 
   /* ===== A PROPOS ===== */
   "apropos.title":       { fr: "The Daring Agency", en: "The Daring Agency" },
-  "apropos.fixed1":      { fr: "Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler — autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.", en: "Dare-Dare is the agency that turns every brief into a memorable moment. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler — prestigious houses that trust us to lead their most ambitious event projects, from 1,500-person concerts to VIP dinners beneath the Louvre Pyramid." },
+  "apropos.fixed1":      { fr: "Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler : autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.", en: "Dare-Dare is the agency that turns every brief into a memorable moment. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler: prestigious houses that trust us to lead their most ambitious event projects, from 1,500-person concerts to VIP dinners beneath the Louvre Pyramid." },
   "apropos.fixed2":      { fr: 'Fondée en 2024, l\'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>', en: 'Founded in 2024, the agency is driven by one belief: <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>' },
   "apropos.fixed3":      { fr: "Aujourd'hui, notre équipe opère entre Paris, Cannes et le Maroc pour offrir à ses clients des événements d'exception entre deux rives de la Méditerranée.", en: "Today, our team operates between Paris, Cannes and Morocco, delivering exceptional events across both sides of the Mediterranean." },
 
   /* ===== LEXIQUE ===== */
-  "lexique.en.def":        { fr: 'To have the courage to do something bold. To challenge someone — and mean it.<br><span class="lexique__example">"You dare us? Consider it done."</span>', en: 'To have the courage to do something bold. To challenge someone — and mean it.<br><span class="lexique__example">"You dare us? Consider it done."</span>' },
-  "lexique.fr.def":        { fr: 'En toute hâte, sans perdre une seconde. L\'art de transformer l\'urgence en excellence.<br><span class="lexique__example">"Le dîner est dans 72h pour 300 personnes ? On s\'en occupe — dare-dare."</span>', en: 'In haste, without wasting a second. The art of turning urgency into excellence.<br><span class="lexique__example">"Dinner is in 72h for 300 guests? We\'re on it — dare-dare."</span>' },
-  "lexique.darija.def":    { fr: 'Maison. Chez soi. Là où l\'on se sent accueilli, protégé, entouré. En darija marocain, chaque événement commence par une porte qui s\'ouvre.<br><span class="lexique__example">"Mrhba bik f\'dar — Bienvenue chez nous."</span>', en: 'Home. Where you feel welcomed, protected, surrounded. In Moroccan Darija, every event starts with an open door.<br><span class="lexique__example">"Mrhba bik f\'dar — Welcome home."</span>' },
-  "lexique.conclusion":    { fr: "Three languages. One name. A house that dares — dare-dare.", en: "Three languages. One name. A house that dares — dare-dare." },
+  "lexique.en.def":        { fr: 'To have the courage to do something bold. To challenge someone, and mean it.<br><span class="lexique__example">"You dare us? Consider it done."</span>', en: 'To have the courage to do something bold. To challenge someone, and mean it.<br><span class="lexique__example">"You dare us? Consider it done."</span>' },
+  "lexique.fr.def":        { fr: 'En toute hâte, sans perdre une seconde. L\'art de transformer l\'urgence en excellence.<br><span class="lexique__example">"Le dîner est dans 72h pour 300 personnes ? On s\'en occupe, dare-dare."</span>', en: 'In haste, without wasting a second. The art of turning urgency into excellence.<br><span class="lexique__example">"Dinner is in 72h for 300 guests? We\'re on it, dare-dare."</span>' },
+  "lexique.darija.def":    { fr: 'Maison. Chez soi. Là où l\'on se sent accueilli, protégé, entouré. En darija marocain, chaque événement commence par une porte qui s\'ouvre.<br><span class="lexique__example">"Mrhba bik f\'dar, Bienvenue chez nous."</span>', en: 'Home. Where you feel welcomed, protected, surrounded. In Moroccan Darija, every event starts with an open door.<br><span class="lexique__example">"Mrhba bik f\'dar, Welcome home."</span>' },
+  "lexique.conclusion":    { fr: "Three languages. One name. A house that dares, dare-dare.", en: "Three languages. One name. A house that dares, dare-dare." },
 
   /* ===== FAQ ===== */
   "faq.title":             { fr: "FAQ", en: "FAQ" },
 
   /* ===== CONTACT ===== */
   "contact.title":         { fr: "Let's Talk",  en: "Let's Talk" },
-  "contact.subtitle":      { fr: "Configurez votre événement en 4 étapes — on s'occupe du reste.", en: "Configure your event in 4 steps — we take care of the rest." },
+  "contact.subtitle":      { fr: "Configurez votre événement en 4 étapes. On s'occupe du reste.", en: "Configure your event in 4 steps. We take care of the rest." },
   "contact.step1.label":   { fr: "Votre événement",  en: "Your event" },
   "contact.step2.label":   { fr: "Vos envies",       en: "Your wishes" },
   "contact.step3.label":   { fr: "Budget & timing",   en: "Budget & timing" },
@@ -109,7 +109,7 @@ const translations = {
 
   /* Step 2 */
   "contact.step2.question":  { fr: "On construit votre univers.", en: "Let's build your universe." },
-  "contact.step2.hint":      { fr: "Cochez tout ce qui vous parle — le reste, on l'invente ensemble.", en: "Check everything that speaks to you — the rest, we'll invent together." },
+  "contact.step2.hint":      { fr: "Cochez tout ce qui vous parle. Le reste, on l'invente ensemble.", en: "Check everything that speaks to you. The rest, we'll invent together." },
   "contact.tag.lieu":        { fr: "Un lieu qui raconte une histoire", en: "A venue that tells a story" },
   "contact.tag.sceno":       { fr: "Une scénographie qu'on n'oublie pas", en: "Set design you won't forget" },
   "contact.tag.food":        { fr: "Une expérience culinaire signature", en: "A signature culinary experience" },
@@ -122,7 +122,7 @@ const translations = {
 
   /* Step 3 */
   "contact.step3.question":  { fr: "Donnez-nous les clés.", en: "Give us the keys." },
-  "contact.step3.hint":      { fr: "Pas de mauvaise réponse — juste des envies à transformer en réalité.", en: "No wrong answer — just ideas to turn into reality." },
+  "contact.step3.hint":      { fr: "Pas de mauvaise réponse, juste des envies à transformer en réalité.", en: "No wrong answer, just ideas to turn into reality." },
   "contact.guests.label":    { fr: "Combien de regards dans la salle ?", en: "How many eyes in the room?" },
   "contact.budget.label":    { fr: "L'ambition, en un mot", en: "Your ambition, in a word" },
   "contact.budget.1":        { fr: "L'essentiel, bien fait", en: "The essentials, done right" },
@@ -135,7 +135,7 @@ const translations = {
   "contact.city.placeholder":{ fr: "Paris, Cannes, Marrakech, le monde...", en: "Paris, Cannes, Marrakech, the world..." },
 
   /* Step 4 */
-  "contact.step4.question":  { fr: "Dernière étape — on vous recontacte dare-dare.", en: "Last step — we'll get back to you in no time." },
+  "contact.step4.question":  { fr: "Dernière étape. On vous recontacte dare-dare.", en: "Last step. We'll get back to you in no time." },
   "contact.name.label":      { fr: "Nom complet", en: "Full name" },
   "contact.name.ph":         { fr: "Marie Dupont", en: "Jane Smith" },
   "contact.company.label":   { fr: "Entreprise", en: "Company" },
@@ -152,16 +152,16 @@ const translations = {
   /* Navigation buttons */
   "contact.prev":            { fr: "Retour", en: "Back" },
   "contact.next":            { fr: "Continuer", en: "Continue" },
-  "contact.submit":          { fr: "Envoyer dare-dare", en: "Send it — dare-dare" },
+  "contact.submit":          { fr: "Envoyer dare-dare", en: "Send it, dare-dare" },
 
   /* Success */
   "contact.success.title":   { fr: "You dared us.", en: "You dared us." },
-  "contact.success.text":    { fr: "On revient vers vous dans les 24h — promis, dare-dare.", en: "We'll get back to you within 24h — promised, dare-dare." },
+  "contact.success.text":    { fr: "On revient vers vous dans les 24h. Promis, dare-dare.", en: "We'll get back to you within 24h. Promised, dare-dare." },
 
   /* ===== FOOTER ===== */
   "footer.tagline":     { fr: "You dare us, we did it.", en: "You dare us, we did it." },
   "footer.events":      { fr: "Événements", en: "Events" },
-  "footer.copyright":   { fr: "© 2024-2026 Agence Dare-Dare — Tous droits réservés", en: "© 2024-2026 Agence Dare-Dare — All rights reserved" },
+  "footer.copyright":   { fr: "© 2024-2026 Agence Dare-Dare · Tous droits réservés", en: "© 2024-2026 Agence Dare-Dare · All rights reserved" },
   "footer.legal":       { fr: "Mentions légales", en: "Legal notice" },
   "footer.privacy":     { fr: "Politique de confidentialité", en: "Privacy policy" },
 
@@ -180,42 +180,42 @@ const translations = {
 const eventDataI18n = {
   soiree: {
     heroTitle:    { fr: "On ne fait pas des soirées. On crée des souvenirs.", en: "We don't throw parties. We create memories." },
-    heroSubtitle: { fr: "Du brief au dernier verre — on orchestre chaque détail pour que vous n'ayez qu'à profiter.", en: "From brief to last call — we orchestrate every detail so you can simply enjoy." },
+    heroSubtitle: { fr: "Du brief au dernier verre. On orchestre chaque détail pour que vous n'ayez qu'à profiter.", en: "From brief to last call. We orchestrate every detail so you can simply enjoy." },
     services: [
       {
         title:    { fr: "Pilotage & coordination", en: "Management & coordination" },
-        desc:     { fr: "Un seul chef de projet, un seul interlocuteur — de la première idée au dernier applaudissement.", en: "One project manager, one point of contact — from the first idea to the final applause." },
+        desc:     { fr: "Un seul chef de projet, un seul interlocuteur, de la première idée au dernier applaudissement.", en: "One project manager, one point of contact, from the first idea to the final applause." },
         features: {
-          fr: ["Brief, cadrage, budget — tout est posé dès le départ", "Rétro-planning serré, suivi sans relâche", "Coordination de chaque prestataire", "Pilotage du jour J, minute par minute", "Débriefing & recommandations post-event"],
-          en: ["Brief, scope, budget — everything set from day one", "Tight timeline, relentless follow-up", "Coordination of every vendor", "D-day management, minute by minute", "Debrief & post-event recommendations"]
+          fr: ["Brief, cadrage, budget : tout est posé dès le départ", "Rétro-planning serré, suivi sans relâche", "Coordination de chaque prestataire", "Pilotage du jour J, minute par minute", "Débriefing & recommandations post-event"],
+          en: ["Brief, scope, budget: everything set from day one", "Tight timeline, relentless follow-up", "Coordination of every vendor", "D-day management, minute by minute", "Debrief & post-event recommendations"]
         }
       },
       {
         title:    { fr: "Production & logistique", en: "Production & logistics" },
-        desc:     { fr: "Lieu, traiteur, technique, mobilier — on verrouille chaque maillon pour que rien ne bouge.", en: "Venue, catering, tech, furniture — we lock down every link so nothing moves." },
+        desc:     { fr: "Lieu, traiteur, technique, mobilier : on verrouille chaque maillon pour que rien ne bouge.", en: "Venue, catering, tech, furniture: we lock down every link so nothing moves." },
         features: {
           fr: ["Sourcing & négociation des lieux", "Régie son, lumière & vidéo", "Traiteur, bar & expérience F&B", "Mobilier, habillage & signalétique", "Sécurité, assurances & conformité"],
           en: ["Venue sourcing & negotiation", "Sound, lighting & video management", "Catering, bar & F&B experience", "Furniture, branding & signage", "Security, insurance & compliance"]
         }
       },
       {
-        title:    { fr: "Mise en scène & moments forts", en: "Staging & highlights" },
-        desc:     { fr: "DJ, artistes, scénographie — on crée les instants dont vos invités parleront encore dans six mois.", en: "DJs, artists, set design — we create the moments your guests will talk about for months." },
+        title:    { fr: "Scénographie & temps forts", en: "Set design & highlights" },
+        desc:     { fr: "DJ, artistes, scénographie : on crée les instants dont vos invités parleront encore dans six mois.", en: "DJs, artists, set design: we create the moments your guests will talk about for months." },
         features: {
           fr: ["Booking artistes, DJ & performers", "Scénarisation des temps forts", "Photobooth & dispositif contenu", "Accueil VIP & gestion des flux", "Maître de cérémonie & ambiance sur-mesure"],
           en: ["Artist, DJ & performer booking", "Highlight scripting", "Photobooth & content setup", "VIP welcome & flow management", "MC & bespoke ambiance"]
         }
       }
     ],
-    bio: { fr: "Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge — Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé.", en: "From Fnac Live to private Longchamp events, through the Moulin Rouge — Dare-Dare orchestrates parties where standards fade behind the experience. Public or ultra-VIP, every format is mastered." }
+    bio: { fr: "Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge, Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé.", en: "From Fnac Live to private Longchamp events, through the Moulin Rouge, Dare-Dare orchestrates parties where standards fade behind the experience. Public or ultra-VIP, every format is mastered." }
   },
   seminaire: {
     heroTitle:    { fr: "Vos équipes méritent mieux qu'une salle de réunion.", en: "Your teams deserve more than a meeting room." },
-    heroSubtitle: { fr: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits — dare-dare.", en: "We design seminars that unite, transform and leave a lasting mark — dare-dare." },
+    heroSubtitle: { fr: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits, dare-dare.", en: "We design seminars that unite, transform and leave a lasting mark, dare-dare." },
     services: [
       {
         title:    { fr: "Conception & programme", en: "Design & program" },
-        desc:     { fr: "On ne remplit pas un agenda — on construit une expérience collective qui a du sens.", en: "We don't fill an agenda — we build a meaningful collective experience." },
+        desc:     { fr: "On ne remplit pas un agenda : on construit une expérience collective qui a du sens.", en: "We don't fill an agenda: we build a meaningful collective experience." },
         features: {
           fr: ["Cadrage des objectifs & brief stratégique", "Programme sur-mesure : plénières, ateliers, off", "Sélection de speakers & intervenants", "Scénarisation des temps forts", "Équilibre entre contenu et convivialité"],
           en: ["Objective framing & strategic brief", "Bespoke program: plenaries, workshops, off-sites", "Speaker & panelist selection", "Highlight scripting", "Balance between content and conviviality"]
@@ -223,7 +223,7 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Logistique & coordination", en: "Logistics & coordination" },
-        desc:     { fr: "Hôtel, transferts, restauration, rooming — on gère tout, vous ne gérez rien.", en: "Hotel, transfers, catering, rooming — we handle everything, you handle nothing." },
+        desc:     { fr: "Hôtel, transferts, restauration, rooming : on gère tout, vous ne gérez rien.", en: "Hotel, transfers, catering, rooming: we handle everything, you handle nothing." },
         features: {
           fr: ["Sourcing hôtels & domaines privatisés", "Transferts groupe & logistique terrain", "Restauration & expériences culinaires", "Rooming list & gestion des chambres", "Coordination multi-sites & multi-jours"],
           en: ["Hotel & private estate sourcing", "Group transfers & field logistics", "Catering & culinary experiences", "Room list & accommodation management", "Multi-site & multi-day coordination"]
@@ -231,14 +231,14 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Team building & incentive", en: "Team building & incentive" },
-        desc:     { fr: "Rallye, ateliers, outdoor — des moments partagés qui marquent plus qu'un PowerPoint.", en: "Rallies, workshops, outdoor — shared moments that resonate more than any PowerPoint." },
+        desc:     { fr: "Rallye, ateliers, outdoor : des moments partagés qui marquent plus qu'un PowerPoint.", en: "Rallies, workshops, outdoor: shared moments that resonate more than any PowerPoint." },
         features: {
           fr: ["Team building sportif & outdoor", "Rallye, défis d'équipe & chasses au trésor", "Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"],
           en: ["Sports & outdoor team building", "Rallies, team challenges & treasure hunts", "Creative & culinary workshops", "Gala dinner & awards ceremony", "Wellness & disconnect experiences"]
         }
       }
     ],
-    bio: { fr: "De 150 à 900 personnes, en France comme au Maroc — Dare-Dare conçoit des séminaires où logistique, programmation et cohésion d'équipe s'articulent sans faille. Chaque brief devient une expérience collective mémorable.", en: "From 150 to 900 people, in France and Morocco — Dare-Dare designs seminars where logistics, programming and team cohesion flow seamlessly. Every brief becomes a memorable collective experience." }
+    bio: { fr: "De 150 à 900 personnes, en France comme au Maroc, Dare-Dare conçoit des séminaires où logistique, programmation et cohésion d'équipe s'articulent sans faille. Chaque brief devient une expérience collective mémorable.", en: "From 150 to 900 people, in France and Morocco, Dare-Dare designs seminars where logistics, programming and team cohesion flow seamlessly. Every brief becomes a memorable collective experience." }
   },
   influence: {
     heroTitle:    { fr: "On crée des moments que vos créateurs voudront poster.", en: "We create moments your creators will want to post." },
@@ -246,7 +246,7 @@ const eventDataI18n = {
     services: [
       {
         title:    { fr: "Concept & set-up", en: "Concept & set-up" },
-        desc:     { fr: "Chaque angle est pensé pour la photo — chaque espace raconte votre marque.", en: "Every angle is designed for the shot — every space tells your brand's story." },
+        desc:     { fr: "Chaque angle est pensé pour la photo, chaque espace raconte votre marque.", en: "Every angle is designed for the shot, every space tells your brand's story." },
         features: {
           fr: ["Concept créatif & direction visuelle", "Photocalls & corners instagrammables", "Éclairage pensé pour le contenu", "Parcours invité scénographié", "Brand experience & storytelling spatial"],
           en: ["Creative concept & visual direction", "Photocalls & Instagram-worthy corners", "Lighting designed for content", "Curated guest journey", "Brand experience & spatial storytelling"]
@@ -254,7 +254,7 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Gestion de projet & guests", en: "Project & guest management" },
-        desc:     { fr: "Guest list, accueil, gifting, flux — chaque créateur est un VIP, pas un numéro.", en: "Guest list, welcome, gifting, flow — every creator is a VIP, not a number." },
+        desc:     { fr: "Guest list, accueil, gifting, flux : chaque créateur est un VIP, pas un numéro.", en: "Guest list, welcome, gifting, flow: every creator is a VIP, not a number." },
         features: {
           fr: ["Stratégie d'invitation & guest list ciblée", "Accueil VIP personnalisé", "Gifting & kits créateurs sur-mesure", "Gestion des flux & espaces privés", "Brief créateurs & guidelines contenu"],
           en: ["Invitation strategy & targeted guest list", "Personalized VIP welcome", "Bespoke gifting & creator kits", "Flow management & private spaces", "Creator brief & content guidelines"]
@@ -262,22 +262,22 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Contenu & retombées", en: "Content & impact" },
-        desc:     { fr: "On crée les conditions pour que le contenu se fasse tout seul — et qu'il performe.", en: "We create the conditions for content to happen organically — and perform." },
+        desc:     { fr: "On crée les conditions pour que le contenu se fasse tout seul, et qu'il performe.", en: "We create the conditions for content to happen organically, and perform." },
         features: {
           fr: ["Activités exclusives & instants partageables", "Masterclass & ateliers de marque", "Expériences sensorielles & immersives", "Live content & stories real-time", "Suivi retombées & reporting social media"],
           en: ["Exclusive activities & shareable moments", "Masterclasses & brand workshops", "Sensory & immersive experiences", "Live content & real-time stories", "Impact tracking & social media reporting"]
         }
       }
     ],
-    bio: { fr: "Chanel, Dior, Mugler, Longchamp — Dare-Dare évolue dans l'univers des marques qui font rêver les créateurs de contenu. Chaque angle est pensé, chaque moment est partageable, avec une exécution irréprochable en coulisses.", en: "Chanel, Dior, Mugler, Longchamp — Dare-Dare moves in the world of brands that inspire content creators. Every angle is considered, every moment is shareable, with flawless execution behind the scenes." }
+    bio: { fr: "Chanel, Dior, Mugler, Longchamp : Dare-Dare évolue dans l'univers des marques qui font rêver les créateurs de contenu. Chaque angle est pensé, chaque moment est partageable, avec une exécution irréprochable en coulisses.", en: "Chanel, Dior, Mugler, Longchamp: Dare-Dare moves in the world of brands that inspire content creators. Every angle is considered, every moment is shareable, with flawless execution behind the scenes." }
   },
   presse: {
     heroTitle:    { fr: "Un voyage presse, c'est une histoire qu'on écrit ensemble.", en: "A press trip is a story we write together." },
-    heroSubtitle: { fr: "On orchestre des expériences éditoriales où votre marque prend vie — jour après jour.", en: "We orchestrate editorial experiences where your brand comes alive — day after day." },
+    heroSubtitle: { fr: "On orchestre des expériences éditoriales où votre marque prend vie, jour après jour.", en: "We orchestrate editorial experiences where your brand comes alive, day after day." },
     services: [
       {
         title:    { fr: "Itinéraire & storytelling", en: "Itinerary & storytelling" },
-        desc:     { fr: "On ne planifie pas un voyage — on écrit un scénario éditorial jour par jour.", en: "We don't plan a trip — we write a day-by-day editorial script." },
+        desc:     { fr: "On ne planifie pas un voyage : on écrit un scénario éditorial jour par jour.", en: "We don't plan a trip: we write a day-by-day editorial script." },
         features: {
           fr: ["Itinéraire éditorial sur-mesure", "Immersions culturelles & accès exclusifs", "Temps forts calibrés pour les retombées", "Storytelling de marque intégré au parcours", "Programmation multi-jours cohérente"],
           en: ["Bespoke editorial itinerary", "Cultural immersions & exclusive access", "Highlights calibrated for coverage", "Brand storytelling woven into the journey", "Consistent multi-day programming"]
@@ -285,7 +285,7 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Logistique multi-destinations", en: "Multi-destination logistics" },
-        desc:     { fr: "Vols, transferts, hôtels, restaurants — on gère la logistique pour que vos invités ne pensent qu'à écrire.", en: "Flights, transfers, hotels, restaurants — we handle logistics so your guests can focus on writing." },
+        desc:     { fr: "Vols, transferts, hôtels, restaurants : on gère la logistique pour que vos invités ne pensent qu'à écrire.", en: "Flights, transfers, hotels, restaurants: we handle logistics so your guests can focus on writing." },
         features: {
           fr: ["Réservation vols & billets", "Transferts privés & logistique terrain", "Hébergement premium & rooming", "Restauration & expériences culinaires", "Coordination inter-destinations fluide"],
           en: ["Flight & ticket booking", "Private transfers & field logistics", "Premium accommodation & rooming", "Catering & culinary experiences", "Seamless inter-destination coordination"]
@@ -293,22 +293,22 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Suivi médias & retombées", en: "Media follow-up & coverage" },
-        desc:     { fr: "Chaque journaliste est un projet — de l'invitation au follow-up post-trip.", en: "Every journalist is a project — from invitation to post-trip follow-up." },
+        desc:     { fr: "Chaque journaliste est un projet, de l'invitation au follow-up post-trip.", en: "Every journalist is a project, from invitation to post-trip follow-up." },
         features: {
           fr: ["Accueil personnalisé de chaque invité", "Dossiers de presse & kits médias", "Gestion des demandes spéciales", "Relances rédactionnelles ciblées", "Reporting complet des retombées"],
           en: ["Personalized welcome for each guest", "Press kits & media packs", "Special request management", "Targeted editorial follow-ups", "Comprehensive coverage reporting"]
         }
       }
     ],
-    bio: { fr: "De Venise pour Bottega Veneta à des activations multi-sites pour Samsung — Dare-Dare excelle dans la coordination complexe. Multi-jours, multi-lieux : chaque participant vit une expérience éditoriale forte.", en: "From Venice for Bottega Veneta to multi-site activations for Samsung — Dare-Dare excels at complex coordination. Multi-day, multi-venue: every participant lives a powerful editorial experience." }
+    bio: { fr: "De Venise pour Bottega Veneta à des activations multi-sites pour Samsung, Dare-Dare excelle dans la coordination complexe. Multi-jours, multi-lieux : chaque participant vit une expérience éditoriale forte.", en: "From Venice for Bottega Veneta to multi-site activations for Samsung, Dare-Dare excels at complex coordination. Multi-day, multi-venue: every participant lives a powerful editorial experience." }
   },
   lancement: {
     heroTitle:    { fr: "Votre produit mérite mieux qu'un communiqué de presse.", en: "Your product deserves more than a press release." },
-    heroSubtitle: { fr: "On crée l'événement qui fera parler de votre marque — dare-dare.", en: "We create the event that will get your brand noticed — dare-dare." },
+    heroSubtitle: { fr: "On crée l'événement qui fera parler de votre marque, dare-dare.", en: "We create the event that will get your brand noticed, dare-dare." },
     services: [
       {
         title:    { fr: "Concept & mise en scène", en: "Concept & staging" },
-        desc:     { fr: "Votre produit mérite un moment — on crée le décor, le parcours et le reveal qui vont avec.", en: "Your product deserves a moment — we create the setting, the journey and the reveal to match." },
+        desc:     { fr: "Votre produit mérite un moment : on crée le décor, le parcours et le reveal qui vont avec.", en: "Your product deserves a moment: we create the setting, the journey and the reveal to match." },
         features: {
           fr: ["Concept créatif & direction de projet", "Parcours scénographique immersif", "Mise en lumière produit & reveal", "Décor sur-mesure & habillage spatial", "Vidéo projection & mapping"],
           en: ["Creative concept & project direction", "Immersive scenic journey", "Product lighting & reveal", "Bespoke decor & spatial design", "Video projection & mapping"]
@@ -316,7 +316,7 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Production & régie technique", en: "Production & technical management" },
-        desc:     { fr: "Son, lumière, vidéo — une machine de guerre technique invisible, au service de l'émotion.", en: "Sound, light, video — an invisible technical powerhouse, in service of emotion." },
+        desc:     { fr: "Son, lumière, vidéo : une machine de guerre technique invisible, au service de l'émotion.", en: "Sound, light, video: an invisible technical powerhouse, in service of emotion." },
         features: {
           fr: ["Régie son & lumière professionnelle", "Captation vidéo multi-caméras", "Effets spéciaux & pyrotechnie", "Streaming & diffusion en direct", "Coordination technique minute par minute"],
           en: ["Professional sound & lighting", "Multi-camera video capture", "Special effects & pyrotechnics", "Streaming & live broadcast", "Minute-by-minute technical coordination"]
@@ -324,14 +324,14 @@ const eventDataI18n = {
       },
       {
         title:    { fr: "Accueil & guest management", en: "Welcome & guest management" },
-        desc:     { fr: "Guest list, accueil VIP, parcours invité — chaque personne qui entre doit sentir qu'on l'attendait.", en: "Guest list, VIP welcome, guest journey — everyone who walks in should feel they were expected." },
+        desc:     { fr: "Guest list, accueil VIP, parcours invité : chaque personne qui entre doit sentir qu'on l'attendait.", en: "Guest list, VIP welcome, guest journey: everyone who walks in should feel they were expected." },
         features: {
           fr: ["Guest list & stratégie d'invitation", "Accueil premium & parcours VIP", "Signalétique & branding sur site", "Vestiaire, badges & accréditations", "Conciergerie événementielle sur-mesure"],
           en: ["Guest list & invitation strategy", "Premium welcome & VIP journey", "On-site signage & branding", "Cloakroom, badges & accreditations", "Bespoke event concierge"]
         }
       }
     ],
-    bio: { fr: "Samsung aux Forum des Halles devant 1 500 personnes, deux activations aux 20 km de Paris, Paris Blockchain Week au Carrousel du Louvre — Dare-Dare crée des lancements spectaculaires dans des lieux emblématiques.", en: "Samsung at Forum des Halles with 1,500 guests, dual activations at the 20km de Paris, Paris Blockchain Week at Carrousel du Louvre — Dare-Dare creates spectacular launches in iconic venues." }
+    bio: { fr: "Samsung aux Forum des Halles devant 1 500 personnes, deux activations aux 20 km de Paris, Paris Blockchain Week au Carrousel du Louvre : Dare-Dare crée des lancements spectaculaires dans des lieux emblématiques.", en: "Samsung at Forum des Halles with 1,500 guests, dual activations at the 20km de Paris, Paris Blockchain Week at Carrousel du Louvre: Dare-Dare creates spectacular launches in iconic venues." }
   }
 };
 
@@ -342,20 +342,20 @@ const testimonialsI18n = [
     author: { fr: "Luminart", en: "Luminart" }
   },
   {
-    text: { fr: "Depuis plus d'un an, Dare-Dare gère l'intégralité de notre logistique événementielle. Réactivité, professionnalisme, fiabilité — un partenaire sur lequel on peut compter les yeux fermés.", en: "For over a year, Dare-Dare has managed all of our event logistics. Responsiveness, professionalism, reliability — a partner you can count on blindly." },
+    text: { fr: "Depuis plus d'un an, Dare-Dare gère l'intégralité de notre logistique événementielle. Réactivité, professionnalisme, fiabilité : un partenaire sur lequel on peut compter les yeux fermés.", en: "For over a year, Dare-Dare has managed all of our event logistics. Responsiveness, professionalism, reliability: a partner you can count on blindly." },
     author: { fr: "Tgod Events", en: "Tgod Events" }
   },
   {
-    text: { fr: "On leur a confié un événement à Marrakech avec 3 semaines de délai. Tout était parfait — du transfert aéroport au dîner sous les étoiles. L'agilité de cette équipe est impressionnante.", en: "We entrusted them with an event in Marrakech on 3 weeks' notice. Everything was perfect — from airport transfer to dinner under the stars. This team's agility is impressive." },
-    author: { fr: "Directrice communication — Secteur luxe", en: "Communications Director — Luxury sector" }
+    text: { fr: "On leur a confié un événement à Marrakech avec 3 semaines de délai. Tout était parfait, du transfert aéroport au dîner sous les étoiles. L'agilité de cette équipe est impressionnante.", en: "We entrusted them with an event in Marrakech on 3 weeks' notice. Everything was perfect, from airport transfer to dinner under the stars. This team's agility is impressive." },
+    author: { fr: "Directrice communication · Secteur luxe", en: "Communications Director · Luxury sector" }
   },
   {
     text: { fr: "Dare-Dare a produit notre activation en marge des 20 km de Paris : deux sites en simultané, coordination sans faille, espace VIP impeccable. On repart avec eux l'année prochaine.", en: "Dare-Dare produced our activation alongside the 20km de Paris: two simultaneous sites, flawless coordination, impeccable VIP area. We're going with them again next year." },
-    author: { fr: "Chef de projet — Secteur tech", en: "Project Manager — Tech sector" }
+    author: { fr: "Chef de projet · Secteur tech", en: "Project Manager · Tech sector" }
   },
   {
-    text: { fr: "Ce qui les distingue, c'est leur capacité à comprendre l'ADN d'une marque et à le traduire dans chaque détail de l'événement. Pas un prestataire — un vrai partenaire créatif.", en: "What sets them apart is their ability to understand a brand's DNA and translate it into every detail of the event. Not a vendor — a true creative partner." },
-    author: { fr: "Responsable événementiel — Maison de mode", en: "Event Manager — Fashion house" }
+    text: { fr: "Ce qui les distingue, c'est leur capacité à comprendre l'ADN d'une marque et à le traduire dans chaque détail de l'événement. Pas un prestataire : un vrai partenaire créatif.", en: "What sets them apart is their ability to understand a brand's DNA and translate it into every detail of the event. Not a vendor: a true creative partner." },
+    author: { fr: "Responsable événementiel · Maison de mode", en: "Event Manager · Fashion house" }
   }
 ];
 
@@ -375,7 +375,7 @@ const faqI18n = [
   },
   {
     q: { fr: "Quel est votre délai minimum pour organiser un événement ?", en: "What is your minimum lead time for an event?" },
-    a: { fr: "Idéalement, nous recommandons un délai de 2 à 3 mois pour un événement standard, et 4 à 6 mois pour un séminaire à l'étranger ou un événement complexe. Cependant, notre agilité nous permet de répondre à des demandes en 3 à 4 semaines lorsque c'est nécessaire — \"dare-dare\", c'est aussi ça.", en: "Ideally, we recommend 2 to 3 months for a standard event, and 4 to 6 months for an international seminar or complex event. However, our agility allows us to respond to requests in 3 to 4 weeks when needed — that's also what \"dare-dare\" means." }
+    a: { fr: "Idéalement, nous recommandons un délai de 2 à 3 mois pour un événement standard, et 4 à 6 mois pour un séminaire à l'étranger ou un événement complexe. Cependant, notre agilité nous permet de répondre à des demandes en 3 à 4 semaines lorsque c'est nécessaire. \"Dare-dare\", c'est aussi ça.", en: "Ideally, we recommend 2 to 3 months for a standard event, and 4 to 6 months for an international seminar or complex event. However, our agility allows us to respond to requests in 3 to 4 weeks when needed. That's also what \"dare-dare\" means." }
   },
   {
     q: { fr: "Comment fonctionne votre tarification ?", en: "How does your pricing work?" },
@@ -391,16 +391,16 @@ const faqI18n = [
   },
   {
     q: { fr: "Comment se déroule une première prise de contact ?", en: "How does the first contact work?" },
-    a: { fr: "Tout commence par un échange — par téléphone, visio ou en personne — pour comprendre votre projet, vos attentes et vos contraintes. Nous vous envoyons ensuite une proposition détaillée avec recommandations de lieux, concept et budget estimatif. Aucun engagement à ce stade.", en: "It all starts with a conversation — by phone, video or in person — to understand your project, expectations and constraints. We then send you a detailed proposal with venue recommendations, concept and estimated budget. No commitment at this stage." }
+    a: { fr: "Tout commence par un échange, par téléphone, visio ou en personne, pour comprendre votre projet, vos attentes et vos contraintes. Nous vous envoyons ensuite une proposition détaillée avec recommandations de lieux, concept et budget estimatif. Aucun engagement à ce stade.", en: "It all starts with a conversation, by phone, video or in person, to understand your project, expectations and constraints. We then send you a detailed proposal with venue recommendations, concept and estimated budget. No commitment at this stage." }
   }
 ];
 
 /* ===== GUEST MOOD i18n ===== */
 const guestMoodI18n = [
-  { max: 30,   fr: "Un écrin intime — chaque détail compte.", en: "An intimate setting — every detail matters." },
+  { max: 30,   fr: "Un écrin intime : chaque détail compte.", en: "An intimate setting: every detail matters." },
   { max: 80,   fr: "L'élégance d'un événement à taille humaine.", en: "The elegance of a human-scale event." },
   { max: 150,  fr: "Assez pour impressionner, assez pour se souvenir de chacun.", en: "Enough to impress, enough to remember everyone." },
-  { max: 300,  fr: "On passe en mode production — et on adore ça.", en: "We're going into production mode — and we love it." },
+  { max: 300,  fr: "On passe en mode production, et on adore ça.", en: "We're going into production mode, and we love it." },
   { max: 500,  fr: "Du grand spectacle. On sort l'artillerie.", en: "The big show. We're bringing out the heavy artillery." },
   { max: 800,  fr: "Un festival à votre nom. On gère.", en: "A festival in your name. We've got it." },
   { max: Infinity, fr: "Vous voyez en grand ? Nous aussi. Dare-dare.", en: "Thinking big? So are we. Dare-dare." }
