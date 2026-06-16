@@ -350,7 +350,7 @@ ul, ol { list-style: none; }
 /* Hamburger */
 .nav__hamburger {
   display: none; flex-direction: column; justify-content: center;
-  align-items: center; width: 32px; height: 32px; cursor: pointer; z-index: 1002;
+  align-items: center; width: 44px; height: 44px; cursor: pointer; z-index: 1002;
 }
 .nav__hamburger span {
   display: block; width: 24px; height: 1.5px; margin: 3px 0;
@@ -1057,9 +1057,14 @@ ul, ol { list-style: none; }
 .temoignages__nav-btn:hover { border-color: #0A0A0A; background: #F5F5F5; }
 .temoignages__dots { display: flex; gap: 8px; }
 .temoignages__dot {
+  position: relative;
   width: 8px; height: 8px; border-radius: 50%;
   background: #D0D0D0; cursor: pointer;
   transition: background var(--transition-fast);
+}
+/* Zone tactile élargie (44px) sans modifier l'apparence du point */
+.temoignages__dot::before {
+  content: ''; position: absolute; inset: -18px;
 }
 .temoignages__dot.active { background: #0A0A0A; }
 
