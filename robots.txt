@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /generate-og.html
 
-Sitemap: https://agencedaredare.com/sitemap.xml
+Sitemap: https://agence-dare-dare.fr/sitemap.xml
