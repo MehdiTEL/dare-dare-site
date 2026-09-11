@@ -518,6 +518,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentStep = 1;
   const totalSteps = 4;
 
+  if (formEl) {  // Formulaire remplacé par des liens directs (WhatsApp/Email) : logique active uniquement s'il est présent.
+
   function goToStep(step) {
     if (step < 1 || step > totalSteps) return;
     currentStep = step;
@@ -666,6 +668,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  } // fin du bloc formulaire de contact (if formEl)
 
   // ---------- PORTFOLIO · Filters, Show More, Mobile Tap ----------
   const portfolioCards = document.querySelectorAll('.portfolio__card');

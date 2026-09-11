@@ -2212,3 +2212,18 @@ ul, ol { list-style: none; }
 /* WhatsApp float */
 .mode-prive .whatsapp-float { background: var(--ink); }
 .mode-prive #backToTop { background: var(--ink); color: #fff; }
+
+
+/* ---------- Contact direct : boutons WhatsApp / Email ---------- */
+.contact__direct{
+  display:flex; gap:16px; justify-content:center; flex-wrap:wrap;
+  margin:8px auto 0; max-width:640px;
+}
+.contact__direct-btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+}
+.contact__direct-btn svg{flex:none}
+@media (max-width:560px){
+  .contact__direct{flex-direction:column; align-items:center}
+  .contact__direct-btn{width:100%; max-width:320px}
+}

@@ -86,7 +86,9 @@ const translations = {
 
   /* ===== CONTACT ===== */
   "contact.title":         { fr: "Parlons-en",  en: "Let's Talk" },
-  "contact.subtitle":      { fr: "Configurez votre événement en 4 étapes. On s'occupe du reste.", en: "Configure your event in 4 steps. We take care of the rest." },
+  "contact.subtitle":      { fr: "Un projet en tête ? Écrivez-nous, on vous répond vite. Dare-dare.", en: "A project in mind? Drop us a line — we reply fast. Dare-dare." },
+  "contact.whatsapp":      { fr: "Discuter sur WhatsApp", en: "Chat on WhatsApp" },
+  "contact.email":         { fr: "Nous écrire par mail", en: "Email us" },
   "contact.step1.label":   { fr: "Votre événement",  en: "Your event" },
   "contact.step2.label":   { fr: "Vos envies",       en: "Your wishes" },
   "contact.step3.label":   { fr: "Budget & timing",   en: "Budget & timing" },

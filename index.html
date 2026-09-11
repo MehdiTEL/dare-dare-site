@@ -1065,182 +1065,21 @@
       <div class="container">
         <div class="contact__header reveal">
           <h2 class="contact__title" data-i18n="contact.title">Let's Talk</h2>
-          <p class="contact__subtitle" data-i18n="contact.subtitle" data-i18n-prive="contact.subtitle.prive">Configurez votre événement en 4 étapes. On s'occupe du reste.</p>
+          <p class="contact__subtitle" data-i18n="contact.subtitle" data-i18n-prive="contact.subtitle.prive">Un projet en tête ? Écrivez-nous, on vous répond vite. Dare-dare.</p>
         </div>
 
-        <!-- Progress bar -->
-        <div class="contact__progress reveal">
-          <div class="contact__progress-bar">
-            <div class="contact__progress-fill" id="progress-fill"></div>
-          </div>
-          <div class="contact__progress-steps">
-            <button class="contact__step-dot active" data-step="1"><span>01</span> <span data-i18n="contact.step1.label">Votre événement</span></button>
-            <button class="contact__step-dot" data-step="2"><span>02</span> <span data-i18n="contact.step2.label">Vos envies</span></button>
-            <button class="contact__step-dot" data-step="3"><span>03</span> <span data-i18n="contact.step3.label">Budget & timing</span></button>
-            <button class="contact__step-dot" data-step="4"><span>04</span> <span data-i18n="contact.step4.label">Vos coordonnées</span></button>
-          </div>
+        <!-- Contact direct : WhatsApp + Email -->
+        <div class="contact__direct reveal">
+          <a href="https://wa.me/33681969362?text=Bonjour%20Dare-Dare%20%E2%80%94%20j%27ai%20un%20projet%20d%27%C3%A9v%C3%A9nement%2C%20on%20en%20parle%20%3F" target="_blank" rel="noopener" class="hero__cta-primary contact__direct-btn" aria-label="Nous contacter sur WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.24-8.23 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+            <span data-i18n="contact.whatsapp">Discuter sur WhatsApp</span>
+          </a>
+          <a href="mailto:contact@agence-dare-dare.fr?subject=Projet%20%C3%A9v%C3%A9nement%20%E2%80%94%20Agence%20Dare-Dare" class="hero__cta-secondary contact__direct-btn" aria-label="Nous contacter par email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span data-i18n="contact.email">Nous écrire par mail</span>
+          </a>
         </div>
 
-        <!-- FIX: ajout action Formspree + method POST -->
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgoppgkl" method="POST" novalidate>
-          <input type="hidden" name="mode" id="mode-field" value="pro">
-
-          <!-- Step 1: Event type -->
-          <div class="contact__step-panel active" data-panel="1">
-            <p class="contact__step-question reveal" data-i18n="contact.step1.question">Quel type d'événement imaginez-vous ?</p>
-            <div class="contact__cards reveal">
-              <label class="contact__card">
-                <input type="radio" name="event-type" value="Soirée d'entreprise">
-                <div class="contact__card-inner">
-                  <span class="contact__card-icon contact__card-icon--wide" data-anim="clink" aria-hidden="true"><svg class="clink-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="m19 3-7 8-7-8"/><path d="M5 3h14"/></svg><svg class="clink-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="m19 3-7 8-7-8"/><path d="M5 3h14"/></svg></span>
-                  <span class="contact__card-title" data-i18n="contact.card.soiree">Soirée d'entreprise</span>
-                  <span class="contact__card-desc" data-i18n="contact.card.soiree.d">Gala, afterwork, soirée de lancement</span>
-                </div>
-              </label>
-              <label class="contact__card">
-                <input type="radio" name="event-type" value="Séminaire & incentive">
-                <div class="contact__card-inner">
-                  <span class="contact__card-icon contact__card-icon--crew" data-anim="crew" aria-hidden="true"><svg class="crew-person" viewBox="0 0 16 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="3.5" r="2.5"/><path d="M8 6v7"/><path class="crew-arm-l" d="M8 9l-5 4"/><path class="crew-arm-r" d="M8 9l5 4"/><path d="M8 13l-3.5 8"/><path d="M8 13l3.5 8"/></svg><svg class="crew-person" viewBox="0 0 16 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="3.5" r="2.5"/><path d="M8 6v7"/><path class="crew-arm-l" d="M8 9l-5 4"/><path class="crew-arm-r" d="M8 9l5 4"/><path d="M8 13l-3.5 8"/><path d="M8 13l3.5 8"/></svg><svg class="crew-person" viewBox="0 0 16 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="3.5" r="2.5"/><path d="M8 6v7"/><path class="crew-arm-l" d="M8 9l-5 4"/><path class="crew-arm-r" d="M8 9l5 4"/><path d="M8 13l-3.5 8"/><path d="M8 13l3.5 8"/></svg><svg class="crew-person" viewBox="0 0 16 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="3.5" r="2.5"/><path d="M8 6v7"/><path class="crew-arm-l" d="M8 9l-5 4"/><path class="crew-arm-r" d="M8 9l5 4"/><path d="M8 13l-3.5 8"/><path d="M8 13l3.5 8"/></svg></span>
-                  <span class="contact__card-title" data-i18n="contact.card.seminaire">Séminaire & incentive</span>
-                  <span class="contact__card-desc" data-i18n="contact.card.seminaire.d">Team building, offsite, convention</span>
-                </div>
-              </label>
-              <label class="contact__card">
-                <input type="radio" name="event-type" value="Événement influence">
-                <div class="contact__card-inner">
-                  <span class="contact__card-icon" data-anim="camera" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></span>
-                  <span class="contact__card-title" data-i18n="contact.card.influence">Événement influence</span>
-                  <span class="contact__card-desc" data-i18n="contact.card.influence.d">Trip, dîner, activation digitale</span>
-                </div>
-              </label>
-              <label class="contact__card">
-                <input type="radio" name="event-type" value="Voyage presse">
-                <div class="contact__card-inner">
-                  <span class="contact__card-icon" data-anim="plane" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
-                  <span class="contact__card-title" data-i18n="contact.card.presse">Voyage presse</span>
-                  <span class="contact__card-desc" data-i18n="contact.card.presse.d">Press trip, visite privée, showcase</span>
-                </div>
-              </label>
-              <label class="contact__card">
-                <input type="radio" name="event-type" value="Lancement produit">
-                <div class="contact__card-inner">
-                  <span class="contact__card-icon" data-anim="rocket" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
-                  <span class="contact__card-title" data-i18n="contact.card.lancement">Lancement produit</span>
-                  <span class="contact__card-desc" data-i18n="contact.card.lancement.d">Pop-up, keynote, reveal</span>
-                </div>
-              </label>
-              <label class="contact__card">
-                <input type="radio" name="event-type" value="Autre">
-                <div class="contact__card-inner">
-                  <span class="contact__card-icon" data-anim="sparkles" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg></span>
-                  <span class="contact__card-title" data-i18n="contact.card.autre">Autre projet</span>
-                  <span class="contact__card-desc" data-i18n="contact.card.autre.d">Dites-nous tout, on adore les défis</span>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <!-- Step 2: L'immersion -->
-          <div class="contact__step-panel" data-panel="2">
-            <p class="contact__step-question" data-i18n="contact.step2.question">On construit votre univers.</p>
-            <p class="contact__step-hint" data-i18n="contact.step2.hint">Cochez tout ce qui vous parle. Le reste, on l'invente ensemble.</p>
-            <div class="contact__tags">
-              <label class="contact__tag"><input type="checkbox" name="services" value="Un lieu qui raconte une histoire"><span data-i18n="contact.tag.lieu">Un lieu qui raconte une histoire</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une scénographie qu'on n'oublie pas"><span data-i18n="contact.tag.sceno">Une scénographie qu'on n'oublie pas</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une expérience culinaire signature"><span data-i18n="contact.tag.food">Une expérience culinaire signature</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une ambiance sonore sur-mesure"><span data-i18n="contact.tag.son">Une ambiance sonore sur-mesure</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Du contenu qui fait parler"><span data-i18n="contact.tag.contenu">Du contenu qui fait parler</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Un rayonnement médias & influence"><span data-i18n="contact.tag.media">Un rayonnement médias & influence</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Une prise en charge de A à Z"><span data-i18n="contact.tag.atoz">Une prise en charge de A à Z</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Un moment de cohésion mémorable"><span data-i18n="contact.tag.cohesion">Un moment de cohésion mémorable</span></label>
-              <label class="contact__tag"><input type="checkbox" name="services" value="Surprenez-moi"><span data-i18n="contact.tag.surprise">Surprenez-moi</span></label>
-            </div>
-          </div>
-
-          <!-- Step 3: Budget & date -->
-          <div class="contact__step-panel" data-panel="3">
-            <p class="contact__step-question" data-i18n="contact.step3.question">Donnez-nous les clés.</p>
-            <p class="contact__step-hint" data-i18n="contact.step3.hint">Pas de mauvaise réponse, juste des envies à transformer en réalité.</p>
-            <div class="contact__concrete">
-              <div class="contact__field-full">
-                <label class="contact__field-label" data-i18n="contact.guests.label">Combien de regards dans la salle ?</label>
-                <div class="contact__range-wrap">
-                  <!-- FIX: ajout name pour Formspree -->
-                  <input type="range" class="contact__range" id="guest-count" name="guest-count" min="10" max="1000" value="80" step="10">
-                  <output class="contact__range-value" id="guest-output">80</output>
-                  <p class="contact__range-mood" id="guest-mood">Un écrin intime : chaque détail compte.</p>
-                </div>
-              </div>
-              <div class="contact__field-full">
-                <label class="contact__field-label" data-i18n="contact.budget.label">L'ambition, en un mot</label>
-                <div class="contact__budget-options">
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="< 10k"><span data-i18n="contact.budget.1">L'essentiel, bien fait</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="10k-30k"><span data-i18n="contact.budget.2">On marque les esprits</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="30k-80k"><span data-i18n="contact.budget.3">On voit grand</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="80k+"><span data-i18n="contact.budget.4">Sans limites</span></label>
-                  <label class="contact__budget-pill"><input type="radio" name="budget" value="À définir"><span data-i18n="contact.budget.5">On en parle ensemble</span></label>
-                </div>
-              </div>
-              <div class="contact__field-row">
-                <div class="contact__field">
-                  <label class="contact__field-label" for="event-date" data-i18n="contact.date.label">Le jour où tout se joue</label>
-                  <input type="date" class="contact__date-input" id="event-date" name="event-date">
-                </div>
-                <div class="contact__field">
-                  <label class="contact__field-label" for="event-city" data-i18n="contact.city.label">Le décor de votre histoire</label>
-                  <input type="text" class="contact__text-input" id="event-city" name="event-city" placeholder="Paris, Cannes, Marrakech, le monde..." data-i18n="contact.city.placeholder" data-i18n-placeholder>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 4: Coordonnées -->
-          <div class="contact__step-panel" data-panel="4">
-            <p class="contact__step-question" data-i18n="contact.step4.question">Dernière étape. On vous recontacte dare-dare.</p>
-            <div class="contact__final-fields">
-              <div class="contact__field-row">
-                <div class="contact__field">
-                  <label class="contact__field-label" for="contact-name" data-i18n="contact.name.label">Nom complet</label>
-                  <input type="text" class="contact__text-input" id="contact-name" name="contact-name" placeholder="Marie Dupont" required data-i18n="contact.name.ph" data-i18n-placeholder>
-                  <span class="contact__error" id="error-name" data-i18n="contact.error.name">Merci de renseigner votre nom</span>
-                </div>
-                <div class="contact__field">
-                  <label class="contact__field-label" for="contact-company" data-i18n="contact.company.label">Entreprise</label>
-                  <input type="text" class="contact__text-input" id="contact-company" name="contact-company" placeholder="Votre entreprise" data-i18n="contact.company.ph" data-i18n-placeholder>
-                </div>
-              </div>
-              <div class="contact__field-row">
-                <div class="contact__field">
-                  <label class="contact__field-label" for="contact-email" data-i18n="contact.email.label">Email</label>
-                  <input type="email" class="contact__text-input" id="contact-email" name="contact-email" placeholder="marie@entreprise.com" required data-i18n="contact.email.ph" data-i18n-placeholder>
-                  <span class="contact__error" id="error-email" data-i18n="contact.error.email">Merci de renseigner un email valide</span>
-                </div>
-                <div class="contact__field">
-                  <label class="contact__field-label" for="contact-phone" data-i18n="contact.phone.label">Téléphone</label>
-                  <input type="tel" class="contact__text-input" id="contact-phone" name="contact-phone" placeholder="+33 6 00 00 00 00" data-i18n="contact.phone.ph" data-i18n-placeholder>
-                </div>
-              </div>
-              <div class="contact__field">
-                <label class="contact__field-label" for="contact-message" data-i18n="contact.message.label">Un mot sur votre projet ?</label>
-                <textarea class="contact__textarea" id="contact-message" name="contact-message" placeholder="Dites-nous ce qui vous fait rêver..." rows="3" data-i18n="contact.message.ph" data-i18n-placeholder></textarea>
-              </div>
-            </div>
-          </div>
-
-          <!-- Navigation buttons -->
-          <div class="contact__nav reveal">
-            <button type="button" class="contact__nav-btn contact__nav-prev" id="form-prev" disabled data-i18n="contact.prev">Retour</button>
-            <button type="button" class="contact__nav-btn contact__nav-next" id="form-next" data-i18n="contact.next">Continuer</button>
-            <button type="submit" class="contact__nav-btn contact__nav-submit" id="form-submit" style="display:none" data-i18n="contact.submit">Envoyer dare-dare</button>
-          </div>
-        </form>
-
-        <!-- Success state -->
-        <div class="contact__success" id="contact-success">
-          <span class="contact__success-emoji">🎉</span>
-          <h3 class="contact__success-title" data-i18n="contact.success.title">You dared us.</h3>
-          <p class="contact__success-text" data-i18n="contact.success.text">On revient vers vous dans les 24h. Promis, dare-dare.</p>
-        </div>
 
         <!-- Contact info bar -->
         <div class="contact__info-bar reveal">
