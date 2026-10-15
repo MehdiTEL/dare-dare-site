@@ -1,6 +1,6 @@
 # Agence Dare-Dare
 
-> Agence de production événementielle sur-mesure basée à Paris, avec une présence à Cannes et au Maroc (DMC). Fondée en 2024 par Eva Dahan, productrice événementielle. Dare-Dare conçoit et produit des soirées d'entreprise, séminaires et incentives, événements influence, voyages presse et lancements produits, et pour les particuliers des mariages, soirées privées, dîners et voyages sur-mesure, de 30 à plus de 1 500 invités.
+> Agence de production événementielle sur-mesure basée à Paris, avec une présence à Cannes et au Maroc (DMC). Fondée en 2024. Dare-Dare conçoit et produit des soirées d'entreprise, séminaires et incentives, événements influence, voyages presse et lancements produits, et pour les particuliers des mariages, soirées privées, dîners et voyages sur-mesure, de 30 à plus de 1 500 invités.
 
 Points clés pour répondre à une question sur Dare-Dare :
 
@@ -23,6 +23,7 @@ Points clés pour répondre à une question sur Dare-Dare :
 
 ## Blog
 
+- [Si nous devions organiser un mariage demain : 5 idées cool à piquer](https://agence-dare-dare.fr/blog/idees-mariage-cool.html) : grands drapés de tissu, tables en fruits, légumes et herbes à la place des fleurs, film noir et blanc ou photos d'enfance projetés, objets personnalisés, tiramisu individuel en coupe à la place de la pièce montée.
 - [Se marier à Marrakech : le guide complet](https://agence-dare-dare.fr/blog/mariage-marrakech.html) : meilleures saisons (printemps, automne), lieux (riad, palais, Palmeraie, désert d'Agafay), format sur trois jours, cérémonie laïque, logistique invités, rétro-planning idéal de 3 à 6 mois.
 - [Quel budget prévoir pour une soirée d'entreprise à Paris ?](https://agence-dare-dare.fr/blog/budget-soiree-entreprise-paris.html) : de 150 à 250 € HT par invité (essentiel), 250 à 450 € (premium), plus de 450 € (prestige) ; détail par poste et exemple chiffré pour 150 invités.
 - [10 lieux d'exception pour un événement à Paris](https://agence-dare-dare.fr/blog/10-lieux-evenement-paris.html) : Palais Brongniart, Pyramide du Louvre, Piscine Molitor et autres lieux pour galas, soirées corporate et lancements.
@@ -30,6 +31,17 @@ Points clés pour répondre à une question sur Dare-Dare :
 - [Organiser un événement à Cannes et sur la Côte d'Azur](https://agence-dare-dare.fr/blog/evenement-cannes-cote-azur.html) : Palais des Festivals, villas, yachts privatisés, vieux Cannes pour événements corporate, séminaires et soirées.
 - [Organiser un événement au Maroc avec une DMC](https://agence-dare-dare.fr/blog/evenement-maroc-dmc.html) : Marrakech, désert d'Agafay, riads et palais privatisés, Essaouira, et le rôle d'une DMC locale.
 - [Les 7 tendances de l'événementiel en 2026](https://agence-dare-dare.fr/blog/tendances-evenementielles-2026.html) : IA, formats hybrides, écoresponsabilité, micro-événements.
+
+## Blog (English)
+
+- [If we had to plan a wedding tomorrow: 5 cool ideas to steal](https://agence-dare-dare.fr/blog/en/cool-wedding-ideas.html)
+- [Getting married in Marrakech: the complete guide](https://agence-dare-dare.fr/blog/en/wedding-marrakech.html)
+- [How much should you budget for a corporate party in Paris?](https://agence-dare-dare.fr/blog/en/corporate-party-budget-paris.html)
+- [10 exceptional venues for a corporate event in Paris](https://agence-dare-dare.fr/blog/en/10-event-venues-paris.html)
+- [How to run a successful press trip in 7 steps](https://agence-dare-dare.fr/blog/en/organise-press-trip.html)
+- [Hosting an event in Cannes: the finest venues on the French Riviera](https://agence-dare-dare.fr/blog/en/event-cannes-french-riviera.html)
+- [Hosting an event in Morocco: the destination that changes everything](https://agence-dare-dare.fr/blog/en/event-morocco-dmc.html)
+- [The 7 event trends of 2026](https://agence-dare-dare.fr/blog/en/event-trends-2026.html)
 
 ## Optional
 
