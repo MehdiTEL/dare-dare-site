@@ -425,3 +425,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .blog-hero__title { font-size: 36px; }
   .article__lieu-name { font-size: 22px; }
 }
+
+/* ---------- Réponse courte (GEO) & tableaux ---------- */
+.article__answer {
+  margin: 0 0 48px; padding: 24px 28px;
+  background: var(--sand-light); border-left: 3px solid var(--ink);
+  font-size: 17px; line-height: 1.75; color: #333;
+}
+.article__answer-label {
+  display: block; margin-bottom: 8px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink);
+}
+.article__table-wrap { margin: 24px 0 32px; overflow-x: auto; }
+.article__table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; color: #333; }
+.article__table th, .article__table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--sand); vertical-align: top; }
+.article__table th { font-weight: 600; color: var(--ink); background: var(--sand-light); }
+.article__table td:last-child, .article__table th:last-child { white-space: nowrap; }

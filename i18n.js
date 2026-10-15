@@ -593,7 +593,7 @@ const faqI18n = [
   },
   {
     q: { fr: "Comment fonctionne votre tarification ?", en: "How does your pricing work?" },
-    a: { fr: "Nous facturons des honoraires de production (fees) calculés en fonction de la complexité et de la durée du projet. Les frais de prestataires sont refacturés en transparence. Chaque devis est détaillé poste par poste. Nous nous adaptons à votre budget et proposons des recommandations en conséquence.", en: "We charge production fees calculated based on project complexity and duration. Vendor costs are passed on transparently. Every quote is detailed line by line. We adapt to your budget and provide recommendations accordingly." }
+    a: { fr: "Nous facturons des honoraires de production (fees) calculés en fonction de la complexité et de la durée du projet. Chaque devis est détaillé poste par poste. Nous nous adaptons à votre budget et proposons des recommandations en conséquence.", en: "We charge production fees calculated based on project complexity and duration. Vendor costs are passed on transparently. Every quote is detailed line by line. We adapt to your budget and provide recommendations accordingly." }
   },
   {
     q: { fr: "Travaillez-vous avec des agences en sous-traitance ?", en: "Do you work as a subcontractor for agencies?" },
