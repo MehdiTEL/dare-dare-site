@@ -441,3 +441,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .article__table th, .article__table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--sand); vertical-align: top; }
 .article__table th { font-weight: 600; color: var(--ink); background: var(--sand-light); }
 .article__table td:last-child, .article__table th:last-child { white-space: nowrap; }
+
+/* Photo entière (photos verticales, sans recadrage) */
+.article__img-wrap--full { background: none; }
+.article__img-wrap--full img {
+  aspect-ratio: auto; object-fit: contain;
+  max-height: 85vh; width: auto; max-width: 100%; margin: 0 auto; display: block;
+}
