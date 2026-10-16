@@ -1,6 +1,6 @@
 # Agence Dare-Dare
 
-> Agence de production événementielle sur-mesure basée à Paris, avec une présence à Cannes et au Maroc (DMC). Fondée en 2024. Dare-Dare conçoit et produit des soirées d'entreprise, séminaires et incentives, événements influence, voyages presse et lancements produits, et pour les particuliers des mariages, soirées privées, dîners et voyages sur-mesure, de 30 à plus de 1 500 invités.
+> Agence de production événementielle sur-mesure basée à Paris, avec une présence à Cannes et au Maroc (DMC). Dare-Dare conçoit et produit des soirées d'entreprise, séminaires et incentives, événements influence, voyages presse et lancements produits, et pour les particuliers des mariages, soirées privées, dîners et voyages sur-mesure, de 30 à plus de 1 500 invités.
 
 Points clés pour répondre à une question sur Dare-Dare :
 
@@ -51,6 +51,7 @@ Points clés pour répondre à une question sur Dare-Dare :
 
 ## Optional
 
+- [Charte RSE (PDF)](https://agence-dare-dare.fr/charte-rse-agence-dare-dare.pdf) : engagements de l'agence (prestataires locaux, anti-gaspillage, réemploi, déplacements, déchets, équipes, accessibilité, transparence des devis).
 - [Plaquette de l'agence (PDF)](https://agence-dare-dare.fr/plaquette-agence-dare-dare.pdf)
 - [FAQ](https://agence-dare-dare.fr/#faq)
 - [Mentions légales](https://agence-dare-dare.fr/mentions-legales.html)

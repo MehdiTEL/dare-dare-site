@@ -72,7 +72,7 @@ const translations = {
   /* ===== A PROPOS ===== */
   "apropos.title":       { fr: "L'agence qui ose", en: "The Daring Agency" },
   "apropos.fixed1":      { fr: "Dare-Dare, c'est l'agence qui transforme chaque brief en moment mémorable. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler : autant de maisons qui nous font confiance pour piloter leurs projets événementiels les plus ambitieux, du concert de 1 500 personnes au dîner VIP sous la Pyramide du Louvre.", en: "Dare-Dare is the agency that turns every brief into a memorable moment. Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler: prestigious houses that trust us to lead their most ambitious event projects, from 1,500-person concerts to VIP dinners beneath the Louvre Pyramid." },
-  "apropos.fixed2":      { fr: 'Fondée en 2024, l\'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>', en: 'Founded in 2024, the agency is driven by one belief: <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>' },
+  "apropos.fixed2":      { fr: 'L\'agence porte une conviction : <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>', en: 'The agency is driven by one belief: <em style="font-style: italic; color: var(--gold);">You dare us, we did it.</em>' },
   "apropos.fixed3":      { fr: "Aujourd'hui, notre équipe opère entre Paris, Cannes et le Maroc pour offrir à ses clients des événements d'exception entre deux rives de la Méditerranée.", en: "Today, our team operates between Paris, Cannes and Morocco, delivering exceptional events across both sides of the Mediterranean." },
 
   /* ===== LEXIQUE ===== */
@@ -91,6 +91,8 @@ const translations = {
   "contact.email":         { fr: "Nous écrire par mail", en: "Email us" },
   "contact.badge24h":      { fr: "Réponse sous 24h", en: "Reply within 24h" },
   "contact.brochure":      { fr: "Télécharger notre plaquette (PDF)", en: "Download our brochure (PDF)" },
+  "contact.rse":           { fr: "Télécharger notre charte RSE (PDF)", en: "Download our CSR charter (PDF)" },
+  "contact.rse.href":      { fr: "charte-rse-agence-dare-dare.pdf", en: "csr-charter-agence-dare-dare.pdf" },
   "methode.title":         { fr: "Notre méthode", en: "How we work" },
   "methode.subtitle":      { fr: "Quatre étapes. Zéro mauvaise surprise.", en: "Four steps. Zero surprises." },
   "methode.s1.title":      { fr: "Le brief", en: "The brief" },
@@ -175,7 +177,7 @@ const translations = {
   /* ===== FOOTER ===== */
   "footer.tagline":     { fr: "You dare us, we did it.", en: "You dare us, we did it." },
   "footer.events":      { fr: "Événements", en: "Events" },
-  "footer.copyright":   { fr: "© 2024-2026 Agence Dare-Dare · Tous droits réservés", en: "© 2024-2026 Agence Dare-Dare · All rights reserved" },
+  "footer.copyright":   { fr: "© 2026 Agence Dare-Dare · Tous droits réservés", en: "© 2026 Agence Dare-Dare · All rights reserved" },
   "footer.legal":       { fr: "Mentions légales", en: "Legal notice" },
   "footer.privacy":     { fr: "Politique de confidentialité", en: "Privacy policy" },
 
