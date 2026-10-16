@@ -1,18 +1,30 @@
 /* COOKIE CONSENT · Agence Dare-Dare
-   Bandeau discret en bas de page, design maison. Cookies techniques uniquement,
-   donc un simple acquittement suffit (RGPD). Choix mémorisé en localStorage. */
+   Bandeau discret en bas de page, design maison. Mesure d'audience (Google Tag Manager)
+   désactivée par défaut (Consent Mode) : elle ne s'active qu'après « Tout accepter ».
+   Choix mémorisé en localStorage : 'all' (accepté) ou 'refused' (refusé). */
 (function () {
-  try {
-    if (localStorage.getItem('dd-cookie-consent') === 'ok') return;
-  } catch (e) { /* localStorage indisponible : on affiche quand même le bandeau */ }
+  var KEY = 'dd-cookie-consent';
+  var choice = null;
+  try { choice = localStorage.getItem(KEY); } catch (e) { /* localStorage indisponible : on affiche le bandeau */ }
+  if (choice === 'all' || choice === 'refused') return;
 
-  var inBlog = location.pathname.indexOf('/blog/') !== -1;
-  var base = inBlog ? '../' : '';
+  var path = location.pathname;
+  var inEn = path.indexOf('/blog/en/') !== -1;
+  var base = inEn ? '../../' : (path.indexOf('/blog/') !== -1 ? '../' : '');
+  var en = inEn || document.documentElement.lang === 'en';
+
+  var t = en ? {
+    txt: '🍪 A few cookies to measure our audience and improve the site. Nothing is tracked unless you say yes.',
+    more: 'Learn more', yes: 'Accept all', no: 'Refuse', label: 'Cookie consent'
+  } : {
+    txt: '🍪 Quelques cookies pour mesurer notre audience et améliorer le site. Rien n\'est suivi sans votre accord.',
+    more: 'En savoir plus', yes: 'Tout accepter', no: 'Refuser', label: 'Consentement aux cookies'
+  };
 
   var css = ''
     + '.dd-cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:99999;'
-    + 'max-width:660px;margin:0 auto;background:#0A0A0A;color:#fff;'
-    + 'border-radius:6px;padding:16px 18px;display:flex;gap:18px;align-items:center;'
+    + 'max-width:680px;margin:0 auto;background:#0A0A0A;color:#fff;'
+    + 'border-radius:6px;padding:16px 18px;display:flex;gap:14px;align-items:center;'
     + 'justify-content:space-between;flex-wrap:wrap;'
     + "font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;"
     + 'box-shadow:0 16px 48px rgba(0,0,0,.4);'
@@ -21,13 +33,26 @@
     + '.dd-cookie.dd-show{transform:translateY(0);opacity:1;}'
     + '.dd-cookie__txt{font-size:13px;line-height:1.55;flex:1 1 300px;color:#E6E6E6;margin:0;}'
     + '.dd-cookie__txt a{color:#fff;text-decoration:underline;text-underline-offset:2px;}'
-    + '.dd-cookie__btn{flex:0 0 auto;background:#fff;color:#0A0A0A;border:none;'
+    + '.dd-cookie__btns{display:flex;gap:8px;flex:0 0 auto;}'
+    + '.dd-cookie__btn{background:#fff;color:#0A0A0A;border:1px solid #fff;'
     + 'font-family:inherit;font-weight:700;font-size:12px;letter-spacing:.08em;'
-    + 'text-transform:uppercase;padding:12px 26px;border-radius:2px;cursor:pointer;'
+    + 'text-transform:uppercase;padding:12px 20px;border-radius:2px;cursor:pointer;'
     + 'transition:opacity .2s ease;}'
+    + '.dd-cookie__btn--ghost{background:transparent;color:#fff;}'
     + '.dd-cookie__btn:hover{opacity:.78;}'
     + '@media(max-width:520px){.dd-cookie{flex-direction:column;align-items:stretch;}'
-    + '.dd-cookie__btn{width:100%;padding:13px;}}';
+    + '.dd-cookie__btns{width:100%;}.dd-cookie__btn{flex:1;padding:13px;}}';
+
+  function save(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+    if (value === 'all' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        ad_storage: 'granted', ad_user_data: 'granted',
+        ad_personalization: 'granted', analytics_storage: 'granted'
+      });
+      (window.dataLayer = window.dataLayer || []).push({ event: 'dd_consent_granted' });
+    }
+  }
 
   function init() {
     var style = document.createElement('style');
@@ -37,20 +62,24 @@
     var bar = document.createElement('div');
     bar.className = 'dd-cookie';
     bar.setAttribute('role', 'dialog');
-    bar.setAttribute('aria-label', 'Consentement aux cookies');
+    bar.setAttribute('aria-label', t.label);
     bar.innerHTML =
-      '<p class="dd-cookie__txt">🍪 Quelques cookies, et uniquement techniques — jamais pour vous pister. '
-      + 'On est bien meilleurs en événements qu\'en pâtisserie. '
-      + '<a href="' + base + 'politique-confidentialite.html">En savoir plus</a></p>'
-      + '<button class="dd-cookie__btn" type="button">J\'accepte</button>';
+      '<p class="dd-cookie__txt">' + t.txt + ' '
+      + '<a href="' + base + 'politique-confidentialite.html">' + t.more + '</a></p>'
+      + '<div class="dd-cookie__btns">'
+      + '<button class="dd-cookie__btn dd-cookie__btn--ghost" type="button" data-choice="refused">' + t.no + '</button>'
+      + '<button class="dd-cookie__btn" type="button" data-choice="all">' + t.yes + '</button>'
+      + '</div>';
     document.body.appendChild(bar);
 
     requestAnimationFrame(function () {
       requestAnimationFrame(function () { bar.classList.add('dd-show'); });
     });
 
-    bar.querySelector('.dd-cookie__btn').addEventListener('click', function () {
-      try { localStorage.setItem('dd-cookie-consent', 'ok'); } catch (e) {}
+    bar.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-choice]');
+      if (!btn) return;
+      save(btn.getAttribute('data-choice'));
       bar.classList.remove('dd-show');
       setTimeout(function () { bar.remove(); }, 550);
     });

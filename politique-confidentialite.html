@@ -3,6 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+  <script>
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
+  </script>
+  <!-- End Google Tag Manager -->
   <title>Politique de confidentialité · Agence Dare-Dare</title>
   <meta name="description" content="Politique de confidentialité de l'Agence Dare-Dare — collecte, utilisation et protection de vos données personnelles conformément au RGPD.">
   <meta name="robots" content="noindex, follow">
@@ -68,6 +80,10 @@
   </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
   <nav class="blog-nav">
@@ -177,12 +193,15 @@
       En cas de litige, vous avez le droit d'introduire une réclamation auprès de la <strong>CNIL</strong> (<a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">cnil.fr</a>).
     </p>
 
-    <h2>9. Cookies</h2>
+    <h2>9. Cookies et mesure d'audience</h2>
     <p>
-      Ce site utilise uniquement des cookies techniques strictement nécessaires à son bon fonctionnement (mémorisation de votre préférence de langue FR/EN). Aucun cookie publicitaire ni de traçage tiers n'est déposé.
+      Ce site utilise des cookies techniques strictement nécessaires à son bon fonctionnement (mémorisation de votre préférence de langue FR/EN et de votre choix concernant les cookies). Ils ne nécessitent pas votre consentement.
     </p>
     <p>
-      Vous pouvez à tout moment configurer votre navigateur pour refuser ces cookies, sans impact majeur sur votre navigation.
+      Avec votre accord, nous utilisons également <strong>Google Tag Manager</strong>, un outil de Google Ireland Limited, pour activer des outils de mesure d'audience (par exemple Google Analytics) qui nous aident à comprendre comment le site est utilisé et à l'améliorer. Ces cookies ne sont déposés que si vous cliquez sur « Tout accepter » dans le bandeau. Si vous cliquez sur « Refuser », aucun cookie de mesure n'est déposé. Votre choix est conservé 13 mois au maximum.
+    </p>
+    <p>
+      Vous pouvez modifier votre choix à tout moment : <a href="#" onclick="try{localStorage.removeItem('dd-cookie-consent')}catch(e){};location.reload();return false;">gérer mes cookies</a>.
     </p>
 
     <h2>10. Modifications</h2>
@@ -206,6 +225,6 @@
   </footer>
 
   <!-- Bandeau cookies -->
-  <script src="cookie-consent.js" defer></script>
+  <script src="cookie-consent.js?v=20261016" defer></script>
 </body>
 </html>
