@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="svc-section svc-section--alt">
       <div class="container">
         <h2 class="section-title svc-section__title">Quelques événements influence</h2>
-        <div class="svc-projects"><figure class="svc-project"><img src="photos/samsung-influences-molitor-1.webp" alt="Événement influence Samsung à la piscine Molitor" width="1200" height="800" loading="lazy"><figcaption><strong>Samsung, piscine Molitor.</strong> Un événement créateurs autour d'un lancement, dans un lieu iconique de Paris.</figcaption></figure><figure class="svc-project"><img src="photos/drink-more-water-pernod-ricard-1.webp" alt="Soirée influence Drink More Water pour Pernod Ricard" width="1200" height="800" loading="lazy"><figcaption><strong>Pernod Ricard, Drink More Water.</strong> Soirée influence et presse : production, coordination des invités et scénographie.</figcaption></figure><figure class="svc-project"><img src="photos/loge-accor-arena-maybelline-nyx.webp" alt="Loge VIP Maybelline à l'Accor Arena" width="1200" height="800" loading="lazy"><figcaption><strong>Maybelline × Accor Arena.</strong> Une activation beauté dans une loge VIP, pour les créateurs.</figcaption></figure><figure class="svc-project"><img src="photos/dior-2.webp" alt="Lancement parfum Dior avec influenceurs" width="1200" height="800" loading="lazy"><figcaption><strong>Dior Parfums, Paris.</strong> Une expérience immersive avec la presse et les influenceurs.</figcaption></figure></div>
+        <div class="svc-projects"><figure class="svc-project"><img src="photos/samsung-influences-molitor-1.webp" alt="Événement influence Samsung à la piscine Molitor" width="1200" height="800" loading="lazy"><figcaption><strong>Samsung, piscine Molitor.</strong> Un événement créateurs autour d'un lancement, dans un lieu iconique de Paris.</figcaption></figure><figure class="svc-project"><img src="photos/drink-more-water-pernod-ricard-1.webp" alt="Soirée influence Drink More Water pour Pernod Ricard" width="1200" height="800" loading="lazy"><figcaption><strong>Pernod Ricard, Drink More Water.</strong> Soirée influence et presse : production, coordination des invités et scénographie.</figcaption></figure><figure class="svc-project"><img src="photos/loge-accor-arena-maybelline-nyx.webp" srcset="photos/w800/loge-accor-arena-maybelline-nyx.webp 800w, photos/loge-accor-arena-maybelline-nyx.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Loge VIP Maybelline à l'Accor Arena" width="1200" height="800" loading="lazy"><figcaption><strong>Maybelline × Accor Arena.</strong> Une activation beauté dans une loge VIP, pour les créateurs.</figcaption></figure><figure class="svc-project"><img src="photos/dior-2.webp" srcset="photos/w800/dior-2.webp 800w, photos/dior-2.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Lancement parfum Dior avec influenceurs" width="1200" height="800" loading="lazy"><figcaption><strong>Dior Parfums, Paris.</strong> Une expérience immersive avec la presse et les influenceurs.</figcaption></figure></div>
       </div>
     </section>
 
@@ -334,6 +334,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label>
             <label class="devis__field"><span data-i18n="devis.tel">Téléphone</span>
               <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label>
+            <label class="devis__field"><span data-i18n="devis.source">Comment nous avez-vous connus ?</span>
+              <select name="source" id="devis-source">
+                <option value="" data-i18n="devis.choose">Choisir…</option>
+                <option data-i18n="devis.s1">Google</option>
+                <option data-i18n="devis.s2">Instagram</option>
+                <option data-i18n="devis.s3">LinkedIn</option>
+                <option data-i18n="devis.s4">Bouche-à-oreille</option>
+                <option data-i18n="devis.s5">Déjà client</option>
+                <option data-i18n="devis.s7">Autre</option>
+              </select></label>
             <label class="devis__field devis__field--full"><span data-i18n="devis.message">Votre idée en quelques mots (facultatif)</span>
               <textarea name="message" id="devis-message" rows="3"></textarea></label>
           </div>
@@ -420,6 +430,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
   <script src="./svc.js?v=20261020" defer></script>
   <script src="./cookie-consent.js?v=20261016" defer></script>
-  <script src="./devis.js?v=20261019" defer></script>
+  <script src="./devis.js?v=20261022" defer></script>
 </body>
 </html>

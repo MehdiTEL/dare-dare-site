@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="svc-section svc-section--alt">
       <div class="container">
         <h2 class="section-title svc-section__title">Selected retreats</h2>
-        <div class="svc-projects"><figure class="svc-project"><img src="../photos/bottega-veneta-venise.jpg" alt="Bottega Veneta seminar in Venice" width="1200" height="800" loading="lazy"><figcaption><strong>Bottega Veneta, Venice.</strong> A 3-day seminar in an ultra-private format.</figcaption></figure><figure class="svc-project"><img src="../photos/bnp-reims-champagne-1.webp" alt="BNP incentive in a Reims champagne house" width="1200" height="800" loading="lazy"><figcaption><strong>BNP, Reims.</strong> An incentive in a champagne house, for over 200 participants.</figcaption></figure></div>
+        <div class="svc-projects"><figure class="svc-project"><img src="../photos/bottega-veneta-venise.jpg" alt="Bottega Veneta seminar in Venice" width="1200" height="800" loading="lazy"><figcaption><strong>Bottega Veneta, Venice.</strong> A 3-day seminar in an ultra-private format.</figcaption></figure><figure class="svc-project"><img src="../photos/bnp-reims-champagne-1.webp" srcset="../photos/w800/bnp-reims-champagne-1.webp 800w, ../photos/bnp-reims-champagne-1.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="BNP incentive in a Reims champagne house" width="1200" height="800" loading="lazy"><figcaption><strong>BNP, Reims.</strong> An incentive in a champagne house, for over 200 participants.</figcaption></figure></div>
       </div>
     </section>
 
@@ -322,6 +322,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label>
             <label class="devis__field"><span data-i18n="devis.tel">Phone</span>
               <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label>
+            <label class="devis__field"><span data-i18n="devis.source">How did you hear about us?</span>
+              <select name="source" id="devis-source">
+                <option value="" data-i18n="devis.choose">Choose…</option>
+                <option data-i18n="devis.s1">Google</option>
+                <option data-i18n="devis.s2">Instagram</option>
+                <option data-i18n="devis.s3">LinkedIn</option>
+                <option data-i18n="devis.s4">Word of mouth</option>
+                <option data-i18n="devis.s5">Existing client</option>
+                <option data-i18n="devis.s7">Autre</option>
+              </select></label>
             <label class="devis__field devis__field--full"><span data-i18n="devis.message">Your idea in a few words (optional)</span>
               <textarea name="message" id="devis-message" rows="3"></textarea></label>
           </div>
@@ -408,6 +418,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
   <script src="../svc.js?v=20261020" defer></script>
   <script src="../cookie-consent.js?v=20261016" defer></script>
-  <script src="../devis.js?v=20261019" defer></script>
+  <script src="../devis.js?v=20261022" defer></script>
 </body>
 </html>
