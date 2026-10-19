@@ -712,7 +712,8 @@ const guestMoodPriveI18n = [
 ];
 
 /* ===== CURRENT LANGUAGE & MODE ===== */
-let currentLang = localStorage.getItem('dare-dare-lang') || 'fr';
+/* La langue dépend de l'adresse : / = français, /en/ = anglais */
+let currentLang = document.documentElement.dataset.pageLang || 'fr';
 let currentMode = localStorage.getItem('dare-dare-mode') || 'pro';
 
 /* ===== SWITCH LANGUAGE ===== */
@@ -1192,7 +1193,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Bind language toggle buttons */
   document.querySelectorAll('.lang-toggle__btn').forEach(btn => {
-    btn.addEventListener('click', () => switchLanguage(btn.dataset.lang));
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      if (lang === currentLang) return;
+      const onEn = /\/en\/(index\.html)?$/.test(location.pathname);
+      location.href = (lang === 'en' ? (onEn ? '' : 'en/') : (onEn ? '../' : '')) + location.hash;
+    });
   });
 
   /* Bind mode toggle buttons */
