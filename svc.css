@@ -49,3 +49,11 @@
 .svc-cards{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .svc-card__text::first-letter{text-transform:uppercase}
 .svc-projects{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+/* Bandeau noir, même DA que l'accueil */
+.svc-hero--dark{min-height:min(78vh,760px);align-items:center;justify-content:center;text-align:center;background:#0A0A0A;flex-direction:column}
+.svc-hero--dark .svc-hero__content{padding:150px 24px 140px;display:flex;flex-direction:column;align-items:center}
+.svc-hero--dark .svc-hero__title{max-width:16ch;margin-left:auto;margin-right:auto}
+.svc-hero--dark .svc-hero__sub{margin-left:auto;margin-right:auto;color:rgba(255,255,255,.75)}
+.svc-hero--dark .hero__ctas{justify-content:center}
+.svc-hero--dark .svc-crumb{color:rgba(255,255,255,.5)}
+.svc-hero--dark .hero__locations-cities span{font-size:6px;margin:0 6px;vertical-align:middle}
