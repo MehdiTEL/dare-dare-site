@@ -2293,3 +2293,7 @@ ul, ol { list-style: none; }
 .idees__card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block}
 .idees__card h3{font-size:18px;line-height:1.3;margin:14px 0 0}
 .idees__all{display:block;text-align:center;margin-top:32px;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.seo-links{text-align:center;font-size:13px;color:var(--grey);margin:0 0 24px;line-height:2}
+.seo-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.footer__seo{text-align:center;font-size:12px;line-height:2;margin:16px auto 0;max-width:900px;opacity:.7}
+.footer__seo a{color:inherit}
