@@ -2308,3 +2308,4 @@ ul, ol { list-style: none; }
 .mobile-menu__sub{display:flex;flex-direction:column;align-items:center;gap:8px;margin:-4px 0 14px}
 .mobile-menu__sub a{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;color:inherit}
 .mobile-menu{overflow-y:auto;justify-content:safe center;padding:80px 0 40px}
+.only-prive{display:none!important}.mode-prive .only-prive{display:revert!important}

@@ -19,19 +19,6 @@ const eventData = window.eventData = {
     testimonialIndex: 0,
     bio: "Du Fnac Live à la soirée privée Longchamp, en passant par le Moulin Rouge, Dare-Dare orchestre des soirées où l'exigence se fait oublier et l'expérience reste. Grand public ou ultra-VIP, chaque format est maîtrisé."
   },
-  seminaire: {
-    heroTitle: "Vos équipes méritent mieux qu'une salle de réunion.",
-    heroSubtitle: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits, dare-dare.",
-    heroImage: "photos/bnp-reims-champagne-1.webp",
-    services: [
-      { icon: "clipboard", title: "Conception & programme", desc: "On ne remplit pas un agenda : on construit une expérience collective qui a du sens.", features: ["Cadrage des objectifs & brief stratégique", "Programme sur-mesure : plénières, ateliers, off", "Sélection de speakers & intervenants", "Scénarisation des temps forts", "Équilibre entre contenu et convivialité"] },
-      { icon: "building", title: "Logistique & coordination", desc: "Hôtel, transferts, restauration, rooming : on gère tout, vous ne gérez rien.", features: ["Sourcing hôtels & domaines privatisés", "Transferts groupe & logistique terrain", "Restauration & expériences culinaires", "Rooming list & gestion des chambres", "Coordination multi-sites & multi-jours"] },
-      { icon: "trophy", title: "Team building & incentive", desc: "Rallye, ateliers, outdoor : des moments partagés qui marquent plus qu'un PowerPoint.", features: ["Team building sportif & outdoor", "Rallye, défis d'équipe & chasses au trésor", "Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"] }
-    ],
-    recommendedDest: "maroc",
-    testimonialIndex: 1,
-    bio: "De 150 à 900 personnes, en France comme au Maroc, Dare-Dare conçoit des séminaires où logistique, programmation et cohésion d'équipe s'articulent sans faille. Chaque brief devient une expérience collective mémorable."
-  },
   influence: {
     heroTitle: "On crée des moments que vos créateurs voudront poster.",
     heroSubtitle: "Des événements pensés pour le contenu : photogéniques, immersifs, parfaitement orchestrés.",

@@ -48,3 +48,4 @@
 .svc-hero{min-height:min(88vh,860px)}
 .svc-cards{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .svc-card__text::first-letter{text-transform:uppercase}
+.svc-projects{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
