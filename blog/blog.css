@@ -450,3 +450,5 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .article__cta-wa { display: block; margin-top: 18px; color: #fff; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 .article__cta-wa:hover { opacity: .75; }
+.article__pin { display: flex; justify-content: center; margin: 32px 0 8px; min-height: 120px; }
+.article__pin > a { color: var(--grey-text, #6C757D); font-size: 14px; }
