@@ -325,7 +325,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .blog-card:hover { opacity: 0.75; }
 
 .blog-card__img {
-  width: 100%; aspect-ratio: 16/10; object-fit: cover;
+  width: 100%; height: auto; aspect-ratio: 16/10; object-fit: cover;
   background: var(--sand-light);
   display: block;
 }
