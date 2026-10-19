@@ -28,14 +28,14 @@ const translations = {
   "hero.tagline":       { fr: "You dare us, we did it.", en: "You dare us, we did it." },
 
   /* ===== SERVICES ===== */
-  "services.title":       { fr: "Ce qu'on<br>fait vraiment", en: "What We<br>Actually Do" },
+  "services.title":       { fr: "Nos événements<br>sur-mesure", en: "What We<br>Actually Do" },
   "services.subtitle":    { fr: "Piloter. Produire. Livrer. Trois mots, zéro compromis, et un seul objectif : que tout soit parfait le jour J.", en: "Plan. Produce. Deliver. Three words, zero compromise, and one goal: perfection on the big day." },
   "services.toggle":      { fr: "Découvrir",  en: "Discover" },
   "services.cta":         { fr: "Lancer un projet", en: "Start a project" },
   "services.trusted":     { fr: "Trusted by", en: "Trusted by" },
 
   /* ===== DESTINATIONS ===== */
-  "dest.title":           { fr: "L\u00e0 o\u00f9 on<br>plante le d\u00e9cor", en: "Where We<br>Set the Stage" },
+  "dest.title":           { fr: "Paris, Cannes<br>et le Maroc", en: "Where We<br>Set the Stage" },
   "dest.subtitle":        { fr: "Paris, Cannes, Maroc. Et partout où votre ambition nous emmène.", en: "Paris, Cannes, Morocco. And wherever your ambition takes us." },
   "dest.paris.tagline":   { fr: "Ici, même les murs ont l'habitude du grand spectacle.", en: "Here, even the walls are used to the grandest of shows." },
   "dest.paris.desc":      { fr: "Tour Eiffel, Palais Brongniart, Piscine Molitor, palaces privés. On transforme les lieux les plus mythiques de la capitale en scènes sur-mesure pour votre marque.", en: "Eiffel Tower, Palais Brongniart, Piscine Molitor, private palaces. We transform the most iconic venues in the capital into bespoke stages for your brand." },
@@ -46,7 +46,7 @@ const translations = {
   "dest.elsewhere":       { fr: 'Votre événement nous emmène ailleurs ? <strong>On produit sur-mesure, partout dans le monde.</strong>', en: 'Taking your event elsewhere? <strong>We produce bespoke events, anywhere in the world.</strong>' },
 
   /* ===== PORTFOLIO ===== */
-  "portfolio.title":     { fr: "Portfolio",   en: "Portfolio" },
+  "portfolio.title":     { fr: "Nos réalisations",   en: "Our Work" },
   "portfolio.subtitle":  { fr: "Chaque projet est une histoire. Au survol, découvrez les coulisses.", en: "Every project is a story. Hover to discover the behind-the-scenes." },
   "portfolio.filter.all":       { fr: "Tous",              en: "All" },
   "portfolio.filter.lancement": { fr: "Lancements",        en: "Launches" },
@@ -67,7 +67,7 @@ const translations = {
   "chiffres.brands":      { fr: "marques accompagnées",    en: "brands served" },
 
   /* ===== TEMOIGNAGES ===== */
-  "temoignages.title":   { fr: "Ce qu'ils<br>disent de nous", en: "What They<br>Say About Us" },
+  "temoignages.title":   { fr: "Ce que disent<br>nos clients", en: "What They<br>Say About Us" },
 
   /* ===== A PROPOS ===== */
   "apropos.title":       { fr: "L'agence qui ose", en: "The Daring Agency" },
@@ -83,10 +83,37 @@ const translations = {
   "lexique.conclusion":    { fr: "Three languages. One name. A house that dares, dare-dare.", en: "Three languages. One name. A house that dares, dare-dare." },
 
   /* ===== FAQ ===== */
-  "faq.title":             { fr: "FAQ", en: "FAQ" },
+  "faq.title":             { fr: "Questions fréquentes", en: "FAQ" },
 
   /* ===== CONTACT ===== */
-  "contact.title":         { fr: "Parlons-en",  en: "Let's Talk" },
+  "devis.type": { fr: "Type d'événement", en: "Type of event" },
+  "devis.choose": { fr: "Choisir…", en: "Choose…" },
+  "devis.t1": { fr: "Lancement de produit", en: "Product launch" },
+  "devis.t2": { fr: "Soirée d'entreprise", en: "Corporate party" },
+  "devis.t3": { fr: "Séminaire", en: "Seminar" },
+  "devis.t4": { fr: "Team building", en: "Team building" },
+  "devis.t5": { fr: "Voyage de presse", en: "Press trip" },
+  "devis.t6": { fr: "Mariage ou événement privé", en: "Wedding or private event" },
+  "devis.t7": { fr: "Autre", en: "Other" },
+  "devis.date": { fr: "Date (même approximative)", en: "Date (even rough)" },
+  "devis.date.ph": { fr: "ex. mi-mars 2027", en: "e.g. mid-March 2027" },
+  "devis.invites": { fr: "Nombre d'invités", en: "Number of guests" },
+  "devis.budget": { fr: "Budget indicatif", en: "Indicative budget" },
+  "devis.unknown": { fr: "Je ne sais pas encore", en: "Not sure yet" },
+  "devis.ville": { fr: "Ville", en: "City" },
+  "devis.other": { fr: "Ailleurs", en: "Elsewhere" },
+  "devis.nom": { fr: "Nom et prénom", en: "Full name" },
+  "devis.societe": { fr: "Société (facultatif)", en: "Company (optional)" },
+  "devis.tel": { fr: "Téléphone", en: "Phone" },
+  "devis.message": { fr: "Votre idée en quelques mots (facultatif)", en: "Your idea in a few words (optional)" },
+  "devis.send.wa": { fr: "Envoyer par WhatsApp", en: "Send via WhatsApp" },
+  "devis.send.mail": { fr: "Envoyer par mail", en: "Send by email" },
+  "devis.note": { fr: "Proposition sous 48 h : concept, lieu et devis détaillé poste par poste.", en: "Proposal within 48 hours: concept, venue and an itemised quote." },
+  "devis.ok": { fr: "Merci ! Votre message est prêt, il ne reste qu'à l'envoyer.", en: "Thank you! Your message is ready, just hit send." },
+  "devis.or": { fr: "Ou directement :", en: "Or directly:" },
+  "idees.title": { fr: "Idées et conseils", en: "Ideas and tips" },
+  "idees.all": { fr: "Tous les articles du blog", en: "All blog articles" },
+  "contact.title":         { fr: "Demander un devis",  en: "Get a Quote" },
   "contact.subtitle":      { fr: "Un projet en tête ? Écrivez-nous, on vous répond vite. Dare-dare.", en: "A project in mind? Drop us a line — we reply fast. Dare-dare." },
   "contact.whatsapp":      { fr: "Discuter sur WhatsApp", en: "Chat on WhatsApp" },
   "contact.email":         { fr: "Nous écrire par mail", en: "Email us" },

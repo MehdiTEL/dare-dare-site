@@ -448,3 +448,5 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   aspect-ratio: auto; object-fit: contain;
   max-height: 85vh; width: auto; max-width: 100%; margin: 0 auto; display: block;
 }
+.article__cta-wa { display: block; margin-top: 18px; color: #fff; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+.article__cta-wa:hover { opacity: .75; }
