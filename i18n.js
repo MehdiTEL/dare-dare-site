@@ -98,6 +98,8 @@ const translations = {
   "m.ctp": { fr: "Agence événementielle Paris", en: "Event agency Paris" },
   "m.ct2b": { fr: "Cannes", en: "Cannes" },
   "m.ct3b": { fr: "Marrakech", en: "Marrakech" },
+  "mode.pro": { fr: "PRO", en: "BUSINESS" },
+  "mode.prive": { fr: "PRIVÉ", en: "PRIVATE" },
   "devis.type": { fr: "Type d'événement", en: "Type of event" },
   "devis.choose": { fr: "Choisir…", en: "Choose…" },
   "devis.t1": { fr: "Lancement de produit", en: "Product launch" },
