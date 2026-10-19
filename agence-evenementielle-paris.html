@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- BLOG: Meta & SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+    <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
   <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
@@ -19,9 +18,12 @@
   <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
   <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
-  <title>Agence événementielle Paris · Événements sur-mesure | Dare-Dare</title>
+    <title>Agence événementielle Paris · Événements sur-mesure | Dare-Dare</title>
   <meta name="description" content="Agence événementielle à Paris : soirées d'entreprise, lancements de produit, séminaires, voyages de presse. Louvre, Ritz, Moulin Rouge, Palais Brongniart. Devis sous 48 h.">
   <link rel="canonical" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html">
+  <link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html">
+  <link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-agency-paris.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html">
   <meta property="og:title" content="Agence événementielle Paris · Événements sur-mesure | Dare-Dare">
   <meta property="og:description" content="Agence événementielle à Paris : soirées d'entreprise, lancements de produit, séminaires, voyages de presse. Louvre, Ritz, Moulin Rouge, Palais Brongniart. Devis sous 48 h.">
   <meta property="og:type" content="website">
@@ -30,16 +32,13 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/moet-chandon.webp">
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- BLOG: Google Fonts -->
+  <link rel="icon" href="./favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- BLOG: Stylesheet -->
-  <link rel="stylesheet" href="blog/blog.css?v=20261019b">
-
-    <script type="application/ld+json">
+  <link rel="stylesheet" href="./style.css?v=20261020">
+  <link rel="stylesheet" href="./svc.css?v=20261020">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -109,17 +108,16 @@
 }
   </script>
 </head>
-<body>
+<body class="svc-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
-  <!-- BLOG: Navigation -->
-  <nav class="blog-nav">
-    <div class="blog-nav__inner">
-      <a href="./" class="blog-nav__logo" aria-label="Agence Dare-Dare · Accueil">
-        <svg class="blog-nav__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
+  <header class="nav nav--transparent nav--svc" role="banner">
+    <div class="nav__inner">
+      <a href="./" class="nav__logo" aria-label="Agence Dare-Dare · Accueil">
+        <!-- LOGO: SVG inline, hérite de currentColor via CSS -->
+        <svg class="nav__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
           <title>DARE DARE</title>
           <text x="6" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
           <g transform="translate(289, 50) rotate(180)">
@@ -127,119 +125,272 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </g>
         </svg>
       </a>
-      <ul class="blog-nav__links">
-        <li><a href="./" class="blog-nav__link">Accueil</a></li>
-        <li><a href="./#services" class="blog-nav__link">Services</a></li>
-        <li><a href="blog/" class="blog-nav__link">Blog</a></li>
-      </ul>
-      <a href="./#contact" class="blog-nav__cta">Devis</a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <div class="nav__drop"><a href="./#services" class="nav__link link-underline" data-i18n="nav.services">Services</a><div class="nav__drop-panel"><a href="agence-lancement-produit.html" data-i18n="m.sv1">Lancement de produit</a><a href="agence-soiree-entreprise.html" data-i18n="m.sv2">Soirée d'entreprise</a><a href="agence-seminaire.html" data-i18n="m.sv3">Séminaire et incentive</a><a href="agence-team-building.html" data-i18n="m.sv4">Team building</a><a href="agence-voyage-de-presse.html" data-i18n="m.sv5">Voyage de presse</a><a href="organisatrice-mariage.html" data-i18n="m.sv6">Mariage</a></div></div>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <div class="nav__drop"><a href="./#destinations" class="nav__link link-underline" data-i18n="nav.destinations">Destinations</a><div class="nav__drop-panel"><a href="agence-evenementielle-paris.html" data-i18n="m.ct1">Paris</a><a href="agence-evenementielle-cannes.html" data-i18n="m.ct2">Cannes et Côte d'Azur</a><a href="agence-evenementielle-marrakech.html" data-i18n="m.ct3">Marrakech et Maroc</a></div></div>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <a href="./#lieux" class="nav__link link-underline" data-i18n="nav.events">Événements</a>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <a href="./#temoignages" class="nav__link link-underline" data-i18n="nav.testimonials">Témoignages</a>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <a href="./#apropos" class="nav__link link-underline" data-i18n="nav.about">À propos</a>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <a href="./#contact" class="nav__link link-underline" data-i18n="nav.contact">Contact</a>
+        <span class="nav__diamond" aria-hidden="true">◆</span>
+        <a href="./blog/" class="nav__link link-underline" data-i18n="nav.blog">Blog</a>
+      </nav>
+      <!-- i18n: Language toggle -->
+      <div class="lang-toggle"><a class="lang-toggle__btn active" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html">FR</a><span class="lang-toggle__sep">|</span><a class="lang-toggle__btn" href="https://www.agence-dare-dare.fr/en/event-agency-paris.html">EN</a></div>
+      <a href="./#contact" class="nav__cta" title="Demander un devis événementiel" data-i18n="nav.cta">Devis</a>
+      <button class="nav__hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- BLOG: Breadcrumb -->
-  <div class="breadcrumb" aria-label="Fil d'Ariane">
-    <a href="./" class="breadcrumb__link">Accueil</a>
-    <span class="breadcrumb__sep" aria-hidden="true">›</span>
-    <span class="breadcrumb__current">Agence événementielle Paris</span>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="./#services" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+    <div class="mobile-menu__sub"><a href="agence-lancement-produit.html" data-i18n="m.sv1">Lancement de produit</a><a href="agence-soiree-entreprise.html" data-i18n="m.sv2">Soirée d'entreprise</a><a href="agence-seminaire.html" data-i18n="m.sv3">Séminaire et incentive</a><a href="agence-team-building.html" data-i18n="m.sv4">Team building</a><a href="agence-voyage-de-presse.html" data-i18n="m.sv5">Voyage de presse</a><a href="organisatrice-mariage.html" data-i18n="m.sv6">Mariage</a></div>
+    <a href="./#destinations" class="mobile-menu__link" data-i18n="nav.destinations">Destinations</a>
+    <div class="mobile-menu__sub"><a href="agence-evenementielle-paris.html" data-i18n="m.ct1">Paris</a><a href="agence-evenementielle-cannes.html" data-i18n="m.ct2">Cannes et Côte d'Azur</a><a href="agence-evenementielle-marrakech.html" data-i18n="m.ct3">Marrakech et Maroc</a></div>
+    <a href="./#lieux" class="mobile-menu__link" data-i18n="nav.events">Événements</a>
+    <a href="./#temoignages" class="mobile-menu__link" data-i18n="nav.testimonials">Témoignages</a>
+    <a href="./#apropos" class="mobile-menu__link" data-i18n="nav.about">À propos</a>
+    <a href="./#contact" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+    <a href="./blog/" class="mobile-menu__link" data-i18n="nav.blog">Blog</a>
+    <a href="./#contact" class="mobile-menu__link" style="color: var(--terracotta-light); margin-top: 24px;" data-i18n="nav.cta">Devis</a>
+    <!-- i18n: mobile lang toggle -->
+    <div class="lang-toggle lang-toggle--mobile"><a class="lang-toggle__btn active" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html">FR</a><span class="lang-toggle__sep">|</span><a class="lang-toggle__btn" href="https://www.agence-dare-dare.fr/en/event-agency-paris.html">EN</a></div>
   </div>
 
-  
-  <article class="article">
-    <header class="article__header">
-      <span class="article__category">Paris</span>
-      <h1 class="article__title">Agence événementielle à Paris</h1>
-      <p class="article__meta">Louvre, Ritz, Moulin Rouge, Palais Brongniart et lieux secrets</p>
-    </header>
-
-    <div class="article__img-wrap">
-      <img src="photos/moet-chandon.webp" alt="Soirée Moët & Chandon au Palais Brongniart" width="1600" height="1000" loading="eager">
-    </div>
-
-    <div class="article__answer">
-      <span class="article__answer-label">La réponse courte</span>
-      L'Agence Dare-Dare est une <strong>agence événementielle basée à Paris</strong>. Nous produisons des <strong>soirées d'entreprise</strong>, des <strong>lancements de produit</strong>, des <strong>séminaires</strong> et des <strong>voyages de presse</strong> dans les plus beaux lieux de la capitale, du Louvre au Ritz, pour des marques comme Moët & Chandon, Dior, Chanel ou Samsung.
-    </div>
-
-    <div class="article__body">
-      <h2>Nos services à Paris</h2>
-      <ul>
-        <li><a href="agence-soiree-entreprise.html">Soirées d'entreprise</a></li>
-        <li><a href="agence-lancement-produit.html">Lancements de produit</a></li>
-        <li><a href="agence-seminaire.html">Séminaires et incentives</a></li>
-        <li><a href="agence-team-building.html">Team building</a></li>
-        <li><a href="agence-voyage-de-presse.html">Voyages de presse</a></li>
-        <li><a href="organisatrice-mariage.html">Mariages</a></li>
-      </ul>
-      <h2>Quelques événements à Paris</h2>
-      <div class="article__img-wrap">
-        <img src="photos/moet-chandon.webp" alt="Soirée Moët & Chandon au Palais Brongniart" width="1200" height="800" loading="lazy">
+  <main id="main">
+    <section class="svc-hero">
+      <img class="svc-hero__img" src="./photos/moet-chandon.webp" alt="Soirée Moët & Chandon au Palais Brongniart" width="1600" height="1000" fetchpriority="high">
+      <div class="svc-hero__shade" aria-hidden="true"></div>
+      <div class="svc-hero__content">
+        <nav class="svc-crumb" aria-label="Fil d'Ariane"><a href="./">Accueil</a> <span aria-hidden="true">◆</span> <span>Agence événementielle Paris</span></nav>
+        <p class="svc-hero__eyebrow">Paris</p>
+        <h1 class="svc-hero__title">Agence événementielle à Paris</h1>
+        <p class="svc-hero__sub">Louvre, Ritz, Moulin Rouge, Palais Brongniart et lieux secrets</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="hero__cta-primary">Demander un devis</a>
+          <a href="https://wa.me/33681969362?text=Bonjour%20Dare-Dare%2C%20j%27ai%20un%20projet%20d%27%C3%A9v%C3%A9nement%20%C3%A0%20Paris" target="_blank" rel="noopener" class="hero__cta-secondary">WhatsApp</a>
+        </div>
       </div>
-      <p><strong>Moët & Chandon, Palais Brongniart.</strong> Une soirée de marque en scénographie immersive.</p>
-      <div class="article__img-wrap">
-        <img src="photos/chanel-hotel-5-etoiles.webp" alt="Réception privée Chanel dans un hôtel 5 étoiles" width="1200" height="800" loading="lazy">
+    </section>
+
+    <section class="svc-intro">
+      <div class="container">
+        <p class="svc-intro__label">La réponse courte</p>
+        <p class="svc-intro__text">L'Agence Dare-Dare est une <strong>agence événementielle basée à Paris</strong>. Nous produisons des <strong>soirées d'entreprise</strong>, des <strong>lancements de produit</strong>, des <strong>séminaires</strong> et des <strong>voyages de presse</strong> dans les plus beaux lieux de la capitale, du Louvre au Ritz, pour des marques comme Moët & Chandon, Dior, Chanel ou Samsung.</p>
       </div>
-      <p><strong>Chanel.</strong> Une réception privée dans un hôtel 5 étoiles parisien.</p>
-      <div class="article__img-wrap">
-        <img src="photos/paris-blockchain-week-moulin-rouge.webp" alt="Soirée privée au Moulin Rouge" width="1200" height="800" loading="lazy">
+    </section>
+
+    <section class="svc-section">
+      <div class="container">
+        <h2 class="section-title svc-section__title">Nos services à Paris</h2>
+        <div class="svc-cards"><div class="svc-card svc-card--link"><a href="agence-soiree-entreprise.html">Soirées d'entreprise</a></div><div class="svc-card svc-card--link"><a href="agence-lancement-produit.html">Lancements de produit</a></div><div class="svc-card svc-card--link"><a href="agence-seminaire.html">Séminaires et incentives</a></div><div class="svc-card svc-card--link"><a href="agence-team-building.html">Team building</a></div><div class="svc-card svc-card--link"><a href="agence-voyage-de-presse.html">Voyages de presse</a></div><div class="svc-card svc-card--link"><a href="organisatrice-mariage.html">Mariages</a></div></div>
       </div>
-      <p><strong>Paris Blockchain Week, Moulin Rouge.</strong> Une soirée privée dans un lieu iconique.</p>
+    </section>
 
-      <h2>Nos lieux préférés</h2>
-      <p>Retrouvez notre sélection de <a href="blog/10-lieux-evenement-paris.html">10 lieux exceptionnels pour un événement à Paris</a>.</p>
-      <h2>Comment on travaille</h2>
-      <ol>
-        <li><strong>Vous nous briefez</strong> : objectif, date, nombre d'invités, budget.</li>
-        <li><strong>Sous 48 h</strong>, nous revenons avec un concept, un lieu et un devis détaillé poste par poste.</li>
-        <li><strong>Nous gérons tout</strong> : lieu, prestataires, décor, logistique, équipe sur place le jour J.</li>
-        <li><strong>Après l'événement</strong>, vous recevez le bilan et les photos.</li>
-      </ol>
-      
+    <section class="svc-section svc-section--alt">
+      <div class="container">
+        <h2 class="section-title svc-section__title">Quelques événements à Paris</h2>
+        <div class="svc-projects"><figure class="svc-project"><img src="photos/moet-chandon.webp" alt="Soirée Moët & Chandon au Palais Brongniart" width="1200" height="800" loading="lazy"><figcaption><strong>Moët & Chandon, Palais Brongniart.</strong> Une soirée de marque en scénographie immersive.</figcaption></figure><figure class="svc-project"><img src="photos/chanel-hotel-5-etoiles.webp" alt="Réception privée Chanel dans un hôtel 5 étoiles" width="1200" height="800" loading="lazy"><figcaption><strong>Chanel.</strong> Une réception privée dans un hôtel 5 étoiles parisien.</figcaption></figure><figure class="svc-project"><img src="photos/paris-blockchain-week-moulin-rouge.webp" alt="Soirée privée au Moulin Rouge" width="1200" height="800" loading="lazy"><figcaption><strong>Paris Blockchain Week, Moulin Rouge.</strong> Une soirée privée dans un lieu iconique.</figcaption></figure></div>
+      </div>
+    </section>
 
-      <h2>Questions fréquentes</h2>
-      <h3>Où se trouve l'agence ?</h3>
-      <p>À Paris. Nous produisons des événements dans toute l'Île-de-France, en France, à Cannes et au Maroc.</p>
-      <h3>Quels lieux pouvez-vous privatiser à Paris ?</h3>
-      <p>Musées, hôtels, rooftops, salles de spectacle, lieux atypiques. Nous avons travaillé au Louvre, au Ritz, au Moulin Rouge, au Palais Brongniart et à l'Accor Arena.</p>
-      <h3>En combien de temps répondez-vous ?</h3>
-      <p>Nous répondons sous 24 h et envoyons une proposition sous 48 h.</p>
-      
+    <section class="svc-section">
+      <div class="container">
+        <h2 class="section-title svc-section__title">Nos lieux préférés</h2>
+        <div class="svc-text"><p>Retrouvez notre sélection de <a href="blog/10-lieux-evenement-paris.html">10 lieux exceptionnels pour un événement à Paris</a>.</p></div>
+      </div>
+    </section>
+
+    <section class="methode" id="methode">
+      <div class="container">
+        <div class="methode__header">
+          <h2 class="methode__title" data-i18n="methode.title">Notre méthode</h2>
+          <p class="methode__subtitle" data-i18n="methode.subtitle">Quatre étapes. Zéro mauvaise surprise.</p>
+        </div>
+        <div class="methode__grid">
+          <div class="methode__step">
+            <span class="methode__num">01</span>
+            <h3 class="methode__step-title" data-i18n="methode.s1.title">Le brief</h3>
+            <p class="methode__step-desc" data-i18n="methode.s1.desc">On vous écoute — vraiment. Votre ambition, vos contraintes, votre budget : tout part de là.</p>
+          </div>
+          <div class="methode__step">
+            <span class="methode__num">02</span>
+            <h3 class="methode__step-title" data-i18n="methode.s2.title">La proposition</h3>
+            <p class="methode__step-desc" data-i18n="methode.s2.desc">Une vision claire, rapidement : concept, lieux, scénographie, budget détaillé. Du sur-mesure, jamais du copier-coller.</p>
+          </div>
+          <div class="methode__step">
+            <span class="methode__num">03</span>
+            <h3 class="methode__step-title" data-i18n="methode.s3.title">La production</h3>
+            <p class="methode__step-desc" data-i18n="methode.s3.desc">On orchestre tout — prestataires, logistique, régie, timing. Vous validez, on exécute.</p>
+          </div>
+          <div class="methode__step">
+            <span class="methode__num">04</span>
+            <h3 class="methode__step-title" data-i18n="methode.s4.title">Le jour J &amp; le bilan</h3>
+            <p class="methode__step-desc" data-i18n="methode.s4.desc">Le jour J, on reste dans l'ombre pour que vous soyez sous les projecteurs. Puis on débriefe, chiffres à l'appui.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header"><h2 class="section-title">Questions fréquentes</h2></div>
+        <div class="faq__list">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false"><span>Où se trouve l'agence ?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">À Paris. Nous produisons des événements dans toute l'Île-de-France, en France, à Cannes et au Maroc.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false"><span>Quels lieux pouvez-vous privatiser à Paris ?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">Musées, hôtels, rooftops, salles de spectacle, lieux atypiques. Nous avons travaillé au Louvre, au Ritz, au Moulin Rouge, au Palais Brongniart et à l'Accor Arena.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false"><span>En combien de temps répondez-vous ?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">Nous répondons sous 24 h et envoyons une proposition sous 48 h.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__header">
+          <h2 class="contact__title">Un événement à Paris ?</h2>
+          <p class="contact__subtitle" data-i18n="contact.subtitle" data-i18n-prive="contact.subtitle.prive">Un projet en tête ? Écrivez-nous, on vous répond vite. Dare-dare.</p>
+        </div>
+
+
+        <!-- Formulaire de devis (devis.js) -->
+        <form class="devis" id="devis-form" novalidate>
+          <div class="devis__grid">
+            <label class="devis__field"><span data-i18n="devis.type">Type d'événement</span>
+              <select name="type" id="devis-type" required>
+                <option value="" data-i18n="devis.choose">Choisir…</option>
+                <option data-i18n="devis.t1">Lancement de produit</option>
+                <option data-i18n="devis.t2">Soirée d'entreprise</option>
+                <option data-i18n="devis.t3">Séminaire</option>
+                <option data-i18n="devis.t4">Team building</option>
+                <option data-i18n="devis.t5">Voyage de presse</option>
+                <option data-i18n="devis.t6">Mariage ou événement privé</option>
+                <option data-i18n="devis.t7">Autre</option>
+              </select></label>
+            <label class="devis__field"><span data-i18n="devis.date">Date (même approximative)</span>
+              <input name="date" id="devis-date" type="text" placeholder="ex. mi-mars 2027" data-i18n="devis.date.ph" data-i18n-attr="placeholder"></label>
+            <label class="devis__field"><span data-i18n="devis.invites">Nombre d'invités</span>
+              <select name="invites" id="devis-invites" required>
+                <option value="" data-i18n="devis.choose">Choisir…</option>
+                <option>- de 30</option><option>30 à 80</option><option>80 à 200</option><option>200 à 500</option><option>+ de 500</option>
+              </select></label>
+            <label class="devis__field"><span data-i18n="devis.budget">Budget indicatif</span>
+              <select name="budget" id="devis-budget" required>
+                <option value="" data-i18n="devis.choose">Choisir…</option>
+                <option>- de 10 000 €</option><option>10 000 à 30 000 €</option><option>30 000 à 80 000 €</option><option>+ de 80 000 €</option><option data-i18n="devis.unknown">Je ne sais pas encore</option>
+              </select></label>
+            <label class="devis__field"><span data-i18n="devis.ville">Ville</span>
+              <select name="ville" id="devis-ville" required>
+                <option value="" data-i18n="devis.choose">Choisir…</option>
+                <option>Paris</option><option>Cannes / Côte d'Azur</option><option>Marrakech / Maroc</option><option data-i18n="devis.other">Ailleurs</option>
+              </select></label>
+            <label class="devis__field"><span data-i18n="devis.nom">Nom et prénom</span>
+              <input name="nom" id="devis-nom" type="text" autocomplete="name" required></label>
+            <label class="devis__field"><span data-i18n="devis.societe">Société (facultatif)</span>
+              <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label>
+            <label class="devis__field"><span data-i18n="devis.tel">Téléphone</span>
+              <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label>
+            <label class="devis__field devis__field--full"><span data-i18n="devis.message">Votre idée en quelques mots (facultatif)</span>
+              <textarea name="message" id="devis-message" rows="3"></textarea></label>
+          </div>
+          <div class="devis__actions">
+            <button type="submit" value="whatsapp" class="hero__cta-primary" data-i18n="devis.send.wa">Envoyer par WhatsApp</button>
+            <button type="submit" value="email" class="hero__cta-secondary devis__btn-mail" data-i18n="devis.send.mail">Envoyer par mail</button>
+          </div>
+          <p class="devis__note" data-i18n="devis.note">Proposition sous 48 h : concept, lieu et devis détaillé poste par poste.</p>
+          <p class="devis__ok" hidden data-i18n="devis.ok">Merci ! Votre message est prêt, il ne reste qu'à l'envoyer.</p>
+        </form>
+        <p class="devis__or" data-i18n="devis.or">Ou directement :</p>
+        <!-- Contact direct : WhatsApp + Email -->
+        <div class="contact__direct">
+          <a href="https://wa.me/33681969362?text=Bonjour%20Dare-Dare%20%E2%80%94%20j%27ai%20un%20projet%20d%27%C3%A9v%C3%A9nement%2C%20on%20en%20parle%20%3F" target="_blank" rel="noopener" class="hero__cta-primary contact__direct-btn" aria-label="Nous contacter sur WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.24-8.23 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+            <span data-i18n="contact.whatsapp">Discuter sur WhatsApp</span>
+          </a>
+          <a href="mailto:contact@agence-dare-dare.fr?subject=Projet%20%C3%A9v%C3%A9nement%20%E2%80%94%20Agence%20Dare-Dare" class="hero__cta-secondary contact__direct-btn" aria-label="Nous contacter par email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span data-i18n="contact.email">Nous écrire par mail</span>
+          </a>
+        </div>
+
+        <!-- Contact info bar -->
+        <div class="contact__info-bar">
+          <a href="mailto:contact@agence-dare-dare.fr" class="contact__info-link" title="Envoyer un email à l'Agence Dare-Dare"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>contact@agence-dare-dare.fr</a>
+          <span class="contact__info-sep">·</span>
+          <a href="tel:+33681969362" class="contact__info-link" title="Appeler l'Agence Dare-Dare"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+33 6 81 96 93 62</a>
+          <span class="contact__info-sep">·</span>
+          <span class="contact__info-link"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Paris · Cannes · Maroc</span>
+          <span class="contact__info-sep">·</span>
+          <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" class="contact__info-link"><svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>@agencedaredare</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-more">
+      <div class="container">
+        <p class="svc-more__label">Nos autres services</p>
+        <div class="svc-more__list"><a class="svc-more__link" href="agence-lancement-produit.html">Lancement de produit</a><a class="svc-more__link" href="agence-soiree-entreprise.html">Soirée d'entreprise</a><a class="svc-more__link" href="agence-seminaire.html">Séminaire et incentive</a><a class="svc-more__link" href="agence-team-building.html">Team building</a><a class="svc-more__link" href="agence-voyage-de-presse.html">Voyage de presse</a><a class="svc-more__link" href="organisatrice-mariage.html">Mariage</a></div>
+        <p class="svc-more__label">Nos destinations</p>
+        <div class="svc-more__list"><a class="svc-more__link" href="agence-evenementielle-cannes.html">Cannes et Côte d'Azur</a><a class="svc-more__link" href="agence-evenementielle-marrakech.html">Marrakech et Maroc</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer zellige-pattern zellige-pattern--gold" role="contentinfo">
+    <div class="container">
+      <div class="footer__logo">
+        <!-- LOGO: SVG inline footer -->
+        <svg class="footer__logo-svg" viewBox="0 0 340 56" fill="currentColor" aria-hidden="true" role="img">
+          <title>DARE DARE</title>
+          <text x="8" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          <g transform="translate(332, 50) rotate(180)">
+            <text x="0" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          </g>
+        </svg>
+      </div>
+      <p class="footer__tagline font-moroccan">You dare us, we did it.</p>
+      <div class="footer__links">
+        <a href="./#services" class="footer__link" data-i18n="nav.services">Services</a>
+        <span class="footer__diamond" aria-hidden="true">◆</span>
+        <a href="./#lieux" class="footer__link" data-i18n="footer.events">Événements</a>
+        <span class="footer__diamond" aria-hidden="true">◆</span>
+        <a href="./#destinations" class="footer__link" data-i18n="nav.destinations">Destinations</a>
+        <span class="footer__diamond" aria-hidden="true">◆</span>
+        <a href="./#contact" class="footer__link" data-i18n="nav.contact">Contact</a>
+        <span class="footer__diamond" aria-hidden="true">◆</span>
+        <a href="./blog/" class="footer__link" data-i18n="nav.blog">Blog</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <!-- TODO: mettre le vrai lien LinkedIn -->
+        <a href="https://linkedin.com/company/agence-dare-dare" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <p class="footer__copyright" data-i18n="footer.copyright">© 2026 Agence Dare-Dare · Tous droits réservés</p>
+      <p class="footer__legal"><a href="./mentions-legales.html" data-i18n="footer.legal">Mentions légales</a> | <a href="./politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a></p>
     </div>
-
-    <div class="article__cta">
-      <h2 class="article__cta-title">Un événement à Paris ?</h2>
-      <p class="article__cta-text">Dites-nous votre date et le nombre d'invités. Proposition sous 48 h.</p>
-      <a href="./#contact" class="article__cta-btn">Demander un devis</a>
-      <a href="https://wa.me/33681969362?text=Bonjour%20Dare-Dare%2C%20j%27ai%20un%20projet%20d%27%C3%A9v%C3%A9nement%20%C3%A0%20Paris" target="_blank" rel="noopener" class="article__cta-wa">Ou discuter sur WhatsApp</a>
-    </div>
-  </article>
-
-  <!-- BLOG: Footer -->
-  <footer class="blog-footer">
-    <a href="./" class="blog-footer__logo" aria-label="Agence Dare-Dare · Accueil">
-      <svg class="blog-footer__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
-        <title>DARE DARE</title>
-        <text x="6" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
-        <g transform="translate(289, 50) rotate(180)">
-          <text x="0" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
-        </g>
-      </svg>
-    </a>
-    <p class="blog-footer__tagline">You dare us, we did it.</p>
-    <ul class="blog-footer__links">
-      <li><a href="./" class="blog-footer__link">Accueil</a></li>
-      <li><a href="./#services" class="blog-footer__link">Services</a></li>
-      <li><a href="./#contact" class="blog-footer__link">Contact</a></li>
-    </ul>
-    <p class="blog-footer__copy">&copy; 2026 Agence Dare-Dare. Tous droits réservés.</p>
-    <p class="blog-footer__copy" style="margin-top: 8px; font-size: 13px;">
-      <a href="mentions-legales.html" class="blog-footer__link">Mentions légales</a>
-      &nbsp;·&nbsp;
-      <a href="politique-confidentialite.html" class="blog-footer__link">Politique de confidentialité</a>
-    </p>
   </footer>
-
-  <!-- Bandeau cookies -->
-  <script src="cookie-consent.js?v=20261016" defer></script>
-  <script src="devis.js?v=20261019" defer></script>
+  <script src="./svc.js?v=20261020" defer></script>
+  <script src="./cookie-consent.js?v=20261016" defer></script>
+  <script src="./devis.js?v=20261019" defer></script>
 </body>
 </html>

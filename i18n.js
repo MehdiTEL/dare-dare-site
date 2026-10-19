@@ -86,6 +86,15 @@ const translations = {
   "faq.title":             { fr: "Questions fréquentes", en: "FAQ" },
 
   /* ===== CONTACT ===== */
+  "m.sv1": { fr: "Lancement de produit", en: "Product launches" },
+  "m.sv2": { fr: "Soirée d'entreprise", en: "Corporate parties" },
+  "m.sv3": { fr: "Séminaire et incentive", en: "Retreats and incentives" },
+  "m.sv4": { fr: "Team building", en: "Team building" },
+  "m.sv5": { fr: "Voyage de presse", en: "Press trips" },
+  "m.sv6": { fr: "Mariage", en: "Weddings" },
+  "m.ct1": { fr: "Paris", en: "Paris" },
+  "m.ct2": { fr: "Cannes et Côte d'Azur", en: "Cannes and the Riviera" },
+  "m.ct3": { fr: "Marrakech et Maroc", en: "Marrakech and Morocco" },
   "devis.type": { fr: "Type d'événement", en: "Type of event" },
   "devis.choose": { fr: "Choisir…", en: "Choose…" },
   "devis.t1": { fr: "Lancement de produit", en: "Product launch" },

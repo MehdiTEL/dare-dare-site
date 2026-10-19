@@ -2297,3 +2297,14 @@ ul, ol { list-style: none; }
 .seo-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .footer__seo{text-align:center;font-size:12px;line-height:2;margin:16px auto 0;max-width:900px;opacity:.7}
 .footer__seo a{color:inherit}
+
+/* ---------- MENU DÉROULANT SERVICES / DESTINATIONS ---------- */
+.nav__drop{position:relative;display:inline-flex;align-items:center}
+.nav__drop-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);min-width:240px;background:#fff;padding:14px 0;box-shadow:0 18px 48px rgba(0,0,0,.14);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;z-index:20}
+.nav__drop-panel::before{content:"";position:absolute;left:0;right:0;top:-18px;height:18px}
+.nav__drop:hover .nav__drop-panel,.nav__drop:focus-within .nav__drop-panel{opacity:1;pointer-events:auto;transform:translate(-50%,14px)}
+.nav__drop-panel a{display:block;padding:10px 24px;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#0A0A0A;white-space:nowrap}
+.nav__drop-panel a:hover{background:#F5F5F5}
+.mobile-menu__sub{display:flex;flex-direction:column;align-items:center;gap:8px;margin:-4px 0 14px}
+.mobile-menu__sub a{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;color:inherit}
+.mobile-menu{overflow-y:auto;justify-content:safe center;padding:80px 0 40px}
