@@ -90,6 +90,7 @@ const translations = {
   "m.sv2": { fr: "Événement influence", en: "Influencer events" },
   "m.sv3": { fr: "Voyage de presse", en: "Press trips" },
   "m.sv4": { fr: "Lancement de produit", en: "Product launches" },
+  "m.sv5": { fr: "Séminaire", en: "Corporate retreats" },
   "m.sv6": { fr: "Mariage", en: "Weddings" },
   "m.ct1": { fr: "Paris", en: "Paris" },
   "m.ct2": { fr: "Cannes et Côte d'Azur", en: "Cannes and the Riviera" },
@@ -99,7 +100,6 @@ const translations = {
   "devis.t1": { fr: "Lancement de produit", en: "Product launch" },
   "devis.t2": { fr: "Soirée d'entreprise", en: "Corporate party" },
   "devis.t3": { fr: "Séminaire", en: "Seminar" },
-  "devis.t4": { fr: "Team building", en: "Team building" },
   "devis.t5": { fr: "Voyage de presse", en: "Press trip" },
   "devis.t6": { fr: "Mariage ou événement privé", en: "Wedding or private event" },
   "devis.t8": { fr: "Événement influence", en: "Influencer event" },
@@ -150,7 +150,7 @@ const translations = {
   "contact.card.soiree":     { fr: "Soirée d'entreprise", en: "Corporate party" },
   "contact.card.soiree.d":   { fr: "Gala, afterwork, soirée de lancement", en: "Gala, afterwork, launch party" },
   "contact.card.seminaire":  { fr: "Séminaire & incentive", en: "Seminar & incentive" },
-  "contact.card.seminaire.d":{ fr: "Team building, offsite, convention", en: "Team building, offsite, convention" },
+  "contact.card.seminaire.d":{ fr: "Offsite, convention, incentive", en: "Offsite, convention, incentive" },
   "contact.card.influence":  { fr: "Événement influence", en: "Influencer event" },
   "contact.card.influence.d":{ fr: "Trip, dîner, activation digitale", en: "Trip, dinner, digital activation" },
   "contact.card.presse":     { fr: "Voyage presse", en: "Press trip" },
@@ -339,11 +339,11 @@ const eventDataI18n = {
         }
       },
       {
-        title:    { fr: "Team building & incentive", en: "Team building & incentive" },
-        desc:     { fr: "Rallye, ateliers, outdoor : des moments partagés qui marquent plus qu'un PowerPoint.", en: "Rallies, workshops, outdoor: shared moments that resonate more than any PowerPoint." },
+        title:    { fr: "Incentive & expériences", en: "Incentive & experiences" },
+        desc:     { fr: "Dîners d'exception, soirées de clôture, expériences locales : des moments partagés qui marquent.", en: "Exceptional dinners, closing parties, local experiences: shared moments that stay with people." },
         features: {
-          fr: ["Team building sportif & outdoor", "Rallye, défis d'équipe & chasses au trésor", "Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"],
-          en: ["Sports & outdoor team building", "Rallies, team challenges & treasure hunts", "Creative & culinary workshops", "Gala dinner & awards ceremony", "Wellness & disconnect experiences"]
+          fr: ["Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"],
+          en: ["Creative & culinary workshops", "Gala dinner & awards ceremony", "Wellness & disconnect experiences"]
         }
       }
     ],

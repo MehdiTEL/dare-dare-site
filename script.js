@@ -57,7 +57,20 @@ const eventData = window.eventData = {
     recommendedDest: "paris",
     testimonialIndex: 0,
     bio: "Samsung aux Forum des Halles devant 1 500 personnes, deux activations aux 20 km de Paris, Paris Blockchain Week au Carrousel du Louvre : Dare-Dare crée des lancements spectaculaires dans des lieux emblématiques."
-  }
+  },
+  seminaire: {
+    heroTitle: "Vos équipes méritent mieux qu'une salle de réunion.",
+    heroSubtitle: "On conçoit des séminaires qui rassemblent, transforment et marquent les esprits, dare-dare.",
+    heroImage: "photos/bnp-reims-champagne-1.webp",
+    services: [
+      { icon: "clipboard", title: "Conception & programme", desc: "On ne remplit pas un agenda : on construit une expérience collective qui a du sens.", features: ["Cadrage des objectifs & brief stratégique", "Programme sur-mesure : plénières, ateliers, off", "Sélection de speakers & intervenants", "Scénarisation des temps forts", "Équilibre entre contenu et convivialité"] },
+      { icon: "building", title: "Logistique & coordination", desc: "Hôtel, transferts, restauration, rooming : on gère tout, vous ne gérez rien.", features: ["Sourcing hôtels & domaines privatisés", "Transferts groupe & logistique terrain", "Restauration & expériences culinaires", "Rooming list & gestion des chambres", "Coordination multi-sites & multi-jours"] },
+      { icon: "trophy", title: "Incentive & expériences", desc: "Dîners d'exception, soirées de clôture, expériences locales : des moments partagés qui marquent.", features: ["Ateliers créatifs & gastronomiques", "Soirée de gala & remise de prix", "Expériences bien-être & déconnexion"] }
+    ],
+    recommendedDest: "maroc",
+    testimonialIndex: 1,
+    bio: "De 150 à 900 personnes, en France comme au Maroc, Dare-Dare conçoit des séminaires où logistique, programmation et cohésion d'équipe s'articulent sans faille. Chaque brief devient une expérience collective mémorable."
+  },
 };
 
 // ---------- B2C Private Event Data ----------

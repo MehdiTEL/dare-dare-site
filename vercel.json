@@ -2,11 +2,43 @@
   "headers": [
     {
       "source": "/photos/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
     },
     {
       "source": "/(.*)\\.(css|js|woff2|svg|ico)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/agence-team-building.html",
+      "destination": "/agence-seminaire.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/team-building-agency.html",
+      "destination": "/en/corporate-retreat-agency.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/team-building-equipes.html",
+      "destination": "/agence-seminaire.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/en/team-building-teams-love.html",
+      "destination": "/en/corporate-retreat-agency.html",
+      "permanent": true
     }
   ]
 }
