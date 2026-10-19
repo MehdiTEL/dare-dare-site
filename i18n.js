@@ -714,7 +714,21 @@ let currentLang = localStorage.getItem('dare-dare-lang') || 'fr';
 let currentMode = localStorage.getItem('dare-dare-mode') || 'pro';
 
 /* ===== SWITCH LANGUAGE ===== */
+/* Liens vers les pages services : version anglaise quand le site est en EN */
+var SERVICE_PAGES_EN = {"agence-evenement-influence": "influencer-event-agency", "agence-voyage-de-presse": "press-trip-agency", "agence-lancement-produit": "product-launch-agency", "agence-soiree-entreprise": "corporate-party-agency", "agence-seminaire": "corporate-retreat-agency", "organisatrice-mariage": "wedding-planner", "agence-evenementielle-paris": "event-agency-paris", "agence-evenementielle-cannes": "event-agency-cannes", "agence-evenementielle-marrakech": "event-agency-marrakech"};
+function updateServiceLinksForLang(lang) {
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    var h = a.getAttribute('href'), m = h.match(/^(?:en\/)?([a-z-]+)\.html$/);
+    if (!m) return;
+    var fr = m[1], en = SERVICE_PAGES_EN[fr];
+    if (!en) { for (var k in SERVICE_PAGES_EN) if (SERVICE_PAGES_EN[k] === fr) { en = fr; fr = k; } }
+    if (!en) return;
+    a.setAttribute('href', lang === 'en' ? 'en/' + en + '.html' : fr + '.html');
+  });
+}
+
 function switchLanguage(lang) {
+  updateServiceLinksForLang(lang);
   if (lang !== 'fr' && lang !== 'en') return;
   currentLang = lang;
   localStorage.setItem('dare-dare-lang', lang);

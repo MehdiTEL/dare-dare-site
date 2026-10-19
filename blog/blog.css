@@ -452,3 +452,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .article__cta-wa:hover { opacity: .75; }
 .article__pin { display: flex; justify-content: center; margin: 32px 0 8px; min-height: 120px; }
 .article__pin > a { color: var(--grey-text, #6C757D); font-size: 14px; }
+/* Photos qui se suivent : côte à côte */
+.article__duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; margin: 32px 0; }
+.article__duo-cell { margin: 0; min-width: 0; }
+.article__duo .article__pin, .article__duo .article__img-wrap { margin: 0; }
+.article__duo .article__img-wrap img { width: 100%; height: auto; }
+.article__duo .article__img-caption { margin-top: 8px; }
+@media (max-width: 600px) { .article__duo { grid-template-columns: 1fr; } }
