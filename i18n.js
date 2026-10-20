@@ -106,6 +106,7 @@ const translations = {
   "devis.s3": { fr: "LinkedIn", en: "LinkedIn" },
   "devis.s4": { fr: "Bouche-à-oreille", en: "Word of mouth" },
   "devis.s5": { fr: "Déjà client", en: "Existing client" },
+  "contact.call": { fr: "Réserver un appel", en: "Book a call" },
   "devis.type": { fr: "Type d'événement", en: "Type of event" },
   "devis.choose": { fr: "Choisir…", en: "Choose…" },
   "devis.t1": { fr: "Lancement de produit", en: "Product launch" },

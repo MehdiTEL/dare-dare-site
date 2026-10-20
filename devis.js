@@ -20,6 +20,7 @@
     if (h.indexOf('wa.me') !== -1) track('whatsapp');
     else if (h.indexOf('mailto:') === 0) track('email');
     else if (h.indexOf('tel:') === 0) track('telephone');
+    else if (h.indexOf('calendly.com') !== -1) track('calendly');
   });
 
   function initForm() {
