@@ -252,13 +252,13 @@
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-food-kiosque-a-journaux.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/en/food-launch-newsstand.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -295,6 +295,18 @@
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/en/fashion-launch-launderette.html</loc>
     <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-lunettes-station-service.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/sunglasses-launch-petrol-station.html</loc>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
