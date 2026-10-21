@@ -14,20 +14,20 @@
   var en = inEn || document.documentElement.lang === 'en';
 
   var t = en ? {
-    txt: '🍪 A few cookies to measure our audience and improve the site. Nothing is tracked unless you say yes.',
-    more: 'Learn more', yes: 'Accept all', no: 'Refuse', label: 'Cookie consent'
+    txt: 'A cookie? We dare to ask. Only to measure our audience, nothing is tracked without your yes.',
+    more: 'Learn more', yes: 'Yes, I dare', no: 'No thanks', label: 'Cookie consent'
   } : {
-    txt: '🍪 Quelques cookies pour mesurer notre audience et améliorer le site. Rien n\'est suivi sans votre accord.',
-    more: 'En savoir plus', yes: 'Tout accepter', no: 'Refuser', label: 'Consentement aux cookies'
+    txt: 'Un cookie ? On ose demander. Il sert seulement à mesurer notre audience, rien n\'est suivi sans votre oui.',
+    more: 'En savoir plus', yes: 'Oui, j\'ose', no: 'Non merci', label: 'Consentement aux cookies'
   };
 
   var css = ''
     + '.dd-cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:99999;'
     + 'max-width:680px;margin:0 auto;background:#0A0A0A;color:#fff;'
-    + 'border-radius:6px;padding:16px 18px;display:flex;gap:14px;align-items:center;'
+    + 'border-radius:0;padding:16px 18px;display:flex;gap:14px;align-items:center;'
     + 'justify-content:space-between;flex-wrap:wrap;'
     + "font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;"
-    + 'box-shadow:0 16px 48px rgba(0,0,0,.4);'
+    + 'box-shadow:none;'
     + 'transform:translateY(160%);opacity:0;'
     + 'transition:transform .55s cubic-bezier(.16,1,.3,1),opacity .4s ease;}'
     + '.dd-cookie.dd-show{transform:translateY(0);opacity:1;}'
@@ -36,7 +36,7 @@
     + '.dd-cookie__btns{display:flex;gap:8px;flex:0 0 auto;}'
     + '.dd-cookie__btn{background:#fff;color:#0A0A0A;border:1px solid #fff;'
     + 'font-family:inherit;font-weight:700;font-size:12px;letter-spacing:.08em;'
-    + 'text-transform:uppercase;padding:12px 20px;border-radius:2px;cursor:pointer;'
+    + 'text-transform:uppercase;padding:12px 20px;border-radius:0;cursor:pointer;'
     + 'transition:opacity .2s ease;}'
     + '.dd-cookie__btn--ghost{background:transparent;color:#fff;}'
     + '.dd-cookie__btn:hover{opacity:.78;}'

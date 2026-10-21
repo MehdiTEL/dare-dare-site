@@ -263,3 +263,14 @@ p{max-width:34em}
 @media(max-width:700px){.tri4{grid-template-columns:minmax(0,1fr)}}
 /* Lancement détourné : 3 photos à la même dimension */
 .tri figure img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block}
+
+/* Lexique Dare-Dare */
+.lex__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,56px);margin-top:56px}
+.lex__item{border-top:1px solid currentColor;padding-top:22px}
+.lex__lang{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.lex__word{font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.02em;margin-top:14px}
+.lex__word span{display:block;font-size:13px;font-weight:400;letter-spacing:0;opacity:.6;margin-top:6px}
+.lex__def{font-size:16px;margin-top:14px}
+.lex__ex{font-size:15px;font-style:italic;opacity:.7;margin-top:10px}
+.lex__sig{font-size:clamp(20px,2vw,26px);font-weight:600;margin-top:56px}
+@media(max-width:900px){.lex__grid{grid-template-columns:minmax(0,1fr)}}
