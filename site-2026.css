@@ -309,3 +309,93 @@ p{max-width:34em}
 }
 @media(max-width:1000px){.rea-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.rea-g{grid-template-columns:minmax(0,1fr)}.svc-i h3{min-width:0}}
+
+/* ===== PAGES 2026 : villes et services (ex pages.css) ===== */
+
+body.pg{--sec:clamp(64px,8.5vw,128px)}
+
+/* Fil d'Ariane et accroche de hero */
+.crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:30px;max-width:none}
+.crumb a{border-bottom:1px solid currentColor;padding-bottom:2px}
+.crumb a:hover{opacity:.6}
+.hero .sur{margin-bottom:22px}
+.hero--pg h1{max-width:12em}
+
+/* Réponse courte : un paragraphe lisible en 5 secondes */
+.ans .lead{margin-top:36px;max-width:40em;font-size:clamp(19px,1.7vw,25px);line-height:1.4}
+.ans .dl2 dd a,.ans dd a{border-bottom:1px solid currentColor}
+
+/* Ce que nous faisons : lignes fines cliquables ou non */
+.rows--pg{margin-top:48px}
+.rows--pg .row{grid-template-columns:minmax(220px,380px) 1fr auto}
+.rows--pg a.row:hover{padding-left:14px}
+.rows--pg .row i{white-space:nowrap}
+
+/* Deux colonnes de détail dans les accordéons */
+.lx{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px clamp(24px,4vw,72px)}
+.lx h3{font-size:clamp(20px,1.8vw,26px);letter-spacing:-.01em;margin-bottom:6px}
+.lx>div>p{font-size:15px;margin-top:8px}
+.lst{list-style:none;margin-top:14px}
+.lst li{border-top:1px solid currentColor;padding:13px 0;font-size:15px;max-width:44em}
+.lst li:last-child{border-bottom:1px solid currentColor}
+.lst b{font-weight:600}
+.lst a{border-bottom:1px solid currentColor}
+
+/* Calendrier : lignes fines */
+.cal{width:100%;border-collapse:collapse;margin-top:6px;max-width:980px}
+.cal td{border-top:1px solid currentColor;padding:15px 24px 15px 0;font-size:15px;vertical-align:top}
+.cal tr:last-child td{border-bottom:1px solid currentColor}
+.cal td:first-child{font-weight:600;white-space:nowrap;width:1%}
+.cal+.lst{margin-top:30px}
+.src{font-size:12px;margin-top:18px;max-width:52em;line-height:1.6}
+.src a{border-bottom:1px solid currentColor}
+
+/* Preuves de page */
+.proofline{font-size:clamp(17px,1.5vw,21px);max-width:38em;margin-top:22px}
+.tri4 figure p{font-size:14px;margin-top:10px}
+.tri4 .cap,.tri .cap,.ideas .cap{font-size:12px;margin-top:6px}
+.tri3d{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,24px);margin-top:56px;align-items:start}
+.tri3d img{width:100%}
+.tri3d p{font-size:14px;margin-top:10px}
+
+/* Idées : « Si nous étions une marque de… » */
+.ideas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px clamp(20px,3vw,56px);margin-top:60px;align-items:start}
+.ideas article{border-top:1px solid var(--ink);padding-top:22px}
+.ideas .num{font-size:12px;font-weight:500;letter-spacing:.14em;margin-bottom:14px}
+.ideas h3{font-size:clamp(21px,2vw,28px);line-height:1.22;letter-spacing:-.012em;margin-bottom:14px}
+.ideas p{font-size:16px}
+.ideas figure{margin:22px 0 6px}
+.ideas img{width:100%}
+.ideas .lnk{margin-top:18px}
+.ideas .note{margin-top:12px;font-size:13px}
+
+/* Où nous le produisons (pages services) */
+.ou{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,64px);margin-top:48px}
+.ou h3{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.015em;margin-bottom:12px}
+.ou p{font-size:15px}
+.ou .lnk{margin-top:10px}
+
+/* Bandeau d'images de moodboard (photos Pinterest créditées, sans recadrage) */
+.mood{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.4vw,24px);margin-top:56px;align-items:start}
+.mood img{width:100%}
+.mood .cap{font-size:12px;margin-top:8px}
+
+.sec--tight{padding-top:calc(var(--sec) * .6)}
+.below a.lnk,.sub a{border-bottom:1px solid currentColor}
+.sub a{font-weight:500}
+
+@media(max-width:1000px){
+  .lx,.ideas,.ou,.tri3d{grid-template-columns:minmax(0,1fr)}
+  .mood{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rows--pg .row{grid-template-columns:1fr}
+  .cal td:first-child{white-space:normal;width:auto;display:block;padding-bottom:0;border-bottom:0}
+  .cal td{display:block;padding:6px 0}
+  .cal tr{display:block;border-top:1px solid currentColor;padding:12px 0}
+  .cal td{border-top:0!important;border-bottom:0!important}
+}
+@media(max-width:700px){
+  .mood{grid-template-columns:minmax(0,1fr)}
+}
+
+/* Photos : même ratio et même largeur dans chaque grille, comme l'accueil (4/5, object-fit cover) */
+.tri3d img,.mood img,.ideas figure img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block}
