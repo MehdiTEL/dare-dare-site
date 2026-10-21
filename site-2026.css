@@ -274,3 +274,38 @@ p{max-width:34em}
 .lex__ex{font-size:15px;font-style:italic;opacity:.7;margin-top:10px}
 .lex__sig{font-size:clamp(20px,2vw,26px);font-weight:600;margin-top:56px}
 @media(max-width:900px){.lex__grid{grid-template-columns:minmax(0,1fr)}}
+
+/* v5 : services en accordéons, réalisations avec explications au survol */
+.svc--acc{display:block;margin-top:48px;border-top:1px solid var(--ink)}
+.svc-i{border-bottom:1px solid var(--ink)}
+.svc-i summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:8px 32px;flex-wrap:wrap;padding:18px 40px 18px 0;position:relative}
+.svc-i summary::-webkit-details-marker{display:none}
+.svc-i summary::after{content:"+";position:absolute;right:0;top:14px;font-size:26px;font-weight:300}
+.svc-i[open] summary::after{content:"\2212"}
+.svc-i h3{font-size:clamp(19px,2vw,26px);min-width:14em}
+.svc-i .hook{font-size:15px;opacity:.7}
+.svc-b{padding:4px 0 28px;max-width:46em}
+.svc-b dl{display:block}
+.svc-b dt{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-top:16px}
+.svc-b dd{font-size:15px;margin-top:4px}
+.svc-b .lnk{margin-top:18px}
+.rea-f{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.rea-f button{background:transparent;border:1px solid #fff;color:#fff;padding:10px 18px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.rea-f button.is-on,.rea-f button:hover{background:#fff;color:var(--ink)}
+.rea-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.4vw,24px);margin-top:32px}
+.rea[hidden]{display:none}
+.rea{position:relative;overflow:hidden;background:#111}
+.rea img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.rea__t{padding:16px 0 0}
+.rea h3{font-size:18px}
+.rea p{font-size:14px;max-width:none;margin-top:6px}
+.rea__type{opacity:.7}.rea__meta b{font-weight:600}
+.rea__q,.rea__role{margin-top:10px}
+.rea__role b{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.rea-note{margin-top:32px;font-size:13px;opacity:.7}
+@media(hover:hover) and (min-width:901px){
+ .rea__t{position:absolute;inset:0;padding:22px;background:rgba(10,10,10,.88);opacity:0;transition:opacity .35s ease;overflow:auto;display:flex;flex-direction:column;justify-content:flex-end}
+ .rea:hover .rea__t,.rea:focus-within .rea__t{opacity:1}
+}
+@media(max-width:1000px){.rea-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.rea-g{grid-template-columns:minmax(0,1fr)}.svc-i h3{min-width:0}}

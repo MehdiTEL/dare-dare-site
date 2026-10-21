@@ -41,7 +41,8 @@
     + '.dd-cookie__btn--ghost{background:transparent;color:#fff;}'
     + '.dd-cookie__btn:hover{opacity:.78;}'
     + '@media(max-width:520px){.dd-cookie{flex-direction:column;align-items:stretch;}'
-    + '.dd-cookie__btns{width:100%;}.dd-cookie__btn{flex:1;padding:13px;}}';
+    + '.dd-cookie__txt{flex:0 0 auto;font-size:12.5px;}.dd-cookie{padding:14px 16px;gap:10px;}'
+    + '.dd-cookie__btns{width:100%;}.dd-cookie__btn{flex:1;padding:11px;}}';
 
   function save(value) {
     try { localStorage.setItem(KEY, value); } catch (e) {}
