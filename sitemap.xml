@@ -299,6 +299,62 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-cafe-cabine-telephonique.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-cafe-cabine-telephonique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/coffee-launch-phone-booth.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-cafe-cabine-telephonique.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/coffee-launch-phone-booth.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-cafe-cabine-telephonique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/coffee-launch-phone-booth.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-cafe-cabine-telephonique.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-chaussures-cordonnier.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-chaussures-cordonnier.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/shoe-launch-cobbler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-chaussures-cordonnier.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/shoe-launch-cobbler.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-chaussures-cordonnier.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/shoe-launch-cobbler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-chaussures-cordonnier.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-mode-bowling.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-mode-bowling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/fashion-launch-bowling-alley.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-mode-bowling.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/fashion-launch-bowling-alley.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-mode-bowling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/fashion-launch-bowling-alley.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-mode-bowling.html"/>
+  </url>
+  <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-lunettes-station-service.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -338,6 +394,24 @@
     <loc>https://www.agence-dare-dare.fr/nos-idees.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/perfume-launch-cocktail-bar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/perfume-launch-cocktail-bar.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/perfume-launch-cocktail-bar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html"/>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-bougies-videoclub.html</loc>
@@ -422,5 +496,23 @@
     <lastmod>2026-10-22</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-scenographie-evenementielle-paris.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-scenography-agency-paris.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/beauty-launch-60s-salon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/beauty-launch-60s-salon.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/beauty-launch-60s-salon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html"/>
   </url>
 </urlset>
