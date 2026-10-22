@@ -461,3 +461,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 600px) { .article__duo { grid-template-columns: 1fr; } }
 .article__cta-more { display: block; margin-top: 10px; color: #fff; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; opacity: .85; }
 .article__cta-more:hover { opacity: 1; }
+
+/* Mention sanitaire loi Evin (articles qui parlent d'alcool) */
+.article__evin { margin: 28px 0 0; font-size: 12px; line-height: 1.5; opacity: .6; text-align: center; }
