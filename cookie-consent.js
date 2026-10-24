@@ -1,6 +1,6 @@
 /* COOKIE CONSENT · Agence Dare-Dare
-   Bandeau discret en bas de page, design maison. Mesure d'audience (Google Tag Manager)
-   désactivée par défaut (Consent Mode) : elle ne s'active qu'après « Tout accepter ».
+   Bandeau discret en bas de page, design maison. Mesure d'audience et publicités Google (Tag Manager, Ads)
+   désactivées par défaut (Consent Mode) : elles ne s'activent qu'après « Oui, j'ose ».
    Choix mémorisé en localStorage : 'all' (accepté) ou 'refused' (refusé). */
 (function () {
   var KEY = 'dd-cookie-consent';
@@ -14,10 +14,10 @@
   var en = inEn || document.documentElement.lang === 'en';
 
   var t = en ? {
-    txt: 'A cookie? We dare to ask. Only to measure our audience, nothing is tracked without your yes.',
+    txt: 'A cookie? We dare to ask. It measures our audience and our Google ads. Nothing is tracked without your yes.',
     more: 'Learn more', yes: 'Yes, I dare', no: 'No thanks', label: 'Cookie consent'
   } : {
-    txt: 'Un cookie ? On ose demander. Il sert seulement à mesurer notre audience, rien n\'est suivi sans votre oui.',
+    txt: 'Un cookie ? On ose demander. Il sert à mesurer notre audience et nos publicités Google. Rien n\'est suivi sans votre oui.',
     more: 'En savoir plus', yes: 'Oui, j\'ose', no: 'Non merci', label: 'Consentement aux cookies'
   };
 
@@ -66,7 +66,7 @@
     bar.setAttribute('aria-label', t.label);
     bar.innerHTML =
       '<p class="dd-cookie__txt">' + t.txt + ' '
-      + '<a href="' + base + 'politique-confidentialite.html">' + t.more + '</a></p>'
+      + '<a href="' + (en ? '/en/privacy-policy.html' : '/politique-confidentialite.html') + '">' + t.more + '</a></p>'
       + '<div class="dd-cookie__btns">'
       + '<button class="dd-cookie__btn dd-cookie__btn--ghost" type="button" data-choice="refused">' + t.no + '</button>'
       + '<button class="dd-cookie__btn" type="button" data-choice="all">' + t.yes + '</button>'
