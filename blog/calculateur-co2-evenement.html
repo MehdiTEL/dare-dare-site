@@ -19,7 +19,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
   <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
   <title>Calculateur d&#x27;empreinte carbone d&#x27;un événement (gratuit)</title>
-  <meta name="description" content="Estimez gratuitement l&#x27;empreinte carbone de votre événement : transports, hébergement, repas, boissons, lieu, décor et goodies. Facteurs de l&#x27;ADEME, estimation indicative.">
+  <meta name="description" content="Estimez gratuitement l&#x27;empreinte carbone de votre événement : transports, repas, lieu, décor. Facteurs ADEME, estimation indicative.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/photos/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/photos/apple-touch-icon.png">
   <link rel="canonical" href="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
   <link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
   <link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/event-carbon-calculator.html">
@@ -28,12 +32,12 @@
   <meta property="og:description" content="Estimez gratuitement l&#x27;empreinte carbone de votre événement : transports, hébergement, repas, boissons, lieu, décor et goodies. Facteurs de l&#x27;ADEME, estimation indicative.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
-  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.webp">
+  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="blog.css?v=20261024">
+  <meta name="twitter:image" content="https://www.agence-dare-dare.fr/photos/og-image.jpg">
+  <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
+  <link rel="stylesheet" href="blog.css?v=20261025">
 
 <style>
 .dl{margin:40px 0;padding:32px;background:#0A0A0A;color:#F6F2EE;border-radius:4px}
@@ -79,9 +83,11 @@
 .warn{background:#F6F2EE;border-left:3px solid #0A0A0A;padding:14px 16px;font-size:14px;margin:18px 0}
 @media (max-width:860px){.calc{grid-template-columns:1fr}.res{position:static}}
 </style>
+  <script type="application/ld+json" id="ld-organization">
+{"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://www.agence-dare-dare.fr/#organization","name":"Agence Dare-Dare","legalName":"Agence Dare-Dare","alternateName":["Dare Dare","Agence Dare Dare","Dare-Dare"],"url":"https://www.agence-dare-dare.fr/","logo":{"@type":"ImageObject","url":"https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp"},"image":"https://www.agence-dare-dare.fr/photos/og-image.webp","slogan":"You dare us, we did it.","description":"Agence événementielle premium à Paris, avec une présence à Cannes et au Maroc (DMC) : soirées d'entreprise, séminaires, lancements, événements influence, voyages de presse.","email":"contact@agence-dare-dare.fr","telephone":"+33681969362","identifier":[{"@type":"PropertyValue","propertyID":"SIREN","value":"109478099"},{"@type":"PropertyValue","propertyID":"SIRET","value":"10947809900012"}],"vatID":"FR69109478099","address":{"@type":"PostalAddress","streetAddress":"11 rue Joubert","postalCode":"75009","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"areaServed":[{"@type":"City","name":"Paris","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"City","name":"Cannes","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"Country","name":"Maroc"}],"knowsAbout":["Production événementielle","Séminaires d'entreprise","Événements influence","Voyages presse","Lancements produits","Scénographie","DMC Maroc"],"knowsLanguage":["fr","en"],"sameAs":["https://instagram.com/agencedaredare","https://linkedin.com/company/agence-dare-dare"],"contactPoint":{"@type":"ContactPoint","contactType":"demande de devis","telephone":"+33681969362","email":"contact@agence-dare-dare.fr","availableLanguage":["fr","en"],"areaServed":["FR","MA"]}}
+  </script>
   <script type="application/ld+json">
-[
- {
+{
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Calculateur d'empreinte carbone de votre événement",
@@ -89,43 +95,96 @@
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web",
   "offers": {
-   "@type": "Offer",
-   "price": "0",
-   "priceCurrency": "EUR"
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
   },
   "inLanguage": "fr-FR",
   "description": "Estimez gratuitement l'empreinte carbone de votre événement : transports, hébergement, repas, boissons, lieu, décor et goodies. Facteurs de l'ADEME, estimation indicative.",
+  "@id": "https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html#app",
+  "isAccessibleForFree": true,
+  "browserRequirements": "Navigateur récent avec JavaScript",
+  "featureList": [
+    "Trajets",
+    "Hébergement",
+    "Repas et boissons",
+    "Lieu",
+    "Décor et goodies"
+  ],
+  "creator": {
+    "@id": "https://www.agence-dare-dare.fr/#organization"
+  },
   "publisher": {
-   "@type": "Organization",
-   "@id": "https://www.agence-dare-dare.fr/#organization",
-   "name": "Agence Dare-Dare"
+    "@id": "https://www.agence-dare-dare.fr/#organization"
   }
- },
- {
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr-FR",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment est calculée l'empreinte carbone d'un événement ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "À partir des facteurs d'émission de la Base Carbone de l'ADEME, d'Agribalyse pour les repas et de Nos Gestes Climat pour l'hôtel. Le résultat est une estimation indicative, non certifiée, avec des incertitudes de 20 à 70 % selon les postes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels postes sont pris en compte ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les trajets des invités, l'hébergement, les repas et boissons, le lieu (surface et durée d'utilisation), puis le décor, l'impression et les goodies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le calculateur est-il gratuit ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Vous pouvez laisser votre e-mail si vous voulez recevoir le détail de votre estimation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment réduire l'empreinte carbone d'un événement ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le train plutôt que l'avion dès que c'est possible : sur un Paris-Lyon, l'écart est énorme. Un menu majoritairement végétarien, de saison et local. Louer et réemployer le décor plutôt que l'acheter, et limiter les goodies à usage unique. Choisir un lieu accessible en transports en commun, et mutualiser les transferts."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-   {
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Accueil",
-    "item": "https://www.agence-dare-dare.fr/"
-   },
-   {
-    "@type": "ListItem",
-    "position": 2,
-    "name": "Blog",
-    "item": "https://www.agence-dare-dare.fr/blog/"
-   },
-   {
-    "@type": "ListItem",
-    "position": 3,
-    "name": "Calculateur CO2",
-    "item": "https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html"
-   }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://www.agence-dare-dare.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.agence-dare-dare.fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calculateur CO2",
+      "item": "https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html"
+    }
   ]
- }
-]
+}
   </script>
 </head>
 <body>
@@ -194,6 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </form></section>
       <h2>Méthode et sources</h2><p>Les facteurs viennent de la Base Carbone de l'ADEME (API ouverte data.ademe.fr), d'Agribalyse pour les repas et de Nos Gestes Climat pour l'hôtel, consultés le 24 octobre 2026. Pour l'électricité, la France utilise la valeur ADEME 2024 ; les autres pays, l'intensité carbone publiée par Ember (dernière année disponible). Un verre de vin compte 12,5 cl, une bière 25 cl, un café 10 cl. L'énergie du lieu est un ordre de grandeur : consommation moyenne des cafés, hôtels et restaurants ramenée à l'heure et au m². Le décor et les goodies chiffrés en euros utilisent les ratios monétaires de l'ADEME (2023). Les postes marqués « estimation Dare-Dare » n'ont pas de facteur officiel.</p>
       <div class="article__table-wrap"><table class="article__table"><thead><tr><th>Facteur</th><th>Valeur</th><th>Source</th></tr></thead><tbody><tr><td>TGV (France continentale)</td><td>0.00293 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43256" rel="noopener" target="_blank">ADEME Base Carbone (Base Empreinte), élément 43256, TGV 2022, InfoGES SNCF, statut Valide générique, incertitude 20 %</a></td></tr><tr><td>TER (traction moyenne)</td><td>0.0277 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43255" rel="noopener" target="_blank">ADEME Base Carbone, élément 43255, TER 2022, InfoGES SNCF, incertitude 60 %</a></td></tr><tr><td>RER et Transilien (Île-de-France)</td><td>0.00978 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43254" rel="noopener" target="_blank">ADEME Base Carbone, élément 43254, RER et transilien 2022, RATP - SNCF, incertitude 20 %</a></td></tr><tr><td>Autocar (gazole)</td><td>0.0376 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43740" rel="noopener" target="_blank">ADEME Base Carbone, élément 43740, Autocar gazole, validité 2026, incertitude 60 %</a></td></tr><tr><td>Voiture particulière, moyenne du parc, par véhicule-km</td><td>0.256 kgCO2e/km (véhicule)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43791" rel="noopener" target="_blank">ADEME Base Carbone, élément 43791, Voiture, motorisation moyenne, 2023, validité 2026, incertitude 60 %</a></td></tr><tr><td colspan="3">Taxi / VTC : voiture moyenne avec un seul passager (estimation Dare-Dare, pas de facteur officiel dédié).</td></tr><tr><td>Avion 101-220 sièges, moins de 500 km (jet), avec traînées</td><td>0.289 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43745" rel="noopener" target="_blank">ADEME Base Carbone, élément 43745, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, 500 à 1 000 km, avec traînées (court-courrier)</td><td>0.225 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43743" rel="noopener" target="_blank">ADEME Base Carbone, élément 43743, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, 1 000 à 2 000 km, avec traînées (moyen-courrier, ex. Paris-Marrakech)</td><td>0.185 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43741" rel="noopener" target="_blank">ADEME Base Carbone, élément 43741, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, 2 000 à 5 000 km, avec traînées</td><td>0.167 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43747" rel="noopener" target="_blank">ADEME Base Carbone, élément 43747, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, plus de 5 000 km, avec traînées (long-courrier)</td><td>0.178 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43749" rel="noopener" target="_blank">ADEME Base Carbone, élément 43749, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Nuitée d&#x27;hôtel en France, petit-déjeuner inclus</td><td>9.91 kgCO2e/nuit</td><td><a href="https://nosgestesclimat.fr/en/documentation/logement/vacances/empreinte-hotel-par-nuit" rel="noopener" target="_blank">Nos Gestes Climat, valeur de départ de la formule 9,91 x (1 - 30 %)</a></td></tr><tr><td colspan="3">Hôtel hors de France : valeur France faute de donnée publiée par pays (estimation Dare-Dare, probablement sous-estimée là où l&#x27;électricité est plus carbonée qu&#x27;en France).</td></tr><tr><td>Repas végétarien</td><td>0.85 kgCO2e/repas</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 (mise à jour 15/01/2025)</a></td></tr><tr><td>Repas végétalien</td><td>0.54 kgCO2e/repas</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 (mise à jour 15/01/2025), liste des équivalents</a></td></tr><tr><td>Repas avec viande blanche (poulet)</td><td>1.46 kgCO2e/repas</td><td><a href="https://impactco2.fr/outils/alimentation/repasavecdupoulet" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 : page « Repas avec du poulet » ouverte, repas = 150 g de poulet, 300 g de légumes, 7 g d&#x27;huile d&#x27;olive, 200 g de dessert moyen, 50 g de pain</a></td></tr><tr><td>Repas avec du saumon</td><td>1.46 kgCO2e/repas</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2</a></td></tr><tr><td>Repas avec viande rouge (bœuf)</td><td>4.97 kgCO2e/repas</td><td><a href="https://impactco2.fr/outils/repas" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2</a></td></tr><tr><td>Vin</td><td>1.27 kgCO2e/litre</td><td><a href="https://impactco2.fr/outils/boisson/vin" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 : page ouverte, dont emballage 0,68, agriculture 0,3, transport 0,23</a></td></tr><tr><td>Bière</td><td>1.35 kgCO2e (unité à confirmer, probablement par litre)</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), liste des équivalents</a></td></tr><tr><td colspan="3">Cocktail : assimilé à 15 cl de vin (estimation Dare-Dare, aucun facteur officiel par cocktail).</td></tr><tr><td>Café</td><td>0.64 kgCO2e (unité à confirmer, probablement par litre)</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), liste des équivalents</a></td></tr><tr><td>Consommation d&#x27;électricité tous usages, tertiaire (cafés, hôtels, restaurants), moyenne annuelle</td><td>254 kWh/(m².an)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:23631" rel="noopener" target="_blank">ADEME Base Carbone, élément 23631, statistiques territoriales tertiaire, France continentale</a></td></tr><tr><td>Électricité, mix réseau France continentale 2024 (consommation)</td><td>0.0519 kgCO2e/kWh</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43642" rel="noopener" target="_blank">ADEME Base Carbone, élément 43642, mix moyen 2024, frontière consommation</a></td></tr><tr><td>Électricité hors de France : intensité carbone du mix électrique de chaque pays, dernière année publiée (2023 à 2025 selon les pays)</td><td>de 0.0208 à 1.3063 kgCO2e/kWh</td><td><a href="https://ember-energy.org/data/yearly-electricity-data/" rel="noopener" target="_blank">Ember, Yearly Electricity Data (licence CC BY 4.0)</a></td></tr><tr><td>Ratio monétaire : meubles (2023)</td><td>231 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43360" rel="noopener" target="_blank">ADEME Base Carbone, élément 43360</a></td></tr><tr><td>Ratio monétaire : textile, habillement, cuir (2023)</td><td>271 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43405" rel="noopener" target="_blank">ADEME Base Carbone, élément 43405</a></td></tr><tr><td>Ratio monétaire : travaux d&#x27;impression et de reproduction (2023)</td><td>210 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43575" rel="noopener" target="_blank">ADEME Base Carbone, élément 43575</a></td></tr><tr><td>Ratio monétaire : produits en caoutchouc et en plastique (2023)</td><td>312 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43415" rel="noopener" target="_blank">ADEME Base Carbone, élément 43415</a></td></tr><tr><td>Ratio monétaire : autres produits manufacturés (2023)</td><td>231 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43365" rel="noopener" target="_blank">ADEME Base Carbone, élément 43365</a></td></tr><tr><td>T-shirt en coton</td><td>5.2 kgCO2e/unité</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:27044" rel="noopener" target="_blank">ADEME Base Carbone, élément 27044, T-shirt en coton</a></td></tr><tr><td>Sweat (coton)</td><td>27.4 kgCO2e/unité</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:27049" rel="noopener" target="_blank">ADEME Base Carbone, élément 27049</a></td></tr><tr><td>Voiture moyenne, par passager-km (usage mixte)</td><td>0.16 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43809" rel="noopener" target="_blank">ADEME Base Carbone, élément 43809, Voiture moyenne, Mixte, 2023, incertitude 60 %</a></td></tr></tbody></table></div>
+      <h2>Questions fréquentes</h2><details><summary>Comment est calculée l&#x27;empreinte carbone d&#x27;un événement ?</summary><p>À partir des facteurs d&#x27;émission de la Base Carbone de l&#x27;ADEME, d&#x27;Agribalyse pour les repas et de Nos Gestes Climat pour l&#x27;hôtel. Le résultat est une estimation indicative, non certifiée, avec des incertitudes de 20 à 70 % selon les postes.</p></details><details><summary>Quels postes sont pris en compte ?</summary><p>Les trajets des invités, l&#x27;hébergement, les repas et boissons, le lieu (surface et durée d&#x27;utilisation), puis le décor, l&#x27;impression et les goodies.</p></details><details><summary>Le calculateur est-il gratuit ?</summary><p>Oui. Vous pouvez laisser votre e-mail si vous voulez recevoir le détail de votre estimation.</p></details><details><summary>Comment réduire l&#x27;empreinte carbone d&#x27;un événement ?</summary><p>Le train plutôt que l&#x27;avion dès que c&#x27;est possible : sur un Paris-Lyon, l&#x27;écart est énorme. Un menu majoritairement végétarien, de saison et local. Louer et réemployer le décor plutôt que l&#x27;acheter, et limiter les goodies à usage unique. Choisir un lieu accessible en transports en commun, et mutualiser les transferts.</p></details>
     </div>
     <aside class="article__cta"><h2 class="article__cta-title">Un événement plus responsable ?</h2><p class="article__cta-text">Dans chaque recommandation, nous proposons au moins une alternative plus responsable. Parlons-en.</p>
       <a href="../#contact" class="article__cta-btn">Demander un devis</a>
@@ -217,6 +277,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="../" class="blog-footer__link">Accueil</a></li>
       <li><a href="../#services" class="blog-footer__link">Services</a></li>
       <li><a href="../#contact" class="blog-footer__link">Contact</a></li>
+      <li><a href="../nos-idees.html" class="blog-footer__link">Nos idées</a></li>
+      <li><a href="../comment-nous-produisons.html" class="blog-footer__link">Comment nous produisons</a></li>
+      <li><a href="../engagements.html" class="blog-footer__link">Engagements</a></li>
+      <li><a href="./" class="blog-footer__link">Journal</a></li>
     </ul>
     <p class="blog-footer__copy">&copy; 2026 Agence Dare-Dare. Tous droits réservés.</p>
     <p class="blog-footer__copy" style="margin-top: 8px; font-size: 13px;">

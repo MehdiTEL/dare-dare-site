@@ -19,13 +19,13 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
   <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
   <!-- Google Search Console : validation de propriété -->
-  <title>Event Agency in Paris, Cannes and Morocco | Dare-Dare</title>
+  <title>Event Agency in Paris, Cannes and Morocco | Agence Dare-Dare</title>
   <meta name="description" content="Dior, Samsung and Moët &amp; Chandon trust us with their parties, launches and press trips. Paris, Cannes, Marrakech. Reply within 24 hours.">
-  <meta property="og:title" content="Event Agency in Paris, Cannes and Morocco | Dare-Dare">
+  <meta property="og:title" content="Event Agency in Paris, Cannes and Morocco | Agence Dare-Dare">
   <meta property="og:description" content="Dior, Samsung and Moët &amp; Chandon trust us with their parties, launches and press trips. Paris, Cannes, Marrakech. Reply within 24 hours.">
   <meta property="og:type" content="website">
   <!-- SEO: Open Graph complet -->
-  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.webp">
+  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/webp">
@@ -36,7 +36,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Event Agency in Paris, Cannes and Morocco | Dare-Dare">
   <meta name="twitter:description" content="Dior, Samsung and Moët &amp; Chandon trust us with their parties, launches and press trips. Paris, Cannes, Marrakech. Reply within 24 hours.">
-  <meta name="twitter:image" content="https://www.agence-dare-dare.fr/photos/og-image.webp">
+  <meta name="twitter:image" content="https://www.agence-dare-dare.fr/photos/og-image.jpg">
   <!-- SEO: meta complémentaires -->
   <meta name="author" content="Agence Dare-Dare">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -55,31 +55,48 @@
   <link rel="icon" type="image/svg+xml" href="../photos/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="../photos/apple-touch-icon.png">
   <link rel="mask-icon" href="../photos/favicon.svg" color="#0A0A0A">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-serif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
   <!-- SEO: Schema.org Organization + LocalBusiness -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EventPlanningBusiness",
+  "@type": [
+    "Organization",
+    "ProfessionalService"
+  ],
   "@id": "https://www.agence-dare-dare.fr/#organization",
   "name": "Agence Dare-Dare",
+  "legalName": "Agence Dare-Dare",
   "alternateName": [
     "Dare Dare",
     "Agence Dare Dare",
     "Dare-Dare"
   ],
-  "url": "https://www.agence-dare-dare.fr",
-  "logo": "https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp",
-  "image": "https://www.agence-dare-dare.fr/photos/og-image.webp",
-  "description": "Agence événementielle premium spécialisée en production et logistique : séminaires, lancements, événements influence, voyages presse. Paris, Cannes et DMC Maroc.",
+  "url": "https://www.agence-dare-dare.fr/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp"
+  },
+  "image": "https://www.agence-dare-dare.fr/photos/og-image.jpg",
+  "slogan": "You dare us, we did it.",
+  "description": "Agence événementielle premium à Paris, avec une présence à Cannes et au Maroc (DMC) : soirées d'entreprise, séminaires, lancements, événements influence, voyages de presse.",
   "email": "contact@agence-dare-dare.fr",
   "telephone": "+33681969362",
-  "sameAs": [
-    "https://instagram.com/agencedaredare",
-    "https://linkedin.com/company/agence-dare-dare"
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "SIREN",
+      "value": "109478099"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "SIRET",
+      "value": "10947809900012"
+    }
   ],
+  "vatID": "FR69109478099",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "11 rue Joubert",
@@ -107,7 +124,7 @@
     },
     {
       "@type": "Country",
-      "name": "Morocco"
+      "name": "Maroc"
     }
   ],
   "knowsAbout": [
@@ -117,9 +134,30 @@
     "Voyages presse",
     "Lancements produits",
     "Scénographie",
-    "Logistique événementielle",
     "DMC Maroc"
   ],
+  "knowsLanguage": [
+    "fr",
+    "en"
+  ],
+  "sameAs": [
+    "https://instagram.com/agencedaredare",
+    "https://linkedin.com/company/agence-dare-dare"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "demande de devis",
+    "telephone": "+33681969362",
+    "email": "contact@agence-dare-dare.fr",
+    "availableLanguage": [
+      "fr",
+      "en"
+    ],
+    "areaServed": [
+      "FR",
+      "MA"
+    ]
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Services événementiels",
@@ -156,267 +194,280 @@
   <!-- SEO: Schema.org FAQPage, 8 questions pour rich snippets Google -->
   <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "inLanguage": "en-GB",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "What types of events do you organize?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "We produce corporate parties, retreats & incentives, influencer events, press trips and product launches. Every format is tailor-made around your goals, your budget and your audience. We work on an intimate dinner as readily as on a show for several thousand: no limit on guest numbers."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Which brands have you worked with?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Our team has produced for Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler, Moët & Chandon, Deloitte, Pernod Ricard, BNP, Maybelline and Paris Blockchain Week. Every collaboration feeds our expertise and our network."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Which destinations do you cover?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Three territories, one standard of excellence: Paris, Cannes and Morocco. On the Moroccan side, we cover Casablanca, Rabat, Marrakech, Tangier, Fez and Essaouira through a rigorously selected local vendor network. Taking your event elsewhere? We adapt, anywhere in the world."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "What is your minimum lead time for an event?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Reply within 24 hours; production possible in 72 hours for a dinner, ideally 2 to 3 months for a party, 4 to 6 months for a retreat abroad. Our agility lets us handle requests in 3 to 4 weeks when needed. That is what “dare-dare” means too."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How does your pricing work?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "We charge production fees calculated based on project complexity and duration. Vendor costs are passed on transparently. Every quote is detailed line by line. We adapt to your budget and provide recommendations accordingly."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "What is your added value in Morocco?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Our local knowledge, a rigorously selected vendor network (venues, caterers, transport, accommodation) and on-site presence ensure seamless coordination and the same level of standards we offer in France. We eliminate the risks of remote organization."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How does the first contact work?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "It all starts with a conversation, by phone, video or in person, to understand your project, expectations and constraints. We then send you a detailed proposal with venue recommendations, concept and estimated budget. No commitment at this stage."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How much does a corporate party cost?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "On a detailed line-by-line quote (venue, catering, technical, scenography, fees), with a reply within 24 hours. To understand the cost items of a corporate party, read our article on the budget of a corporate party in Paris."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How many guests do you produce events for?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No limit on guest numbers: from an intimate dinner to a show for several thousand guests, including client evenings and brand concerts. Every detail is orchestrated by a dedicated project lead, whatever the size."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Can you organise a retreat or incentive in Marrakech?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Yes. We are our own DMC in Morocco, between Paris and Casablanca: private riads, the Agafay desert, hotels, transfers, rooming, closing night. We also coordinate Casablanca, Rabat, Tangier, Fez and Essaouira with local suppliers we know first-hand."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "What is an unexpected launch?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "It is launching a product in a venue nobody expects: a fashion collection in a laundromat, a champagne in a late-night grocery store, jewellery in a bakery. A common thread from the invitation to the morning after, and content that shoots itself."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How quickly do we get a reply and a proposal?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Reply within 24 hours, then a detailed proposal (concept, venue, line-by-line budget); production possible in 72 hours for a dinner, ideally 2 to 3 months for a party. A 15-minute call is enough to get started."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "en-GB",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of events do you organize?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We produce corporate parties, retreats & incentives, influencer events, press trips and product launches. Every format is tailor-made around your goals, your budget and your audience. We work on an intimate dinner as readily as on a show for several thousand: no limit on guest numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which brands have you worked with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our team has produced for Samsung, Chanel, Dior, Bottega Veneta, Hermès, Longchamp, Mugler, Moët & Chandon, Deloitte, Pernod Ricard, BNP, Maybelline and Paris Blockchain Week. Every collaboration feeds our expertise and our network."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which destinations do you cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three territories, one standard of excellence: Paris, Cannes and Morocco. On the Moroccan side, we cover Casablanca, Rabat, Marrakech, Tangier, Fez and Essaouira through a rigorously selected local vendor network. Taking your event elsewhere? We adapt, anywhere in the world."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your minimum lead time for an event?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reply within 24 hours; production possible in 72 hours for a dinner, ideally 2 to 3 months for a party, 4 to 6 months for a retreat abroad. Our agility lets us handle requests in 3 to 4 weeks when needed. That is what “dare-dare” means too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does your pricing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We charge production fees calculated based on project complexity and duration. Vendor costs are passed on transparently. Every quote is detailed line by line. We adapt to your budget and provide recommendations accordingly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your added value in Morocco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our local knowledge, a rigorously selected vendor network (venues, caterers, transport, accommodation) and on-site presence ensure seamless coordination and the same level of standards we offer in France. We eliminate the risks of remote organization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the first contact work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It all starts with a conversation, by phone, video or in person, to understand your project, expectations and constraints. We then send you a detailed proposal with venue recommendations, concept and estimated budget. No commitment at this stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a corporate party cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a detailed line-by-line quote (venue, catering, technical, scenography, fees), with a reply within 24 hours. To understand the cost items of a corporate party, read our article on the budget of a corporate party in Paris."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many guests do you produce events for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No limit on guest numbers: from an intimate dinner to a show for several thousand guests, including client evenings and brand concerts. Every detail is orchestrated by a dedicated project lead, whatever the size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you organise a retreat or incentive in Marrakech?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We are our own DMC in Morocco, between Paris and Casablanca: private riads, the Agafay desert, hotels, transfers, rooming, closing night. We also coordinate Casablanca, Rabat, Tangier, Fez and Essaouira with local suppliers we know first-hand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an unexpected launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is launching a product in a venue nobody expects: a fashion collection in a laundromat, a champagne in a late-night grocery store, jewellery in a bakery. A common thread from the invitation to the morning after, and content that shoots itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly do we get a reply and a proposal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reply within 24 hours, then a detailed proposal (concept, venue, line-by-line budget); production possible in 72 hours for a dinner, ideally 2 to 3 months for a party. A 15-minute call is enough to get started."
+      }
+    }
+  ]
 }
 </script>
   <!-- SEO: Schema.org WebSite, identité du site pour Google -->
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Agence Dare-Dare",
+  "alternateName": "Dare-Dare",
+  "slogan": "You dare us, we did it.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "demande de devis",
+    "telephone": "+33681969362",
+    "email": "contact@agence-dare-dare.fr",
+    "availableLanguage": [
+      "fr",
+      "en"
+    ],
+    "areaServed": [
+      "FR",
+      "MA"
+    ]
+  },
+  "url": "https://www.agence-dare-dare.fr",
+  "description": "Agence événementielle premium. Production sur-mesure à Paris, Cannes et au Maroc.",
+  "publisher": {
+    "@id": "https://www.agence-dare-dare.fr/#organization"
+  },
+  "inLanguage": "en-GB"
+}
+</script>
+<script type="application/ld+json">
+[
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Agence Dare-Dare",
-    "alternateName": "Dare-Dare",
-    "slogan": "You dare us, we did it.",
-    "contactPoint": {"@type": "ContactPoint", "contactType": "demande de devis", "telephone": "+33681969362", "email": "contact@agence-dare-dare.fr", "availableLanguage": ["fr", "en"], "areaServed": ["FR", "MA"]},
-    "url": "https://www.agence-dare-dare.fr",
-    "description": "Agence événementielle premium. Production sur-mesure à Paris, Cannes et au Maroc.",
-    "publisher": {
+    "@type": "Service",
+    "name": "Soirées d'entreprise",
+    "serviceType": "Soirées d'entreprise",
+    "description": "Afterworks, soirées de fin d'année et soirées clients à Paris, Cannes et au Maroc : lieu, traiteur, DJ, déco, régie.",
+    "url": "https://www.agence-dare-dare.fr/agence-soiree-entreprise.html",
+    "provider": {
       "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "areaServed": [
+      "Paris",
+      "Cannes",
+      "Maroc"
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Entreprises et marques"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Séminaires et incentives",
+    "serviceType": "Séminaires et incentives",
+    "description": "Séminaires et incentives en France, en Italie et au Maroc : hôtels, domaines, transferts, rooming, programme, closing night.",
+    "url": "https://www.agence-dare-dare.fr/agence-seminaire.html",
+    "provider": {
+      "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "areaServed": [
+      "Paris",
+      "Cannes",
+      "Maroc"
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Entreprises et marques"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Lancements de produits",
+    "serviceType": "Lancements de produits",
+    "description": "Concept, lieu détourné, mise en scène, reveal, régie, captation et gestion des invités pour les marques de luxe, de mode et de beauté.",
+    "url": "https://www.agence-dare-dare.fr/agence-lancement-produit.html",
+    "provider": {
+      "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "areaServed": [
+      "Paris",
+      "Cannes",
+      "Maroc"
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Entreprises et marques"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Événements influence",
+    "serviceType": "Événements influence",
+    "description": "Concept, photocalls, guest list créateurs, gifting et suivi des retombées.",
+    "url": "https://www.agence-dare-dare.fr/agence-evenement-influence.html",
+    "provider": {
+      "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "areaServed": [
+      "Paris",
+      "Cannes",
+      "Maroc"
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Entreprises et marques"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Voyages de presse",
+    "serviceType": "Voyages de presse",
+    "description": "Itinéraire éditorial, journalistes ciblés, logistique, kits médias et reporting des retombées.",
+    "url": "https://www.agence-dare-dare.fr/agence-voyage-de-presse.html",
+    "provider": {
+      "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "areaServed": [
+      "Paris",
+      "Cannes",
+      "Maroc"
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Entreprises et marques"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "DMC Maroc",
+    "serviceType": "DMC Maroc",
+    "description": "Notre propre réseau local entre Paris et Casablanca : riads, désert d'Agafay, transferts, prestataires en direct.",
+    "url": "https://www.agence-dare-dare.fr/agence-evenementielle-marrakech.html",
+    "provider": {
+      "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "areaServed": [
+      "Paris",
+      "Cannes",
+      "Maroc"
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Entreprises et marques"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Agence événementielle à Paris, Cannes et au Maroc",
+    "url": "https://www.agence-dare-dare.fr/",
+    "about": {
+      "@id": "https://www.agence-dare-dare.fr/#organization"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".brief"
+      ]
     },
     "inLanguage": "en-GB"
   }
-  </script>
-<script type="application/ld+json">
-[
- {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Soirées d'entreprise",
-  "serviceType": "Soirées d'entreprise",
-  "description": "Afterworks, soirées de fin d'année et soirées clients à Paris, Cannes et au Maroc : lieu, traiteur, DJ, déco, régie.",
-  "url": "https://www.agence-dare-dare.fr/agence-soiree-entreprise.html",
-  "provider": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "areaServed": [
-   "Paris",
-   "Cannes",
-   "Maroc"
-  ],
-  "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "Entreprises et marques"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Séminaires et incentives",
-  "serviceType": "Séminaires et incentives",
-  "description": "Séminaires et incentives en France, en Italie et au Maroc : hôtels, domaines, transferts, rooming, programme, closing night.",
-  "url": "https://www.agence-dare-dare.fr/agence-seminaire.html",
-  "provider": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "areaServed": [
-   "Paris",
-   "Cannes",
-   "Maroc"
-  ],
-  "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "Entreprises et marques"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Lancements de produits",
-  "serviceType": "Lancements de produits",
-  "description": "Concept, lieu détourné, mise en scène, reveal, régie, captation et gestion des invités pour les marques de luxe, de mode et de beauté.",
-  "url": "https://www.agence-dare-dare.fr/agence-lancement-produit.html",
-  "provider": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "areaServed": [
-   "Paris",
-   "Cannes",
-   "Maroc"
-  ],
-  "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "Entreprises et marques"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Événements influence",
-  "serviceType": "Événements influence",
-  "description": "Concept, photocalls, guest list créateurs, gifting et suivi des retombées.",
-  "url": "https://www.agence-dare-dare.fr/agence-evenement-influence.html",
-  "provider": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "areaServed": [
-   "Paris",
-   "Cannes",
-   "Maroc"
-  ],
-  "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "Entreprises et marques"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Voyages de presse",
-  "serviceType": "Voyages de presse",
-  "description": "Itinéraire éditorial, journalistes ciblés, logistique, kits médias et reporting des retombées.",
-  "url": "https://www.agence-dare-dare.fr/agence-voyage-de-presse.html",
-  "provider": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "areaServed": [
-   "Paris",
-   "Cannes",
-   "Maroc"
-  ],
-  "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "Entreprises et marques"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "DMC Maroc",
-  "serviceType": "DMC Maroc",
-  "description": "Notre propre réseau local entre Paris et Casablanca : riads, désert d'Agafay, transferts, prestataires en direct.",
-  "url": "https://www.agence-dare-dare.fr/agence-evenementielle-marrakech.html",
-  "provider": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "areaServed": [
-   "Paris",
-   "Cannes",
-   "Maroc"
-  ],
-  "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "Entreprises et marques"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Agence événementielle à Paris, Cannes et au Maroc",
-  "url": "https://www.agence-dare-dare.fr/",
-  "about": {
-   "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "speakable": {
-   "@type": "SpeakableSpecification",
-   "cssSelector": [
-    "#reponse-courte"
-   ]
-  },
-  "inLanguage": "en-GB"
- }
 ]
-  </script>
-<link rel="stylesheet" href="../dd-2026.css?v=20261024b">
+</script>
+<link rel="stylesheet" href="../dd-2026.css?v=20261025">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -433,7 +484,7 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
 
 <header class="nav" id="nav" role="banner">
  <a href="./" class="nav__logo" aria-label="Agence Dare-Dare, home"><img src="../photos/dare-dare-logo-blanc.svg" alt="Agence Dare-Dare" width="132" height="25"></a>
- <nav class="nav__links" aria-label="Main navigation"><a href="#expertises">Services</a><a href="#preuves">Work</a><a href="../nos-idees.html">Our ideas</a><a href="#territoires">Destinations</a><a href="../blog/en/">Blog</a><a href="#contact">Contact</a></nav>
+ <nav class="nav__links" aria-label="Main navigation"><a href="#expertises">Services</a><a href="#preuves">Work</a><a href="../nos-idees.html">Our ideas</a><a href="event-scenography-agency-paris.html">Scenography</a><a href="#territoires">Destinations</a><a href="how-we-produce.html">How we produce</a><a href="commitments.html">Commitments</a><a href="../blog/en/">The Journal</a><a href="#contact">Contact</a></nav>
  <div class="nav__right"><span class="lang nav__lang"><a href="../" hreflang="fr" lang="fr">FR</a> · <b>EN</b></span><a class="btn" href="#contact" data-cur="Write">Request a quote</a>
  <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
 </header>
@@ -444,7 +495,7 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
 
 <main id="main">
 <section class="hero" id="hero">
-<div class="hero__slide on" data-cap="Bottega Veneta|Retreat, Venice"><img src="../photos/bottega-veneta-venise.jpg" srcset="../photos/w800/bottega-veneta-venise.webp 800w" sizes="100vw" width="800" height="1200" alt="Bottega Veneta, retreat in Venice" fetchpriority="high"></div>
+<div class="hero__slide on" data-cap="Bottega Veneta|Retreat, Venice"><img src="../photos/w800/bottega-veneta-venise.webp" sizes="100vw" width="800" height="1200" decoding="async" alt="Bottega Veneta, retreat in Venice" fetchpriority="high"></div>
 <div class="hero__bar" aria-hidden="true"><i class="on"></i></div>
  <div class="hero__txt">
   <h1 class="serif"><span class="sr">Event agency in Paris, Cannes and Morocco:  </span><span class="ln logo-type lt"><span>The agency</span></span><span class="ln"><span class="it">that dares.</span></span></h1>
@@ -463,7 +514,7 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
  <div class="porte"><a class="porte__lien" href="corporate-party-agency.html" aria-label="For your teams: corporate parties"></a><img src="../photos/paris-blockchain-week-moulin-rouge.webp" srcset="../photos/w800/paris-blockchain-week-moulin-rouge.webp 800w, ../photos/paris-blockchain-week-moulin-rouge.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Private evening at the Moulin Rouge" loading="lazy"><div class="porte__in" id="porte-equipes"><div class="eyebrow">Corporate parties · New Year · Retreats</div><h2 class="serif"><span class="lt">For your</span><br><span class="it">teams.</span></h2><p>The nights that bring your people together: a venue, a run of show, a team memory. And retreats that leave a mark, from Paris to Marrakech.</p><ul><li><a href="corporate-party-agency.html">Corporate parties</a></li><li><a href="../blog/en/year-end-corporate-party-paris.html">End of year and New Year</a></li><li><a href="corporate-retreat-agency.html">Corporate retreats and incentives</a></li><li><a href="event-agency-marrakech.html">Morocco DMC</a></li></ul><a class="btn" href="#contact" data-cur="Write">Let's talk about your party</a></div></div>
 </section>
 
-<div class="logos serif" aria-label="Ils nous ont fait confiance"><span>Chanel</span><span>Dior</span><span>Bottega Veneta</span><span>Moët &amp; Chandon</span><span>Samsung</span><span>Longchamp</span><span>Hermès</span><span>Mugler</span><span>Deloitte</span><span>Pernod Ricard</span></div>
+<div class="logos serif" aria-label="They trusted us"><span>Chanel</span><span>Dior</span><span>Bottega Veneta</span><span>Moët &amp; Chandon</span><span>Samsung</span><span>Longchamp</span><span>Hermès</span><span>Mugler</span><span>Deloitte</span><span>Pernod Ricard</span></div>
 
 <section class="manifesto wrap">
  <div class="eyebrow">Manifesto</div>
@@ -521,7 +572,7 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
 <article class="card" tabindex="0" role="button" data-i="12" data-cur="View" aria-label="BNP Paribas : view the project"><div class="card__img"><img src="../photos/bnp-reims-champagne-1.webp" srcset="../photos/w800/bnp-reims-champagne-1.webp 800w, ../photos/bnp-reims-champagne-1.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="BNP, corporate evening at a champagne house in Reims" loading="lazy" width="1200" height="1600"></div><div class="card__meta"><h3 class="serif">BNP Paribas</h3><span>Champagne house, Reims</span></div><p class="card__type">Corporate evening · Incentive</p><span class="card__plus">View the project</span><div class="card__more"><p class="card__m2">Champagne house, Reims · <b>200+ participants</b></p><p class="card__q2">A corporate evening that spells prestige, in a house steeped in history.</p><p class="card__r2"><b>Our role</b> Project lead: venue, catering, technical production, entertainment</p></div></article>
 <article class="card" tabindex="0" role="button" data-i="13" data-cur="View" aria-label="Paris Blockchain Week : view the project"><div class="card__img"><img src="../photos/paris-blockchain-week-moulin-rouge.webp" srcset="../photos/w800/paris-blockchain-week-moulin-rouge.webp 800w, ../photos/paris-blockchain-week-moulin-rouge.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Paris Blockchain Week, evening at the Moulin Rouge" loading="lazy" width="1200" height="1600"></div><div class="card__meta"><h3 class="serif">Paris Blockchain Week</h3><span>Moulin Rouge, Paris</span></div><p class="card__type">Private evening · Iconic venue</p><span class="card__plus">View the project</span><div class="card__more"><p class="card__m2">Moulin Rouge, Paris · <b>Exclusive VIP</b></p><p class="card__q2">The Moulin Rouge privatised for one night: the French Touch at its most spectacular.</p><p class="card__r2"><b>Our role</b> Legendary venue coordination, security management, evening production</p></div></article>
 <article class="card" tabindex="0" role="button" data-i="14" data-cur="View" aria-label="Maybelline / NYX : view the project"><div class="card__img"><img src="../photos/loge-accor-arena-maybelline-nyx.webp" srcset="../photos/w800/loge-accor-arena-maybelline-nyx.webp 800w, ../photos/loge-accor-arena-maybelline-nyx.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Maybelline NYX, VIP box at the Accor Arena" loading="lazy" width="1200" height="1600"></div><div class="card__meta"><h3 class="serif">Maybelline / NYX</h3><span>Accor Arena, Paris</span></div><p class="card__type">Beauty activation · VIP box</p><span class="card__plus">View the project</span><div class="card__more"><p class="card__m2">Accor Arena, Paris · <b>VIP guests</b></p><p class="card__q2">A box transformed into a beauty world, where make-up meets live entertainment.</p><p class="card__r2"><b>Our role</b> Box set design, beauty coordination, VIP welcome</p></div></article>
-<article class="card" tabindex="0" role="button" data-i="15" data-cur="View" aria-label="Bottega Veneta : view the project"><div class="card__img"><img src="../photos/bottega-veneta-venise.jpg" srcset="../photos/w800/bottega-veneta-venise.webp 800w" sizes="(max-width: 768px) 100vw, 50vw" alt="Bottega Veneta, MICE retreat in Venice" loading="lazy" width="800" height="1200"></div><div class="card__meta"><h3 class="serif">Bottega Veneta</h3><span>Venise, Italie</span></div><p class="card__type">MICE seminar · Ultra-private format</p><span class="card__plus">View the project</span><div class="card__more"><p class="card__m2">Venice, Italy · <b>3 days · Exclusive VIP</b></p><p class="card__q2">Three days in Venice for one of the most demanding houses in the world. Every venue, transfer and meal designed as a brand statement.</p><p class="card__r2"><b>Our role</b> Full MICE management: multi-day logistics, private venues, on-site coordination, VIP welcome</p></div></article>
+<article class="card" tabindex="0" role="button" data-i="15" data-cur="View" aria-label="Bottega Veneta : view the project"><div class="card__img"><img src="../photos/w800/bottega-veneta-venise.webp" sizes="(max-width: 768px) 100vw, 50vw" alt="Bottega Veneta, MICE retreat in Venice" loading="lazy" width="800" height="1200"></div><div class="card__meta"><h3 class="serif">Bottega Veneta</h3><span>Venise, Italie</span></div><p class="card__type">MICE seminar · Ultra-private format</p><span class="card__plus">View the project</span><div class="card__more"><p class="card__m2">Venice, Italy · <b>3 days · Exclusive VIP</b></p><p class="card__q2">Three days in Venice for one of the most demanding houses in the world. Every venue, transfer and meal designed as a brand statement.</p><p class="card__r2"><b>Our role</b> Full MICE management: multi-day logistics, private venues, on-site coordination, VIP welcome</p></div></article>
   </div>
   <p class="work__note">Projects delivered in-house and as freelance.</p>
   <div class="work__progress"><i id="wp"></i></div>
@@ -640,7 +691,7 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
 <footer class="footer" role="contentinfo">
   <div class="footer__top">
     <div><img class="footer__logo" src="../photos/dare-dare-logo-blanc.svg" alt="Agence Dare-Dare" width="150" height="28"><p class="footer__sig">You dare us, we did it.</p></div>
-    <nav class="footer__links" aria-label="Pied de page">
+    <nav class="footer__links" aria-label="Footer">
       <a href="#expertises">Services</a><a href="#territoires">Destinations</a><a href="../nos-idees.html">Our ideas</a><a href="../blog/en/">Blog</a><a href="#contact">Contact</a>
       <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener">Instagram</a><a href="https://linkedin.com/company/agence-dare-dare" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
@@ -654,7 +705,7 @@ function t(o){document.body.classList.toggle('menu-open',o);b.setAttribute('aria
 b.addEventListener('click',function(){t(!document.body.classList.contains('menu-open'))});
 document.querySelectorAll('.mmenu a').forEach(function(a){a.addEventListener('click',function(){t(false)})});})();
 </script>
-<script src="../devis.js?v=20261022b"></script>
+<script src="../devis.js?v=20261022b" defer></script>
 <script src="../cookie-consent.js?v=20261021b" defer></script>
 <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
 <script>

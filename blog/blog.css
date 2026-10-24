@@ -519,3 +519,4 @@ body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
 .legal-content h2{font-family:var(--dd-serif)!important;font-weight:400!important;font-size:clamp(26px,2.6vw,34px)!important}
 .legal-content a{color:var(--dd-ink);text-decoration-color:var(--dd-rose-text)}
 .blog-nav__back{color:var(--dd-paper)!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

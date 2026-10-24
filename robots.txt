@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 Disallow: /generate-og.html
+Disallow: /essai-
+Disallow: /maquette-2026/
 
 # Robots IA (recherche, citations et réponses)
 User-agent: GPTBot
@@ -27,6 +29,12 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 User-agent: MistralAI-User
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: https://www.agence-dare-dare.fr/sitemap.xml

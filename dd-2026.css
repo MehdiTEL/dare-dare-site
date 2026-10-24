@@ -191,6 +191,8 @@ footer{border-top:1px solid var(--line);padding-block:56px 40px}
 /* idées : épingles officielles */
 .detourne__grid{align-items:start}
 .dt__pin{min-height:240px;display:flex;justify-content:center}
+.dest__cr{display:block;margin-top:10px;font-size:10px;letter-spacing:.04em;opacity:.7}.dest__cr a{text-decoration:underline}
+.dest__p--typo{background:var(--rose);color:var(--ink)}.dest__p--typo::after{display:none}.dest__p--typo .eyebrow,.dest__p--typo p{color:var(--ink)}
 /* trois épingles au même format : le widget officiel reste intact, seul le cadrage de l'image est fixé */
 .detourne__grid.pins{grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:start}
 .detourne__grid.pins .dt:first-child{grid-column:auto}
