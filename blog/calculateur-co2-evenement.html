@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+  <script>
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
+  <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
+  <title>Calculateur d&#x27;empreinte carbone d&#x27;un événement (gratuit)</title>
+  <meta name="description" content="Estimez gratuitement l&#x27;empreinte carbone de votre événement : transports, hébergement, repas, boissons, lieu, décor et goodies. Facteurs de l&#x27;ADEME, estimation indicative.">
+  <link rel="canonical" href="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
+  <link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
+  <link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/event-carbon-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
+  <meta property="og:title" content="Calculateur d&#x27;empreinte carbone d&#x27;un événement (gratuit)">
+  <meta property="og:description" content="Estimez gratuitement l&#x27;empreinte carbone de votre événement : transports, hébergement, repas, boissons, lieu, décor et goodies. Facteurs de l&#x27;ADEME, estimation indicative.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html">
+  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="blog.css?v=20261022">
+
+<style>
+.dl{margin:40px 0;padding:32px;background:#0A0A0A;color:#F6F2EE;border-radius:4px}
+.dl h2{color:#F6F2EE;margin:0 0 8px;font-size:clamp(24px,3vw,34px)}
+.dl p{color:rgba(246,242,238,.8);margin:0 0 18px}
+.dl form{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+.dl label{display:flex;flex-direction:column;gap:6px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,242,238,.65)}
+.dl input[type=text],.dl input[type=email]{background:transparent;border:0;border-bottom:1px solid rgba(246,242,238,.4);color:#F6F2EE;font:400 16px Inter,sans-serif;padding:8px 0;border-radius:0}
+.dl input:focus{outline:none;border-bottom-color:#E8B4C8}
+.dl .full{grid-column:1/-1}
+.dl .ck{flex-direction:row;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;font-size:13px;color:rgba(246,242,238,.8)}
+.dl .ck input{margin-top:3px;accent-color:#E8B4C8}
+.dl .ck a{color:#F6F2EE}
+.dl button{justify-self:start;background:#F6F2EE;color:#0A0A0A;border:0;border-radius:99px;padding:15px 26px;font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.dl button:hover{background:#E8B4C8}
+.dl .ok{display:none;grid-column:1/-1;padding:14px 16px;background:rgba(246,242,238,.08);border-radius:4px}
+.dl .ok a{color:#E8B4C8;font-weight:600}
+.dl .err{grid-column:1/-1;color:#E8B4C8;font-size:13px;min-height:1em}
+.dl .hp{position:absolute;left:-9999px}
+@media (max-width:640px){.dl{padding:24px 18px}.dl form{grid-template-columns:1fr}}
+.toc{margin:24px 0;padding:22px 26px;border:1px solid rgba(0,0,0,.12);border-radius:4px}
+.toc ol{margin:8px 0 0 18px}
+</style>
+<style>
+.calc{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start;margin:28px 0}
+.calc fieldset{border:1px solid rgba(0,0,0,.12);border-radius:4px;padding:18px 20px;margin:0 0 16px}
+.calc legend{font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:0 6px}
+.calc .hint{font-size:13px;color:#6B645F;margin:0 0 10px}
+.calc label{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px;padding:6px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.calc input[type=number],.calc select{width:110px;flex:0 0 110px;padding:7px 8px;border:1px solid rgba(0,0,0,.25);border-radius:3px;font:inherit;text-align:right;background:#fff}
+.tr{display:grid;grid-template-columns:minmax(0,1fr) 90px 90px;gap:8px;align-items:center;font-size:14px;padding:6px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.tr.h{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6B645F;border:0}
+.tr input{width:100%;padding:7px 8px;border:1px solid rgba(0,0,0,.25);border-radius:3px;font:inherit;text-align:right}
+.res{position:sticky;top:90px;background:#0A0A0A;color:#F6F2EE;border-radius:4px;padding:26px}
+.res .lab{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#E8B4C8}
+.res .big{font-size:48px;font-weight:800;line-height:1;margin:10px 0 4px}
+.res .sub{color:rgba(246,242,238,.75);font-size:14px}
+.bars{margin:20px 0 0;display:grid;gap:10px}
+.bar{font-size:13px}.bar span{display:flex;justify-content:space-between;margin-bottom:4px}
+.bar i{display:block;height:8px;background:rgba(246,242,238,.15);border-radius:99px;overflow:hidden}
+.bar b{display:block;height:100%;background:#E8B4C8;border-radius:99px;width:0;transition:width .4s}
+.warn{background:#F6F2EE;border-left:3px solid #0A0A0A;padding:14px 16px;font-size:14px;margin:18px 0}
+@media (max-width:860px){.calc{grid-template-columns:1fr}.res{position:static}}
+</style>
+  <script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculateur d'empreinte carbone de votre événement",
+  "url": "https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "offers": {
+   "@type": "Offer",
+   "price": "0",
+   "priceCurrency": "EUR"
+  },
+  "inLanguage": "fr-FR",
+  "description": "Estimez gratuitement l'empreinte carbone de votre événement : transports, hébergement, repas, boissons, lieu, décor et goodies. Facteurs de l'ADEME, estimation indicative.",
+  "publisher": {
+   "@type": "Organization",
+   "@id": "https://www.agence-dare-dare.fr/#organization",
+   "name": "Agence Dare-Dare"
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Accueil",
+    "item": "https://www.agence-dare-dare.fr/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Blog",
+    "item": "https://www.agence-dare-dare.fr/blog/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Calculateur CO2",
+    "item": "https://www.agence-dare-dare.fr/blog/calculateur-co2-evenement.html"
+   }
+  ]
+ }
+]
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- BLOG: Navigation -->
+  <nav class="blog-nav">
+    <div class="blog-nav__inner">
+      <a href="../" class="blog-nav__logo" aria-label="Agence Dare-Dare · Accueil">
+        <svg class="blog-nav__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
+          <title>DARE DARE</title>
+          <text x="6" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          <g transform="translate(289, 50) rotate(180)">
+            <text x="0" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+          </g>
+        </svg>
+      </a>
+      <ul class="blog-nav__links">
+        <li><a href="../" class="blog-nav__link">Accueil</a></li>
+        <li><a href="../#services" class="blog-nav__link">Services</a></li>
+        <li><a href="./" class="blog-nav__link">Blog</a></li>
+      </ul>
+      <a href="../#contact" class="blog-nav__cta">Devis</a>
+    </div>
+  </nav>
+
+
+  <div class="breadcrumb" aria-label="Fil d&#39;Ariane">
+    <a href="../">Accueil</a><span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
+    <a href="./">Blog</a><span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
+    <span aria-current="page">Calculateur CO2</span><span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
+    <a href="en/event-carbon-calculator.html" hreflang="en" lang="en">English version</a>
+  </div>
+  <article class="article">
+    <header class="article__header"><span class="article__category">Outil gratuit · Calculateur</span><h1 class="article__title">Calculateur d'empreinte carbone de votre événement</h1>
+      <p class="article__meta">Agence Dare-Dare · Octobre 2026</p></header>
+    <div class="article__answer"><span class="article__answer-label">La réponse courte</span>Renseignez vos invités, leurs trajets, l'hébergement, les repas, le lieu et le décor : vous obtenez <strong>une estimation de l'empreinte carbone de votre événement</strong>, poste par poste, avec les facteurs d'émission de l'ADEME. C'est une estimation indicative, non certifiée.</div>
+    <p class="warn"><strong>Estimations indicatives, non certifiées.</strong> Ce calculateur s'appuie sur la Base Carbone de l'ADEME et d'autres sources publiques, avec des incertitudes de 20 à 70 % selon les postes. Il ne remplace pas un bilan carbone réalisé selon une méthode reconnue. Les trajets en avion incluent l'effet des traînées.</p>
+    <div class="calc"><form class="calc-in" id="calc-in" onsubmit="return false">
+<fieldset><legend>Vos invités</legend><label>Nombre de participants<input type="number" min="0" step="1" name="n" value="100" inputmode="decimal"></label></fieldset>
+<fieldset><legend>Les trajets</legend><p class="hint">Pour chaque mode : combien de personnes et quelle distance aller (km). Le retour est compté automatiquement.</p><div class="tr h"><span></span><span>Personnes*</span><span>Km aller</span></div><div class="tr"><span>Train (TGV, Intercités)</span><input type="number" min="0" name="p_tgv" value="0" aria-label="Train (TGV, Intercités) : Personnes"><input type="number" min="0" name="k_tgv" value="0" aria-label="Train (TGV, Intercités) : Km aller"></div><div class="tr"><span>Train régional (TER)</span><input type="number" min="0" name="p_ter" value="0" aria-label="Train régional (TER) : Personnes"><input type="number" min="0" name="k_ter" value="0" aria-label="Train régional (TER) : Km aller"></div><div class="tr"><span>Métro, RER, tram</span><input type="number" min="0" name="p_metro" value="0" aria-label="Métro, RER, tram : Personnes"><input type="number" min="0" name="k_metro" value="0" aria-label="Métro, RER, tram : Km aller"></div><div class="tr"><span>Autocar</span><input type="number" min="0" name="p_car" value="0" aria-label="Autocar : Personnes"><input type="number" min="0" name="k_car" value="0" aria-label="Autocar : Km aller"></div><div class="tr"><span>Voiture (par véhicule)</span><input type="number" min="0" name="p_voiture" title="Véhicules" value="0" aria-label="Voiture (par véhicule) : Personnes"><input type="number" min="0" name="k_voiture" value="0" aria-label="Voiture (par véhicule) : Km aller"></div><div class="tr"><span>Taxi, VTC</span><input type="number" min="0" name="p_taxi" value="0" aria-label="Taxi, VTC : Personnes"><input type="number" min="0" name="k_taxi" value="0" aria-label="Taxi, VTC : Km aller"></div><div class="tr"><span>Avion</span><input type="number" min="0" name="p_avion" value="0" aria-label="Avion : Personnes"><input type="number" min="0" name="k_avion" value="0" aria-label="Avion : Km aller"></div><p class="hint">* Voiture : nombre de véhicules.</p></fieldset>
+<fieldset><legend>Hébergement</legend><label>Nuits d'hôtel en France (total)<input type="number" min="0" step="1" name="nuits_fr" value="0" inputmode="decimal"></label><label>Nuits d'hôtel au Maroc (total)<input type="number" min="0" step="1" name="nuits_ma" value="0" inputmode="decimal"></label></fieldset>
+<fieldset><legend>Repas et boissons</legend><label>Repas végétariens<input type="number" min="0" step="1" name="veg" value="0" inputmode="decimal"></label><label>Repas végétaliens<input type="number" min="0" step="1" name="vegan" value="0" inputmode="decimal"></label><label>Repas volaille<input type="number" min="0" step="1" name="poulet" value="100" inputmode="decimal"></label><label>Repas poisson<input type="number" min="0" step="1" name="poisson" value="0" inputmode="decimal"></label><label>Repas bœuf<input type="number" min="0" step="1" name="boeuf" value="0" inputmode="decimal"></label><label>Verres de vin<input type="number" min="0" step="1" name="vin" value="0" inputmode="decimal"></label><label>Bières<input type="number" min="0" step="1" name="biere" value="0" inputmode="decimal"></label><label>Cocktails<input type="number" min="0" step="1" name="cocktail" value="0" inputmode="decimal"></label><label>Cafés<input type="number" min="0" step="1" name="cafe" value="0" inputmode="decimal"></label></fieldset>
+<fieldset><legend>Le lieu</legend><label>Surface du lieu (m²)<input type="number" min="0" step="1" name="m2" value="400" inputmode="decimal"></label><label>Durée d'utilisation (heures, montage compris)<input type="number" min="0" step="1" name="h" value="8" inputmode="decimal"></label><label>Pays<select name="pays"><option value="fr">France</option><option value="ma">Maroc</option></select></label></fieldset>
+<fieldset><legend>Décor, impression et goodies</legend><p class="hint">En euros HT dépensés, quand vous ne connaissez pas le poids des matériaux.</p><label>Mobilier et décor (€ HT)<input type="number" min="0" step="1" name="meubles" value="0" inputmode="decimal"></label><label>Textiles, nappes, tenues (€ HT)<input type="number" min="0" step="1" name="textile" value="0" inputmode="decimal"></label><label>Impression, signalétique (€ HT)<input type="number" min="0" step="1" name="impression" value="0" inputmode="decimal"></label><label>Objets en plastique (€ HT)<input type="number" min="0" step="1" name="plastique" value="0" inputmode="decimal"></label><label>Autres objets, goodies (€ HT)<input type="number" min="0" step="1" name="autres" value="0" inputmode="decimal"></label><label>T-shirts<input type="number" min="0" step="1" name="tshirt" value="0" inputmode="decimal"></label><label>Sweats<input type="number" min="0" step="1" name="sweat" value="0" inputmode="decimal"></label></fieldset>
+</form><aside class="res" aria-live="polite"><div class="lab">Votre estimation</div><div class="big"><span id="r-t">0</span> t</div><div class="sub">CO₂e au total · <span id="r-p">0</span> kg par participant</div>
+<div class="sub" style="margin-top:8px">Soit environ <span id="r-km">0</span> km parcourus en voiture par une personne</div><div class="bars"><div class="bar"><span>Trajets<em data-v="0">0</em></span><i><b data-b="0"></b></i></div><div class="bar"><span>Hébergement<em data-v="1">0</em></span><i><b data-b="1"></b></i></div><div class="bar"><span>Repas et boissons<em data-v="2">0</em></span><i><b data-b="2"></b></i></div><div class="bar"><span>Lieu<em data-v="3">0</em></span><i><b data-b="3"></b></i></div><div class="bar"><span>Décor et goodies<em data-v="4">0</em></span><i><b data-b="4"></b></i></div></div></aside></div>
+    <div class="article__body">
+      <h2>Comment réduire</h2><ul><li>Le train plutôt que l'avion dès que c'est possible : sur un Paris-Lyon, l'écart est énorme.</li><li>Un menu majoritairement végétarien, de saison et local.</li><li>Louer et réemployer le décor plutôt que l'acheter, et limiter les goodies à usage unique.</li><li>Choisir un lieu accessible en transports en commun, et mutualiser les transferts.</li></ul>
+      <section class="dl" id="telecharger" aria-label="Télécharger l'outil">
+<h2>Recevez votre estimation par e-mail</h2>
+<p>Nous vous envoyons le détail, et nous pouvons vous aider à le réduire sur votre prochain événement.</p>
+<form class="dl-form co2-form" data-outil="calculateur-co2" data-pdf="#" data-lang="fr" novalidate>
+<label>Prénom et nom<input type="text" name="nom" autocomplete="name" required></label>
+<label>E-mail professionnel<input type="email" name="email" autocomplete="email" required></label>
+<label>Société<input type="text" name="societe" autocomplete="organization" required></label>
+<label>Fonction<input type="text" name="fonction" autocomplete="organization-title"></label>
+<input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label class="ck full"><input type="checkbox" name="rgpd" required> <span>J'accepte que l'Agence Dare-Dare utilise ces informations pour m'envoyer cet outil et me recontacter au sujet de mes projets d'événements. Je peux me désinscrire à tout moment. <a href="../politique-confidentialite.html">Politique de confidentialité</a>.</span></label>
+<p class="err full" role="alert"></p>
+<button type="submit">Recevoir mon estimation</button>
+<div class="ok" role="status">Merci ! Votre estimation part par e-mail. Nous revenons vers vous rapidement.</div>
+</form></section>
+      <h2>Méthode et sources</h2><p>Les facteurs viennent de la Base Carbone de l'ADEME (API ouverte data.ademe.fr), d'Agribalyse pour les repas et de Nos Gestes Climat pour l'hôtel, consultés le 24 octobre 2026. Un verre de vin compte 12,5 cl, une bière 25 cl, un café 10 cl. L'énergie du lieu est un ordre de grandeur : consommation moyenne des cafés, hôtels et restaurants ramenée à l'heure et au m². Le décor et les goodies chiffrés en euros utilisent les ratios monétaires de l'ADEME (2023). Les postes marqués « estimation Dare-Dare » n'ont pas de facteur officiel.</p>
+      <div class="article__table-wrap"><table class="article__table"><thead><tr><th>Facteur</th><th>Valeur</th><th>Source</th></tr></thead><tbody><tr><td>TGV (France continentale)</td><td>0.00293 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43256" rel="noopener" target="_blank">ADEME Base Carbone (Base Empreinte), élément 43256, TGV 2022, InfoGES SNCF, statut Valide générique, incertitude 20 %</a></td></tr><tr><td>TER (traction moyenne)</td><td>0.0277 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43255" rel="noopener" target="_blank">ADEME Base Carbone, élément 43255, TER 2022, InfoGES SNCF, incertitude 60 %</a></td></tr><tr><td>RER et Transilien (Île-de-France)</td><td>0.00978 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43254" rel="noopener" target="_blank">ADEME Base Carbone, élément 43254, RER et transilien 2022, RATP - SNCF, incertitude 20 %</a></td></tr><tr><td>Autocar (gazole)</td><td>0.0376 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43740" rel="noopener" target="_blank">ADEME Base Carbone, élément 43740, Autocar gazole, validité 2026, incertitude 60 %</a></td></tr><tr><td>Voiture particulière, moyenne du parc, par véhicule-km</td><td>0.256 kgCO2e/km (véhicule)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43791" rel="noopener" target="_blank">ADEME Base Carbone, élément 43791, Voiture, motorisation moyenne, 2023, validité 2026, incertitude 60 %</a></td></tr><tr><td colspan="3">Taxi / VTC : voiture moyenne avec un seul passager (estimation Dare-Dare, pas de facteur officiel dédié).</td></tr><tr><td>Avion 101-220 sièges, moins de 500 km (jet), avec traînées</td><td>0.289 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43745" rel="noopener" target="_blank">ADEME Base Carbone, élément 43745, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, 500 à 1 000 km, avec traînées (court-courrier)</td><td>0.225 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43743" rel="noopener" target="_blank">ADEME Base Carbone, élément 43743, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, 1 000 à 2 000 km, avec traînées (moyen-courrier, ex. Paris-Marrakech)</td><td>0.185 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43741" rel="noopener" target="_blank">ADEME Base Carbone, élément 43741, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, 2 000 à 5 000 km, avec traînées</td><td>0.167 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43747" rel="noopener" target="_blank">ADEME Base Carbone, élément 43747, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Avion 101-220 sièges, plus de 5 000 km, avec traînées (long-courrier)</td><td>0.178 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43749" rel="noopener" target="_blank">ADEME Base Carbone, élément 43749, validité 2026, incertitude 70 %, frontière AVEC trainées</a></td></tr><tr><td>Nuitée d&#x27;hôtel en France, petit-déjeuner inclus</td><td>9.91 kgCO2e/nuit</td><td><a href="https://nosgestesclimat.fr/en/documentation/logement/vacances/empreinte-hotel-par-nuit" rel="noopener" target="_blank">Nos Gestes Climat, valeur de départ de la formule 9,91 x (1 - 30 %)</a></td></tr><tr><td colspan="3">Hôtel au Maroc : valeur France faute de donnée publiée (estimation Dare-Dare, probablement sous-estimée vu le mix électrique marocain).</td></tr><tr><td>Repas végétarien</td><td>0.85 kgCO2e/repas</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 (mise à jour 15/01/2025)</a></td></tr><tr><td>Repas végétalien</td><td>0.54 kgCO2e/repas</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 (mise à jour 15/01/2025), liste des équivalents</a></td></tr><tr><td>Repas avec viande blanche (poulet)</td><td>1.46 kgCO2e/repas</td><td><a href="https://impactco2.fr/outils/alimentation/repasavecdupoulet" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 : page « Repas avec du poulet » ouverte, repas = 150 g de poulet, 300 g de légumes, 7 g d&#x27;huile d&#x27;olive, 200 g de dessert moyen, 50 g de pain</a></td></tr><tr><td>Repas avec du saumon</td><td>1.46 kgCO2e/repas</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2</a></td></tr><tr><td>Repas avec viande rouge (bœuf)</td><td>4.97 kgCO2e/repas</td><td><a href="https://impactco2.fr/outils/repas" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2</a></td></tr><tr><td>Vin</td><td>1.27 kgCO2e/litre</td><td><a href="https://impactco2.fr/outils/boisson/vin" rel="noopener" target="_blank">Impact CO2 (ADEME), Agribalyse 3.2 : page ouverte, dont emballage 0,68, agriculture 0,3, transport 0,23</a></td></tr><tr><td>Bière</td><td>1.35 kgCO2e (unité à confirmer, probablement par litre)</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), liste des équivalents</a></td></tr><tr><td colspan="3">Cocktail : assimilé à 15 cl de vin (estimation Dare-Dare, aucun facteur officiel par cocktail).</td></tr><tr><td>Café</td><td>0.64 kgCO2e (unité à confirmer, probablement par litre)</td><td><a href="https://impactco2.fr/equivalents.csv" rel="noopener" target="_blank">Impact CO2 (ADEME), liste des équivalents</a></td></tr><tr><td>Consommation d&#x27;électricité tous usages, tertiaire (cafés, hôtels, restaurants), moyenne annuelle</td><td>254 kWh/(m².an)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:23631" rel="noopener" target="_blank">ADEME Base Carbone, élément 23631, statistiques territoriales tertiaire, France continentale</a></td></tr><tr><td>Électricité, mix réseau France continentale 2024 (consommation)</td><td>0.0519 kgCO2e/kWh</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43642" rel="noopener" target="_blank">ADEME Base Carbone, élément 43642, mix moyen 2024, frontière consommation</a></td></tr><tr><td>Électricité, mix réseau Maroc</td><td>0.718 kgCO2e/kWh</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:15651" rel="noopener" target="_blank">ADEME Base Carbone, élément 15651, Électricité, mix moyen, Maroc, statut Valide générique, validité déc. 2017</a></td></tr><tr><td>Ratio monétaire : meubles (2023)</td><td>231 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43360" rel="noopener" target="_blank">ADEME Base Carbone, élément 43360</a></td></tr><tr><td>Ratio monétaire : textile, habillement, cuir (2023)</td><td>271 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43405" rel="noopener" target="_blank">ADEME Base Carbone, élément 43405</a></td></tr><tr><td>Ratio monétaire : travaux d&#x27;impression et de reproduction (2023)</td><td>210 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43575" rel="noopener" target="_blank">ADEME Base Carbone, élément 43575</a></td></tr><tr><td>Ratio monétaire : produits en caoutchouc et en plastique (2023)</td><td>312 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43415" rel="noopener" target="_blank">ADEME Base Carbone, élément 43415</a></td></tr><tr><td>Ratio monétaire : autres produits manufacturés (2023)</td><td>231 kgCO2e/k€ HT (2023)</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43365" rel="noopener" target="_blank">ADEME Base Carbone, élément 43365</a></td></tr><tr><td>T-shirt en coton</td><td>5.2 kgCO2e/unité</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:27044" rel="noopener" target="_blank">ADEME Base Carbone, élément 27044, T-shirt en coton</a></td></tr><tr><td>Sweat (coton)</td><td>27.4 kgCO2e/unité</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:27049" rel="noopener" target="_blank">ADEME Base Carbone, élément 27049</a></td></tr><tr><td>Voiture moyenne, par passager-km (usage mixte)</td><td>0.16 kgCO2e/passager.km</td><td><a href="https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/lines?qs=Identifiant_de_l%27%C3%A9l%C3%A9ment:43809" rel="noopener" target="_blank">ADEME Base Carbone, élément 43809, Voiture moyenne, Mixte, 2023, incertitude 60 %</a></td></tr></tbody></table></div>
+    </div>
+    <aside class="article__cta"><h2 class="article__cta-title">Un événement plus responsable ?</h2><p class="article__cta-text">Dans chaque recommandation, nous proposons au moins une alternative plus responsable. Parlons-en.</p>
+      <a href="../#contact" class="article__cta-btn">Demander un devis</a>
+      <a href="../engagements.html" class="article__cta-more">Nos engagements</a></aside>
+    <p class="article__evin">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+  </article>
+  <section class="related"><h2 class="related__title">Nos outils gratuits</h2><div class="related__grid"><a href="checklist-soiree-entreprise.html" class="related__card"><span class="related__card-category">Checklist</span><span class="related__card-title">Préparer sa soirée d&#x27;entreprise : la checklist gratuite (58 points)</span></a><a href="retroplanning-evenement.html" class="related__card"><span class="related__card-category">Rétroplanning</span><span class="related__card-title">Rétroplanning d&#x27;événement : le modèle gratuit, de J-90 à J+7</span></a><a href="modele-brief-agence.html" class="related__card"><span class="related__card-category">Modèle</span><span class="related__card-title">Le modèle de brief : les 10 questions avant d&#x27;appeler une agence événementielle</span></a></div></section>
+  <!-- BLOG: Footer -->
+  <footer class="blog-footer">
+    <a href="../" class="blog-footer__logo" aria-label="Agence Dare-Dare · Accueil">
+      <svg class="blog-footer__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
+        <title>DARE DARE</title>
+        <text x="6" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+        <g transform="translate(289, 50) rotate(180)">
+          <text x="0" y="43" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="48" letter-spacing="2" text-rendering="geometricPrecision">DARE</text>
+        </g>
+      </svg>
+    </a>
+    <p class="blog-footer__tagline">You dare us, we did it.</p>
+    <ul class="blog-footer__links">
+      <li><a href="../" class="blog-footer__link">Accueil</a></li>
+      <li><a href="../#services" class="blog-footer__link">Services</a></li>
+      <li><a href="../#contact" class="blog-footer__link">Contact</a></li>
+    </ul>
+    <p class="blog-footer__copy">&copy; 2026 Agence Dare-Dare. Tous droits réservés.</p>
+    <p class="blog-footer__copy" style="margin-top: 8px; font-size: 13px;">
+      <a href="../mentions-legales.html" class="blog-footer__link">Mentions légales</a>
+      &nbsp;·&nbsp;
+      <a href="../politique-confidentialite.html" class="blog-footer__link">Politique de confidentialité</a>
+    </p>
+  </footer>
+
+
+  <script src="../cookie-consent.js?v=20261021b" defer></script>
+  <script src="../devis.js?v=20261022b" defer></script>
+  <script src="../ressources/telechargement.js?v=20261024b" defer></script>
+
+<script>
+(function(){var F={"tgv": 0.00293, "ter": 0.0277, "metro": 0.00978, "car": 0.0376, "voiture": 0.256, "taxi": 0.256, "av1": 0.289, "av2": 0.225, "av3": 0.185, "av4": 0.167, "av5": 0.178, "hotel_fr": 9.91, "hotel_ma": 9.91, "veg": 0.85, "vegan": 0.54, "poulet": 1.46, "poisson": 1.46, "boeuf": 4.97, "vin": 0.15875, "biere": 0.3375, "cocktail": 0.1905, "cafe": 0.064, "kwh_m2_h": 0.028995, "elec_fr": 0.0519, "elec_ma": 0.718, "r_meubles": 0.231, "r_textile": 0.271, "r_impression": 0.21, "r_plastique": 0.312, "r_autres": 0.231, "tshirt": 5.2, "sweat": 27.4, "voit_pkm": 0.16},f=document.getElementById('calc-in'),last={};
+function g(n){var e=f.elements[n];return e?Math.max(0,parseFloat(e.value)||0):0}
+function avion(km){return km<500?F.av1:km<1000?F.av2:km<2000?F.av3:km<5000?F.av4:F.av5}
+function fmt(x,d){return x.toLocaleString(document.documentElement.lang==='fr'?'fr-FR':'en-GB',{maximumFractionDigits:d,minimumFractionDigits:d})}
+function calc(){var t=0,tr=0;
+ ['tgv','ter','metro','car','taxi'].forEach(function(k){tr+=g('p_'+k)*g('k_'+k)*2*F[k]});
+ tr+=g('p_voiture')*g('k_voiture')*2*F.voiture;var ka=g('k_avion');tr+=g('p_avion')*ka*2*avion(ka);
+ var he=g('nuits_fr')*F.hotel_fr+g('nuits_ma')*F.hotel_ma;
+ var re=g('veg')*F.veg+g('vegan')*F.vegan+g('poulet')*F.poulet+g('poisson')*F.poisson+g('boeuf')*F.boeuf+g('vin')*F.vin+g('biere')*F.biere+g('cocktail')*F.cocktail+g('cafe')*F.cafe;
+ var li=g('m2')*g('h')*F.kwh_m2_h*(f.elements.pays.value==='ma'?F.elec_ma:F.elec_fr);
+ var de=g('meubles')*F.r_meubles+g('textile')*F.r_textile+g('impression')*F.r_impression+g('plastique')*F.r_plastique+g('autres')*F.r_autres+g('tshirt')*F.tshirt+g('sweat')*F.sweat;
+ var parts=[tr,he,re,li,de];t=parts.reduce(function(a,b){return a+b},0);var n=g('n')||1;
+ document.getElementById('r-t').textContent=fmt(t/1000,t<10000?2:1);document.getElementById('r-p').textContent=fmt(t/n,1);document.getElementById('r-km').textContent=fmt(t/F.voit_pkm,0);
+ parts.forEach(function(p,i){document.querySelector('[data-v="'+i+'"]').textContent=fmt(p,0)+' kg';document.querySelector('[data-b="'+i+'"]').style.width=(t?Math.round(p/t*100):0)+'%'});
+ last={total_kg:Math.round(t),par_participant_kg:Math.round(t/n*10)/10,trajets_kg:Math.round(tr),hebergement_kg:Math.round(he),repas_boissons_kg:Math.round(re),lieu_kg:Math.round(li),decor_goodies_kg:Math.round(de),participants:n}}
+f.addEventListener('input',calc);calc();
+var mf=document.querySelector('.co2-form');if(mf){mf.dataset.pdf='';mf.addEventListener('submit',function(){try{dataLayer.push({event:'dd_co2',total_kg:last.total_kg})}catch(e){}},true);
+ window.ddExtra=function(){return last}}
+})();
+</script>
+</body>
+</html>
