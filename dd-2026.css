@@ -191,6 +191,12 @@ footer{border-top:1px solid var(--line);padding-block:56px 40px}
 /* idées : épingles officielles */
 .detourne__grid{align-items:start}
 .dt__pin{min-height:240px;display:flex;justify-content:center}
+/* trois épingles au même format : le widget officiel reste intact, seul le cadrage de l'image est fixé */
+.detourne__grid.pins{grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:start}
+.detourne__grid.pins .dt:first-child{grid-column:auto}
+.dt__pin>span[class*="_embed_pin"]{width:100%!important;max-width:none!important;min-width:0!important}
+.dt__pin span[class$="_pages"]{padding-bottom:125%!important}
+@media (max-width:768px){.detourne__grid.pins{grid-template-columns:1fr!important}}
 .dt__more{display:inline-block;margin-top:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
 /* bandeaux CTA */
 
