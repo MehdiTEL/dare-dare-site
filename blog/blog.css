@@ -545,3 +545,7 @@ body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
 .article .dd-defi{margin-top:72px;padding:56px 48px}
 @media (max-width:768px){.article .dd-defi{padding:40px 24px;margin-top:56px}}
 .article .dd-defi__in{width:100%}
+
+/* pied de page du Journal : les liens passent à la ligne sur mobile */
+.blog-footer__links{display:flex;flex-wrap:wrap;gap:8px 18px;max-width:100%}
+.blog-footer__links li{min-width:0}

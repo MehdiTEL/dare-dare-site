@@ -61,3 +61,6 @@
 .svc-section__title:not(:has(.lt)),.section-title:not(:has(.lt)),.methode__title:not(:has(.lt)){font-size:clamp(32px,3.8vw,58px);line-height:1.05}
 .faq-item__answer{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.2,.8,.2,1)}
 .faq-item__icon{transition:transform .4s}.faq-item.open .faq-item__icon{transform:rotate(45deg)}
+
+/* bouton WhatsApp plein (fond papier) : texte encre */
+.contact__direct-btn.hero__cta-primary{color:var(--ink);border-bottom:0}

@@ -165,3 +165,12 @@ details[open].more>summary::after{transform:rotate(45deg)}
 .merci__links a:hover{color:var(--rose)}
 .merci__back{margin-top:34px;font-size:13px;color:rgba(246,242,238,.65)}
 .merci__back a{border-bottom:1px solid currentColor}
+
+/* textes de dd-2026.css pensés pour l'encre : lisibles sur les sections papier */
+.sec:not(.dark):not(.contact):not(.faq) .below,.sec:not(.dark):not(.contact):not(.faq) .steps{color:var(--ink)}
+.sec:not(.dark):not(.contact):not(.faq) .below a{color:var(--ink)}
+
+/* Réassurance avant le formulaire (une ligne sobre) */
+.dd-reassur{font-size:.85rem;line-height:1.6;letter-spacing:.02em;color:rgba(246,242,238,.7);margin:0 0 28px;max-width:720px}
+.dd-reassur a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.contact__header + .dd-reassur,.contact .container > .dd-reassur{text-align:center;margin-left:auto;margin-right:auto}

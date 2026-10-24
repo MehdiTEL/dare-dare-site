@@ -40,7 +40,7 @@
     q = (q || '').replace(/\s+/g, ' ').trim().slice(0, 160);
     var input = box.querySelector('.dd-defi__in');
     if (!q) { if (input) input.focus(); return; }
-    push({ event: 'dd_defi', defi_type: type || 'aucun', defi_page: location.pathname });
+    push({ event: 'dd_defi', defi_type: type || 'aucun', defi_page: location.pathname, defi_origin: location.pathname, defi_target: box.getAttribute('data-target') || location.pathname, defi_lang: en ? 'en' : 'fr' });
     if (fill(q, type, true)) return;
     var target = box.getAttribute('data-target');
     if (target) {
