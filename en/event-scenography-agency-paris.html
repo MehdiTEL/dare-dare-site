@@ -38,8 +38,8 @@
   <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-serif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
-  <link rel="stylesheet" href="../dd-2026.css?v=20261025">
-  <link rel="stylesheet" href="../dd-pages.css?v=20261024">
+  <link rel="stylesheet" href="../dd-2026.css?v=20261026">
+  <link rel="stylesheet" href="../dd-pages.css?v=20261027">
   <link rel="stylesheet" href="../dd-svc.css?v=20261024">
   <script type="application/ld+json" id="ld-organization">
 {"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://www.agence-dare-dare.fr/#organization","name":"Agence Dare-Dare","legalName":"Agence Dare-Dare","alternateName":["Dare Dare","Agence Dare Dare","Dare-Dare"],"url":"https://www.agence-dare-dare.fr/","logo":{"@type":"ImageObject","url":"https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp"},"image":"https://www.agence-dare-dare.fr/photos/og-image.webp","slogan":"You dare us, we did it.","description":"Agence événementielle premium à Paris, avec une présence à Cannes et au Maroc (DMC) : soirées d'entreprise, séminaires, lancements, événements influence, voyages de presse.","email":"contact@agence-dare-dare.fr","telephone":"+33681969362","identifier":[{"@type":"PropertyValue","propertyID":"SIREN","value":"109478099"},{"@type":"PropertyValue","propertyID":"SIRET","value":"10947809900012"}],"vatID":"FR69109478099","address":{"@type":"PostalAddress","streetAddress":"11 rue Joubert","postalCode":"75009","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"areaServed":[{"@type":"City","name":"Paris","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"City","name":"Cannes","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"Country","name":"Maroc"}],"knowsAbout":["Production événementielle","Séminaires d'entreprise","Événements influence","Voyages presse","Lancements produits","Scénographie","DMC Maroc"],"knowsLanguage":["fr","en"],"sameAs":["https://instagram.com/agencedaredare","https://linkedin.com/company/agence-dare-dare"],"contactPoint":{"@type":"ContactPoint","contactType":"demande de devis","telephone":"+33681969362","email":"contact@agence-dare-dare.fr","availableLanguage":["fr","en"],"areaServed":["FR","MA"]}}
@@ -191,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="svc-hero__sub">A venue becomes a brand house for one night: concept, set, lighting, furniture, guest journey. Designed, built and installed by our team.</p>
         <div class="hero__ctas">
           <a href="#contact" class="hero__cta-primary">Get a quote</a>
-          <a href="https://wa.me/33681969362?text=Hello%20Dare-Dare%2C%20I%20have%20a%20scenography%20project" target="_blank" rel="noopener" class="hero__cta-secondary">WhatsApp</a>
+          <a href="#defi" class="hero__cta-secondary" data-cur="Dare">Dare us</a>
         </div>
       </div>
       <div class="hero__locations" aria-hidden="true">
@@ -289,6 +289,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </section>
+
+    <section class="dd-defi" id="defi" data-lang="en" aria-labelledby="defi-q">
+  <div class="sur">The challenge</div>
+  <h2 class="dd-defi__q" id="defi-q"><span class="lt">I dare you</span><br><em>to…</em></h2>
+  <form class="dd-defi__row" autocomplete="off"><label class="sr-only" for="defi-in">Your challenge</label><input class="dd-defi__in" id="defi-in" name="defi" type="text" maxlength="160" placeholder="turn a warehouse into a one-night lounge"><button class="dd-defi__go" type="submit">Take it on</button></form>
+  <div class="dd-defi__sugg" role="group" aria-label="Example challenges"><button type="button" data-type="Other">turn a warehouse into a one-night lounge</button><button type="button" data-type="Other">dress a dinner for 200 guests in a raw venue</button><button type="button" data-type="Other">design a retreat that does not look like a meeting room</button></div>
+  <p class="dd-defi__note">A challenge, an idea, a venue: reply within 24 hours, with a first idea.</p>
+</section>
 
     <section class="contact" id="contact">
       <div class="container">
@@ -413,6 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 var b=document.querySelector('.nav__burger');if(b){var t=function(o){document.body.classList.toggle('menu-open',o);b.setAttribute('aria-expanded',o);var m=document.querySelector('.mmenu');if(m)m.setAttribute('aria-hidden',!o)};b.addEventListener('click',function(){t(!document.body.classList.contains('menu-open'))});document.querySelectorAll('.mmenu a').forEach(function(a){a.addEventListener('click',function(){t(false)})})}
 var fs=document.querySelectorAll('.fab'),c=document.getElementById('contact'),h=document.querySelector('.svc-hero');function v(){var on=scrollY>(h?h.offsetHeight*.8:400)&&(!c||c.getBoundingClientRect().top>innerHeight*.6);fs.forEach(function(x){x.classList.toggle('on',on)})}addEventListener('scroll',v,{passive:true});v()})();</script>
   <script src="../cookie-consent.js?v=20261021b" defer></script>
-  <script src="../devis.js?v=20261022b" defer></script>
+  <script src="../devis.js?v=20261026" defer></script>
+  <script src="../defi.js?v=20261026" defer></script>
 </body>
 </html>
