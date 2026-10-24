@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 /* ============================================
    AGENCE DARE-DARE · Blog CSS
    Design éditorial monochrome, typo Inter
@@ -464,3 +465,57 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* Mention sanitaire loi Evin (articles qui parlent d'alcool) */
 .article__evin { margin: 28px 0 0; font-size: 12px; line-height: 1.5; opacity: .6; text-align: center; }
+
+
+/* ===================== Dare-Dare 2026 : le Journal dans le design du site ===================== */
+:root{--dd-ink:#0A0A0A;--dd-paper:#F6F2EE;--dd-rose:#E8B4C8;--dd-rose-text:#B0316B;--dd-mute:#6B645F;--dd-serif:"Instrument Serif",Georgia,serif}
+body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
+.blog-nav{background:var(--dd-ink);color:var(--dd-paper);border:0}
+.blog-nav__logo,.blog-nav__logo-svg{color:var(--dd-paper)}
+.blog-nav__link{color:rgba(246,242,238,.85)}
+.blog-nav__link:hover,.blog-nav__link[aria-current="page"]{color:var(--dd-paper)}
+.blog-nav__cta{clip-path:none;background:transparent;color:var(--dd-paper);border:1px solid var(--dd-paper);border-radius:99px;padding:11px 22px;font-weight:500;letter-spacing:.14em;transition:background .4s,color .4s}
+.blog-nav__cta:hover{background:var(--dd-paper);color:var(--dd-ink);opacity:1}
+.breadcrumb{color:var(--dd-mute)}
+.breadcrumb a{color:var(--dd-ink);border-bottom:1px solid rgba(10,10,10,.25)}
+.article__category,.blog-card__category,.related__card-category{color:var(--dd-rose-text);font-weight:500;letter-spacing:.22em}
+.article__title{font-family:var(--dd-serif);font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.01em}
+.article__meta{color:var(--dd-mute)}
+.article__body h2,.article__cta-title,.related__title{font-family:var(--dd-serif);font-weight:400;letter-spacing:-.005em}
+.article__body h2{font-size:clamp(30px,3.4vw,44px);line-height:1.05}
+.article__body h3{font-weight:800;text-transform:uppercase;letter-spacing:.03em;font-size:15px}
+.article__body a{color:var(--dd-ink);text-decoration-color:var(--dd-rose-text)}
+.article__answer{background:var(--dd-ink);color:var(--dd-paper);border:0;border-radius:4px}
+.article__answer a{color:var(--dd-rose)}
+.article__answer-label{color:var(--dd-rose)}
+.article__body blockquote{border-left-color:var(--dd-ink)}
+.article__img-wrap{background:transparent}
+.article__img-wrap img{filter:none}
+.article__cta{background:var(--dd-ink);color:var(--dd-paper);border-radius:4px}
+.article__cta-title{color:var(--dd-paper);font-size:clamp(30px,3.4vw,44px)}
+.article__cta-text{color:rgba(246,242,238,.8)}
+.article__cta-btn{background:var(--dd-paper);color:var(--dd-ink);border-radius:99px;clip-path:none;font-weight:500;letter-spacing:.14em}
+.article__cta-btn:hover{background:var(--dd-rose);opacity:1}
+.article__cta-wa,.article__cta-more{color:var(--dd-paper)}
+.article__table th{border-bottom-color:var(--dd-ink)}
+.blog-hero{background:var(--dd-ink);color:var(--dd-paper);padding-bottom:70px}
+.blog-hero__title{font-family:var(--dd-serif);font-weight:400;font-size:clamp(56px,9vw,130px);letter-spacing:-.01em;color:var(--dd-paper)}
+.blog-hero__title .lt{font-family:Inter,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:.78em}
+.blog-hero__subtitle{color:rgba(246,242,238,.8)}
+.blog-card{border-color:rgba(10,10,10,.12)}
+.blog-card__title{font-family:var(--dd-serif);font-weight:400;font-size:clamp(24px,2.4vw,32px);line-height:1.1}
+.blog-card:hover .blog-card__title{font-style:italic}
+.related{background:var(--dd-paper)}
+.related__card{border-color:rgba(10,10,10,.12);border-radius:4px}
+.related__card-title{font-family:var(--dd-serif);font-weight:400;font-size:22px}
+.blog-footer{background:var(--dd-ink);color:var(--dd-paper)}
+.blog-footer__logo,.blog-footer__logo-svg{color:var(--dd-paper)}
+.blog-footer__tagline{font-family:var(--dd-serif);font-style:italic;font-size:24px}
+.blog-footer__link,.blog-footer__copy{color:rgba(246,242,238,.75)}
+.article__evin{color:var(--dd-mute)}
+@media (max-width:900px){.article__img-wrap{margin:32px 0}.article__img-wrap--full{margin-left:0;margin-right:0}}
+/* pages légales */
+.legal-content h1{font-family:var(--dd-serif)!important;font-weight:400!important;font-size:clamp(44px,6vw,72px)!important;line-height:1!important;letter-spacing:-.01em}
+.legal-content h2{font-family:var(--dd-serif)!important;font-weight:400!important;font-size:clamp(26px,2.6vw,34px)!important}
+.legal-content a{color:var(--dd-ink);text-decoration-color:var(--dd-rose-text)}
+.blog-nav__back{color:var(--dd-paper)!important}

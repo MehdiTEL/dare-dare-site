@@ -211,6 +211,9 @@ footer{border-top:1px solid var(--line);padding-block:56px 40px}
 /* ===== Deux portes ===== */
 .portes{display:grid;grid-template-columns:1fr 1fr;gap:2px}
 .porte{position:relative;min-height:78svh;overflow:hidden;display:flex;align-items:flex-end;color:var(--paper)}
+.porte__lien{position:absolute;inset:0;z-index:1}
+.porte__in{pointer-events:none}.porte__in a{pointer-events:auto}
+.porte:hover h2 .it{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.12em}
 .porte>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
 .porte:hover>img{transform:scale(1.04)}
 .porte::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.55)}
