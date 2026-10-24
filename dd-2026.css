@@ -191,6 +191,11 @@ footer{border-top:1px solid var(--line);padding-block:56px 40px}
 /* idées : épingles officielles */
 .detourne__grid{align-items:start}
 .dt__pin{min-height:240px;display:flex;justify-content:center}
+/* accueil allégé (24/10) : lexique et destinations plus compacts */
+.lex{padding-block:clamp(64px,9vh,100px)}.lex__grid{margin-top:32px}.lex__item{padding-block:24px}.lex__word{font-size:clamp(32px,3vw,48px);margin:10px 0}.lex__ex{display:none}
+.dest{height:64svh;min-height:440px}
+@media (min-width:901px){.work{height:260vh}}
+.faq__more>summary{cursor:pointer;list-style:none;margin-top:26px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper)}.faq__more>summary::-webkit-details-marker{display:none}.faq__more>summary::after{content:" +"}.faq__more[open]>summary::after{content:" ×"}
 .dest__cr{display:block;margin-top:10px;font-size:10px;letter-spacing:.04em;opacity:.7}.dest__cr a{text-decoration:underline}
 .dest__p--typo{background:var(--rose);color:var(--ink)}.dest__p--typo::after{display:none}.dest__p--typo .eyebrow,.dest__p--typo p{color:var(--ink)}
 /* trois épingles au même format : le widget officiel reste intact, seul le cadrage de l'image est fixé */
