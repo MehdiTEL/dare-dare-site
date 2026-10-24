@@ -1,0 +1,63 @@
+/* Dare-Dare 2026 · pages services anglaises (ancienne structure svc-*) habillées comme les pages FR. */
+.container{max-width:none;padding:0 clamp(20px,5vw,72px);margin:0}
+.svc-hero{position:relative;min-height:86svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:var(--paper);padding:0}
+.svc-hero>img.pg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.svc-hero.has-img::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.55)}
+.svc-hero::before{display:none}
+.svc-hero__content{position:relative;z-index:2;padding:150px clamp(20px,5vw,72px) clamp(48px,9vh,96px);max-width:1200px;text-align:left}
+.svc-crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.6);margin-bottom:22px}
+.svc-crumb a{border-bottom:1px solid rgba(246,242,238,.35)}
+.svc-hero__eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
+.svc-hero__title{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(56px,9vw,150px);line-height:.9;letter-spacing:-.01em;color:var(--paper)}
+.svc-hero__title .lt{font-size:.78em}
+.svc-hero__sub{max-width:620px;margin-top:24px;font-size:17px;color:rgba(246,242,238,.85)}
+.hero__ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero__locations{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.6)}
+.hero__tagline{font-family:"Instrument Serif",serif;font-style:italic;font-size:22px;text-transform:none;letter-spacing:0;color:var(--paper)}
+
+.svc-intro,.svc-section,.methode,.faq,.svc-more{padding:clamp(90px,14vh,150px) 0}
+.svc-intro{background:var(--paper);color:var(--ink)}
+.svc-intro__label,.methode__subtitle,.svc-more__label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#6B645F;margin-bottom:16px;display:block}
+.svc-intro__text{font-family:"Instrument Serif",serif;font-size:clamp(26px,2.6vw,40px);line-height:1.2;max-width:1000px}
+.svc-section{background:var(--ink);color:var(--paper)}
+.svc-section--alt{background:var(--paper);color:var(--ink)}
+.svc-section__title,.section-title,.methode__title,.contact__title{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(40px,5.6vw,88px);line-height:.95;letter-spacing:-.01em;margin-bottom:34px;max-width:1100px}
+.svc-section__title .lt,.section-title .lt,.methode__title .lt,.contact__title .lt{font-size:.8em}
+.svc-text{max-width:72ch;font-size:16px;opacity:.85}
+.svc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.svc-card{padding:26px;border:1px solid var(--line);border-radius:4px;background:transparent}
+.svc-section--alt .svc-card{border-color:rgba(10,10,10,.14)}
+.svc-card__title{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(22px,2vw,28px);margin-bottom:8px}
+.svc-card__text{font-size:15px;opacity:.85}
+.svc-projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.svc-project{margin:0}
+.svc-project img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.svc-project figcaption{font-size:14px;margin-top:10px;opacity:.85}
+
+.methode{background:var(--ink);color:var(--paper)}
+.methode__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
+.methode__num{font:800 13px Inter,sans-serif;letter-spacing:.06em;color:var(--rose)}
+.methode__step-title{font-family:"Instrument Serif",serif;font-weight:400;font-size:26px;margin:10px 0 8px}
+.methode__step-desc{font-size:15px;opacity:.8}
+
+.faq{background:var(--ink);color:var(--paper)}
+.faq__list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item__question{width:100%;display:flex;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:0;color:var(--paper);text-align:left;cursor:pointer;font-family:"Instrument Serif",serif;font-size:clamp(20px,1.8vw,26px)}
+.faq-item__icon{font-family:Inter,sans-serif}
+.faq-item__answer-inner{padding:0 0 24px;color:rgba(246,242,238,.75);max-width:62ch}
+
+.contact{background:var(--ink);color:var(--paper);padding:clamp(110px,18vh,190px) 0}
+.contact__subtitle{max-width:560px;color:rgba(246,242,238,.75);margin-bottom:40px}
+.contact__direct,.contact__info-bar{margin-top:30px;font-size:14px;color:rgba(246,242,238,.75)}
+.contact__info-link,.contact__direct-btn{color:var(--paper);border-bottom:1px solid rgba(246,242,238,.35)}
+
+.svc-more{background:var(--paper);color:var(--ink)}
+.svc-more__list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 30px;border-top:1px solid rgba(10,10,10,.14)}
+.svc-more__list li{border-bottom:1px solid rgba(10,10,10,.14)}
+.svc-more__link{display:block;padding:16px 0;font-size:15px;color:var(--ink)}
+.svc-more__link:hover{color:#B0316B}
+.zellige-pattern::before,.zellige-pattern::after{display:none!important}
+.svc-section__title:not(:has(.lt)),.section-title:not(:has(.lt)),.methode__title:not(:has(.lt)){font-size:clamp(32px,3.8vw,58px);line-height:1.05}
+.faq-item__answer{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.2,.8,.2,1)}
+.faq-item__icon{transition:transform .4s}.faq-item.open .faq-item__icon{transform:rotate(45deg)}

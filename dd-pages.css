@@ -129,3 +129,4 @@ details[open].more>summary::after{transform:rotate(45deg)}
 }
 
 .sec .refs{padding:0;border:0;max-width:900px}
+.sec h2:not(:has(.lt)){font-size:clamp(32px,3.8vw,58px);line-height:1.05}
