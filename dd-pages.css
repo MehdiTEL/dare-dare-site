@@ -1,0 +1,131 @@
+/* Dare-Dare 2026 · gabarit des pages intérieures (services, villes, idées, mariage).
+   Complète dd-2026.css : mêmes couleurs, mêmes polices, titres en deux lignes. */
+body{background:var(--ink);color:var(--paper)}
+main{display:block}
+.crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.6);margin-bottom:26px}
+.crumb a{border-bottom:1px solid rgba(246,242,238,.35)}
+
+/* héros de page */
+.pghero{position:relative;min-height:86svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+.pghero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pghero.has-img::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.55)}
+.pghero__in{position:relative;z-index:2;padding:150px clamp(20px,5vw,72px) clamp(48px,9vh,96px);max-width:1200px}
+.pghero .sur{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
+.pghero h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(56px,9vw,150px);line-height:.9;letter-spacing:-.01em}
+.pghero h1 .lt{font-size:.78em}
+.pghero .hero__lead{max-width:620px;margin-top:26px;font-size:17px;color:rgba(246,242,238,.85)}
+.pghero .hero__sig{font-family:"Instrument Serif",serif;font-style:italic;font-size:24px;margin-top:14px}
+.pghero .hero__cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.pghero .hero__promise{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(246,242,238,.6);margin-top:14px}
+
+/* sections : rythme encre / papier */
+.sec{padding:clamp(90px,14vh,150px) clamp(20px,5vw,72px)}
+.sec:not(.dark):not(.contact):not(.faq){background:var(--paper);color:var(--ink)}
+.sec.dark{background:var(--ink);color:var(--paper)}
+.sec>.sur,.sec .sur{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin-bottom:18px}
+.sec:not(.dark):not(.contact):not(.faq) .sur{color:#6B645F}
+.sec h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(40px,5.6vw,88px);line-height:.95;letter-spacing:-.01em;max-width:1100px;margin-bottom:28px}
+.sec h2 .lt{font-size:.8em}
+.sec h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(24px,2.2vw,32px);line-height:1.1;margin-bottom:10px}
+.sec .sub,.sec .lead{font-size:17px;max-width:720px;margin-bottom:28px;opacity:.85}
+.sec p{max-width:72ch}
+.sec .lnk{border-bottom:1px solid currentColor}
+.below{margin-top:30px}
+
+/* réponse courte */
+.ans dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin:30px 0;padding:30px 0;border-top:1px solid rgba(10,10,10,.14);border-bottom:1px solid rgba(10,10,10,.14)}
+.ans dt,.dl2 dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#6B645F;margin-bottom:8px}
+.ans dd,.dl2 dd{margin:0;font-size:15px}
+.dl2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:24px}
+details.more{margin-top:24px}
+details.more>summary{cursor:pointer;list-style:none;display:inline-flex;gap:10px;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::after{content:"+";font-size:16px;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+details[open].more>summary::after{transform:rotate(45deg)}
+
+/* ce que nous faisons : lignes */
+.rows{border-top:1px solid rgba(10,10,10,.14)}
+.sec.dark .rows{border-top-color:var(--line)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) 120px;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid rgba(10,10,10,.14)}
+.sec.dark .row{border-bottom-color:var(--line)}
+.row b{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(24px,2.4vw,36px);line-height:1.05}
+.row span{font-size:15px;opacity:.85}
+.row i{font-style:normal;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#B0316B;text-align:right}
+.sec.dark .row i{color:var(--rose)}
+.lx{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-top:26px}
+.lst{list-style:none;padding:0;margin:0}
+.lst li{padding:8px 0 8px 18px;position:relative;font-size:15px;border-bottom:1px solid rgba(10,10,10,.08)}
+.sec.dark .lst li{border-bottom-color:var(--line)}
+.lst li::before{content:"";position:absolute;left:0;top:1.05em;width:8px;height:1px;background:#B0316B}
+.sec.dark .lst li::before{background:var(--rose)}
+
+/* preuves */
+.stats{display:none}
+.refs{font-size:15px;opacity:.8;max-width:900px}
+.proofline{font-family:"Instrument Serif",serif;font-style:italic;font-size:clamp(22px,2.2vw,32px);line-height:1.2;margin:18px 0 34px;max-width:900px}
+.tri4,.tri3d,.tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.tri4 figure,.tri3d figure,.tri figure{margin:0}
+.tri4 img,.tri3d img,.tri img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.tri4 figure:hover img,.tri3d figure:hover img{transform:scale(1.04)}
+.tri4 p,.tri3d p,.tri p{font-size:14px;margin-top:10px;opacity:.85}
+.cap{font-size:11px;opacity:.6;margin-top:6px}
+
+/* idées */
+.ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.ideas article{padding:26px;border:1px solid rgba(10,10,10,.14);border-radius:4px;display:flex;flex-direction:column;gap:10px}
+.sec.dark .ideas article{border-color:var(--line)}
+.ideas .num,.cols4 .num{font:800 13px Inter,sans-serif;letter-spacing:.06em;color:#B0316B}
+.sec.dark .ideas .num,.sec.dark .cols4 .num{color:var(--rose)}
+.ideas h3{font-size:clamp(22px,2vw,28px)}
+.ideas p{font-size:15px;opacity:.85}
+.ideas .note{font-size:13px;opacity:.7}
+.ideas figure{margin:8px 0 0}
+.ideas img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* lieux */
+.ou{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;border-top:1px solid rgba(10,10,10,.14);padding-top:30px}
+.ou p{font-size:15px;opacity:.85;margin-bottom:12px}
+.cal{width:100%;border-collapse:collapse;margin-top:20px;font-size:15px}
+.cal td{padding:12px 10px;border-bottom:1px solid rgba(10,10,10,.12);vertical-align:top}
+.cal td:first-child{font-weight:600;white-space:nowrap;width:180px}
+.src{font-size:12px;opacity:.6;margin-top:18px}
+
+/* méthode */
+.steps{font-size:14px;letter-spacing:.06em}
+.steps b{color:var(--rose);margin-right:4px}
+
+/* FAQ : reprend le style de l'accueil */
+.sec.faq{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;background:var(--ink)}
+.sec.faq>.sur,.sec.faq>h2{grid-column:1}
+.sec.faq>details{grid-column:2;border-top:1px solid var(--line)}
+.sec.faq>details:last-of-type{border-bottom:1px solid var(--line)}
+.sec.faq>details>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:22px 0;font-family:"Instrument Serif",serif;font-size:clamp(20px,1.8vw,26px)}
+.sec.faq>details>summary::-webkit-details-marker{display:none}
+.sec.faq>details>summary::after{content:"+";font-family:Inter,sans-serif;transition:transform .4s}
+.sec.faq>details[open]>summary::after{transform:rotate(45deg)}
+.sec.faq>details>p{padding:0 0 24px;color:rgba(246,242,238,.75);max-width:62ch}
+.sec.faq>.sur{grid-row:1}.sec.faq>h2{grid-row:2;align-self:start}
+.sec.faq>details:nth-of-type(1){grid-row:1}
+
+/* liens utiles */
+.vig{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 30px;border-top:1px solid rgba(10,10,10,.14)}
+.vig li{border-bottom:1px solid rgba(10,10,10,.14)}
+.vig a{display:block;padding:16px 0;font-size:15px}
+.vig a:hover{color:#B0316B}
+
+/* page Nos idées */
+.idees-head{padding:150px clamp(20px,5vw,72px) 60px}
+.idees-head h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(56px,9vw,150px);line-height:.9}
+.idees-head h1 .lt{font-size:.78em}
+.idees-head .chap{max-width:680px;margin-top:22px;color:rgba(246,242,238,.8)}
+.idees-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;padding:0 clamp(20px,5vw,72px) 100px}
+.idee p{font-family:"Instrument Serif",serif;font-size:22px;line-height:1.2;margin:12px 0 6px}
+.cta-band{padding:clamp(90px,14vh,150px) clamp(20px,5vw,72px);text-align:center;background:var(--paper)!important;color:var(--ink)!important}
+
+@media (max-width:900px){
+ .row{grid-template-columns:1fr}.row i{text-align:left}
+ .sec.faq{grid-template-columns:1fr;gap:20px}
+ .sec.faq>.sur,.sec.faq>h2,.sec.faq>details{grid-column:1;grid-row:auto}
+}
+
+.sec .refs{padding:0;border:0;max-width:900px}
