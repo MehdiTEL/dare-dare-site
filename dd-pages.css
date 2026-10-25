@@ -50,13 +50,13 @@ details[open].more>summary::after{transform:rotate(45deg)}
 .sec.dark .row{border-bottom-color:var(--line)}
 .row b{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(24px,2.4vw,36px);line-height:1.05}
 .row span{font-size:15px;opacity:.85}
-.row i{font-style:normal;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#B0316B;text-align:right}
+.row i{font-style:normal;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#A3122A;text-align:right}
 .sec.dark .row i{color:var(--rose)}
 .lx{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-top:26px}
 .lst{list-style:none;padding:0;margin:0}
 .lst li{padding:8px 0 8px 18px;position:relative;font-size:15px;border-bottom:1px solid rgba(10,10,10,.08)}
 .sec.dark .lst li{border-bottom-color:var(--line)}
-.lst li::before{content:"";position:absolute;left:0;top:1.05em;width:8px;height:1px;background:#B0316B}
+.lst li::before{content:"";position:absolute;left:0;top:1.05em;width:8px;height:1px;background:#A3122A}
 .sec.dark .lst li::before{background:var(--rose)}
 
 /* preuves */
@@ -74,7 +74,7 @@ details[open].more>summary::after{transform:rotate(45deg)}
 .ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .ideas article{padding:26px;border:1px solid rgba(10,10,10,.14);border-radius:4px;display:flex;flex-direction:column;gap:10px}
 .sec.dark .ideas article{border-color:var(--line)}
-.ideas .num,.cols4 .num{font:800 13px Inter,sans-serif;letter-spacing:.06em;color:#B0316B}
+.ideas .num,.cols4 .num{font:800 13px Inter,sans-serif;letter-spacing:.06em;color:#A3122A}
 .sec.dark .ideas .num,.sec.dark .cols4 .num{color:var(--rose)}
 .ideas h3{font-size:clamp(22px,2vw,28px)}
 .ideas p{font-size:15px;opacity:.85}
@@ -111,7 +111,7 @@ details[open].more>summary::after{transform:rotate(45deg)}
 .vig{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 30px;border-top:1px solid rgba(10,10,10,.14)}
 .vig li{border-bottom:1px solid rgba(10,10,10,.14)}
 .vig a{display:block;padding:16px 0;font-size:15px}
-.vig a:hover{color:#B0316B}
+.vig a:hover{color:#A3122A}
 
 /* page Nos idées */
 .idees-head{padding:150px clamp(20px,5vw,72px) 60px}

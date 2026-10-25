@@ -468,7 +468,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 
 /* ===================== Dare-Dare 2026 : le Journal dans le design du site ===================== */
-:root{--dd-ink:#0A0A0A;--dd-paper:#F6F2EE;--dd-rose:#E8B4C8;--dd-rose-text:#B0316B;--dd-mute:#6B645F;--dd-serif:"Instrument Serif",Georgia,serif}
+:root{--dd-ink:#0A0A0A;--dd-paper:#F6F2EE;--dd-rose:#EF4B45;--dd-rose-text:#A3122A;--dd-mute:#6B645F;--dd-serif:"Instrument Serif",Georgia,serif}
 body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
 .blog-nav{background:var(--dd-ink);color:var(--dd-paper);border:0}
 .blog-nav__logo,.blog-nav__logo-svg{color:var(--dd-paper)}
@@ -522,7 +522,7 @@ body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* Défi sur la page (defi.js) : même geste que l'accueil, adapté aux pages services */
-.dd-defi{--paper:#F6F2EE;--rose:#E8B4C8;--line:rgba(255,255,255,.14);background:var(--ink);color:var(--paper);padding:clamp(80px,12vh,140px) clamp(20px,5vw,72px);border-top:1px solid var(--line)}
+.dd-defi{--paper:#F6F2EE;--rose:#EF4B45;--line:rgba(255,255,255,.14);background:var(--ink);color:var(--paper);padding:clamp(80px,12vh,140px) clamp(20px,5vw,72px);border-top:1px solid var(--line)}
 .dd-defi .sur{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
 .dd-defi__q{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(44px,7vw,112px);line-height:.92;letter-spacing:-.01em;margin:0}
 .dd-defi__q .lt{font-size:.8em}

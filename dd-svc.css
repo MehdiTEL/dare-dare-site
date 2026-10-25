@@ -56,7 +56,7 @@
 .svc-more__list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 30px;border-top:1px solid rgba(10,10,10,.14)}
 .svc-more__list li{border-bottom:1px solid rgba(10,10,10,.14)}
 .svc-more__link{display:block;padding:16px 0;font-size:15px;color:var(--ink)}
-.svc-more__link:hover{color:#B0316B}
+.svc-more__link:hover{color:#A3122A}
 .zellige-pattern::before,.zellige-pattern::after{display:none!important}
 .svc-section__title:not(:has(.lt)),.section-title:not(:has(.lt)),.methode__title:not(:has(.lt)){font-size:clamp(32px,3.8vw,58px);line-height:1.05}
 .faq-item__answer{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.2,.8,.2,1)}
