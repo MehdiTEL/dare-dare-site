@@ -1,4 +1,4 @@
-:root{--ink:#0A0A0A;--paper:#F6F2EE;--rose:#E8B4C8;--mute:#8C8580;--line:rgba(255,255,255,.14);--ease:cubic-bezier(.2,.8,.2,1)}
+:root{--ink:#0A0A0A;--paper:#F6F2EE;--rose:#EF4B45;--mute:#8C8580;--line:rgba(255,255,255,.14);--ease:cubic-bezier(.2,.8,.2,1)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--ink);color:var(--paper);font:400 16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
