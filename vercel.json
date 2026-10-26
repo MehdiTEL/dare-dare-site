@@ -47,23 +47,13 @@
       "permanent": true
     },
     {
-      "source": "/agence-team-building.html",
-      "destination": "/agence-seminaire.html",
-      "permanent": true
-    },
-    {
-      "source": "/en/team-building-agency.html",
-      "destination": "/en/corporate-retreat-agency.html",
-      "permanent": true
-    },
-    {
       "source": "/blog/team-building-equipes.html",
-      "destination": "/agence-seminaire.html",
+      "destination": "/agence-team-building.html",
       "permanent": true
     },
     {
       "source": "/blog/en/team-building-teams-love.html",
-      "destination": "/en/corporate-retreat-agency.html",
+      "destination": "/en/team-building-agency.html",
       "permanent": true
     },
     {
