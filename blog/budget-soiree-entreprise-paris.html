@@ -4,21 +4,13 @@
   <!-- BLOG: Meta & SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+  <!-- Google (Tag Manager, Ads) et Pinterest : rien n'est chargé avant le choix du visiteur (voir cookie-consent.js) -->
   <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
-  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  gtag('set',{cookie_expires:34128000}); /* cookies Google limités à 13 mois (CNIL) */
+  gtag('js', new Date()); gtag('config', 'AW-18516847281');
   </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
-  <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
   <title>Budget soirée d'entreprise à Paris : les vrais prix 2026</title>
   <meta name="description" content="Lieu, traiteur, DJ, déco : combien coûte une soirée d&#x27;entreprise à Paris par invité, et où se trouvent les économies. Le guide chiffré 2026.">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -50,7 +42,7 @@
   <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
 
   <!-- BLOG: Stylesheet -->
-  <link rel="stylesheet" href="blog.css?v=20261029">
+  <link rel="stylesheet" href="blog.css?v=2026102704">
 
   <!-- BLOG: Schema.org JSON-LD -->
   <script type="application/ld+json" id="ld-organization">
@@ -153,8 +145,6 @@
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- BLOG: Navigation -->
@@ -216,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <h2>Le budget par invité selon le niveau de soirée</h2>
       <p>Raisonner par invité est la façon la plus simple de cadrer un budget. Voici les trois niveaux qu'on rencontre le plus souvent :</p>
-      <div class="article__table-wrap">
+      <div class="article__table-wrap" tabindex="0" role="region" aria-label="Tableau défilant">
         <table class="article__table">
           <thead><tr><th>Niveau</th><th>Ce que ça comprend</th><th>Budget HT / invité</th></tr></thead>
           <tbody>
@@ -261,7 +251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/1100707965160549891/">MERIT, dîner raffiné</a>
       </div>
       <p class="article__img-caption">Inspiration · via Pinterest.</p>
-<div class="article__table-wrap">
+<div class="article__table-wrap" tabindex="0" role="region" aria-label="Tableau défilant">
         <table class="article__table">
           <thead><tr><th>Poste</th><th>Hypothèse</th><th>Montant HT</th></tr></thead>
           <tbody>
@@ -365,13 +355,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="../mentions-legales.html" class="blog-footer__link">Mentions légales</a>
       &nbsp;·&nbsp;
       <a href="../politique-confidentialite.html" class="blog-footer__link">Politique de confidentialité</a>
+      &nbsp;·&nbsp;
+      <a href="../politique-cookies.html" class="blog-footer__link">Cookies</a>
     </p>
   </footer>
 
-  <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
 
   <!-- Bandeau cookies -->
-  <script src="../cookie-consent.js?v=20261028" defer></script>
-  <script src="../devis.js?v=20261026" defer></script>
+  <script src="../cookie-consent.js?v=2026102701" defer></script>
+  <script src="../devis.js?v=2026102701" defer></script>
 </body>
 </html>

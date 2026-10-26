@@ -37,7 +37,14 @@
     return '';
   }
 
+  /* L'origine de la visite (clic Google, campagne, page d'arrivée) n'est gardée qu'avec l'accord cookies du visiteur */
+  function consentOk() {
+    try { var c = JSON.parse(localStorage.getItem('dd-cookie-consent') || 'null'); return !!(c && (c.a || c.ads)); }
+    catch (e) { try { return localStorage.getItem('dd-cookie-consent') === 'all'; } catch (e2) { return false; } }
+  }
+
   function capture() {
+    if (!consentOk()) return;
     try {
       var p = new URLSearchParams(location.search);
       KEYS.forEach(function (k) { var v = (p.get(k) || '').slice(0, 200); if (v) sset('dd_' + k, v); });
@@ -90,10 +97,20 @@
       }
     }
 
+    /* Information RGPD au moment de la collecte (art. 13) */
+    var info = document.createElement('p');
+    info.className = 'devis__info';
+    info.style.cssText = 'font-size:12px;line-height:1.5;margin:14px 0 0;max-width:640px';
+    var pol = en ? '/en/privacy-policy.html' : '/politique-confidentialite.html';
+    info.innerHTML = en
+      ? 'Your details are only used to answer your request and prepare a proposal. They are kept for 3 years after our last contact and never sold. You can access, correct or delete them at contact@agence-dare-dare.fr. <a href="' + pol + '" style="color:inherit;text-decoration:underline">Privacy policy</a>.'
+      : 'Vos informations servent uniquement à répondre à votre demande et à préparer une proposition. Elles sont conservées 3 ans après notre dernier échange et ne sont jamais vendues. Vous pouvez y accéder, les corriger ou les faire effacer : contact@agence-dare-dare.fr. <a href="' + pol + '" style="color:inherit;text-decoration:underline">Politique de confidentialité</a>.';
+
     var err = document.createElement('p');
     err.className = 'devis__err'; err.setAttribute('role', 'alert'); err.hidden = true;
     var actions = form.querySelector('.devis__actions');
     if (actions && actions.parentNode) actions.parentNode.insertBefore(err, actions.nextSibling); else form.appendChild(err);
+    if (actions && actions.parentNode) actions.parentNode.insertBefore(info, err.nextSibling); else form.appendChild(info);
   }
 
   /* ---------- Envoi à FormSubmit (AJAX) ---------- */

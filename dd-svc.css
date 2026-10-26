@@ -2,17 +2,18 @@
 .container{max-width:none;padding:0 clamp(20px,5vw,72px);margin:0}
 .svc-hero{position:relative;min-height:86svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:var(--paper);padding:0}
 .svc-hero>img.pg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.svc-hero.has-img::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.55)}
+.svc-hero.has-img::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.62)}
 .svc-hero::before{display:none}
 .svc-hero__content{position:relative;z-index:2;padding:150px clamp(20px,5vw,72px) clamp(48px,9vh,96px);max-width:1200px;text-align:left}
-.svc-crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.6);margin-bottom:22px}
+.svc-crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.9);margin-bottom:22px}
 .svc-crumb a{border-bottom:1px solid rgba(246,242,238,.35)}
 .svc-hero__eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
+.svc-hero.has-img .svc-hero__eyebrow{color:var(--paper)}
 .svc-hero__title{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(56px,9vw,150px);line-height:.9;letter-spacing:-.01em;color:var(--paper)}
 .svc-hero__title .lt{font-size:.78em}
-.svc-hero__sub{max-width:620px;margin-top:24px;font-size:17px;color:rgba(246,242,238,.85)}
+.svc-hero__sub{max-width:620px;margin-top:24px;font-size:17px;color:rgba(246,242,238,.9)}
 .hero__ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.hero__locations{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.6)}
+.hero__locations{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.9)}
 .hero__tagline{font-family:"Instrument Serif",serif;font-style:italic;font-size:22px;text-transform:none;letter-spacing:0;color:var(--paper)}
 
 .svc-intro,.svc-section,.methode,.faq,.svc-more{padding:clamp(90px,14vh,150px) 0}
@@ -35,6 +36,7 @@
 .svc-project figcaption{font-size:14px;margin-top:10px;opacity:.85}
 
 .methode{background:var(--ink);color:var(--paper)}
+.methode .methode__subtitle{color:#8C8580}
 .methode__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
 .methode__num{font:800 13px Inter,sans-serif;letter-spacing:.06em;color:var(--rose)}
 .methode__step-title{font-family:"Instrument Serif",serif;font-weight:400;font-size:26px;margin:10px 0 8px}

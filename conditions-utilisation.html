@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+  <!-- Google (Tag Manager, Ads) et Pinterest : rien n'est chargé avant le choix du visiteur (voir cookie-consent.js) -->
   <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
-  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  gtag('set',{cookie_expires:34128000}); /* cookies Google limités à 13 mois (CNIL) */
+  gtag('js', new Date()); gtag('config', 'AW-18516847281');
   </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
-  <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
   <title>Conditions générales d'utilisation · Agence Dare-Dare</title>
   <meta name="description" content="Conditions générales d'utilisation du site de l'Agence Dare-Dare : accès, contenus et idées publiés, outils gratuits, propriété intellectuelle.">
   <meta name="robots" content="noindex, follow">
@@ -46,7 +38,7 @@
   <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
 
   <!-- Stylesheet (réutilise le CSS du blog pour la cohérence) -->
-  <link rel="stylesheet" href="blog/blog.css?v=20261029">
+  <link rel="stylesheet" href="blog/blog.css?v=2026102704">
 
   <style>
     /* Styles spécifiques pages légales */
@@ -96,8 +88,6 @@
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
@@ -158,13 +148,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p style="margin: 0; font-size: 13px;">
       <a href="mentions-legales.html" style="color: #FFFFFF; text-decoration: underline; margin: 0 8px;">Mentions légales</a> ·
       <a href="politique-confidentialite.html" style="color: #FFFFFF; text-decoration: underline; margin: 0 8px;">Politique de confidentialité</a> ·
+      <a href="politique-cookies.html" style="color: #FFFFFF; text-decoration: underline; margin: 0 8px;">Cookies</a> ·
       <a href="conditions-utilisation.html" style="color: #FFFFFF; text-decoration: underline; margin: 0 8px;">Conditions d'utilisation</a>
     </p>
     <p style="margin: 8px 0 0; font-size: 13px;"><a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener" style="color: #FFFFFF; margin: 0 8px;">Instagram</a> · <a href="https://linkedin.com/company/agence-dare-dare" target="_blank" rel="noopener" style="color: #FFFFFF; margin: 0 8px;">LinkedIn</a></p>
   </footer>
 
   <!-- Bandeau cookies -->
-  <script src="cookie-consent.js?v=20261028" defer></script>
-  <script src="devis.js?v=20261026" defer></script>
+  <script src="cookie-consent.js?v=2026102701" defer></script>
+  <script src="devis.js?v=2026102701" defer></script>
 </body>
 </html>

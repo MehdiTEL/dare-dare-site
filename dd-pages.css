@@ -2,21 +2,22 @@
    Complète dd-2026.css : mêmes couleurs, mêmes polices, titres en deux lignes. */
 body{background:var(--ink);color:var(--paper)}
 main{display:block}
-.crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.6);margin-bottom:26px}
+.crumb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,242,238,.9);margin-bottom:26px}
 .crumb a{border-bottom:1px solid rgba(246,242,238,.35)}
 
 /* héros de page */
 .pghero{position:relative;min-height:86svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
 .pghero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.pghero.has-img::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.55)}
+.pghero.has-img::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.62)}
 .pghero__in{position:relative;z-index:2;padding:150px clamp(20px,5vw,72px) clamp(48px,9vh,96px);max-width:1200px}
 .pghero .sur{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
 .pghero h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(56px,9vw,150px);line-height:.9;letter-spacing:-.01em}
 .pghero h1 .lt{font-size:.78em}
-.pghero .hero__lead{max-width:620px;margin-top:26px;font-size:17px;color:rgba(246,242,238,.85)}
+.pghero .hero__lead{max-width:620px;margin-top:26px;font-size:17px;color:rgba(246,242,238,.9)}
 .pghero .hero__sig{font-family:"Instrument Serif",serif;font-style:italic;font-size:24px;margin-top:14px}
 .pghero .hero__cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.pghero .hero__promise{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(246,242,238,.6);margin-top:14px}
+.pghero .hero__promise{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(246,242,238,.9);margin-top:14px}
+.pghero.has-img .sur{color:var(--paper)}
 
 /* sections : rythme encre / papier */
 .sec{padding:clamp(90px,14vh,150px) clamp(20px,5vw,72px)}
@@ -168,6 +169,8 @@ details[open].more>summary::after{transform:rotate(45deg)}
 
 /* textes de dd-2026.css pensés pour l'encre : lisibles sur les sections papier */
 .sec:not(.dark):not(.contact):not(.faq) .below,.sec:not(.dark):not(.contact):not(.faq) .steps{color:var(--ink)}
+/* rouge foncé sur papier : contraste AA (7:1) */
+.sec:not(.dark):not(.contact):not(.faq) .steps b{color:#A3122A}
 .sec:not(.dark):not(.contact):not(.faq) .below a{color:var(--ink)}
 
 /* Réassurance avant le formulaire (une ligne sobre) */

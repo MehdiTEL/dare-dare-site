@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+  <!-- Google (Tag Manager, Ads) et Pinterest : rien n'est chargé avant le choix du visiteur (voir cookie-consent.js) -->
   <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
-  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  gtag('set',{cookie_expires:34128000}); /* cookies Google limités à 13 mois (CNIL) */
+  gtag('js', new Date()); gtag('config', 'AW-18516847281');
   </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
-  <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
   <title>Event planning timeline: the free template, from D-90 to D+7</title>
   <meta name="description" content="The free planning timeline to organise a party or a launch: 38 steps from D-90 to D+7, with who does what. Download it as a PDF.">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -39,7 +31,7 @@
   <meta name="twitter:image" content="https://www.agence-dare-dare.fr/photos/deloitte-louvre.webp">
   <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
-  <link rel="stylesheet" href="../blog.css?v=20261029">
+  <link rel="stylesheet" href="../blog.css?v=2026102704">
 
 <style>
 .dl{margin:40px 0;padding:32px;background:#0A0A0A;color:#F6F2EE;border-radius:4px}
@@ -53,6 +45,8 @@
 .dl .ck{flex-direction:row;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;font-size:13px;color:rgba(246,242,238,.8)}
 .dl .ck input{margin-top:3px;accent-color:#EF4B45}
 .dl .ck a{color:#F6F2EE}
+.dl .dl-info{font-size:13px;line-height:1.5;margin:0}
+.dl .dl-info a{color:#F6F2EE}
 .dl button{justify-self:start;background:#F6F2EE;color:#0A0A0A;border:0;border-radius:99px;padding:15px 26px;font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
 .dl button:hover{background:#EF4B45}
 .dl .ok{display:none;grid-column:1/-1;padding:14px 16px;background:rgba(246,242,238,.08);border-radius:4px}
@@ -124,8 +118,6 @@
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- BLOG: Navigation -->
@@ -197,10 +189,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <form class="dl-form" data-outil="event-planning-timeline" data-pdf="../../ressources/en/event-planning-timeline.pdf" data-lang="en" novalidate>
 <label>Full name<input type="text" name="nom" autocomplete="name" required></label>
 <label>Work email<input type="email" name="email" autocomplete="email" required></label>
-<label>Company<input type="text" name="societe" autocomplete="organization" required></label>
+<label>Company (optional)<input type="text" name="societe" autocomplete="organization"></label>
 <label>Job title<input type="text" name="fonction" autocomplete="organization-title"></label>
 <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-<label class="ck full"><input type="checkbox" name="rgpd" required> <span>I agree that Agence Dare-Dare may use these details to send me this tool and contact me about my event projects. I can unsubscribe at any time. <a href="../../politique-confidentialite.html">Privacy policy</a>.</span></label>
+<label class="ck full"><input type="checkbox" name="rgpd"> <span>I agree that Agence Dare-Dare may contact me about my event projects (optional).</span></label>
+<p class="full dl-info">Your details are used to send you this tool and, if you tick the box, to contact you. They are kept for 3 years at most. You can access, correct or delete them by writing to contact@agence-dare-dare.fr. <a href="../../en/privacy-policy.html">Privacy policy</a>.</p>
 <p class="err full" role="alert"></p>
 <button type="submit">Download the PDF</button>
 <div class="ok" role="status">Thank you! Your tool is ready: <a href="../../ressources/en/event-planning-timeline.pdf" target="_blank" rel="noopener">open the PDF</a>.</div>
@@ -252,13 +245,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="../../mentions-legales.html" class="blog-footer__link">Legal notice</a>
       &nbsp;·&nbsp;
       <a href="../../politique-confidentialite.html" class="blog-footer__link">Privacy policy</a>
+      &nbsp;·&nbsp;
+      <a href="../../en/cookie-policy.html" class="blog-footer__link">Cookies</a>
     </p>
   </footer>
 
 
-  <script src="../../cookie-consent.js?v=20261028" defer></script>
-  <script src="../../devis.js?v=20261026" defer></script>
-  <script src="../../ressources/telechargement.js?v=20261024" defer></script>
-  <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+  <script src="../../cookie-consent.js?v=2026102701" defer></script>
+  <script src="../../devis.js?v=2026102701" defer></script>
+  <script src="../../ressources/telechargement.js?v=2026102701" defer></script>
 </body>
 </html>

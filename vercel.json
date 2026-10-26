@@ -43,7 +43,7 @@
   "redirects": [
     {
       "source": "/politique-de-cookies-ue",
-      "destination": "/politique-confidentialite.html",
+      "destination": "/politique-cookies.html",
       "permanent": true
     },
     {

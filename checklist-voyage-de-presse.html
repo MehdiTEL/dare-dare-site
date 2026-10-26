@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
+  <!-- Google (Tag Manager, Ads) et Pinterest : rien n'est chargé avant le choix du visiteur (voir cookie-consent.js) -->
   <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
-  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  gtag('set',{cookie_expires:34128000}); /* cookies Google limités à 13 mois (CNIL) */
+  gtag('js', new Date()); gtag('config', 'AW-18516847281');
   </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
-  <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
     <title>Checklist voyage de presse gratuite (PDF) | Agence Dare-Dare</title>
   <meta name="description" content="Téléchargez gratuitement notre checklist du voyage de presse réussi : de J-90 au bilan des retombées, toutes les étapes en 4 pages.">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -35,7 +27,7 @@
   <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-serif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
-  <link rel="stylesheet" href="./style.css?v=20261020">
+  <link rel="stylesheet" href="./style.css?v=2026102705">
   <link rel="stylesheet" href="./svc.css?v=20261021">
   <script type="application/ld+json" id="ld-organization">
 {"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://www.agence-dare-dare.fr/#organization","name":"Agence Dare-Dare","legalName":"Agence Dare-Dare","alternateName":["Dare Dare","Agence Dare Dare","Dare-Dare"],"url":"https://www.agence-dare-dare.fr/","logo":{"@type":"ImageObject","url":"https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp"},"image":"https://www.agence-dare-dare.fr/photos/og-image.webp","slogan":"You dare us, we did it.","description":"Agence événementielle premium à Paris, avec une présence à Cannes et au Maroc (DMC) : soirées d'entreprise, séminaires, lancements, événements influence, voyages de presse.","email":"contact@agence-dare-dare.fr","telephone":"+33681969362","identifier":[{"@type":"PropertyValue","propertyID":"SIREN","value":"109478099"},{"@type":"PropertyValue","propertyID":"SIRET","value":"10947809900012"}],"vatID":"FR69109478099","address":{"@type":"PostalAddress","streetAddress":"11 rue Joubert","postalCode":"75009","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"areaServed":[{"@type":"City","name":"Paris","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"City","name":"Cannes","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"Country","name":"Maroc"}],"knowsAbout":["Production événementielle","Séminaires d'entreprise","Événements influence","Voyages presse","Lancements produits","Scénographie","DMC Maroc"],"knowsLanguage":["fr","en"],"sameAs":["https://instagram.com/agencedaredare","https://linkedin.com/company/agence-dare-dare","https://www.google.com/search?kgmid=/g/11z_p10mn8"],"contactPoint":{"@type":"ContactPoint","contactType":"demande de devis","telephone":"+33681969362","email":"contact@agence-dare-dare.fr","availableLanguage":["fr","en"],"areaServed":["FR","MA"]}}
@@ -72,8 +64,6 @@
 </head>
 <body class="svc-page">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <header class="nav nav--transparent nav--svc" role="banner">
     <div class="nav__inner">
@@ -112,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu" aria-hidden="true" inert>
     <a href="./#services" class="mobile-menu__link" data-i18n="nav.services">Services</a>
     <div class="mobile-menu__sub"><a href="agence-soiree-entreprise.html" data-i18n="m.sv1">Soirée d'entreprise</a><a href="agence-evenement-influence.html" data-i18n="m.sv2">Événement influence</a><a href="agence-voyage-de-presse.html" data-i18n="m.sv3">Voyage de presse</a><a href="agence-lancement-produit.html" data-i18n="m.sv4">Lancement de produit</a><a href="agence-seminaire.html" data-i18n="m.sv5">Séminaire</a><a href="organisatrice-mariage.html" class="only-prive" data-i18n="m.sv6">Mariage</a></div>
     <a href="./#destinations" class="mobile-menu__link" data-i18n="nav.destinations">Destinations</a>
@@ -205,12 +195,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
       <p class="footer__copyright" data-i18n="footer.copyright">© 2026 Agence Dare-Dare · Tous droits réservés</p>
-      <p class="footer__legal"><a href="./mentions-legales.html" data-i18n="footer.legal">Mentions légales</a> | <a href="./politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a></p>
+      <p class="footer__legal"><a href="./mentions-legales.html" data-i18n="footer.legal">Mentions légales</a> | <a href="./politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a> · <a href="./politique-cookies.html" data-i18n="footer.privacy">Cookies</a></p>
     </div>
   </footer>
-  <script src="./svc.js?v=20261020" defer></script>
-  <script src="./cookie-consent.js?v=20261028" defer></script>
-  <script src="./devis.js?v=20261026" defer></script>
+  <script src="./svc.js?v=2026102704" defer></script>
+  <script src="./cookie-consent.js?v=2026102701" defer></script>
+  <script src="./devis.js?v=2026102701" defer></script>
   <script>
   (function () {
     var f = document.getElementById('lead-form');

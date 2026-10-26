@@ -8,10 +8,11 @@
   }
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
   var burger = document.querySelector('.nav__hamburger'), menu = document.querySelector('.mobile-menu');
+  if (menu) menu.inert = !menu.classList.contains('active'); // menu fermé : hors du parcours clavier
   if (burger && menu) burger.addEventListener('click', function () {
     var open = !menu.classList.contains('active');
     menu.classList.toggle('active', open); burger.classList.toggle('active', open);
-    burger.setAttribute('aria-expanded', open); menu.setAttribute('aria-hidden', !open);
+    burger.setAttribute('aria-expanded', open); menu.setAttribute('aria-hidden', !open); menu.inert = !open;
     document.body.style.overflow = open ? 'hidden' : '';
   });
   document.querySelectorAll('.faq-item').forEach(function (it) {
