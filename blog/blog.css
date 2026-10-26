@@ -7,7 +7,7 @@
 :root {
   --ivory: #FFFFFF;
   --ink: #0A0A0A;
-  --grey-text: #6C757D;
+  --grey-text: #5C636A;
   --sand: #E8E8E8;
   --sand-light: #F5F5F5;
   --font-display: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -452,7 +452,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .article__cta-wa { display: block; margin-top: 18px; color: #fff; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 .article__cta-wa:hover { opacity: .75; }
 .article__pin { display: flex; justify-content: center; margin: 32px 0 8px; min-height: 120px; }
-.article__pin > a { color: var(--grey-text, #6C757D); font-size: 14px; }
+.article__pin > a { color: var(--grey-text, #5C636A); font-size: 14px; }
 /* Photos qui se suivent : côte à côte */
 .article__duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; margin: 32px 0; }
 .article__duo-cell { margin: 0; min-width: 0; }
