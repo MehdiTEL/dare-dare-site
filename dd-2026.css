@@ -58,7 +58,7 @@ a{color:inherit;text-decoration:none}
 /* MANIFESTO */
 .manifesto{padding-block:clamp(110px,18vh,200px)}
 .manifesto p{font-size:clamp(34px,5.2vw,84px);line-height:1.06;letter-spacing:-.01em;max-width:1300px}
-.manifesto .w{opacity:.16;transition:opacity .6s}
+.manifesto .w{opacity:.4;transition:opacity .6s}
 .manifesto .w.lit{opacity:1}
 .manifesto .eyebrow{margin-bottom:40px}
 
@@ -388,7 +388,7 @@ details.svc:hover{padding-left:0}
 .footer__logo{height:24px;width:auto}
 .footer__sig{font-family:"Instrument Serif",serif;font-style:italic;font-size:28px;margin-top:18px}
 .footer__links{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:14px;align-items:flex-start}
-.footer__seo{margin-top:48px;font-size:12px;line-height:2;color:var(--mute);max-width:1100px}
+.footer__seo{margin-top:48px;font-size:12px;line-height:2;color:var(--mute);max-width:1100px}.footer__seo a{display:inline-block;padding:3px 0}
 .footer__legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:28px;font-size:12px;color:var(--mute)}
 @media (max-width:900px){
  .nav__burger{display:flex}
