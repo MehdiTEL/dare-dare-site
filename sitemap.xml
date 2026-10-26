@@ -54,7 +54,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-agency-paris.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html"/>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -118,7 +118,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-agency-paris.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-evenementielle-paris.html"/>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -659,14 +659,14 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-scenographie-evenementielle-paris.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-scenography-agency-paris.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-scenographie-evenementielle-paris.html"/>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/en/event-scenography-agency-paris.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-scenographie-evenementielle-paris.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-scenography-agency-paris.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-scenographie-evenementielle-paris.html"/>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html</loc>
@@ -871,5 +871,47 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/meilleures-agences-seminaire-maroc.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/best-morocco-retreat-agencies.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/meilleures-agences-seminaire-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/agence-team-building.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-team-building.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/team-building-agency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-team-building.html"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/en/team-building-agency.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-team-building.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/team-building-agency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-team-building.html"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/agence-evenementielle-coupe-du-monde-2030-maroc.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-evenementielle-coupe-du-monde-2030-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/morocco-world-cup-2030-events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-evenementielle-coupe-du-monde-2030-maroc.html"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/en/morocco-world-cup-2030-events.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-evenementielle-coupe-du-monde-2030-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/morocco-world-cup-2030-events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-evenementielle-coupe-du-monde-2030-maroc.html"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/communication-evenementielle.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/communication-evenementielle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/event-communication.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/communication-evenementielle.html"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/event-communication.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/communication-evenementielle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/event-communication.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/communication-evenementielle.html"/>
+    <lastmod>2026-10-26</lastmod>
   </url>
 </urlset>
