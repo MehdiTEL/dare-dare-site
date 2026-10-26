@@ -233,7 +233,11 @@
     a.textContent = en ? 'Get a quote' : 'Demander un devis';
     var st = document.createElement('style');
     st.textContent = '.dd-sticky-devis{display:none}@media(max-width:768px){.dd-sticky-devis{display:flex;align-items:center;justify-content:center;position:fixed;left:16px;right:84px;bottom:calc(16px + env(safe-area-inset-bottom,0px));height:52px;z-index:900;background:#0A0A0A;color:#fff;border:1px solid #fff;font:700 12px/1 Inter,Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}.dd-sticky-devis.dd-hide{opacity:0;pointer-events:none}}';
-    document.head.appendChild(st); document.body.appendChild(a);
+    // Repère propre au bouton (nom distinct de celui des boutons flottants) pour les lecteurs d'écran
+    var box = document.createElement('div');
+    box.setAttribute('role', 'complementary'); box.setAttribute('aria-label', en ? 'Quote request' : 'Demande de devis');
+    box.appendChild(a);
+    document.head.appendChild(st); document.body.appendChild(box);
     var wa = document.querySelector('.whatsapp-float');
     function place() {
       if (!wa || innerWidth > 768) return;

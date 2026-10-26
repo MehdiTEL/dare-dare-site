@@ -8,6 +8,7 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/photos/favicon.svg">
   <style>
+    .skip-link{position:absolute;left:-999px;top:8px}.skip-link:focus{left:16px}
     body{margin:0;background:#0A0A0A;color:#F6F2EE;font-family:Inter,Helvetica,Arial,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
     h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(40px,8vw,84px);margin:0 0 16px}
     p{opacity:.8;margin:0 0 28px}
@@ -19,7 +20,8 @@
   </style>
 </head>
 <body>
-  <main>
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+  <main id="main">
     <h1>Cette page n'existe pas.</h1>
     <p>Mais nos idées, elles, existent. You dare us, we did it.</p>
     <a href="/">Accueil</a><a href="/#expertises">Nos services</a><a href="/blog/">Le Journal</a>

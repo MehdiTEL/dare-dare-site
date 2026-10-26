@@ -530,7 +530,7 @@ body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
 .dd-defi__row{display:flex;gap:16px;align-items:center;margin-top:34px;border-bottom:1px solid rgba(246,242,238,.45);padding-bottom:10px;max-width:1100px}
 .dd-defi__row:focus-within{border-bottom-color:var(--rose)}
 .dd-defi__in{flex:1;min-width:0;background:transparent;border:0;color:var(--paper);font:400 clamp(20px,2.4vw,34px)/1.2 "Instrument Serif",serif;font-style:italic;padding:8px 0}
-.dd-defi__in::placeholder{color:rgba(246,242,238,.45)}
+.dd-defi__in::placeholder{color:rgba(246,242,238,.5)}
 .dd-defi__in:focus{outline:none}
 .dd-defi__go{flex:none;background:var(--paper);color:var(--ink);border:1px solid var(--paper);padding:14px 26px;font:700 12px/1 Inter,Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .3s,color .3s}
 .dd-defi__go:hover,.dd-defi__go:focus-visible{background:transparent;color:var(--paper)}
@@ -549,3 +549,8 @@ body{background:var(--dd-paper);color:var(--dd-ink);font-weight:400}
 /* pied de page du Journal : les liens passent à la ligne sur mobile */
 .blog-footer__links{display:flex;flex-wrap:wrap;gap:8px 18px;max-width:100%}
 .blog-footer__links li{min-width:0}
+
+/* Accessibilité : lien d'évitement et focus visible au clavier */
+.skip-link{position:absolute;left:-999px;top:8px;background:#F6F2EE;color:#0A0A0A;padding:10px 16px;z-index:200}
+.skip-link:focus{left:16px}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}

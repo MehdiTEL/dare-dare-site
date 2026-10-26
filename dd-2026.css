@@ -244,7 +244,7 @@ footer{border-top:1px solid var(--line);padding-block:56px 40px}
 .defi__row{display:flex;gap:16px;align-items:center;margin-top:34px;border-bottom:1px solid rgba(246,242,238,.45);padding-bottom:10px;max-width:1100px}
 .defi__row:focus-within{border-bottom-color:var(--rose)}
 .defi__row input{flex:1;min-width:0;background:transparent;border:0;color:var(--paper);font:400 clamp(22px,2.6vw,38px)/1.2 "Instrument Serif",serif;font-style:italic;padding:8px 0}
-.defi__row input::placeholder{color:rgba(246,242,238,.38)}
+.defi__row input::placeholder{color:rgba(246,242,238,.5)}
 .defi__row input:focus{outline:none}
 .defi__sugg{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .defi__sugg button{background:transparent;border:1px solid var(--line);color:rgba(246,242,238,.8);border-radius:99px;padding:9px 16px;font:400 13px Inter,sans-serif;cursor:pointer;transition:border-color .3s,color .3s}
@@ -361,7 +361,7 @@ details.svc:hover{padding-left:0}
 .devis__field{display:flex;flex-direction:column;gap:8px;min-width:0}
 .devis__field span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
 .devis__field--full{grid-column:1/-1}
-.devis input,.devis select,.devis textarea{background:transparent;border:0;border-bottom:1px solid rgba(246,242,238,.35);color:var(--paper);font:400 16px Inter,sans-serif;padding:10px 0;border-radius:0;width:100%;-webkit-appearance:none;appearance:none}
+.devis input,.devis select,.devis textarea{background:transparent;border:0;border-bottom:1px solid rgba(246,242,238,.4);color:var(--paper);font:400 16px Inter,sans-serif;padding:10px 0;border-radius:0;width:100%;-webkit-appearance:none;appearance:none}
 .devis select{background-image:linear-gradient(45deg,transparent 50%,var(--paper) 50%),linear-gradient(135deg,var(--paper) 50%,transparent 50%);background-position:calc(100% - 12px) 50%,calc(100% - 7px) 50%;background-size:5px 5px;background-repeat:no-repeat}
 .devis select option{background:var(--ink);color:var(--paper)}
 .devis input:focus,.devis select:focus,.devis textarea:focus{outline:none;border-bottom-color:var(--rose)}
