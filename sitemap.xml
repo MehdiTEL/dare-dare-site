@@ -956,4 +956,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/seminaire-2-jours-programme-type.html"/>
     <lastmod>2026-10-26</lastmod>
   </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/agence-relations-presse-evenementielle.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-relations-presse-evenementielle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-pr-agency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-relations-presse-evenementielle.html"/>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/en/event-pr-agency.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/agence-relations-presse-evenementielle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/event-pr-agency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/agence-relations-presse-evenementielle.html"/>
+    <lastmod>2026-10-30</lastmod>
+  </url>
 </urlset>
