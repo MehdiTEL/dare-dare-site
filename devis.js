@@ -156,12 +156,12 @@
     var busy = false;
     var T = en ? {
       subj: 'Quote request', ok: 'Request received, redirecting…',
-      auto: 'We have received your request. Reply within 24 hours, with a first idea and not a quote. Agence Dare-Dare',
+      auto: 'We have received your request. Reply within 24 hours, proposal within 72 hours. Agence Dare-Dare',
       fail: 'Our form is not responding right now. Your request is ready, send it in one click:',
       wa: 'Send on WhatsApp', mail: 'Send by email', sending: 'Sending…'
     } : {
       subj: 'Demande de devis', ok: 'Demande bien reçue, nous vous redirigeons…',
-      auto: 'Nous avons bien reçu votre demande. Réponse sous 24 h, avec une première idée et pas un devis. Agence Dare-Dare',
+      auto: 'Nous avons bien reçu votre demande. Réponse sous 24 h, proposition sous 72 h. Agence Dare-Dare',
       fail: 'Notre formulaire ne répond pas pour le moment. Votre demande est prête, envoyez-la en un clic :',
       wa: 'Envoyer par WhatsApp', mail: 'Envoyer par mail', sending: 'Envoi en cours…'
     };
