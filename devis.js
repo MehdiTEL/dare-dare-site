@@ -121,11 +121,14 @@
     if (actions && actions.parentNode) actions.parentNode.insertBefore(info, err.nextSibling); else form.appendChild(info);
   }
 
-  /* ---------- Envoi à FormSubmit (AJAX) ---------- */
+  /* ---------- Envoi : notre boîte (/api/devis), FormSubmit en secours ---------- */
   function send(payload) {
+    return post('/api/devis', payload).catch(function () { return post(DEST, payload); });
+  }
+  function post(url, payload) {
     var ctl = ('AbortController' in window) ? new AbortController() : null;
     var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 10000);
-    return fetch(DEST, {
+    return fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(payload),
