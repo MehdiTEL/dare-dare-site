@@ -80,7 +80,7 @@
     hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0';
     form.appendChild(hp);
 
-    /* E-mail (nécessaire à l'accusé de réception) ; le téléphone devient facultatif */
+    /* E-mail (nécessaire à l'accusé de réception) ; le téléphone reste obligatoire */
     if (!form.elements.email) {
       var tel = form.elements.tel, telLabel = tel && tel.closest('label');
       var lab = document.createElement('label');
@@ -89,9 +89,7 @@
       lab.firstChild.textContent = en ? 'Email' : 'E-mail';
       if (telLabel) {
         telLabel.parentNode.insertBefore(lab, telLabel);
-        tel.required = false;
-        var sp = telLabel.querySelector('span');
-        if (sp) { sp.removeAttribute('data-i18n'); sp.textContent = en ? 'Phone (optional)' : 'Téléphone (facultatif)'; }
+        tel.required = true;
       } else {
         var g = form.querySelector('.devis__grid'); if (g) g.appendChild(lab);
       }
@@ -106,6 +104,16 @@
       ? 'Your details are only used to answer your request and prepare a proposal. They are kept for 3 years after our last contact and never sold. You can access, correct or delete them at contact@agence-dare-dare.fr. <a href="' + pol + '" style="color:inherit;text-decoration:underline">Privacy policy</a>.'
       : 'Vos informations servent uniquement à répondre à votre demande et à préparer une proposition. Elles sont conservées 3 ans après notre dernier échange et ne sont jamais vendues. Vous pouvez y accéder, les corriger ou les faire effacer : contact@agence-dare-dare.fr. <a href="' + pol + '" style="color:inherit;text-decoration:underline">Politique de confidentialité</a>.';
 
+    /* Consentement RGPD : case à cocher obligatoire avant l'envoi */
+    var rgpd = document.createElement('label');
+    rgpd.className = 'devis__rgpd';
+    rgpd.innerHTML = '<input type="checkbox" name="consentement" id="devis-rgpd" required><span></span>';
+    rgpd.lastChild.innerHTML = en
+      ? 'I agree that Agence Dare-Dare may use my details to answer my request (<a href="' + pol + '">privacy policy</a>).'
+      : 'J’accepte qu’Agence Dare-Dare utilise mes informations pour répondre à ma demande (<a href="' + pol + '">politique de confidentialité</a>).';
+    var actions0 = form.querySelector('.devis__actions');
+    if (actions0 && actions0.parentNode) actions0.parentNode.insertBefore(rgpd, actions0); else form.appendChild(rgpd);
+
     var err = document.createElement('p');
     err.className = 'devis__err'; err.setAttribute('role', 'alert'); err.hidden = true;
     var actions = form.querySelector('.devis__actions');
@@ -116,7 +124,7 @@
   /* ---------- Envoi à FormSubmit (AJAX) ---------- */
   function send(payload) {
     var ctl = ('AbortController' in window) ? new AbortController() : null;
-    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 15000);
+    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 10000);
     return fetch(DEST, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -140,13 +148,13 @@
     var T = en ? {
       subj: 'Quote request', ok: 'Request received, redirecting…',
       auto: 'We have received your request. Reply within 24 hours, with a first idea and not a quote. Agence Dare-Dare',
-      fail: 'We could not save your request on our site (connection). It is not lost: ',
-      wa: 'send it on WhatsApp', or: ' or ', mail: 'send it by email', end: '.'
+      fail: 'Our form is not responding right now. Your request is ready, send it in one click:',
+      wa: 'Send on WhatsApp', mail: 'Send by email', sending: 'Sending…'
     } : {
       subj: 'Demande de devis', ok: 'Demande bien reçue, nous vous redirigeons…',
       auto: 'Nous avons bien reçu votre demande. Réponse sous 24 h, avec une première idée et pas un devis. Agence Dare-Dare',
-      fail: 'Nous n’avons pas pu enregistrer votre demande sur notre site (connexion). Elle n’est pas perdue : ',
-      wa: 'envoyez-la par WhatsApp', or: ' ou ', mail: 'envoyez-la par mail', end: '.'
+      fail: 'Notre formulaire ne répond pas pour le moment. Votre demande est prête, envoyez-la en un clic :',
+      wa: 'Envoyer par WhatsApp', mail: 'Envoyer par mail', sending: 'Envoi en cours…'
     };
 
     form.addEventListener('submit', function (e) {
@@ -155,7 +163,7 @@
       var hp = form.elements._honey;
       if (hp && hp.value) return;
       if (!form.reportValidity()) return;
-      var via = (e.submitter && e.submitter.value) || 'whatsapp';
+      var via = (e.submitter && e.submitter.value) || 'formulaire';
       var v = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
       var lines = en ? [
         'Hello Dare-Dare, here is my project:',
@@ -184,17 +192,17 @@
         _template: 'table', _captcha: 'false', _autoresponse: T.auto,
         type: v('type'), date: v('date'), invites: v('invites'), budget: v('budget'), ville: v('ville'),
         nom: v('nom'), societe: v('societe'), email: v('email'), tel: v('tel'), message: m, source: v('source'),
-        canal_choisi: via
+        canal_choisi: via, consentement_rgpd: 'oui (' + new Date().toISOString().slice(0, 10) + ')'
       };
       form.querySelectorAll('input[data-dd-hidden]').forEach(function (h) { if (h.value) payload[h.name] = h.value; });
 
-      /* WhatsApp s'ouvre tout de suite (comportement d'origine, sinon le navigateur bloque la fenêtre) */
-      if (via !== 'email') window.open(waUrl, '_blank', 'noopener');
+      /* Ancien bouton WhatsApp (pages pas encore mises à jour) : la fenêtre s'ouvre tout de suite */
+      if (via === 'whatsapp') window.open(waUrl, '_blank', 'noopener');
 
       var err = form.querySelector('.devis__err'), ok = form.querySelector('.devis__ok');
       if (err) err.hidden = true;
       busy = true; form.setAttribute('aria-busy', 'true');
-      form.querySelectorAll('button[type=submit]').forEach(function (b) { b.disabled = true; });
+      form.querySelectorAll('button[type=submit]').forEach(function (b) { b.disabled = true; b.setAttribute('data-label', b.textContent); b.textContent = T.sending; });
 
       send(payload).then(function () {
         (window.dataLayer = window.dataLayer || []).push({
@@ -208,16 +216,20 @@
       }).catch(function () {
         (window.dataLayer = window.dataLayer || []).push({ event: 'dd_devis_erreur', contact_channel: via });
         busy = false; form.removeAttribute('aria-busy');
-        form.querySelectorAll('button[type=submit]').forEach(function (b) { b.disabled = false; });
+        form.querySelectorAll('button[type=submit]').forEach(function (b) { b.disabled = false; b.textContent = b.getAttribute('data-label') || b.textContent; });
+        /* Repli : deux vrais boutons avec le message prérempli, la demande n'est jamais perdue */
         if (err) {
-          err.textContent = T.fail;
+          err.textContent = '';
+          var t = document.createElement('span'); t.textContent = T.fail;
+          var box = document.createElement('span'); box.className = 'devis__err-btns';
           var a1 = document.createElement('a'), a2 = document.createElement('a');
-          a1.href = waUrl; a1.target = '_blank'; a1.rel = 'noopener'; a1.textContent = T.wa;
-          a2.href = mailUrl; a2.textContent = T.mail;
-          err.appendChild(a1); err.appendChild(document.createTextNode(T.or)); err.appendChild(a2); err.appendChild(document.createTextNode(T.end));
+          a1.href = waUrl; a1.target = '_blank'; a1.rel = 'noopener'; a1.textContent = T.wa; a1.className = 'hero__cta-primary';
+          a2.href = mailUrl; a2.textContent = T.mail; a2.className = 'hero__cta-secondary';
+          box.appendChild(a1); box.appendChild(a2);
+          err.appendChild(t); err.appendChild(box);
           err.hidden = false;
+          err.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         }
-        if (via === 'email') location.href = mailUrl;
       });
     });
   }

@@ -846,6 +846,36 @@ details.svc:hover{padding-left:0}
 .devis .is-invalid,.devis [aria-invalid="true"]{border-bottom-color:#EF4B45}
 .direct2{margin-top:44px;font-size:14px;color:rgba(246,242,238,.75);line-height:2}
 .direct2 a{border-bottom:1px solid rgba(246,242,238,.35)}
+.contact__head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px 64px;align-items:start;margin:28px 0 56px}
+.contact__head .intro{margin:0}
+.contact__coords{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-family:"Instrument Serif",serif;font-size:clamp(28px,3.4vw,46px);line-height:1.15}
+.contact__coords a{color:var(--paper);border-bottom:1px solid rgba(246,242,238,.35);max-width:100%;overflow-wrap:anywhere}
+@media(max-width:860px){.contact__head{grid-template-columns:1fr}}
+.contact__coords a:hover{border-bottom-color:var(--rose)}
+.devis__submit{padding:20px 40px;font-size:13px;font-weight:600;gap:14px}
+.devis__submit::after{content:"→";font-size:16px;letter-spacing:0;transition:transform .3s}
+.devis__submit:hover::after{transform:translateX(4px)}
+.devis__submit:disabled{opacity:.6;cursor:progress}
+.devis__submit:disabled::after{content:none}
+.devis__rgpd{display:flex;align-items:flex-start;gap:12px;margin-top:32px;max-width:640px;font-size:13px;line-height:1.5;color:rgba(246,242,238,.8);cursor:pointer}
+.devis .devis__rgpd input{flex:0 0 20px;width:20px;height:20px;margin:0;padding:0;border:1px solid rgba(246,242,238,.6);border-radius:3px;background:transparent;cursor:pointer;display:grid;place-content:center}
+.devis .devis__rgpd input:checked{background:var(--paper);border-color:var(--paper)}
+.devis .devis__rgpd input:checked::before{content:"";width:10px;height:6px;border:solid var(--ink);border-width:0 0 2px 2px;transform:translateY(-1px) rotate(-45deg)}
+.devis .devis__rgpd input:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.devis__rgpd a{color:inherit;text-decoration:underline}
+.devis__actions{margin-top:24px}
+.devis__err{margin-top:20px;padding:20px 22px;border:1px solid rgba(246,242,238,.35);font-size:14px;line-height:1.5;max-width:640px}
+.devis__err-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.contact__direct{margin-top:64px;max-width:980px}
+.contact__direct-t{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin:0 0 18px}
+.contact__opts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.contact__opt{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center;padding:22px 24px;border:1px solid rgba(246,242,238,.25);color:var(--paper);transition:border-color .3s,background .3s}
+.contact__opt:hover{border-color:var(--paper);background:rgba(246,242,238,.05)}
+.contact__opt-k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.contact__opt-v{grid-column:1;font-family:"Instrument Serif",serif;font-size:24px;line-height:1.15;overflow-wrap:anywhere}
+.contact__opt-a{grid-column:2;grid-row:1/3;font-size:18px;transition:transform .3s}
+.contact__opt:hover .contact__opt-a{transform:translateX(4px)}
+@media(max-width:600px){.devis__submit{width:100%;justify-content:center}}
 .rse{margin-top:18px;font-size:13px;color:var(--mute);max-width:640px}
 /* pied de page */
 .footer{border-top:1px solid var(--line);padding-block:64px 36px;padding-inline:clamp(20px,5vw,72px)}
@@ -1045,9 +1075,9 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
 <section id="territoires">
  <div class="wrap" style="padding-block:0 48px"><div class="eyebrow">Where and how</div><h2 class="sec-title serif rv" style="margin-top:18px;max-width:1100px"><span class="lt">Paris, Cannes, Morocco,</span><br><span class="it">and wherever your ambition takes us.</span></h2><p class="sr">Paris, Cannes, Morocco, and wherever your ambition takes us.</p></div>
  <div class="dest">
-<div class="dest__p"><a class="porte__lien" href="event-agency-paris.html" aria-label="Event agency in Paris"></a><img src="../photos/dest-paris-1.jpg" srcset="../photos/w800/dest-paris-1.webp 800w, ../photos/dest-paris-1.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Pont Alexandre III and its lit lamps at dusk, Paris" loading="lazy"><div class="dest__t"><div class="eyebrow">01</div><h3 class="serif">Paris</h3><p>Here, even the walls are used to the grandest shows: Palais Brongniart, Piscine Molitor, rooftops. We turn the capital's most iconic venues into stages for your brand. <a class="lnk" href="event-agency-paris.html">Event agency in Paris</a> · <a class="lnk" href="../blog/en/10-event-venues-paris.html">10 event venues</a></p></div></div>
-<div class="dest__p"><a class="porte__lien" href="event-agency-cannes.html" aria-label="Event agency in Cannes"></a><img src="../photos/dest-cannes-2.jpg" srcset="../photos/w800/dest-cannes-2.webp 800w, ../photos/dest-cannes-2.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Wooden boat seen from above on the blue sea, off Cannes" loading="lazy"><div class="dest__t"><div class="eyebrow">02</div><h3 class="serif it">Cannes</h3><p>We roll out the red carpet, even outside the festival. Private villas, yachts, terraces over the Mediterranean, 365 days a year. <a class="lnk" href="event-agency-cannes.html">Event agency in Cannes</a> · <a class="lnk" href="../blog/en/event-cannes-french-riviera.html">Events in Cannes</a> · <a class="lnk" href="event-agency-cannes.html#festival-2027">Cannes Film Festival 2027</a></p></div></div>
-<div class="dest__p"><a class="porte__lien" href="event-agency-marrakech.html" aria-label="Event agency in Morocco"></a><img src="../photos/maroc-palais-bahia.webp" srcset="../photos/w800/maroc-palais-bahia.webp 800w, ../photos/maroc-palais-bahia.webp 1280w" sizes="(max-width: 768px) 100vw, 50vw" alt="Courtyard of the Bahia Palace in Marrakech, orange trees and zellige" loading="lazy"><div class="dest__t"><div class="eyebrow">03</div><h3 class="serif">Morocco</h3><p>Event agency in Marrakech: retreats, riads, the Agafay desert. Morocco is our home turf. Casablanca for launches, Rabat for protocol, Marrakech for emotion, Tangier for audacity. A Morocco DMC between Paris and Casablanca. <a class="lnk" href="event-agency-marrakech.html">Event agency in Morocco</a> · <a class="lnk" href="morocco-world-cup-2030-events.html">2030 World Cup</a> · <a class="lnk" href="../blog/en/event-morocco-dmc.html">Morocco DMC</a></p><small class="dest__cr">Bahia Palace, Marrakech. Photo: <a href="https://commons.wikimedia.org/wiki/File:Palais_de_la_Bahia,_Marrakech_(23984982364).jpg" target="_blank" rel="noopener">Matt Kieffer</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.fr" target="_blank" rel="noopener">CC BY-SA 2.0</a></small></div></div>
+<div class="dest__p"><a class="porte__lien" href="event-agency-paris.html" aria-label="Agence événementielle à Paris"></a><img src="../photos/dest-paris-1.jpg" srcset="../photos/w800/dest-paris-1.webp 800w, ../photos/dest-paris-1.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Pont Alexandre III and its lit lamps at dusk, Paris" loading="lazy"><div class="dest__t"><div class="eyebrow">01</div><h3 class="serif">Paris</h3><p>Here, even the walls are used to the grandest shows: Palais Brongniart, Piscine Molitor, rooftops. We turn the capital's most iconic venues into stages for your brand. <a class="lnk" href="event-agency-paris.html">Event agency in Paris</a> · <a class="lnk" href="../blog/en/10-event-venues-paris.html">10 event venues</a></p></div></div>
+<div class="dest__p"><a class="porte__lien" href="event-agency-cannes.html" aria-label="Agence événementielle à Cannes"></a><img src="../photos/dest-cannes-2.jpg" srcset="../photos/w800/dest-cannes-2.webp 800w, ../photos/dest-cannes-2.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Wooden boat seen from above on the blue sea, off Cannes" loading="lazy"><div class="dest__t"><div class="eyebrow">02</div><h3 class="serif it">Cannes</h3><p>We roll out the red carpet, even outside the festival. Private villas, yachts, terraces over the Mediterranean, 365 days a year. <a class="lnk" href="event-agency-cannes.html">Event agency in Cannes</a> · <a class="lnk" href="../blog/en/event-cannes-french-riviera.html">Events in Cannes</a> · <a class="lnk" href="event-agency-cannes.html">Cannes Film Festival 2027</a></p></div></div>
+<div class="dest__p"><a class="porte__lien" href="event-agency-marrakech.html" aria-label="Agence événementielle au Maroc"></a><img src="../photos/maroc-palais-bahia.webp" srcset="../photos/w800/maroc-palais-bahia.webp 800w, ../photos/maroc-palais-bahia.webp 1280w" sizes="(max-width: 768px) 100vw, 50vw" alt="Courtyard of the Bahia Palace in Marrakech, orange trees and zellige" loading="lazy"><div class="dest__t"><div class="eyebrow">03</div><h3 class="serif">Morocco</h3><p>Event agency in Marrakech: retreats, riads, the Agafay desert. Morocco is our home turf. Casablanca for launches, Rabat for protocol, Marrakech for emotion, Tangier for audacity. A Morocco DMC between Paris and Casablanca. <a class="lnk" href="event-agency-marrakech.html">Event agency in Morocco</a> · <a class="lnk" href="../agence-evenementielle-coupe-du-monde-2030-maroc.html">2030 World Cup</a> · <a class="lnk" href="../blog/en/event-morocco-dmc.html">Morocco DMC</a></p><small class="dest__cr">Bahia Palace, Marrakech. Photo: <a href="https://commons.wikimedia.org/wiki/File:Palais_de_la_Bahia,_Marrakech_(23984982364).jpg" target="_blank" rel="noopener">Matt Kieffer</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.fr" target="_blank" rel="noopener">CC BY-SA 2.0</a></small></div></div>
  </div>
  <div class="wrap method"><p class="below" style="margin-top:28px">Four steps, a dedicated project manager, no bad surprises: <a class="lnk" href="how-we-produce.html">how we produce</a>.</p></div>
 </section>
@@ -1067,10 +1097,10 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
 
 <section class="contact wrap" id="contact">
   <div class="eyebrow">Contact</div><h2 class="serif" style="margin-top:24px"><span class="lt">You dare us,</span><br><span class="it">we did it.</span></h2>
-  <p class="intro">An event in mind? Write to us, we'll get back to you fast. Dare-dare. Reply within 24 hours.</p>
+  <div class="contact__head"><p class="intro">An event in mind? Write to us, we'll get back to you fast. Dare-dare. Reply within 24 hours.</p><div class="contact__coords"><a href="mailto:contact@agence-dare-dare.fr?subject=Event%20project%20-%20Agence%20Dare-Dare">contact@agence-dare-dare.fr</a><a href="tel:+33681969362">+33 6 81 96 93 62</a><a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener">@agencedaredare</a></div></div>
   <form class="devis" id="devis-form" novalidate>
-          <div class="devis__grid"><label class="devis__field"><span>Type of event</span>
-              <select name="type" id="devis-type" required>
+          <div class="devis__grid"><label class="devis__field"><span>Type of event (optional)</span>
+              <select name="type" id="devis-type">
                 <option value="">Choose…</option>
                 <option>Corporate parties</option>
                 <option>Influencer events</option>
@@ -1083,10 +1113,20 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
               <input name="date" id="devis-date" type="text" placeholder="ex. mi-mars 2027"></label><label class="devis__field"><span>Number of guests</span>
               <select name="invites" id="devis-invites" required>
                 <option value="">Choose…</option>
-                <option>Under 30</option><option>30 to 80</option><option>80 to 200</option><option>200 to 500</option><option>Over 500</option>
+                <option>Under 30</option><option>30 to 80</option><option>80 to 200</option><option>200 to 500</option><option>500 to 1,500</option><option>Over 1,500</option>
               </select></label><label class="devis__field"><span>Full name</span>
               <input name="nom" id="devis-nom" type="text" autocomplete="name" required></label><label class="devis__field"><span>Phone</span>
-              <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label><label class="devis__field devis__field--full"><span>Your idea in a few words (optional)</span>
+              <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label><label class="devis__field"><span>How did you hear about us? (optional)</span>
+              <select name="source" id="devis-source">
+                <option value="">Choose…</option>
+                <option>Google</option>
+                <option>Instagram</option>
+                <option>LinkedIn</option>
+                <option>TikTok</option>
+                <option>Word of mouth</option>
+                <option>Existing client</option>
+                <option>Other</option>
+              </select></label><label class="devis__field devis__field--full"><span>Your idea in a few words (optional)</span>
               <textarea name="message" id="devis-message" rows="3"></textarea></label></div><details class="devis__more"><summary>Tell us everything, we love a challenge (optional)</summary><div class="devis__grid"><label class="devis__field"><span>Indicative budget (optional)</span>
               <select name="budget" id="devis-budget">
                 <option value="">Choose…</option>
@@ -1096,23 +1136,13 @@ el.addEventListener('click',done);setTimeout(done,1700)})();</script>
                 <option value="">Choose…</option>
                 <option>Paris</option><option>Cannes / French Riviera</option><option>Marrakech / Morocco</option><option>Elsewhere</option>
               </select></label><label class="devis__field"><span>Company (optional)</span>
-              <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label><label class="devis__field"><span>How did you hear about us?</span>
-              <select name="source" id="devis-source">
-                <option value="">Choose…</option>
-                <option>Google</option>
-                <option>Instagram</option>
-                <option>LinkedIn</option>
-                <option>Word of mouth</option>
-                <option>Existing client</option>
-                <option>Other</option>
-              </select></label></div></details><div class="devis__actions">
-            <button type="submit" value="whatsapp" class="hero__cta-primary">Send via WhatsApp</button>
-            <button type="submit" value="email" class="hero__cta-secondary devis__btn-mail">Send by email</button>
+              <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label></div></details><div class="devis__actions">
+            <button type="submit" value="formulaire" class="hero__cta-primary devis__submit">Send my request</button>
           </div>
           <p class="devis__note">Concept, venue and detailed line-by-line quote.</p>
           <p class="devis__ok" hidden>Thank you! Your message is ready, just hit send.</p>
         </form>
-  <p class="direct2">Or directly: <a href="https://calendly.com/agence-dare-dare/30min" target="_blank" rel="noopener">Book a 15-minute call</a> · <a href="https://wa.me/33681969362?text=Hello%20Dare-Dare%2C%20I%20have%20an%20event%20project%2C%20shall%20we%20talk%3F" target="_blank" rel="noopener">Chat on WhatsApp</a> · <a href="mailto:contact@agence-dare-dare.fr?subject=Projet%20%C3%A9v%C3%A9nement%20-%20Agence%20Dare-Dare">contact@agence-dare-dare.fr</a> · <a href="tel:+33681969362">+33 6 81 96 93 62</a> · <a href="https://instagram.com/agencedaredare" target="_blank" rel="noopener">Instagram @agencedaredare</a></p>
+  <div class="contact__direct"><p class="contact__direct-t">Or directly</p><ul class="contact__opts"><li><a class="contact__opt" href="https://calendly.com/agence-dare-dare/30min" target="_blank" rel="noopener"><span class="contact__opt-k">Call</span><span class="contact__opt-v">Book 15 minutes</span><span class="contact__opt-a" aria-hidden="true">→</span></a></li><li><a class="contact__opt" href="https://wa.me/33681969362?text=Hello%20Dare-Dare%2C%20I%20have%20an%20event%20project%2C%20shall%20we%20talk%3F" target="_blank" rel="noopener"><span class="contact__opt-k">WhatsApp</span><span class="contact__opt-v">Chat now</span><span class="contact__opt-a" aria-hidden="true">→</span></a></li></ul></div>
   <p class="rse">Daring is also about doing good: we aim to give 1 to 2% of our profits each year to the Association Petits Princes, and we welcome interns. <a class="lnk" href="../charte-rse-agence-dare-dare.pdf" download>Our CSR charter</a></p>
 </section>
 
@@ -1135,7 +1165,7 @@ function t(o){document.body.classList.toggle('menu-open',o);b.setAttribute('aria
 b.addEventListener('click',function(){t(!document.body.classList.contains('menu-open'))});
 document.querySelectorAll('.mmenu a').forEach(function(a){a.addEventListener('click',function(){t(false)})});})();
 </script>
-<script src="../devis.js?v=2026102701" defer></script>
+<script src="../devis.js?v=2026110401" defer></script>
 <script src="../cookie-consent.js?v=2026102701" defer></script>
 <script>
 

@@ -39,7 +39,7 @@
   <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-serif-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
-  <link rel="stylesheet" href="dd-2026.css?v=2026102703">
+  <link rel="stylesheet" href="dd-2026.css?v=2026110401">
   <link rel="stylesheet" href="dd-pages.css?v=2026102704">
   <script type="application/ld+json" id="ld-organization">
 {"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://www.agence-dare-dare.fr/#organization","name":"Agence Dare-Dare","legalName":"Agence Dare-Dare","alternateName":["Dare Dare","Agence Dare Dare","Dare-Dare"],"url":"https://www.agence-dare-dare.fr/","logo":{"@type":"ImageObject","url":"https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp"},"image":"https://www.agence-dare-dare.fr/photos/og-image.webp","slogan":"You dare us, we did it.","description":"Agence événementielle premium à Paris, avec une présence à Cannes et au Maroc (DMC) : soirées d'entreprise, séminaires, lancements, événements influence, voyages de presse.","email":"contact@agence-dare-dare.fr","telephone":"+33681969362","identifier":[{"@type":"PropertyValue","propertyID":"SIREN","value":"109478099"},{"@type":"PropertyValue","propertyID":"SIRET","value":"10947809900012"}],"vatID":"FR69109478099","address":{"@type":"PostalAddress","streetAddress":"11 rue Joubert","postalCode":"75009","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"areaServed":[{"@type":"City","name":"Paris","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"City","name":"Cannes","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"Country","name":"Maroc"}],"knowsAbout":["Production événementielle","Séminaires d'entreprise","Événements influence","Voyages presse","Lancements produits","Scénographie","DMC Maroc"],"knowsLanguage":["fr","en"],"sameAs":["https://instagram.com/agencedaredare","https://linkedin.com/company/agence-dare-dare","https://www.google.com/search?kgmid=/g/11z_p10mn8"],"contactPoint":{"@type":"ContactPoint","contactType":"demande de devis","telephone":"+33681969362","email":"contact@agence-dare-dare.fr","availableLanguage":["fr","en"],"areaServed":["FR","MA"]}}
@@ -351,9 +351,10 @@
   <h2><span class="lt">Vos équipes,</span><br><em>ailleurs.</em></h2>
   <p class="intro">Un séminaire, un incentive, une destination à trouver ? Écrivez-nous. Réponse sous 24 h.</p>
   <p class="dd-reassur">Notre propre DMC au Maroc · Responsabilité civile professionnelle (attestation 2026 sur demande) · <a href="/charte-rse-agence-dare-dare.pdf">Charte RSE</a> · <a href="/engagements.html">Nos engagements</a></p>
+  <p class="contact__coords"><a href="tel:+33681969362">+33 6 81 96 93 62</a><a href="mailto:contact@agence-dare-dare.fr?subject=Projet%20s%C3%A9minaire%20-%20Agence%20Dare-Dare">contact@agence-dare-dare.fr</a></p>
   <form class="devis" id="devis-form" novalidate>
-          <div class="devis__grid"><label class="devis__field"><span>Type d'événement</span>
-              <select name="type" id="devis-type" required>
+          <div class="devis__grid"><label class="devis__field"><span>Type d'événement (facultatif)</span>
+              <select name="type" id="devis-type">
                 <option value="">Choisir…</option>
                 <option>Soirée d'entreprise</option>
                 <option>Événement influence</option>
@@ -366,10 +367,20 @@
               <input name="date" id="devis-date" type="text" placeholder="ex. mi-mars 2027"></label><label class="devis__field"><span>Nombre d'invités</span>
               <select name="invites" id="devis-invites" required>
                 <option value="">Choisir…</option>
-                <option>- de 30</option><option>30 à 80</option><option>80 à 200</option><option>200 à 500</option><option>+ de 500</option>
+                <option>- de 30</option><option>30 à 80</option><option>80 à 200</option><option>200 à 500</option><option>500 à 1 500</option><option>+ de 1 500</option>
               </select></label><label class="devis__field"><span>Nom et prénom</span>
               <input name="nom" id="devis-nom" type="text" autocomplete="name" required></label><label class="devis__field"><span>Téléphone</span>
-              <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label><label class="devis__field devis__field--full"><span>Votre idée en quelques mots (facultatif)</span>
+              <input name="tel" id="devis-tel" type="tel" autocomplete="tel" required></label><label class="devis__field"><span>Comment nous avez-vous connus ? (facultatif)</span>
+              <select name="source" id="devis-source">
+                <option value="">Choisir…</option>
+                <option>Google</option>
+                <option>Instagram</option>
+                <option>LinkedIn</option>
+                <option>TikTok</option>
+                <option>Bouche-à-oreille</option>
+                <option>Déjà client</option>
+                <option>Autre</option>
+              </select></label><label class="devis__field devis__field--full"><span>Votre idée en quelques mots (facultatif)</span>
               <textarea name="message" id="devis-message" rows="3"></textarea></label></div><details class="devis__more"><summary>Dites-nous tout, on adore les défis (facultatif)</summary><div class="devis__grid"><label class="devis__field"><span>Budget indicatif (facultatif)</span>
               <select name="budget" id="devis-budget">
                 <option value="">Choisir…</option>
@@ -379,23 +390,13 @@
                 <option value="">Choisir…</option>
                 <option>Paris</option><option>Cannes / Côte d'Azur</option><option>Marrakech / Maroc</option><option>Ailleurs</option>
               </select></label><label class="devis__field"><span>Société (facultatif)</span>
-              <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label><label class="devis__field"><span>Comment nous avez-vous connus ?</span>
-              <select name="source" id="devis-source">
-                <option value="">Choisir…</option>
-                <option>Google</option>
-                <option>Instagram</option>
-                <option>LinkedIn</option>
-                <option>Bouche-à-oreille</option>
-                <option>Déjà client</option>
-                <option>Autre</option>
-              </select></label></div></details><div class="devis__actions">
-            <button type="submit" value="whatsapp" class="hero__cta-primary">Envoyer par WhatsApp</button>
-            <button type="submit" value="email" class="hero__cta-secondary devis__btn-mail">Envoyer par mail</button>
+              <input name="societe" id="devis-societe" type="text" autocomplete="organization"></label></div></details><div class="devis__actions">
+            <button type="submit" value="formulaire" class="hero__cta-primary devis__submit">Envoyer ma demande</button>
           </div>
           <p class="devis__note">concept, lieu et devis détaillé poste par poste.</p>
           <p class="devis__ok" hidden>Merci ! Votre message est prêt, il ne reste qu'à l'envoyer.</p>
         </form>
-  <p class="direct2"><a href="https://calendly.com/agence-dare-dare/30min" target="_blank" rel="noopener">Réserver un appel de 15 minutes</a> · <a href="https://wa.me/33681969362?text=Bonjour%2C%20j%27ai%20un%20projet%20de%20s%C3%A9minaire%2C%20on%20en%20parle%20%3F" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:contact@agence-dare-dare.fr?subject=Projet%20s%C3%A9minaire%20-%20Agence%20Dare-Dare">contact@agence-dare-dare.fr</a> · <a href="tel:+33681969362">+33 6 81 96 93 62</a></p>
+  <div class="contact__direct"><p class="contact__direct-t">Ou directement</p><ul class="contact__opts"><li><a class="contact__opt" href="https://calendly.com/agence-dare-dare/30min" target="_blank" rel="noopener"><span class="contact__opt-k">Appel</span><span class="contact__opt-v">Réserver 15 minutes</span><span class="contact__opt-a" aria-hidden="true">→</span></a></li><li><a class="contact__opt" href="https://wa.me/33681969362?text=Bonjour%2C%20j%27ai%20un%20projet%20de%20s%C3%A9minaire%2C%20on%20en%20parle%20%3F" target="_blank" rel="noopener"><span class="contact__opt-k">WhatsApp</span><span class="contact__opt-v">Écrire maintenant</span><span class="contact__opt-a" aria-hidden="true">→</span></a></li></ul></div>
   <p class="rse">Un événement peut aussi faire du bien : nous visons à reverser 1 à 2 % de nos bénéfices chaque année à l'Association Petits Princes, et nous accueillons des stagiaires. <a class="lnk" href="charte-rse-agence-dare-dare.pdf" download>Notre charte RSE</a></p>
 </section>
 
@@ -419,7 +420,7 @@ function t(o){document.body.classList.toggle('menu-open',o);b.setAttribute('aria
 b.addEventListener('click',function(){t(!document.body.classList.contains('menu-open'))});
 document.querySelectorAll('.mmenu a').forEach(function(a){a.addEventListener('click',function(){t(false)})});})();
 </script>
-<script src="devis.js?v=2026102701" defer></script>
+<script src="devis.js?v=2026110401" defer></script>
   <script src="defi.js?v=20261028" defer></script>
 <script src="cookie-consent.js?v=2026102701" defer></script>
 <script>(function(){var n=document.getElementById('nav');if(!n)return;function u(){n.classList.toggle('solid',scrollY>60)}addEventListener('scroll',u,{passive:true});u();
