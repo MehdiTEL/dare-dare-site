@@ -1,5 +1,5 @@
 /* DEVIS & SUIVI · Agence Dare-Dare
-   1. Formulaire de devis (#devis-form) : enregistre la demande (FormSubmit, mail à l'agence + accusé de réception),
+   1. Formulaire de devis (#devis-form) : enregistre la demande (Web3Forms, puis /api/devis et FormSubmit en secours),
       puis redirige vers la page Merci. Si l'envoi échoue : repli WhatsApp / mail avec le message prérempli.
       Origine de la demande (page, porte, Défi, gclid, utm_*) gardée en sessionStorage et envoyée en champs cachés.
    2. Suivi des demandes : chaque clic WhatsApp, mail, téléphone ou envoi du formulaire
@@ -8,6 +8,8 @@
   var WA = '33681969362';
   var MAIL = 'contact@agence-dare-dare.fr';
   var DEST = 'https://formsubmit.co/ajax/' + MAIL;
+  /* Clé publique Web3Forms (liée à contact@agence-dare-dare.fr, elle peut être visible) */
+  var W3F = 'https://api.web3forms.com/submit', W3F_KEY = '425991be-b475-4525-b5a8-7765b5575eae';
 
   function track(channel, origin) {
     (window.dataLayer = window.dataLayer || []).push({
@@ -121,9 +123,13 @@
     if (actions && actions.parentNode) actions.parentNode.insertBefore(info, err.nextSibling); else form.appendChild(info);
   }
 
-  /* ---------- Envoi : notre boîte (/api/devis), FormSubmit en secours ---------- */
+  /* Envoi : Web3Forms, puis notre boîte (/api/devis), puis FormSubmit en dernier secours */
   function send(payload) {
-    return post('/api/devis', payload).catch(function () { return post(DEST, payload); });
+    var w = { access_key: W3F_KEY, subject: payload._subject, from_name: 'Site Agence Dare-Dare', replyto: payload.email, botcheck: '' };
+    Object.keys(payload).forEach(function (k) { if (k.charAt(0) !== '_' && payload[k]) w[k] = payload[k]; });
+    return post(W3F, w)
+      .catch(function () { return post('/api/devis', payload); })
+      .catch(function () { return post(DEST, payload); });
   }
   function post(url, payload) {
     var ctl = ('AbortController' in window) ? new AbortController() : null;
