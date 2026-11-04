@@ -188,7 +188,7 @@
         '', v('nom') + (v('societe') ? ' (' + v('societe') + ')' : ''), v('email'), v('tel')
       ];
       var body = lines.filter(function (l, i) { return l !== '' || lines[i - 1] !== ''; }).join('\n');
-      var mailUrl = 'mailto:' + MAIL + '?subject=' + encodeURIComponent((en ? 'Quote request · ' : 'Demande de devis · ') + v('type')) + '&body=' + encodeURIComponent(body);
+      var mailUrl = 'mailto:' + MAIL + '?subject=' + encodeURIComponent([en ? 'Quote request' : 'Demande de devis', v('type')].filter(Boolean).join(' · ')) + '&body=' + encodeURIComponent(body);
       var waUrl = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(body);
 
       /* Phrase du Défi : début du message si elle vient du bloc « Je vous mets au défi de… » */
@@ -197,7 +197,7 @@
       else if (form.elements.defi) form.elements.defi.value = '';
 
       var payload = {
-        _subject: T.subj + ' · ' + v('type') + ' · ' + v('nom') + (v('societe') ? ' (' + v('societe') + ')' : ''),
+        _subject: [T.subj, v('type'), v('nom') + (v('societe') ? ' (' + v('societe') + ')' : '')].filter(Boolean).join(' · '),
         _template: 'table', _captcha: 'false', _autoresponse: T.auto,
         type: v('type'), date: v('date'), invites: v('invites'), budget: v('budget'), ville: v('ville'),
         nom: v('nom'), societe: v('societe'), email: v('email'), tel: v('tel'), message: m, source: v('source'),
