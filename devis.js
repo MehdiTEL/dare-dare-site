@@ -156,7 +156,7 @@
     var busy = false;
     var T = en ? {
       subj: 'Quote request', ok: 'Request received, redirecting…',
-      auto: 'We have received your request. We'll get back to you dare-dare: a reply within 24 hours, then a recommendation and a budget within 72 hours. Agence Dare-Dare',
+      auto: 'We have received your request. We\'ll get back to you dare-dare: a reply within 24 hours, then a recommendation and a budget within 72 hours. Agence Dare-Dare',
       fail: 'Our form is not responding right now. Your request is ready, send it in one click:',
       wa: 'Send on WhatsApp', mail: 'Send by email', sending: 'Sending…'
     } : {
