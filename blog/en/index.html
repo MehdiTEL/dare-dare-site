@@ -4,283 +4,76 @@
   <!-- BLOG: Meta & SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google (Tag Manager, Ads) et Pinterest : rien n'est chargé avant le choix du visiteur (voir cookie-consent.js) -->
+  <!-- Google Tag Manager + Consent Mode (mesure désactivée tant que le visiteur n'a pas accepté) -->
   <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
-  gtag('set',{cookie_expires:34128000}); /* cookies Google limités à 13 mois (CNIL) */
-  gtag('js', new Date()); gtag('config', 'AW-18516847281');
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+  try{if(localStorage.getItem('dd-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T9L5BNM4');
   </script>
-  <title>The Journal · Event ideas and field notes | Agence Dare-Dare</title>
-  <meta name="description" content="Launch ideas, venues, trends and field notes from premium events: the Agence Dare-Dare Journal, in Paris, Cannes and Morocco.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="/photos/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="/photos/apple-touch-icon.png">
+  <!-- End Google Tag Manager -->
+  <!-- Google Ads (gtag.js) · soumis au consentement ci-dessus -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516847281"></script>
+  <script>gtag('js', new Date()); gtag('config', 'AW-18516847281');</script>
+  <title>Blog · Agence Dare-Dare | Event insights</title>
+  <meta name="description" content="Ideas, trends and behind-the-scenes of premium events. Guides, trends and field notes by Agence Dare-Dare.">
   <link rel="canonical" href="https://www.agence-dare-dare.fr/blog/en/">
   <link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/blog/">
   <link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/blog/en/">
   <link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/blog/">
 
   <!-- BLOG: Open Graph -->
-  <meta property="og:title" content="The Journal · Event ideas and field notes | Agence Dare-Dare">
+  <meta property="og:title" content="Blog · Agence Dare-Dare | Event insights">
   <meta property="og:description" content="Ideas, trends and behind-the-scenes of premium events. Guides, trends and field notes by Agence Dare-Dare.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.agence-dare-dare.fr/blog/en/">
   <meta property="og:site_name" content="Agence Dare-Dare">
   <meta property="og:locale" content="en_GB">
-  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.jpg">
+  <meta property="og:image" content="https://www.agence-dare-dare.fr/photos/og-image.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:alt" content="Agence Dare-Dare, event agency in Paris, Cannes and Morocco">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:alt" content="Long white dinner table set across the net of a grass tennis court, guests dressed in white">
 
   <!-- BLOG: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Journal · Event ideas and field notes | Agence Dare-Dare">
+  <meta name="twitter:title" content="Blog · Agence Dare-Dare | Event insights">
   <meta name="twitter:description" content="Ideas, trends and behind-the-scenes of premium events.">
-  <meta name="twitter:image" content="https://www.agence-dare-dare.fr/photos/og-image.jpg">
+  <meta name="twitter:image" content="https://www.agence-dare-dare.fr/photos/og-image.webp">
 
   <!-- BLOG: Google Fonts -->
-  <link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- BLOG: Stylesheet -->
-  <link rel="stylesheet" href="../blog.css?v=2026102704">
+  <link rel="stylesheet" href="../blog.css?v=20261022">
 
   <!-- BLOG: Schema.org CollectionPage JSON-LD -->
-  <script type="application/ld+json" id="ld-organization">
-{"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://www.agence-dare-dare.fr/#organization","name":"Agence Dare-Dare","legalName":"Agence Dare-Dare","alternateName":["Dare Dare","Agence Dare Dare","Dare-Dare"],"url":"https://www.agence-dare-dare.fr/","logo":{"@type":"ImageObject","url":"https://www.agence-dare-dare.fr/photos/logo-dare-dare.webp"},"image":"https://www.agence-dare-dare.fr/photos/og-image.webp","slogan":"You dare us, we did it.","description":"Premium event agency in Paris, with a presence in Cannes and in Morocco (DMC): corporate parties, seminars, product launches, influencer events, press trips.","email":"contact@agence-dare-dare.fr","telephone":"+33681969362","identifier":[{"@type":"PropertyValue","propertyID":"SIREN","value":"109478099"},{"@type":"PropertyValue","propertyID":"SIRET","value":"10947809900012"}],"vatID":"FR69109478099","address":{"@type":"PostalAddress","streetAddress":"11 rue Joubert","postalCode":"75009","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"areaServed":[{"@type":"City","name":"Paris","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"City","name":"Cannes","containedInPlace":{"@type":"Country","name":"France"}},{"@type":"Country","name":"Morocco"}],"knowsAbout":["Event production","Corporate seminars","Influencer events","Press trips","Product launches","Scenography","Morocco DMC"],"knowsLanguage":["fr","en"],"sameAs":["https://instagram.com/agencedaredare","https://linkedin.com/company/agence-dare-dare","https://www.google.com/search?kgmid=/g/11z_p10mn8"],"contactPoint":{"@type":"ContactPoint","contactType":"quote request","telephone":"+33681969362","email":"contact@agence-dare-dare.fr","availableLanguage":["fr","en"],"areaServed":["FR","MA"]}}
-  </script>
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Blog · Agence Dare-Dare",
-  "inLanguage": "en-GB",
-  "description": "Ideas, trends and behind-the-scenes of premium events.",
-  "url": "https://www.agence-dare-dare.fr/blog/en/",
-  "publisher": {
-    "@id": "https://www.agence-dare-dare.fr/#organization"
-  },
-  "@id": "https://www.agence-dare-dare.fr/blog/en/#collection",
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "url": "https://www.agence-dare-dare.fr/blog/en/two-day-corporate-seminar-programme.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "url": "https://www.agence-dare-dare.fr/blog/en/choosing-an-event-caterer.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "url": "https://www.agence-dare-dare.fr/blog/en/event-communication.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "url": "https://www.agence-dare-dare.fr/blog/en/best-morocco-retreat-agencies.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "url": "https://www.agence-dare-dare.fr/blog/en/best-event-agencies-paris.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "url": "https://www.agence-dare-dare.fr/blog/en/event-carbon-calculator.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "url": "https://www.agence-dare-dare.fr/blog/en/company-party-checklist.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "url": "https://www.agence-dare-dare.fr/blog/en/event-planning-timeline.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 9,
-        "url": "https://www.agence-dare-dare.fr/blog/en/agency-brief-template.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 10,
-        "url": "https://www.agence-dare-dare.fr/blog/en/morocco-seminar-guide.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 11,
-        "url": "https://www.agence-dare-dare.fr/blog/en/press-trip-kit.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 12,
-        "url": "https://www.agence-dare-dare.fr/blog/en/2027-events-calendar.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 13,
-        "url": "https://www.agence-dare-dare.fr/blog/en/year-end-corporate-party-paris.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 14,
-        "url": "https://www.agence-dare-dare.fr/blog/en/riad-event-marrakech.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 15,
-        "url": "https://www.agence-dare-dare.fr/blog/en/rooftop-paris-event.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 16,
-        "url": "https://www.agence-dare-dare.fr/blog/en/sunglasses-launch-petrol-station.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 17,
-        "url": "https://www.agence-dare-dare.fr/blog/en/perfume-launch-cocktail-bar.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 18,
-        "url": "https://www.agence-dare-dare.fr/blog/en/beauty-launch-60s-salon.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 19,
-        "url": "https://www.agence-dare-dare.fr/blog/en/candle-launch-video-store.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 20,
-        "url": "https://www.agence-dare-dare.fr/blog/en/corporate-party-instagrammable.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 21,
-        "url": "https://www.agence-dare-dare.fr/blog/en/3-day-seminar-marrakech.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 22,
-        "url": "https://www.agence-dare-dare.fr/blog/en/fashion-launch-launderette.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 23,
-        "url": "https://www.agence-dare-dare.fr/blog/en/coffee-launch-phone-booth.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 24,
-        "url": "https://www.agence-dare-dare.fr/blog/en/shoe-launch-cobbler.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 25,
-        "url": "https://www.agence-dare-dare.fr/blog/en/fashion-launch-bowling-alley.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 26,
-        "url": "https://www.agence-dare-dare.fr/blog/en/champagne-launch-corner-shop.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 27,
-        "url": "https://www.agence-dare-dare.fr/blog/en/sports-launch-tennis-club.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 28,
-        "url": "https://www.agence-dare-dare.fr/blog/en/food-launch-newsstand.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 29,
-        "url": "https://www.agence-dare-dare.fr/blog/en/skincare-launch-hammam.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 30,
-        "url": "https://www.agence-dare-dare.fr/blog/en/jewellery-launch-bakery.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 31,
-        "url": "https://www.agence-dare-dare.fr/blog/en/cosmetics-launch-fruit-veg.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 32,
-        "url": "https://www.agence-dare-dare.fr/blog/en/cool-wedding-ideas.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 33,
-        "url": "https://www.agence-dare-dare.fr/blog/en/wedding-marrakech.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 34,
-        "url": "https://www.agence-dare-dare.fr/blog/en/corporate-party-budget-paris.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 35,
-        "url": "https://www.agence-dare-dare.fr/blog/en/10-event-venues-paris.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 36,
-        "url": "https://www.agence-dare-dare.fr/blog/en/event-trends-2026.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 37,
-        "url": "https://www.agence-dare-dare.fr/blog/en/organise-press-trip.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 38,
-        "url": "https://www.agence-dare-dare.fr/blog/en/event-cannes-french-riviera.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 39,
-        "url": "https://www.agence-dare-dare.fr/blog/en/event-morocco-dmc.html"
-      }
-    ]
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Blog · Agence Dare-Dare",
+    "inLanguage": "en-GB",
+    "description": "Ideas, trends and behind-the-scenes of premium events.",
+    "url": "https://www.agence-dare-dare.fr/blog/en/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Agence Dare-Dare",
+      "url": "https://www.agence-dare-dare.fr"
+    }
   }
-}
   </script>
-<style>
-.blog-card__cover{aspect-ratio:3/4;background:#0A0A0A;color:#F6F2EE;display:flex;flex-direction:column;justify-content:space-between;padding:26px 24px;overflow:hidden}
-.blog-card__cover span{font:500 11px Inter,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#EF4B45}
-.blog-card__cover strong{font:800 clamp(22px,2.2vw,30px)/1.05 Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
-.blog-card__cover em{font:italic 400 22px "Instrument Serif",Georgia,serif;color:rgba(246,242,238,.7)}
-.blog-card:nth-child(3n+2) .blog-card__cover{background:#F6F2EE;color:#0A0A0A;box-shadow:inset 0 0 0 1px rgba(10,10,10,.12)}
-.blog-card:nth-child(3n+2) .blog-card__cover span{color:#A3122A}.blog-card:nth-child(3n+2) .blog-card__cover em{color:#6B645F}
-</style>
-<link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/fonts/fonts.css?v=20261025">
-<style>.blog-card--pin{cursor:default}.blog-card--pin:hover{opacity:1}.blog-card__pin{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}.blog-card__credit{font-size:10px;letter-spacing:.06em;color:#6B645F}.blog-card__link{display:block;color:inherit;text-decoration:none}.blog-card__link:hover .blog-card__title{font-style:italic}</style>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to main content</a>
 <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L5BNM4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- BLOG: Navigation -->
@@ -306,214 +99,83 @@
 
   <!-- BLOG: Hero -->
   <header class="blog-hero">
-    <h1 class="blog-hero__title"><span class="sr">The Journal of Agence Dare-Dare: ideas, trends and behind the scenes of premium events. </span><span class="lt">The</span><br><em>Journal.</em></h1>
+    <h1 class="blog-hero__title">Insights</h1>
     <p class="blog-hero__subtitle">Ideas, trends and behind-the-scenes of premium events.</p>
     <p class="blog-hero__subtitle"><a href="../" hreflang="fr" lang="fr">Version française</a></p>
   </header>
 
   <!-- BLOG: Articles listing -->
-  <main id="main" class="blog-list">
-
-    <!-- BLOG: Card · two-day-corporate-seminar-programme.html -->
-    <a href="two-day-corporate-seminar-programme.html" class="blog-card">
-      <img class="blog-card__img" title="Photo: R Prazeres, CC BY-SA 4.0" src="../../photos/w800/maroc-dar-bacha.webp" alt="Garden of the Dar el Bacha palace in Marrakech, a zellige path and a fountain" width="800" height="600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">2-day corporate seminar: the sample programme, in Paris or Morocco</h2>
-        <p class="blog-card__excerpt">Hour by hour, one programme for Paris and one for Marrakech, the five decisions to take before writing it and the pacing mistakes to avoid.</p>
-        <p class="blog-card__meta">October 2026 · 9 min read</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · choosing-an-event-caterer.html -->
-    <a href="choosing-an-event-caterer.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/w800/longchamp.webp" alt="Long laid table, green and gold tableware, yellow flowers and leather napkins" width="800" height="1067" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">How to choose an event caterer in Paris and Morocco: the questions to ask</h2>
-        <p class="blog-card__excerpt">Guest count, allergens, what the quote includes, the bar and the alcohol-free menu, cooking without a kitchen in a riad: the questions we ask before recommending a caterer.</p>
-        <p class="blog-card__meta">October 2026 · 8 min read</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · event-communication.html -->
-    <a href="event-communication.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/w800/samsung-influences-molitor-1.webp" alt="A team in black T-shirts running along a lake in a Paris park" width="800" height="1067" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">Event communication: getting people talking about your event before, during and after</h2>
-        <p class="blog-card__excerpt">One message, three stages, content designed to be picked up and a measurable debrief: our method for making an event shine beyond the room.</p>
-        <p class="blog-card__meta">October 2026 · 8 min read</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · best-morocco-retreat-agencies.html -->
-    <a href="best-morocco-retreat-agencies.html" class="blog-card">
-      <img class="blog-card__img" title="Photo: Josephhassane, CC0" src="../../photos/w800/maroc-agafay.webp" alt="Tented camp in the Agafay desert, Atlas mountains behind" width="800" height="534" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">The best agencies for a corporate retreat in Morocco in 2027</h2>
-        <p class="blog-card__excerpt">Eight agencies and DMCs, with their specialty, verifiable references and who each one suits, plus the six criteria we used to choose them.</p>
-        <p class="blog-card__meta">October 2026 · 14 min read</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · best-event-agencies-paris.html -->
-    <a href="best-event-agencies-paris.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/paris-blockchain-week-louvre-1.webp" alt="Dinner under the Louvre Pyramid" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">The best event agencies in Paris in 2027</h2>
-        <p class="blog-card__excerpt">Ten Paris agencies, with their specialty, verifiable references and who each one suits, plus the six criteria we used to choose them.</p>
-        <p class="blog-card__meta">October 2026 · 12 min read</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · event-carbon-calculator.html -->
-    <a href="event-carbon-calculator.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/dior-2.webp" alt="Event carbon footprint calculator (free)" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">Event carbon footprint calculator (free)</h2>
-        <p class="blog-card__excerpt">Travel, accommodation, meals, venue, decor: estimate your event carbon footprint with ADEME factors.</p>
-        <p class="blog-card__meta">October 2026 · Calculator</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · company-party-checklist.html -->
-    <a href="company-party-checklist.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/allianz-soiree-de-noel.webp" alt="Illustration for the article: Planning your company party: the free checklist (58 points)" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">Planning your company party: the free checklist (58 points)</h2>
-        <p class="blog-card__excerpt">The free checklist to plan a company party: guest numbers, venue, running order, alcohol-free, dietary needs, accessibility, the day itself. 58 points as a PDF.</p>
-        <p class="blog-card__meta">October 2026 · Free PDF</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · event-planning-timeline.html -->
-    <a href="event-planning-timeline.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/deloitte-louvre.webp" alt="Illustration for the article: Event planning timeline: the free template, from D-90 to D+7" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">Event planning timeline: the free template, from D-90 to D+7</h2>
-        <p class="blog-card__excerpt">The free planning timeline to organise a party or a launch: 38 steps from D-90 to D+7, with who does what. Download it as a PDF.</p>
-        <p class="blog-card__meta">October 2026 · Free PDF</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · agency-brief-template.html -->
-    <a href="agency-brief-template.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/chanel-hotel-5-etoiles.webp" alt="Illustration for the article: The brief template: 10 questions to answer before calling an event agency" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">The brief template: 10 questions to answer before calling an event agency</h2>
-        <p class="blog-card__excerpt">The free brief template: the 10 questions to answer before calling an event agency, with examples of good answers. A PDF to fill in.</p>
-        <p class="blog-card__meta">October 2026 · Free PDF</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · morocco-seminar-guide.html -->
-    <a href="morocco-seminar-guide.html" class="blog-card">
-      <img title="Photo: R Prazeres, CC BY-SA 4.0" class="blog-card__img" src="../../photos/maroc-dar-bacha.webp" alt="Illustration for the article: Organising a seminar in Morocco: the free 2027 guide" width="1024" height="768" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">Organising a seminar in Morocco: the free 2027 guide</h2>
-        <p class="blog-card__excerpt">The free guide to organising a seminar in Morocco in 2027: seasons, Ramadan and holidays, cities, riads, flights, formalities, alcohol and customs, checklist. As a PDF.</p>
-        <p class="blog-card__meta">October 2026 · Free PDF</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · press-trip-kit.html -->
-    <a href="press-trip-kit.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/drink-more-water-pernod-ricard-1.webp" alt="Illustration for the article: The press trip kit: free templates (invitation, programme, coverage tracker)" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">The press trip kit: free templates (invitation, programme, coverage tracker)</h2>
-        <p class="blog-card__excerpt">The free kit to organise a press trip: editorial angle framework, journalist invitation, day-by-day programme, media kit, coverage tracker. As a PDF.</p>
-        <p class="blog-card__meta">October 2026 · Free PDF</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · 2027-events-calendar.html -->
-    <a href="2027-events-calendar.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/paris-blockchain-week-ritz-1.webp" alt="Illustration for the article: 2027 calendar of key dates to time your event (France and Morocco)" width="1200" height="1600" loading="lazy">
-      <div class="blog-card__content">
-        <span class="blog-card__category">Free tool</span>
-        <h2 class="blog-card__title">2027 calendar of key dates to time your event (France and Morocco)</h2>
-        <p class="blog-card__excerpt">The free 2027 calendar to time your event: French bank holidays, school holidays, Fashion Weeks, trade fairs, Cannes Film Festival, Ramadan and holidays in Morocco. As a PDF.</p>
-        <p class="blog-card__meta">October 2026 · Free PDF</p>
-      </div>
-    </a>
-
-    <!-- BLOG: Card · year-end-corporate-party-paris.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/475200198202403783/">A guest holding a supper club menu and a golden flower ring</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="year-end-corporate-party-paris.html" class="blog-card__link"><div class="blog-card__content">
-        <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">Year-end corporate party in Paris: 8 ideas for your teams</h2>
-        <p class="blog-card__excerpt">Grand dinner, ball, jazz club, rooftop chalet, cruise, awards night, new-year brunch, and the calendar to book in time.</p>
-        <p class="blog-card__meta">October 2026 · 9 min read</p>
-      </div></a></div>
+  <main class="blog-list">
 
     <!-- BLOG: Card · riad-event-marrakech.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/661607001522846001/">Berber lounge with low seating</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="riad-event-marrakech.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="riad-event-marrakech.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/og-image.webp" alt="A Marrakech riad courtyard set for a private dinner" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
         <h2 class="blog-card__title">An event in a riad in Marrakech</h2>
         <p class="blog-card__excerpt">Hiring a riad, dinner in the courtyard, medina access, seasons and alcohol: our guide.</p>
         <p class="blog-card__meta">October 2026 · 7 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · rooftop-paris-event.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/263671753177670950/">Hôtel Dame des Arts rooftop, Left Bank</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="rooftop-paris-event.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="rooftop-paris-event.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/og-image.webp" alt="A private event on a Paris rooftop at sunset" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
         <h2 class="blog-card__title">Booking a rooftop in Paris</h2>
         <p class="blog-card__excerpt">Rooftop types, iconic addresses, a weather plan B, constraints and timing for booking a Paris rooftop.</p>
         <p class="blog-card__meta">October 2026 · 7 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · sunglasses-launch-petrol-station.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/350295677288834155/">Route 66 petrol station with vintage red pumps, a young woman in a headscarf doing her make-up by a convertible</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="sunglasses-launch-petrol-station.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="sunglasses-launch-petrol-station.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/station-shooting.jpg" alt="Route 66 petrol station with vintage red pumps" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a sunglasses collection at a retro petrol station</h2>
         <p class="blog-card__excerpt">A retro petrol station, sunglasses at the till, branded jerrycans, a car wash photocall and a sunset after-party.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
-
-    <!-- BLOG: Card · perfume-launch-cocktail-bar.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/647673990194478605/">Chic cocktail bar, Manor Bar, Rosewood Baha Mar</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="perfume-launch-cocktail-bar.html" class="blog-card__link"><div class="blog-card__content">
-        <span class="blog-card__category">Launch</span>
-        <h2 class="blog-card__title">Launching a perfume in a cocktail bar</h2>
-        <p class="blog-card__excerpt">A private bar, a menu where every scent becomes a drink, bartenders as noses, a smelling flight and an after-party.</p>
-        <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
-
-    <!-- BLOG: Card · beauty-launch-60s-salon.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/319333429849902307/">Vintage 1950s-60s hair salon</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="beauty-launch-60s-salon.html" class="blog-card__link"><div class="blog-card__content">
-        <span class="blog-card__category">Launch</span>
-        <h2 class="blog-card__title">Launching a beauty range in a 1960s hair salon</h2>
-        <p class="blog-card__excerpt">Private retro salon, hood dryers as testing stations, express blow-dries and manicures, and an after-party.</p>
-        <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · candle-launch-video-store.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/991636411717692152/">Red neon </a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="candle-launch-video-store.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="candle-launch-video-store.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/videoclub-neon.jpg" alt="Red neon Video Club sign" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a candle collection in a video rental store</h2>
         <p class="blog-card__excerpt">Vintage video store, scents shelved by genre, membership cards, popcorn screening and Reels.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
+    <!-- BLOG: Card · fashion-launch-bowling-alley.html -->
+    <a href="fashion-launch-bowling-alley.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/og-image.webp" alt="Launching a fashion collection at a bowling alley" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
+        <span class="blog-card__category">Launch</span>
+        <h2 class="blog-card__title">Launching a fashion collection at a bowling alley</h2>
+        <p class="blog-card__excerpt">A private bowling alley, a runway down the lanes, customised shoes, a tournament, a neon party and Reels.</p>
+        <p class="blog-card__meta">October 2026 · 6 min read</p>
+      </div>
+    </a>
 
     <!-- BLOG: Card · corporate-party-instagrammable.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/494903446569147295/">Party in a booked-out launderette, a crowd between the machines under a disco ball</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="corporate-party-instagrammable.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="corporate-party-instagrammable.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/og-image.webp" alt="Guests taking photos at a corporate party with an original set design" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
-        <h2 class="blog-card__title">A brand event guests actually post about</h2>
+        <h2 class="blog-card__title">A corporate party guests actually post about</h2>
         <p class="blog-card__excerpt">A concept that reads in one image, a great photo moment, phone-friendly lighting, a filmable surprise and a content plan.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · 3-day-seminar-marrakech.html -->
     <a href="3-day-seminar-marrakech.html" class="blog-card">
-      <img title="Photo: Josephhassane, CC0" class="blog-card__img" src="../../photos/maroc-agafay.webp" alt="Illustration for the article: A 3-day seminar in Marrakech" width="1280" height="853" loading="lazy">
+      <img class="blog-card__img" src="../../photos/seminaire-meet-me-marrakech.jpg" alt="Old phone reading Meet me in Marrakech" width="560" height="350" loading="lazy">
       <div class="blog-card__content">
         <span class="blog-card__category">Seminar</span>
         <h2 class="blog-card__title">A 3-day seminar in Marrakech</h2>
@@ -522,93 +184,86 @@
       </div>
     </a>
 
-
-
-
-
     <!-- BLOG: Card · fashion-launch-launderette.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/887138826599752117/">Model photographed from inside a tumble dryer, in a launderette</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="fashion-launch-launderette.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="fashion-launch-launderette.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/laverie-shooting-machine.jpg" alt="Model photographed from inside a tumble dryer, in a launderette" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a fashion collection in a launderette</h2>
         <p class="blog-card__excerpt">A private launderette, portholes as shop windows, a runway between the machines, pressing tickets and a DJ set.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
-
-    <!-- BLOG: Card · coffee-launch-phone-booth.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/769763761354318297/">London red phone booth</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="coffee-launch-phone-booth.html" class="blog-card__link"><div class="blog-card__content">
-        <span class="blog-card__category">Launch</span>
-        <h2 class="blog-card__title">Launching a coffee brand behind a phone booth</h2>
-        <p class="blog-card__excerpt">A red phone booth, a hidden coffee bar, an invitation by phone call, a switchboard tasting and an after.</p>
-        <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
-
-    <!-- BLOG: Card · shoe-launch-cobbler.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/455074737324212053/">Shopfront of a cobbler’s shop</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="shoe-launch-cobbler.html" class="blog-card__link"><div class="blog-card__content">
-        <span class="blog-card__category">Launch</span>
-        <h2 class="blog-card__title">Launching a shoe collection at a cobbler’s</h2>
-        <p class="blog-card__excerpt">A cobbler’s workshop, a repair-ticket invitation, on-site personalisation and a shoe shine bar.</p>
-        <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
-
-    <!-- BLOG: Card · fashion-launch-bowling-alley.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/738731145173093563/">Chic bowling alley, lanes and neon</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="fashion-launch-bowling-alley.html" class="blog-card__link"><div class="blog-card__content">
-        <span class="blog-card__category">Launch</span>
-        <h2 class="blog-card__title">Launching a fashion collection at a bowling alley</h2>
-        <p class="blog-card__excerpt">A private retro bowling alley, a runway down the lanes, customised shoes, a guest tournament and a neon party.</p>
-        <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · champagne-launch-corner-shop.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/421790321359969146/">A shop basket on the floor between the aisles, a guest in red mules</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="champagne-launch-corner-shop.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="champagne-launch-corner-shop.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/epicerie-retro.jpg" alt="A shop basket on the floor between the aisles, a guest in red mules" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a champagne cuvée in a late-night corner shop</h2>
-        <p class="blog-card__excerpt">A fake late-night corner shop, shelves of bottles, a token till, crisps and caviar, a soundtrack and Reels.</p>
+        <p class="blog-card__excerpt">A fake late-night corner shop, shelves of bottles, a token till, crisps and caviar, a DJ and Reels.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · sports-launch-tennis-club.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/815292338831057671/">Long white dinner table set across the net of a grass tennis court, guests dressed in white</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="sports-launch-tennis-club.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="sports-launch-tennis-club.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/tennis-byevelina.jpg" alt="Long white dinner table set across the net of a grass tennis court, guests dressed in white" width="736" height="920" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a sports collection at a vintage tennis club</h2>
         <p class="blog-card__excerpt">A vintage tennis club, all-white kit, a mini tournament, lemonade at the club house, Reels and a sunset after-party.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · food-launch-newsstand.html -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/641481540707989635/">Summer Fridays kiosk with a striped awning, magazines featuring its products and flowers</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="food-launch-newsstand.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="food-launch-newsstand.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/kiosque-summer-fridays.jpg" alt="Summer Fridays kiosk with a striped awning, magazines featuring its products and flowers" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a food product at a newsstand</h2>
         <p class="blog-card__excerpt">A Parisian newsstand takeover, a fake front page, newsprint wrapping, a morning tasting and Reels.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · Lancement hammam -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/1130896156503945568/">Ancient hammam under a star-pierced dome, with steam and blue zellige tiles</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="skincare-launch-hammam.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="skincare-launch-hammam.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/hammam-dome-mosaique.jpg" alt="Ancient hammam under a star-pierced dome, with steam and blue zellige tiles" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a skincare range in a hammam</h2>
         <p class="blog-card__excerpt">A private hammam in Marrakech, a reinvented ritual, an ingredients workshop, rooftop dinner and Reels.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · Lancement joaillerie -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/646688827785185529/">Croissant covered in gold jewellery, earrings and a bracelet</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="jewellery-launch-bakery.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="jewellery-launch-bakery.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/joaillerie-madrejoy.jpg" alt="Croissant covered in gold jewellery, earrings and a bracelet" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a jewellery collection like a bakery</h2>
         <p class="blog-card__excerpt">Jewellery displayed like pastries, paper bags, a surprise batch and Reels.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · Lancement cosmétique -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/1150458667339487601/">Rhode Peptide Lip Tint lying in glossy raspberries</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="cosmetics-launch-fruit-veg.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="cosmetics-launch-fruit-veg.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/cosmetique-couverture-baies.jpg" alt="Rhode Peptide Lip Tint lying in glossy raspberries" width="736" height="1308" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Launch</span>
         <h2 class="blog-card__title">Launching a beauty product with fruit and vegetables</h2>
         <p class="blog-card__excerpt">Market pop-up, fruit reveal, juice bar, sensory workshop and Reels.</p>
         <p class="blog-card__meta">October 2026 · 6 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card · Idées mariage cool -->
     <a href="cool-wedding-ideas.html" class="blog-card">
-      <div class="blog-card__cover" aria-hidden="true"><span>Wedding</span><strong>If we had to plan a wedding tomorrow: 5 cool ideas to steal</strong><em>Dare-Dare</em></div>
+      <img class="blog-card__img" src="../../photos/mariage-cool-tiramisu-2.jpg" alt="Individual tiramisus served in stainless steel coupes" width="560" height="350" loading="lazy">
       <div class="blog-card__content">
         <span class="blog-card__category">Wedding</span>
         <h2 class="blog-card__title">If we had to plan a wedding tomorrow: 5 cool ideas to steal</h2>
@@ -619,7 +274,7 @@
 
     <!-- BLOG: Card · Mariage à Marrakech -->
     <a href="wedding-marrakech.html" class="blog-card">
-      <img title="Photo: Matt Kieffer, CC BY-SA 2.0" class="blog-card__img" src="../../photos/maroc-palais-bahia.webp" alt="Illustration for the article: Getting married in Marrakech: the complete guide" width="1280" height="1923" loading="lazy">
+      <img class="blog-card__img" src="../../photos/maroc-marrakech.jpg" alt="Marrakech, wedding destination" width="560" height="373" loading="lazy">
       <div class="blog-card__content">
         <span class="blog-card__category">Wedding</span>
         <h2 class="blog-card__title">Getting married in Marrakech: the complete guide</h2>
@@ -629,16 +284,19 @@
     </a>
 
     <!-- BLOG: Card · Budget soirée d'entreprise -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/1100707965160549891/">MERIT, refined dinner</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="corporate-party-budget-paris.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="corporate-party-budget-paris.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/diner-press-action.webp" alt="Corporate dinner table set in a Paris venue" width="560" height="315" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Budget</span>
         <h2 class="blog-card__title">How much should you budget for a corporate party in Paris?</h2>
         <p class="blog-card__excerpt">Budget per guest, venue, catering and tech costs, plus a worked example for 150 guests.</p>
         <p class="blog-card__meta">October 2026 · 8 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card 1 · 10 lieux exceptionnels -->
     <a href="10-event-venues-paris.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/paris-blockchain-week-louvre-2.webp" alt="Illustration for the article: 10 exceptional venues for a corporate event in Paris" width="1600" height="900" loading="lazy">
+      <img class="blog-card__img" src="../../photos/paris-blockchain-week-louvre-2.webp" alt="Gala reception in a Louvre gallery, corporate event venue in Paris" width="560" height="350" loading="lazy">
       <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
         <h2 class="blog-card__title">10 exceptional venues for a corporate event in Paris</h2>
@@ -649,7 +307,7 @@
 
     <!-- BLOG: Card 2 · Tendances 2026 -->
     <a href="event-trends-2026.html" class="blog-card">
-      <img class="blog-card__img" src="../../photos/tendance-hero.jpg" alt="Illustration for the article: The 7 event trends of 2026" width="1200" height="800" loading="lazy">
+      <img class="blog-card__img" src="../../photos/samsung-showcase-theodort-1.webp" alt="Immersive Samsung showcase, illustrating 2026 event trends" width="560" height="350" loading="lazy">
       <div class="blog-card__content">
         <span class="blog-card__category">Trends</span>
         <h2 class="blog-card__title">The 7 event trends of 2026</h2>
@@ -659,24 +317,30 @@
     </a>
 
     <!-- BLOG: Card 3 · Voyage presse -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/1109574426970692422/">Plane cabin, screens from the Summery Copenhagen campaign</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="organise-press-trip.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="organise-press-trip.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/diner-press-action.webp" alt="Press dinner, illustrating a successful press trip" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
         <h2 class="blog-card__title">How to run a successful press trip in 7 steps</h2>
         <p class="blog-card__excerpt">From the first brief to media coverage: the playbook for turning a press trip into editorial coverage.</p>
         <p class="blog-card__meta">March 2026 · 10 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card 4 · Événement Cannes -->
-    <div class="blog-card blog-card--pin"><div class="blog-card__pin"><a data-pin-do="embedPin" data-pin-width="small" href="https://www.pinterest.com/pin/812196114091076462/">Guests in silk scarves at a waterside lunch</a><span class="blog-card__credit">Photo: via Pinterest</span></div><a href="event-cannes-french-riviera.html" class="blog-card__link"><div class="blog-card__content">
+    <a href="event-cannes-french-riviera.html" class="blog-card">
+      <img class="blog-card__img" src="../../photos/dest-cannes-1.jpg" alt="Aerial view of Cannes harbour and the Croisette, event on the French Riviera" width="560" height="350" loading="lazy">
+      <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
         <h2 class="blog-card__title">Hosting an event in Cannes: the finest venues on the French Riviera</h2>
         <p class="blog-card__excerpt">Palais des Festivals, hillside villas, private yachts, old Cannes: the Riviera's most striking settings.</p>
         <p class="blog-card__meta">April 2026 · 7 min read</p>
-      </div></a></div>
+      </div>
+    </a>
 
     <!-- BLOG: Card 5 · Événement Maroc -->
     <a href="event-morocco-dmc.html" class="blog-card">
-      <img title="Photo: R Prazeres, CC BY-SA 4.0" class="blog-card__img" src="../../photos/maroc-dar-bacha.webp" alt="Illustration for the article: Hosting an event in Morocco: the destination that changes everything" width="1024" height="768" loading="lazy">
+      <img class="blog-card__img" src="../../photos/maroc-marrakech.jpg" alt="Marrakech medina at sunset, event destination in Morocco" width="560" height="350" loading="lazy">
       <div class="blog-card__content">
         <span class="blog-card__category">Guide</span>
         <h2 class="blog-card__title">Hosting an event in Morocco: the destination that changes everything</h2>
@@ -688,8 +352,6 @@
   </main>
 
   <!-- BLOG: Footer -->
-  <p class="article__evin">Alcohol abuse is dangerous for your health; drink responsibly.</p>
-
   <footer class="blog-footer">
     <a href="../../en/" class="blog-footer__logo" aria-label="Agence Dare-Dare · Home">
       <svg class="blog-footer__logo-svg" viewBox="0 0 295 56" fill="currentColor" aria-hidden="true" role="img">
@@ -705,23 +367,17 @@
       <li><a href="../../en/" class="blog-footer__link">Home</a></li>
       <li><a href="../../en/#services" class="blog-footer__link">Services</a></li>
       <li><a href="../../en/#contact" class="blog-footer__link">Contact</a></li>
-      <li><a href="../../nos-idees.html" class="blog-footer__link">Our ideas</a></li>
-      <li><a href="../../en/how-we-produce.html" class="blog-footer__link">How we produce</a></li>
-      <li><a href="../../en/commitments.html" class="blog-footer__link">Commitments</a></li>
-      <li><a href="./" class="blog-footer__link">Journal</a></li>
     </ul>
     <p class="blog-footer__copy">&copy; 2026 Agence Dare-Dare. All rights reserved.</p>
     <p class="blog-footer__copy" style="margin-top: 8px; font-size: 13px;">
       <a href="../../mentions-legales.html" class="blog-footer__link">Legal notice</a>
       &nbsp;·&nbsp;
       <a href="../../politique-confidentialite.html" class="blog-footer__link">Privacy policy</a>
-      &nbsp;·&nbsp;
-      <a href="../../en/cookie-policy.html" class="blog-footer__link">Cookies</a>
     </p>
   </footer>
 
   <!-- Bandeau cookies -->
-  <script src="../../cookie-consent.js?v=2026102701" defer></script>
-  <script src="../../devis.js?v=2026102701" defer></script>
+  <script src="../../cookie-consent.js?v=20261016" defer></script>
+  <script src="../../devis.js?v=20261022b" defer></script>
 </body>
 </html>
