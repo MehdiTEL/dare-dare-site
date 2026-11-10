@@ -311,6 +311,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/perfume-launch-cocktail-bar.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.agence-dare-dare.fr/blog/soiree-entreprise-instagrammable.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -336,13 +348,13 @@
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-mode-bowling.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/en/fashion-launch-bowling-alley.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
