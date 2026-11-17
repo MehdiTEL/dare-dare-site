@@ -312,13 +312,25 @@
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/en/perfume-launch-cocktail-bar.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/lancement-beaute-salon-annees-60.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/blog/en/beauty-launch-60s-salon.html</loc>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
