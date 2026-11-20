@@ -542,9 +542,18 @@
   <url>
     <loc>https://www.agence-dare-dare.fr/nos-idees.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/nos-idees.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/ideas.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/nos-idees.html"/>
     <lastmod>2026-10-24</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.agence-dare-dare.fr/en/ideas.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.agence-dare-dare.fr/nos-idees.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.agence-dare-dare.fr/en/ideas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.agence-dare-dare.fr/nos-idees.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.agence-dare-dare.fr/blog/lancement-parfum-bar-cocktails.html</loc>
