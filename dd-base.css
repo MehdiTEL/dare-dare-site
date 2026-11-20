@@ -185,3 +185,7 @@ details[open].more>summary::after{transform:rotate(45deg)}
 .nav__links{gap:clamp(18px,1.7vw,28px);margin-left:clamp(24px,3vw,48px)}
 @media (min-width:901px) and (max-width:1320px){.nav__links{display:none}.nav__burger{display:flex}}
 @media (max-width:900px){.mmenu{overflow-y:auto;justify-content:flex-start;padding:92px 28px 40px}.mmenu a{font-size:34px}.mmenu small a{font-size:13px}}
+
+/* Mobile : le grand titre (ex. « ÉVÉNEMENTIELLE ») ne déborde plus du héros */
+.pghero__in{min-width:0;width:100%}
+@media (max-width:600px){.pghero h1{font-size:clamp(34px,9.4vw,56px)}.pghero .hero__lead{font-size:16px}}
