@@ -1,4 +1,4 @@
-/* Dare-Dare 2026 · gabarit des pages intérieures (services, villes, idées, mariage).
+/* Dare-Dare 2026 · dd-base.css : socle des pages intérieures (services, villes, idées, mariage, vœux), au-dessus de dd-2026.css.
    Complète dd-2026.css : mêmes couleurs, mêmes polices, titres en deux lignes. */
 body{background:var(--ink);color:var(--paper)}
 main{display:block}
@@ -177,3 +177,11 @@ details[open].more>summary::after{transform:rotate(45deg)}
 .dd-reassur{font-size:.85rem;line-height:1.6;letter-spacing:.02em;color:rgba(246,242,238,.7);margin:0 0 28px;max-width:720px}
 .dd-reassur a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .contact__header + .dd-reassur,.contact .container > .dd-reassur{text-align:center;margin-left:auto;margin-right:auto}
+
+/* Pied de page : coordonnées identiques sur toutes les pages (mail, téléphone, Paris et Casablanca) */
+.footer__coords{margin-top:24px;font-size:13px;color:var(--mute)}.footer__coords a{color:inherit;border-bottom:1px solid rgba(246,242,238,.25)}.footer__coords a:hover{color:var(--paper)}
+
+/* Navigation à 8 entrées : un peu plus serrée sur grand écran, menu burger sous 1320 px, menu mobile qui défile sur petit écran. */
+.nav__links{gap:clamp(18px,1.7vw,28px);margin-left:clamp(24px,3vw,48px)}
+@media (min-width:901px) and (max-width:1320px){.nav__links{display:none}.nav__burger{display:flex}}
+@media (max-width:900px){.mmenu{overflow-y:auto;justify-content:flex-start;padding:92px 28px 40px}.mmenu a{font-size:34px}.mmenu small a{font-size:13px}}
